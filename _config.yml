@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en"
-title                    : "Site Title"
+title                    : "DL Board"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "ByungSoo Ko"
+description              : "an master's student researcher in deep learning"
 url                      : "https://kobiso.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -77,25 +77,25 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "ByungSoo Ko"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
-  email            :
-  uri              :
+  bio              : "I am a master's student researcher in deep learning"
+  location         : "Daejeon, Korea"
+  email            : "kobiso62@gmail.com"
+  uri              : "https://kobiso.github.io/"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           :
+  github           : "https://github.com/kobiso"
   gitlab           :
   google_plus      :
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "byungsoo-ko-151013b8" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. http://stackoverflow.com/users/123456/username)
