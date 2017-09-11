@@ -1,6 +1,6 @@
 full_rebuild: true
-name: Gridster
-description: the material experience for jekyll
+name: kobiso
+description: abcdefg
 destination: jekyllbuild
 url: https://kobiso.github.io/ #place url
 baseurl: #place folder name if site is served in subfolder
@@ -12,7 +12,7 @@ gems: [jekyll-paginate]
 tag_dir: /tag
 category_dir: /category
 author_dir: /author
-author_title_prefix: 'Posted by '
+author_title_prefix: 'Posted by ByungSoo Ko'
 media_folder: /media/compressed
 author_default_avatar: /profile-pic.jpg
 tumblr: "#"
