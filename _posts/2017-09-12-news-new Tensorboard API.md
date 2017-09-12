@@ -12,7 +12,7 @@ As the previous TensorBoard API did not include reusable APIs, it was difficult 
 From now on, the new TensorBoard API allows users to customize their own creation of useful visualizations and extend it to cover a wider variety of use cases.
 
 Below is a demo video feed of data (e.g. gradients and convolution filters) as a model trains.
-<iframe width="640" height="360" src="https://youtu.be/06HjEr0OX5k" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/06HjEr0OX5k" frameborder="0" allowfullscreen></iframe>
 
 * The list of TensorBoard plugin: [[GitHub](https://github.com/tensorflow/tensorboard/tree/master/tensorboard/plugins)]
 
