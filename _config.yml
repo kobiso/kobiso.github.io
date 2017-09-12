@@ -78,7 +78,7 @@ analytics:
 # Site Author
 author:
   name             : "ByungSoo Ko"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/me.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "I am a master's student researcher in deep learning"
   location         : "Daejeon, Korea"
   email            : "kobiso62@gmail.com"
