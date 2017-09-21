@@ -2,7 +2,7 @@
 title: "Configuration"
 permalink: /docs/configuration/
 excerpt: "Settings for configuring and customizing the theme."
-last_modified_at: 2017-09-05T12:06:30-04:00
+last_modified_at: 2017-09-12T12:25:16-04:00
 ---
 
 Settings that affect your entire site can be changed in [Jekyll's configuration file](https://jekyllrb.com/docs/configuration/): `_config.yml`, found in the root of your project. If you don't have this file you'll need to copy or create one using the theme's [default `_config.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_config.yml) as a base.
@@ -23,6 +23,71 @@ If you're using the Ruby gem version of the theme you'll need this line to activ
 ```yaml
 theme: minimal-mistakes-jekyll
 ```
+
+### Skin
+
+Easily change the color scheme of the theme using one of the provided "skins":
+
+```yaml
+minimal_mistakes_skin : "default" # "air", "contrast", "dark", "dirt", "mint", "sunrise"
+```
+
+**Note:** If you have made edits to the theme's CSS files be sure to update [`/assets/css/main.scss`](https://github.com/mmistakes/minimal-mistakes/blob/master/assets/css/main.scss) to include `@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin` before the `minimal-mistakes` import.
+{: .notice--warning}
+
+#### Air skin: `air`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/air-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/air-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/air-skin-post.png"></a>
+    <figcaption>Calm and blue.</figcaption>
+</figure>
+
+#### Contrast skin: `contrast`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/contrast-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/contrast-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/contrast-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/contrast-skin-post.png"></a>
+    <figcaption>Retro feel with bold blue links and inverted footer.</figcaption>
+</figure>
+
+#### Dark skin: `dark`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/dark-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/dark-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/dark-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/dark-skin-post.png"></a>
+    <figcaption>Inverted palette, white text on a dark background.</figcaption>
+</figure>
+
+#### Dirt skin: `dirt`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/dirt-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/dirt-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/dirt-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/dirt-skin-post.png"></a>
+    <figcaption>Earthy tones.</figcaption>
+</figure>
+
+#### Mint skin: `mint`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/mint-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/mint-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/mint-skin-post.png"></a>
+    <figcaption>Minty fresh green.</figcaption>
+</figure>
+
+#### Sunrise skin: `sunrise`
+{:.no_toc}
+
+<figure class="half">
+    <a href="{{ site.baseurl }}/assets/images/sunrise-skin-archive-large.png"><img src="{{ site.baseurl }}/assets/images/sunrise-skin-archive.png"></a>
+    <a href="{{ site.baseurl }}/assets/images/sunrise-skin-post-large.png"><img src="{{ site.baseurl }}/assets/images/sunrise-skin-post.png"></a>
+    <figcaption>Oranges and red.</figcaption>
+</figure>
 
 ### Site Locale
 
@@ -101,6 +166,21 @@ If you don't set `repository` correctly you may see the following error when try
 {: .notice--danger}
 
 For more information on how `site.github` data can be used with Jekyll check out [`github-metadata`'s documentation](https://github.com/jekyll/github-metadata).
+
+### Site Scripts
+
+Add scripts to the `<head>` or closing `</body>` elements by assigning paths to either `head_scripts` and/or `footer_scripts`.
+
+For example, to add a CDN version of jQuery to page's head along with a custom script you'd do the following:
+
+```yaml
+head_scripts:
+  - https://code.jquery.com/jquery-3.2.1.min.js
+  - /assets/js/your-custom-head-script.js
+```
+
+Consult the [JavaScript documentation]({{ site.baseurl }}{% link _docs/17-javascript.md %}) for more information on working with theme scripts.
+{: .notice--info}
 
 ### Site Default Teaser Image
 
