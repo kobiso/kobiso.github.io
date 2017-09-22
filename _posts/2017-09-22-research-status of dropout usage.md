@@ -7,54 +7,26 @@ tags:
   - Deep network
 ---
 
-{% include toc title="Unique Title" icon="file-text" %}
+## Dropout
 
-Testing Kramdown auto-generated table of contents with unique title and icon assigned in the include like so:
-
-```liquid
-{% raw %}{% include toc title="Unique Title" icon="file-text" %}{% endraw %}
-```
-
-## HTML Elements
-
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
-
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
-
-## Body text
-
-Lorem ipsum dolor sit amet, test link adipiscing elit. **This is strong**. Nullam dignissim convallis est. Quisque aliquam.
-
-![Smithsonian Image]({{ site.url }}{{ site.baseurl }}/assets/images/3953273590_704e3899d5_m.jpg)
-{: .image-right}
-
-*This is emphasized*. Donec faucibus. Nunc iaculis suscipit dui. 53 = 125. Water is H2O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. The New York Times (That’s a citation). Underline.Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.
-
-HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.
-
-### Blockquotes
-
-> Lorem ipsum dolor sit amet, test link adipiscing elit. Nullam dignissim convallis est. Quisque aliquam.
+> Dropout is one of the simplest and the most powerful regularization techniques.
+It prevents units from complex co-adapting by randomly dropping units from the network. [[N. Srivastava et al., 2014](http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)]
+Below table is a list of famous deep networks which use dropout techniques.
 
 ## Status of dropout usage in famous deep networks
 
-| Model | Dropout layers | Remark | Reference |
-|:--------|:-------:|--------:|--------:|
-| cell1   | cell2   | cell3   | cell3   |
-| cell4   | cell5   | cell6   | cell3   |
-|----
-| cell1   | cell2   | cell3   | cell3   |
-| cell4   | cell5   | cell6   | cell3   |
-|=====
-| Foot1   | Foot2   | Foot3  | Foot3
+| Model | Dropout layers | Remark |
+|:--------|:-------:|--------:|
+| AlexNet [[Alex Krizhevsky et al., 2012](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf)]   | Used in two fully-connected layers   | Won the 2012 ILSVRC (ImageNet Large-Scale Visual Recognition Challenge)   |
+| ZFNet [[Matthew D. Zeiler et al., 2013](https://arxiv.org/pdf/1311.2901v3.pdf)]   | Used in two fully-connected layers   | Won the 2013 ILSVRC   |
+| VGG Net [[Karen Simonyan et al., 2014](https://arxiv.org/pdf/1409.1556v6.pdf)]   | Used in two fully-connected layers   | Best utilized with simple and deep CNN   |
+| GoogLeNet [[Christian Szegedy et al., 2015](https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf)]   | Used in one fully-connected layer   | Won the 2014 ILSVRC   |
+| Generative Adversarial Networks [[Ian J. Goodfellow et al., 2014](https://arxiv.org/pdf/1406.2661v1.pdf)]   | Applied in training the discriminator net   | Various usage such as feature extraction, generating artificial images   |
+| Generating Image Descriptions [[Adrej Karpathy et al., 2014](https://arxiv.org/pdf/1412.2306v2.pdf)]   | Used in all layers except in the recurrent layers   | Combination of CNNs and RNNs   |
+| Spatial Transformer Networks [[Max Jaderberg et al., 2015](https://arxiv.org/pdf/1506.02025.pdf)]   | Used in all layers except the first convolutional layer   | Introduce of a Spatial Transformer module   |
 {: rules="groups"}
 
 ## Notices
 
-**Watch out!** You can also add notices by appending `{: .notice}` to a paragraph.
+**The list will keep updated**
 {: .notice}
