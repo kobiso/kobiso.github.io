@@ -1,5 +1,5 @@
 ---
-title: "Status of dropout usage in famous deep networks"
+title: "Status of dropout technique usage in famous deep networks"
 categories:
   - Research
 tags:
@@ -7,13 +7,13 @@ tags:
   - Deep network
 ---
 
-## Dropout
+## Dropout technique
 
 > Dropout is one of the simplest and the most powerful regularization techniques.
 It prevents units from complex co-adapting by randomly dropping units from the network. [[N. Srivastava et al., 2014](http://www.jmlr.org/papers/volume15/srivastava14a/srivastava14a.pdf)]
 Below table is a list of famous deep networks which use dropout techniques.
 
-## Status of dropout usage in famous deep networks
+## Status of dropout technique usage in famous deep networks
 
 | Model | Dropout layers | Remark |
 |:--------|:-------:|--------:|
@@ -28,5 +28,5 @@ Below table is a list of famous deep networks which use dropout techniques.
 
 ## Notices
 
-**The list will keep updated**
+The list will keep updated
 {: .notice}
