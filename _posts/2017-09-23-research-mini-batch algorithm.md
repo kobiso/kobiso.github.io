@@ -3,28 +3,21 @@ title: "Layout: Post with Table Of Contents"
 header:
   image: assets/images/unsplash-image-9.jpg
   caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+categories:
+  - Research
 tags:
-  - table of contents
+  - convex optimization problem
+  - gradient descent method
 ---
 
-{% include toc title="Unique Title" icon="file-text" %}
+{% include toc title="Table of Contents" icon="file-text" %}
 
-Testing Kramdown auto-generated table of contents with unique title and icon assigned in the include like so:
 
-```liquid
-{% raw %}{% include toc title="Unique Title" icon="file-text" %}{% endraw %}
-```
 
-## HTML Elements
+# Convex optimization problem
 
-Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
 
-<h1>Heading 1</h1>
-<h2>Heading 2</h2>
-<h3>Heading 3</h3>
-<h4>Heading 4</h4>
-<h5>Heading 5</h5>
-<h6>Heading 6</h6>
+
 
 ## Body text
 
