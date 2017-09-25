@@ -1,8 +1,5 @@
 ---
 title: "Convex optimization problem"
-header:
-  image: assets/images/convex.png
-  caption: "Source: Reza Zadeh"
 categories:
   - Research
 tags:
@@ -10,9 +7,9 @@ tags:
   - gradient descent method
 ---
 
-{% include toc title="Table of Contents" icon="file-text" %}
-
 When we solve machine learning problem, we have to optimize a certain objective function. One of the case of it is convex optimization problem which is a problem of minimizing convex functions over convex sets.
+
+{% include toc title="Table of Contents" icon="file-text" %}
 
 ## Optimization problem
 > In mathematics and computer science, an **optimization problem** is the problem of finding the best solution from all feasible solutions.
@@ -34,7 +31,7 @@ $$
 \forall x_1, x_2 \in X, \forall t \in [0, 1]: \qquad f(tx_1+(1-t)x_2)\leq t f(x_1)+(1-t)f(x_2).
 $$
 
-![Convex function on an interval](https://en.wikipedia.org/wiki/Convex_function#/media/File:ConvexFunction.svg)
+![Convex function on an interval]({{ site.url }}{{ site.baseurl }}/assets/images/convex_function.png)
 
 The reason why convex function is important on optimization problem is that it makes optimization easier than the general case since local minimum must be a global minimum. In other word, the convex function has to have only one optimal value, but the optimal point does not have to be one. The below loosely convex function has one optimal value with multiple optimal points.
 
