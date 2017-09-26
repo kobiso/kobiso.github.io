@@ -15,13 +15,13 @@ When we solve machine learning problem, we have to optimize a certain objective 
 > In mathematics and computer science, an **optimization problem** is the problem of finding the best solution from all feasible solutions.
 
 We can write the standard form of a optimization problem as,
-```math
+
 $$
 \underset{x}{\operatorname{minimize}} \hspace{1em} f(x) \\
 \operatorname{subject\;to} \hspace{1em} g_i(x) \leq 0, \quad i = 1,\dots,m \\
 \hspace{5em} h_i(x) = 0, \quad i = 1, \dots,p  \\
-$$
-```
+$${: .text-center}
+
 
 The function $$f(x)$$ is an objective function to be minimized over the variable $$x$$, and both functions $$g_i(x)$$ and $$h_i(x)$$ are constraints function. If the optimization is maximization problem, it can be treated by negating the objective function. We can think of it as finding an optimum point which can be the minimum or maximum point of the objective function. Sadly, we can not find optimum point in every case. The simplest way to find the optimum point is to find zero point of its derivative function, however, there can be non-differentiable functions or it can not be a extreme point even though it is zero point, such as saddle point. And one of the easy case to find the extreme point is convex optimization.
 
