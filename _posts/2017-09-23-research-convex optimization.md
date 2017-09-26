@@ -29,9 +29,10 @@ The function $$f(x)$$ is an objective function to be minimized over the variable
 > In mathematics, a **convex function** is if its epigraph (the set of points on or above the graph of the function) is a convex set.
 
 In here, convex set includes a convex region where, for every pair of points within the region, every point on the straight line segment that joins the pair of points is also within the region.The convex function has convex set as a domain of it such as the quadratic function $$x^{2}$$ and the exponential function $$e^{x}$$. The convex function can be written as,
+
 $$
 \forall x_1, x_2 \in X, \forall t \in [0, 1]: \qquad f(tx_1+(1-t)x_2)\leq t f(x_1)+(1-t)f(x_2).
-$$
+$${: .text-center}
 
 ![Convex function on an interval]({{ site.url }}{{ site.baseurl }}/assets/images/convex_function.png)
 
@@ -43,7 +44,7 @@ If you want to make it one optimal value with only one optimal point, you can pu
 
 $$
 \forall x_1 \neq x_2 \in X, \forall t \in (0, 1): \qquad f(tx_1+(1-t)x_2) < t f(x_1)+(1-t)f(x_2).
-$$
+$${: .text-center}
 
 This function is called strictly convex function and we can design an optimization algorithm since it has unique optimal point.
 
