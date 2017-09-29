@@ -22,6 +22,7 @@ $$
 \hspace{5em} h_i(x) = 0, \quad i = 1, \dots,p  \\
 $${: .text-center}
 
+
 The function $$f(x)$$ is an objective function to be minimized over the variable $$x$$, and both functions $$g_i(x)$$ and $$h_i(x)$$ are constraints function. If the optimization is maximization problem, it can be treated by negating the objective function. We can think of it as finding an optimum point which can be the minimum or maximum point of the objective function. Sadly, we can not find optimum point in every case. The simplest way to find the optimum point is to find zero point of its derivative function, however, there can be non-differentiable functions or it can not be a extreme point even though it is zero point, such as saddle point. And one of the easy case to find the extreme point is convex optimization.
 
 ## Convex Set and Convex Function
@@ -60,6 +61,11 @@ $$
 $${: .text-center}
 
 when the functions $$f, g_1 \ldots g_m : \mathbb{R}^n \rightarrow \mathbb{R}$$ are all convex functions. As I mentioned about the convex function, the optimization solution is unique since every function is convex. There are well-known algorithms for convex optimization problem such as, gradient descent method, lagrange multiplier, and newton method.
+
+## References
+- [Convex optimization by Stephen Boyd](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)
+- [Optimization problem on Wikipedia](https://en.wikipedia.org/wiki/Optimization_problem)
+- [Convex optimization on Wikipedia](https://en.wikipedia.org/wiki/Convex_optimization)
 
 ## Notices
 Still writing :D
