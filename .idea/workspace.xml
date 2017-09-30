@@ -98,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_page.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="262">
-              <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+              <caret line="82" column="5" lean-forward="false" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -268,12 +268,12 @@
       <workItem from="1506481273652" duration="2778000" />
       <workItem from="1506763139860" duration="231000" />
       <workItem from="1506763399118" duration="614000" />
-      <workItem from="1506771420428" duration="6462000" />
+      <workItem from="1506771420428" duration="6522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12285000" />
+    <option name="totallyTimeSpent" value="12345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="895" extended-state="6" />
@@ -468,7 +468,7 @@
     <entry file="file://$PROJECT_DIR$/_sass/minimal-mistakes/_page.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
-          <caret line="82" column="5" lean-forward="true" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
+          <caret line="82" column="5" lean-forward="false" selection-start-line="82" selection-start-column="5" selection-end-line="82" selection-end-column="5" />
           <folding />
         </state>
       </provider>
