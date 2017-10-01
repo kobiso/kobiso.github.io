@@ -5,6 +5,8 @@ categories:
 tags:
   - TensorBoard
   - TensorFlow
+header:
+  teaser: /assets/images/tensorboard.png
 ---
 
 TensorFlow team launched the new customizable TensorBoard API on Sept 11, 2017.

@@ -5,6 +5,8 @@ categories:
 tags:
   - convex optimization problem
   - gradient descent method
+header:
+  teaser: /assets/images/convex_function.png
 ---
 
 When we solve machine learning problem, we have to optimize a certain objective function. One of the case of it is convex optimization problem which is a problem of minimizing convex functions over convex sets.

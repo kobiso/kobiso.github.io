@@ -5,6 +5,8 @@ categories:
 tags:
   - XAI
   - Reference
+header:
+  teaser: /assets/images/XAI.jpg
 ---
 
 

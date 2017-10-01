@@ -5,6 +5,8 @@ categories:
 tags:
   - Dropout
   - Deep network
+header:
+  teaser: /assets/images/dropout.jpeg
 ---
 
 ## Dropout technique
