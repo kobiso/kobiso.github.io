@@ -35,7 +35,8 @@ The function $$f(x)$$ is an objective function to be minimized over the variable
 In other word, The convex function has convex set as a domain of it such as the quadratic function $$x^{2}$$ and the exponential function $$e^{x}$$. The convex function can be written as,
 
 $$
-\forall x_1, x_2 \in X, \forall t \in [0, 1]: \qquad f(tx_1+(1-t)x_2)\leq t f(x_1)+(1-t)f(x_2).
+\forall x_1, x_2 \in X, \forall t \in [0, 1]: \\
+f(tx_1+(1-t)x_2)\leq t f(x_1)+(1-t)f(x_2). \\
 $${: .text-center}
 
 ![Convex function on an interval]({{ site.url }}{{ site.baseurl }}/assets/images/convex_function.png)
@@ -47,7 +48,8 @@ The reason why convex function is important on optimization problem is that it m
 If you want to make it one optimal value with only one optimal point, you can put more condition as below.
 
 $$
-\forall x_1 \neq x_2 \in X, \forall t \in (0, 1): \qquad f(tx_1+(1-t)x_2) < t f(x_1)+(1-t)f(x_2).
+\forall x_1 \neq x_2 \in X, \forall t \in [0, 1]: \\
+f(tx_1+(1-t)x_2) < t f(x_1)+(1-t)f(x_2). \\
 $${: .text-center}
 
 This function is called strictly convex function and we can design an optimization algorithm since it has unique optimal point.
