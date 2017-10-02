@@ -4,7 +4,6 @@ categories:
   - Research
 tags:
   - convex optimization problem
-  - gradient descent method
 header:
   teaser: /assets/images/convex_function.png
 ---
@@ -67,10 +66,6 @@ $${: .text-center}
 when the functions $$f, g_1 \ldots g_m : \mathbb{R}^n \rightarrow \mathbb{R}$$ are all convex functions. As I mentioned about the convex function, the optimization solution is unique since every function is convex. There are well-known algorithms for convex optimization problem such as, gradient descent method, lagrange multiplier, and newton method.
 
 ## References
-- [Convex optimization by Stephen Boyd](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)
-- [Optimization problem on Wikipedia](https://en.wikipedia.org/wiki/Optimization_problem)
-- [Convex optimization on Wikipedia](https://en.wikipedia.org/wiki/Convex_optimization)
-
-## Notices
-Still writing :D
-{: .notice}
+- Convex optimization by Stephen Boyd [[Link](https://web.stanford.edu/~boyd/cvxbook/bv_cvxbook.pdf)]
+- Optimization problem on Wikipedia [[Link](https://en.wikipedia.org/wiki/Optimization_problem)]
+- Convex optimization on Wikipedia [[Link](https://en.wikipedia.org/wiki/Convex_optimization)]
