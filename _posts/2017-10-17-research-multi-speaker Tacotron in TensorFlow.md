@@ -81,15 +81,25 @@ One more advantage is that it is able to achieve high audio quality synthesis an
 It can be done since enough amount of data for training help to train less amount of data properly.
 
 # Data
+For the datasets, the author used three public Korean figures below.
+I added video of each to show how they normally talk so that you can compare with the speech synthesis result.
+* [Sohn Suk-hee](https://en.wikipedia.org/wiki/Sohn_Suk-hee): anchor and president of JTBC broadcasting station.
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/r7Pmf-_Ebt4" frameborder="0" allowfullscreen></iframe>
+
+* [Park Geun-hye](https://en.wikipedia.org/wiki/Park_Geun-hye): a former President of South Korea
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/is0nMGtg3Ow" frameborder="0" allowfullscreen></iframe>
+
+* [Moon Jae-in](https://en.wikipedia.org/wiki/Moon_Jae-in): the current President of South Korea
+<iframe width="640" height="360" src="https://www.youtube-nocookie.com/embed/p0iokDQy1sQ" frameborder="0" allowfullscreen></iframe>
 
 # Result
+You can see and hear the speech synthesis result in this [**link**](http://carpedm20.github.io/tacotron/en.html).
 
+15+ hours of Sohn's data, 5+ hours of Park's data, and 2+ hours of Moon's data was used for training stage.
+In the result, every speaker is able to be identified almost perfectly, even for the Moon's result which has only for two hours of data seems pretty valid.
 
 # References
-- Github page of 'Multi-Speaker Tacotron' [[Link](https://github.com/devsisters/multi-speaker-tacotron-tensorflow/blob/master/README.md)]
+- Github page of 'Multi-Speaker Tacotron in TensorFlow' [[Link](https://github.com/devsisters/multi-speaker-tacotron-tensorflow/blob/master/README.md)]
 - Presentation material of the project [[Link](https://www.slideshare.net/carpedm20/deview-2017-80824162)]
 - Tacotron: Towards End-to-End Speech Synthesis [[Link](https://arxiv.org/abs/1703.10135)]
 - Deep Voice 2: Multi-Speaker Neural Text-to-Speech [[Link](https://arxiv.org/abs/1705.08947)]
-
-# Notices
-Still writing :D
