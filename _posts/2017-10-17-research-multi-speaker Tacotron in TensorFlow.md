@@ -58,17 +58,27 @@ Spectrogram, which is output of the decoder module, will be used for generating 
 
 ### 3. Attention
 ![Encoder of Tacotron]({{ site.url }}{{ site.baseurl }}/assets/images/tacotron_attention.png)
+
 The context vector and the attention RNN is concatenated to each other in order to form the input to the decoder RNNs.
 And the text analysis and acoustic modeling are accomplished together by an attention based RNN, which has the capacity to learn the relevant contextual factors embedded in the text sequence.
 This helps to generate more natural and human-like speech from a language text which is not trained before.
 
 ### 4. Vocoder
 ![Encoder of Tacotron]({{ site.url }}{{ site.baseurl }}/assets/images/tacotron_vocoder.png)
+
 The output spectrogram from the decoder module will go through a CBHG module for the post-processing net which is used to predict alternative targets such as vocoder parameters that synthesizes waveform samples directly.
 And then, the Griffin-Lim reconstruction process will be used to synthesize waveform from the predicted spectrogram. 
 These process finally outputs sounds of speech.
 
 ## Deep Voice 2
+![Encoder of Tacotron]({{ site.url }}{{ site.baseurl }}/assets/images/MST.png)
+{: .full}
+
+The point of using *Deep Voice 2* is to train multiple speakers' voice with one deep learning model.
+Tacotron model can be trained only one person's voice and it will take N times of memory space if we want to train N number of people's voice.
+But by using Deep Voice 2 model, we can train multiple speakers' voice on a single model with smaller amount of memory space.
+One more advantage is that it is able to achieve high audio quality synthesis and preserve the speaker identities even with less than half an hour of data per speaker.
+It can be done since enough amount of data for training help to train less amount of data properly.
 
 # Data
 
@@ -78,6 +88,8 @@ These process finally outputs sounds of speech.
 # References
 - Github page of 'Multi-Speaker Tacotron' [[Link](https://github.com/devsisters/multi-speaker-tacotron-tensorflow/blob/master/README.md)]
 - Presentation material of the project [[Link](https://www.slideshare.net/carpedm20/deview-2017-80824162)]
+- Tacotron: Towards End-to-End Speech Synthesis [[Link](https://arxiv.org/abs/1703.10135)]
+- Deep Voice 2: Multi-Speaker Neural Text-to-Speech [[Link](https://arxiv.org/abs/1705.08947)]
 
 # Notices
 Still writing :D
