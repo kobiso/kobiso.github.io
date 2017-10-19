@@ -77,6 +77,26 @@ $${: .text-center}
 
 ![Sigmoid function]({{ site.url }}{{ site.baseurl }}/assets/images/activation functions/sigmoid function.png){: .align-center}
 
+Sigmoid function is well-known activation function in classification problem.
+As you can see on the figure, it looks like step function, but has smooth curve which will give us analogue activation unlike step function.
+So it can be used for multi-classes classification problem.
+Moreover, as it is nonlinear function, combination of sigmoid function will be nonlinear as well and so we can stack layers.
+
+This function has tendency that it brings the $$f(x)$$ values to either end of the curve.
+The $$x$$ values between -2 and 2 have very steep $$f(x)$$ values, which mean, small changes of $$x$$ values will make big changes on $$f(x)$$ values.
+This property gives advantage on classification problem because it brings the activations to either side of the curve (above $$x=2$$ and below $$x=-2$$) and makes clear distinctions on prediction.
+One more advantage of the sigmoid function is that the output range of it is $$(0,1)$$ compared to its of linear function $$(-\infty,+\infty)$$.
+It gives valid activation bounds and prevent the output exceeds the limit to calculate.
+ 
+One drawback of sigmoid function is that it can cause *"gradient vanishing problem"*.
+On the either end of the sigmoid function (above $$x=4$$ and below $$x=-4$$), $$f(x)$$ values change very slowly by $$x$$ values and the gradient in this region will be small.
+Thus, gradient cannot make enough change because of extremely small value and it can be vanished.
+This problem will cause significantly slow training or refuse to learn further.
+
+There has been several tricks introduced to avoid this problem, but it has recently fallen out of favor and rarely used.
+
+# Rectified linear unit (ReLU)
+
 # References
 - Activation function in Wikipedia [[Link](https://en.wikipedia.org/wiki/Activation_function)]
 - Blog post about activation function[[Link](https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0)]
