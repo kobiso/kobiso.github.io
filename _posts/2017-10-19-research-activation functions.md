@@ -93,10 +93,88 @@ On the either end of the sigmoid function (above $$x=4$$ and below $$x=-4$$), $$
 Thus, gradient cannot make enough change because of extremely small value and it can be vanished.
 This problem will cause significantly slow training or refuse to learn further.
 
+The other drawback is that sigmoid outputs are not zero-centered.
+This could cause undesirable zig-zagging dynamics in the gradient updates for the weight, because if the data coming into a neuron is always positive, then the gradient on the weights will become either all be positive or all negative during backpropagation.
+
 There has been several tricks introduced to avoid this problem, but it has recently fallen out of favor and rarely used.
 
+# Tanh
+
+$$
+f(x) =  \tanh(x) \\
+\hspace{6em} = \frac{2}{1+e^{-2x} } - 1 \quad (3) \\
+\hspace{8em} = 2 sigmoid(2x) - 1 \quad (4) \\
+$${: .text-center}
+
+![Tanh function]({{ site.url }}{{ site.baseurl }}/assets/images/activation functions/tanh.png){: .align-center}
+
+The tanh function is a scaled sigmoid function as shown in the equation (3) and (4).
+I has very similar look with sigmoid function, has bound range between [-1, 1] and zero-centered.
+As it has non-linearity, we can stack layers, and as it has bound range between [-1, 1], the activation would not blow up.
+Furthermore, the tanh function is always perferred to the sigmoid function, because it is zero-centered. 
+
 # Rectified linear unit (ReLU)
+
+$$
+f(x) =  max(0, x)
+$${: .text-center}
+
+![ReLU function]({{ site.url }}{{ site.baseurl }}/assets/images/activation functions/relu.png){: .align-center}
+
+ReLU has become a very popular activation function these days.
+It outpus x if x is positive and 0 otherwise.
+ReLU looks like to have the problem of linear function, but it is nonlinear and the combination of ReLU is also nonlinear.
+(As it is a good approximator, any function can be approximated with combinations of ReLU)
+And the range of ReLU is [0, inf), so it can blow up the activation.
+
+First advantage of ReLU is that it greatly accelerate the convergence of stochastic gradient descent compared to sigmoid and tanh functions.
+This is because of its linear and non-saturating form.
+('Saturate' means is that the function plateaus out or saturates beyond some range.
+For example, $$tanh(x)$$ saturates on [-1, +1] but ReLU does not at least on the positive side)
+Second advantage is that it can be implemented by simply thresholding a matrix of activations at zero, when tanh and sigmoid neurons involve expensive operations such as exponentials.
+
+However, it has disadvantage of "dying ReLU problem" which means ReLU units can be fragile during training and can die.
+This is because the gradient can go towards zero for negative $$x$$ and it will make the units go into that state will stop being trained to variations in error and input.
+This problem usually happens if the learning rate is set too high but with proper setting of the learning rate, the issue will be less.
+
+# Leaky ReLU
+
+$$
+f(x) = \begin{cases}
+	0.01x & \text{for  } x < 0  \quad (5) \\
+	x & \text{for  } x \ge 0\end{cases}
+$${: .text-center}
+
+![Leaky ReLU function]({{ site.url }}{{ site.baseurl }}/assets/images/activation functions/leaky relu.png){: .align-center}
+
+There are variations in ReLU to handle the dying ReLU problem and Leaky ReLU is one of them.
+It simply makes the horizontal line of ReLU into non-horizontal component as shown in equation (5). 
+The main idea of it is to let the gradient be non-zero and recover during training eventually.
+However, the consistency of the benefit using this function is not clear yet. 
+
+# Maxout
+
+$$
+f(\vec{x}) = \max_i x_i
+$${: .text-center}
+
+# Softmax
+
+$$
+f_i(\vec{x}) = \frac{e^{x_i}}{\sum_{j=1}^J e^{x_j}} \quad for {{mvar|i}} = 1, …,
+$${: .text-center}
+
+# Other activation functions
+
+ - Activation functions of one fold x from the previous layer or layers
+![Cheet sheet 1]({{ site.url }}{{ site.baseurl }}/assets/images/activation functions/cheet sheet1.png)
+{: .full}
+
+- Activation functions of not one fold x from the previous layer or layers
+![Cheet sheet 2]({{ site.url }}{{ site.baseurl }}/assets/images/activation functions/cheet sheet2.png)
+{: .full}
 
 # References
 - Activation function in Wikipedia [[Link](https://en.wikipedia.org/wiki/Activation_function)]
 - Blog post about activation function[[Link](https://medium.com/the-theory-of-everything/understanding-activation-functions-in-neural-networks-9491262884e0)]
+- Standford CS231 lecture note [[Link](http://cs231n.github.io/neural-networks-1/)]
