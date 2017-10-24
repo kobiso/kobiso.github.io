@@ -30,7 +30,7 @@ However, since the range of value $$Y$$ is between $$-\infty$$ and $$+\infty$$, 
 This is why we use activation function to make a bound of the value $$Y$$ and decide whether it should be "ON" (1) (activated) or "OFF" (0) (deactivated).
 (The idea of neuron to be activated or deactivated is from how our brain and neuron on the brain works.)
 
-# Binary Step Function
+## Binary Step Function
 
 $$
 f(x) = \begin{cases}
@@ -49,7 +49,7 @@ As the output 1 indicates 100% activated, it is hard to choose between class1 an
 Therefore, we rather need to get probabilistic activation output such as, 50% activated and 70% activated.
 Alternatively, we need strength or probabilistic activation values rather than just binary activated or deactivated.
 
-# Identity and Linear Function
+## Identity and Linear Function
 
 $$
 f(x) = cx \quad (2)
@@ -69,7 +69,7 @@ Second, as the derivative of equation (2) with respect to $$x$$ is $$c$$, this g
 Even though we have an error in prediction, the changes made by back propagation will be constant and it does not depend on the change in input $$ \delta(x)$$.
 This is a huge problem for training a network since the network need to be trained based on the input and its error in prediction, not constant value.
 
-# Sigmoid Function
+## Sigmoid Function
 
 $$
 f(x) =  \frac{1}{1+e^{-x} } 
@@ -98,7 +98,7 @@ This could cause undesirable zig-zagging dynamics in the gradient updates for th
 
 There has been several tricks introduced to avoid this problem, but it has recently fallen out of favor and rarely used.
 
-# Tanh
+## Hyperbolic Tangent (Tanh)
 
 $$
 f(x) =  \tanh(x) \\
@@ -113,7 +113,7 @@ I has very similar look with sigmoid function, has bound range between [-1, 1] a
 As it has non-linearity, we can stack layers, and as it has bound range between [-1, 1], the activation would not blow up.
 Furthermore, the tanh function is always perferred to the sigmoid function, because it is zero-centered. 
 
-# Rectified linear unit (ReLU)
+## Rectified Linear Unit (ReLU)
 
 $$
 f(x) =  max(0, x)
@@ -137,7 +137,7 @@ However, it has disadvantage of "dying ReLU problem" which means ReLU units can 
 This is because the gradient can go towards zero for negative $$x$$ and it will make the units go into that state will stop being trained to variations in error and input.
 This problem usually happens if the learning rate is set too high but with proper setting of the learning rate, the issue will be less.
 
-# Leaky ReLU
+## Leaky ReLU
 
 $$
 f(x) = \begin{cases}
@@ -152,19 +152,30 @@ It simply makes the horizontal line of ReLU into non-horizontal component as sho
 The main idea of it is to let the gradient be non-zero and recover during training eventually.
 However, the consistency of the benefit using this function is not clear yet. 
 
-# Maxout
+## Maxout
 
 $$
-f(\vec{x}) = \max_i x_i
+h_{i} \left( x \right) = \max_{j\in\left[1,k\right]}\left(z_{ij}\right) \\
+z_{ij} = x^{T} W_{\dots ij} + b_{ij}
 $${: .text-center}
 
-# Softmax
+Other types of units have been proposed that do not have the functional form as equation (1).
+One popular form is the Maxout neuron that generalizes the ReLU and leaky ReLU function.
+Therefore, maxout neuron have all the advantage of ReLU unit while not having dying ReLU problem.
+However, it doubles the number of parameters for every single neuron which lead to a high total number of parameters.
+
+## Softmax
 
 $$
-f_i(\vec{x}) = \frac{e^{x_i}}{\sum_{j=1}^J e^{x_j}} \quad for {{mvar|i}} = 1, …,
+f_i(\vec{x}) = \frac{e^{x_i}}{\sum_{j=1}^J e^{x_j}} \quad for {{mvar|i}} = 1, …, J
 $${: .text-center}
 
-# Other activation functions
+The softmax function is a generalization of the logistic function that squashes a $$J$$-dimensional vector $$x$$ of arbitrary real values to a $$J$$-dimensional vector $$f_i(\vec{x})$$ of real values in the range [0,1] that add up to 1.
+In probability theory, the output of the softmax function can be used to represent a categorical distribution which is a probability distribution over $$J$$ different possible outcomes.
+Therefore, it is used in multiple classification logistic regression model by giving probability output for each class.
+And it is used in different layer level, not in unit level. 
+
+## Other Activation Functions
 
  - Activation functions of one fold x from the previous layer or layers
 ![Cheet sheet 1]({{ site.url }}{{ site.baseurl }}/assets/images/activation functions/cheet sheet1.png)
@@ -173,6 +184,12 @@ $${: .text-center}
 - Activation functions of not one fold x from the previous layer or layers
 ![Cheet sheet 2]({{ site.url }}{{ site.baseurl }}/assets/images/activation functions/cheet sheet2.png)
 {: .full}
+
+# How and what to use?
+When you start modeling a network, the ReLU non-linearity function is recommended to use, but you have to be careful with learning rates and dying ReLU problem.
+If you see some dead units or worried of it, try to use Leaky ReLU or Maxout.
+You do not want to use Sigmoid function, try tanh instead, but it would work worse than ReLU and Maxout.
+Moreover, it is not common to mix and match different types of neurons in the same network, even though there is no fundamental problem identified.
 
 # References
 - Activation function in Wikipedia [[Link](https://en.wikipedia.org/wiki/Activation_function)]
