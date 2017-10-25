@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/2017-10-25-coding-L3_FogJmp.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/neural machine translation by jointly learning to align and translate/new decoder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/neural machine translation by jointly learning to align and translate/new encoder.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/neural machine translation by jointly learning to align and translate/seq2seq.PNG" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/2017-10-25-research-multi-neural machine translation.md" afterPath="$PROJECT_DIR$/_posts/2017-10-25-research-multi-neural machine translation.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,8 +69,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/2017-10-25-research-multi-neural machine translation.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="437">
-                <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="18" />
+              <first_editor relative-caret-position="171">
+                <caret line="9" column="117" lean-forward="false" selection-start-line="9" selection-start-column="117" selection-end-line="9" selection-end-column="117" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -157,8 +160,8 @@
         <option value="$PROJECT_DIR$/_posts/2017-10-17-research-multi-speaker Tacotron in TensorFlow.md" />
         <option value="$PROJECT_DIR$/_posts/2017-10-23-coding-L2_CyclicRotation.md" />
         <option value="$PROJECT_DIR$/_posts/2017-10-19-research-activation functions.md" />
-        <option value="$PROJECT_DIR$/_posts/2017-10-25-research-multi-neural machine translation.md" />
         <option value="$PROJECT_DIR$/_posts/2017-10-25-coding-L3_FogJmp.md" />
+        <option value="$PROJECT_DIR$/_posts/2017-10-25-research-multi-neural machine translation.md" />
       </list>
     </option>
   </component>
@@ -170,7 +173,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="58" />
     <option name="y" value="128" />
     <option name="width" value="1400" />
@@ -282,15 +285,15 @@
       <workItem from="1506771420428" duration="18356000" />
       <workItem from="1506932599487" duration="5792000" />
       <workItem from="1508123458230" duration="33339000" />
-      <workItem from="1508373865371" duration="37757000" />
+      <workItem from="1508373865371" duration="43159000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101067000" />
+    <option name="totallyTimeSpent" value="106469000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1359375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -746,7 +749,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-10-25-coding-L3_FogJmp.md">
+    <entry file="file://$PROJECT_DIR$/_posts/2017-10-25-coding-L3_FrogJmp.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="243">
@@ -762,8 +765,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-25-research-multi-neural machine translation.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="437">
-            <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="18" />
+          <first_editor relative-caret-position="171">
+            <caret line="9" column="117" lean-forward="false" selection-start-line="9" selection-start-column="117" selection-end-line="9" selection-end-column="117" />
             <folding />
           </first_editor>
           <second_editor>
