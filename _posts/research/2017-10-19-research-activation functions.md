@@ -8,6 +8,9 @@ header:
   teaser: /assets/images/activation functions/sigmoid function.png
   overlay_image: /assets/images/activation functions/sigmoid function.png
   overlay_filter: 0.4
+sidebar:
+  nav: "dl"
+author_profile: false
 ---
 
 Let's talk about activation function in artificial neural network and some questions related of it.

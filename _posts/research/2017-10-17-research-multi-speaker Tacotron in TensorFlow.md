@@ -8,6 +8,9 @@ header:
   teaser: /assets/images/MST.png
   overlay_image: /assets/images/MST.png
   overlay_filter: 0.4
+sidebar:
+  nav: "dl"
+author_profile: false
 ---
 
 Today, I am going to introduce interesting project, which is 'Multi-Speaker Tacotron in TensorFlow'.

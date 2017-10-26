@@ -7,6 +7,11 @@ tags:
   - Reference
 header:
   teaser: /assets/images/XAI.jpg
+  overlay_image: /assets/images/XAI.jpg
+  overlay_filter: 0.4  
+sidebar:
+  nav: "dl"
+author_profile: false
 ---
 
 

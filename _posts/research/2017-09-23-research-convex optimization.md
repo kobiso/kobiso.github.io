@@ -6,6 +6,11 @@ tags:
   - convex optimization problem
 header:
   teaser: /assets/images/convex_function.png
+  overlay_image: /assets/images/convex_function.png
+  overlay_filter: 0.4
+sidebar:
+  nav: "dl"
+author_profile: false
 ---
 
 When we solve machine learning problem, we have to optimize a certain objective function. One of the case of it is convex optimization problem which is a problem of minimizing convex functions over convex sets.

@@ -8,6 +8,9 @@ header:
   teaser: /assets/images/lrcn.png
   overlay_image: /assets/images/lrcn.png
   overlay_filter: 0.4
+sidebar:
+  nav: "dl"
+author_profile: false
 ---
 
 There has been a lot of attempt to combine between Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN) for image-based sequence recognition or video classification tasks.

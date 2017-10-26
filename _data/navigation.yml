@@ -14,3 +14,25 @@ main:
      url: /tags/
    - title: "Archives"
      url: /year-archive/
+
+dl:
+  - title: Deep Learning Basic
+    children:
+      - title: "Convex optimization problem"
+        url: /research/research-convex-optimization/
+      - title: "Activation function"
+        url: /research/research-activation-functions/
+  - title: Paper & Project Review
+    children:
+      - title: "LRCN"
+        url: /research/research-lrcn/
+      - title: "Multi-speaker Tacotron"
+        url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
+      - title: "Multi-neural machine translation"
+        url: /research/research-multi-neural-machine-translation/
+  - title: Deep Learning Related
+    children:
+      - title: "Dropout usage"
+        url: /research/research-status-of-dropout-usage/
+      - title: "XAI references"
+        url: /research/research-eXplainable-AI(XAI)-references/

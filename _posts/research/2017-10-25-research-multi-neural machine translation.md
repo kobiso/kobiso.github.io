@@ -9,6 +9,9 @@ header:
   teaser: /assets/images/neural machine translation by jointly learning to align and translate/new encoder.png
   overlay_image: /assets/images/neural machine translation by jointly learning to align and translate/new encoder.png
   overlay_filter: 0.4
+sidebar:
+  nav: "dl"
+author_profile: false
 ---
 
 The paper *"Neural Machine Translation By Jointly Learning To Align And Translate"* introduced in 2015 is one of the most famous deep learning paper related natural language process which is cited more than 2,000 times.

@@ -7,6 +7,11 @@ tags:
   - Deep network
 header:
   teaser: /assets/images/dropout.jpeg
+  overlay_image: /assets/images/dropout.jpeg
+  overlay_filter: 0.4  
+sidebar:
+  nav: "dl"
+author_profile: false
 ---
 
 ## Dropout technique
