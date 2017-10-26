@@ -8,6 +8,9 @@ header:
   teaser: /assets/images/codility.png
   overlay_image: /assets/images/codility.png
   overlay_filter: 0.4
+sidebar:
+  nav: "coding"
+author_profile: false
 ---
 
 Sharing an answer code of mine about [CyclicRotation problem of Codility lesson 2](https://codility.com/programmers/lessons/2-arrays/cyclic_rotation/start/).

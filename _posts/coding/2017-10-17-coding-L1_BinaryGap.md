@@ -8,6 +8,9 @@ header:
   teaser: /assets/images/codility.png
   overlay_image: /assets/images/codility.png
   overlay_filter: 0.4
+sidebar:
+  nav: "coding"
+author_profile: false
 ---
 
 Sharing an answer code of mine about [BinaryGap problem of Codility lesson 1](https://codility.com/programmers/lessons/1-iterations/binary_gap/start/).

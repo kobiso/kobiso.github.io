@@ -36,3 +36,15 @@ dl:
         url: /research/research-status-of-dropout-usage/
       - title: "XAI references"
         url: /research/research-eXplainable-AI(XAI)-references/
+
+coding:
+  - title: Codility
+    children:
+      - title: "Lesson1. Binary Gap"
+        url: /coding challenge/coding-L1_BinaryGap/
+      - title: "Lesson2. CyclicRotation"
+        url: /coding challenge/coding-L2_CyclicRotation/
+      - title: "Lesson3. FrogJmp"
+        url: /coding challenge/coding-L3_FrogJmp/
+      - title: "Lesson4. MissingInteger"
+        url: /coding challenge/coding-L4_MissingInteger/

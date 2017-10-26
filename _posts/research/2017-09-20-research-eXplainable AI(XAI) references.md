@@ -14,8 +14,8 @@ sidebar:
 author_profile: false
 ---
 
+The **eXplainable Artificial Intelligence (XAI)** is an artificial intelligence model that is able to explain its decisions and actions to human users.
 
-The eXplainable Artificial Intelligence (XAI) is an artificial intelligence model that is able to explain its decisions and actions to human users.
 As dramatic success in machine learning and deep learning these days, the capability of explaining the reason of decision of AI model is getting more important.
 However, considering the explosion of new AI capabilities, research on XAI is now a starting point.
 The Defense Advanced Research Projects Agency (DARPA) just initiated research of XAI on 2016, and there are few other agencies and companies following the research on XAI.
