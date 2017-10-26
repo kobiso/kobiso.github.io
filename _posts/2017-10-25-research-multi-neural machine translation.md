@@ -107,8 +107,66 @@ e_{ij} = a(s_{i-1}, h_j)
 $${: .text-center}
 
 # Experiment and Result
+## Dataset
+- Evaluate the proposed approach on the task of **English-to-French translation**
+- Use [ACL WMT'14 dataset](http://www.statmt.org/wmt14/translation-task.html): bilingual, parallel corpora
+  - Europarl (61M words), News commentary (5.5M), UN (421M), Two crawled corpora of 90M and 272.5M words, total 850M words
+  - Reduce the size of the combined corpus to have 348M
+  - Concatenate news-test-2012 and news-test-2013 to make a validation set, and evaluate the models on the test set (news-test-2014)
+  
+## Models
+- Train two types of models
+  - **RNN Encoder-Decoder** (refer as RNNencdec): Baseline, 1000 hidden units
+  - **RNNsearch**: Proposed model, 1000 hidden units    
+- To train the models,
+  - Use a multiplayer network with a single maxout hidden layer
+  - Use a mini-batch stochastic gradient descent (SGD)
+  - Use a beam search to find a translation that approximately maximizes the conditional probability
+  
+## Quantitative Results
 
+![Result 1]({{ site.url }}{{ site.baseurl }}/assets/images/neural machine translation by jointly learning to align and translate/result1.png){: .align-center}
+- The translation performance measured in BLEU score
+- RNNsearch outperforms the RNNencdec for all the cases
+- RNNsearch is as high as that of the conventional phrase-based translation system (Moses)
+  
+![Result 2]({{ site.url }}{{ site.baseurl }}/assets/images/neural machine translation by jointly learning to align and translate/result2.png){: .align-center}
+- The performance of RNNencdec dramatically drops as the length of the sentences increases
+- Both RNNsearch-30 and RNNsearch-50 are more robust to the length of the sentences
+- Especially, RNNsearch-50 shows no performance deterioration even with sentences of length 50 or more
+
+## Quantitative Analysis
+
+### Alignment
+
+![Result 3]({{ site.url }}{{ site.baseurl }}/assets/images/neural machine translation by jointly learning to align and translate/result3.png)
+{: .full}
+
+- Four sample alignments found by RNNsearch-50 between the source sentence (English) and the generated translation (French)
+- Each pixel shows the weight $$\alpha_ij$$ of the annotation of the $$j$$-th source word for the $$i$$-th target word, in grayscale (0:black, 1:white)
+- (a): an arbitrary sentence, (b-d): three randomly selected samples among the sentences without any unknown words and of length between 10 and 20 words from the test set
+
+### Long Sentences
+
+- **Source sentence** from the test set:
+  > An admitting privilege is the right of a doctor to admit a patient to a hospital or a medical centre to carry out a diagnosis or a procedure, based on his status as a health care worker at a hospital.
+
+- **The RNNencdec-50** translated this sentence into:
+  > Un privil\`ege d’admission est le droit d’un m´edecin de reconnaˆıtre un patient `al’hˆopital ou un centre m´edical d’un diagnostic ou de prendre un diagnostic enfonction de son ´etat de sant´e.
+  - It correctly translated the the source sentence until \[a medical center\], but it deviated afterward
+  
+- **The RNNsearch-50** generated the following correct translation: 
+  > Un privil\`ege d’admission est le droit d’un m´edecin d’admettre un patient \`a unhˆopital ou un centre m´edical pour effectuer un diagnostic ou une proc´edure, selonson statut de travailleur des soins de sant´e `a l’hˆopital.
+  - It preserve the whole meaning of the input sentence without omitting any details
+  - This is because the RNNsearch does not require encoding a long sentence into a fixed-length vector, but only accurately encoding the parts of the input sentence that surround a particular word.
+  
 # Conclusion
+- The conventional approach (encoder-decoder) issues
+  - Encodes a whole input sentence into a fixed-length vector
+  - it cannot translate long sentences
+- Propose a novel approach by extending the basic encoder-decoder
+  - No fixed size representation
+  - Plausible alignment
 
 # References
 - Neural Machine Translation by Jointly Learning to Align and Translate [[Link](https://arxiv.org/abs/1409.0473)]
