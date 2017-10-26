@@ -1,5 +1,5 @@
 ---
-title: "Codility Lesson3: FrogJmp"
+title: "Codility Lesson4: MissingInteger"
 categories:
   - Coding challenge
 tags:
@@ -10,56 +10,57 @@ header:
   overlay_filter: 0.4
 ---
 
-Sharing an answer code of mine about [FrogJmp problem of Codility lesson 3](https://codility.com/programmers/lessons/3-time_complexity/frog_jmp/start/).
+Sharing an answer code of mine about [MissingInteger problem of Codility lesson 4](https://codility.com/programmers/lessons/4-counting_elements/missing_integer/start/).
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
-## Lesson 3: FrogJmp
-A small frog wants to get to the other side of the road. The frog is currently located at position X and wants to get to a position greater than or equal to Y. The small frog always jumps a fixed distance, D.
-
-Count the minimal number of jumps that the small frog must perform to reach its target.
+## Lesson 4: MissingInteger
+This is a demo task.
 
 Write a function:
 ```python
 def solution(A, K)
 ```
-that, given three integers X, Y and D, returns the minimal number of jumps from position X to a position equal to or greater than Y.
+that, given an array A of N integers, returns the smallest positive integer (greater than 0) that does not occur in A.
 
-For example, given:
+For example, given A = [1, 3, 6, 4, 1, 2], the function should return 5.
 
-$$
-  X = 10 \\
-  Y = 85 \\
-  D = 30
-$${: .text-center}
+Given A = [1, 2, 3], the function should return 4.
 
-the function should return 3, because the frog will be positioned as follows:
-- after the first jump, at position 10 + 30 = 40
-- after the second jump, at position 10 + 30 + 30 = 70
-- after the third jump, at position 10 + 30 + 30 + 30 = 100
+Given A = [−1, −3], the function should return 1.
 
 Assume that:
-- X, Y and D are integers within the range [1..1,000,000,000];
-- X ≤ Y.
+
+- N is an integer within the range [1..100,000];
+- each element of array A is an integer within the range [−1,000,000..1,000,000].
 
 Complexity:
-- expected worst-case time complexity is O(1);
-- expected worst-case space complexity is O(1).
+
+- expected worst-case time complexity is O(N);
+- expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
+
+Elements of input arrays can be modified.
 
 ## Example answer code in Python 2.7
 
 ```python
-def solution(X, Y, D):
+def solution(A):
     # write your code in Python 2.7
     
-    if X >= Y: # does not have to jump
-        return 0;
+    '''
+    We can only consider N integers as we are tying to find the smallest positive integer.    
+    '''
+    
+    occur = [False]*len(A)
+    
+    for value in A: # Save occured positive integer less than N
+        if 0 < value <= len(A):
+            occur[value-1] = True
         
-    else: # have to jump
-        range = Y-X
-        if range % D == 0: # When the position equal to Y after jumps
-            return range / D
-        else: # When the position is greater than Y after jumps
-            return (range / D) + 1
+    for i in range(len(occur)): # Check the smallest positive integer
+        if occur[i] == False:
+            return i+1
+    
+    return len(occur)+1 # All positive integer less than N exist, so next integer is the answer
 ```
-- Time complexity: O(1)
+- Detected time complexity: O(N) or O(N*log(N))
