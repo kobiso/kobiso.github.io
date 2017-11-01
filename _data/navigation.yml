@@ -22,6 +22,8 @@ dl:
         url: /research/research-convex-optimization/
       - title: "Activation function"
         url: /research/research-activation-functions/
+      - title: "Feed-forward neural network"
+        url: /research/research-ffnn/
   - title: Paper & Project Review
     children:
       - title: "LRCN"
