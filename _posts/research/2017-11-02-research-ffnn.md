@@ -32,7 +32,7 @@ The forward propagation process of FFNN can be described as below.
 
 $$
 z^{(l+1)}_{i} = \mathbf{w}^{(l+1)}_{i}\mathbf{y}^{(l)} + b^{(l+1)}_{i}, \\
-y^{(l+1)}_{i} = f(z^{(l+1)}_{i}), 
+y^{(l+1)}_{i} = f(z^{(l+1)}_{i}).
 $${: .text-center}
 
 - $$\mathbf{z}^{(l)}$$: the vector of inputs into layer $$l$$
@@ -41,9 +41,23 @@ $${: .text-center}
 - $$i$$: any hidden unit
 - $$\mathbf{W}^{(l)}$$: a weight matrix in the layer $$l$$
 - $$\mathbf{b}^{(l)}$$: a bias vector in the layer $$l$$
-- $$f(\cdot)$$: an [activation function](/research/research-activation-functions/) such as a sigmoid, hyperbolic tangent, rectified linear unit, or softmax function.
+- $$f(\cdot)$$: an [activation function](/research/research-activation-functions/) such as a sigmoid, hyperbolic tangent, rectified linear unit, or softmax function
 
 ![Example architecture of LRCN]({{ site.url }}{{ site.baseurl }}/assets/images/ffnn/ffnn_equ.png){: .align-center}
 
+## Backpropagation
+In the *backpropagation* step, the neural network can be trained with *gradient descent algorithm*.
+The main goal of this step is to minimize the error function $$J(\mathbf{W},\mathbf{b})$$ such as cross entropy for the classification problem and mean-squared error for the regression problem.
+The gradient descent algorithm updates the parameters $$\mathbf{W}$$ and $$\mathbf{b}$$ in every iteration as below.
+
+$$
+\mathbf{W}_{ij}^{(l)} \leftarrow \mathbf{W}_{ij}^{(l)} - \alpha \frac{\partial}{\partial \mathbf{W}_{ij}^{(l)}} J(\mathbf{W},\mathbf{b}), \\
+b_{i}^{(l)} \leftarrow b_{i}^{(l)} - \alpha \frac{\partial}{\partial b_{i}^{(l)}} J(\mathbf{W},\mathbf{b}).
+$${: .text-center}
+
+- $$W^{(l)}_{ij}$$: an element of the weight matrix associated with the connection between unit $$j$$ in layer $$l$$ and unit $$i$$ in layer $$l+1$$
+- $$b^{(l)}_i$$: an element of the bias vector associated with unit $$i$$ in layer $$l+1$$ and $${\alpha}$$ is the learning rate
+
 # References
 - FFNN in Wikipedia [[Link](https://en.wikipedia.org/wiki/Feedforward_neural_network)]
+- Deep Learning book [[Link](http://www.deeplearningbook.org/)]
