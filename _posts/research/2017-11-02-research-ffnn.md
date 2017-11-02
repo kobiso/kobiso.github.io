@@ -13,6 +13,8 @@ sidebar:
 author_profile: false
 ---
 
+The Feed-Forward Neural Network (FFNN) is the simplest and basic artificial neural network we should know first before talking about other complicated networks. 
+
 {% include toc title="Table of Contents" icon="file-text" %}
 
 # Feed-Forward Neural Network (FFNN)
