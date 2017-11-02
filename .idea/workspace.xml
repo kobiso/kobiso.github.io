@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/research/2017-11-02-research-ffnn.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,12 +17,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="228">
+              <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="53" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-11-02-research-ffnn.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-02-research-ffnn.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="492">
+                <caret line="41" column="46" lean-forward="false" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2017-10-19-research-activation functions.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-19-research-activation functions.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="211">
+                <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="18" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -30,44 +60,9 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1368">
+            <state relative-caret-position="702">
               <caret line="72" column="11" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="11" />
-              <folding>
-                <marker date="1509266477000" expanded="true" signature="3165:3203" ph="analytics: &lt;2 keys&gt;" />
-                <marker date="1509266477000" expanded="true" signature="5933:6023" ph="plugins: &lt;5 items&gt;" />
-                <marker date="1509266477000" expanded="true" signature="5946:5961" ph="jekyll-paginate" />
-                <marker date="1509266477000" expanded="true" signature="5966:5980" ph="jekyll-sitemap" />
-                <marker date="1509266477000" expanded="true" signature="5985:5996" ph="jekyll-gist" />
-                <marker date="1509266477000" expanded="true" signature="6001:6012" ph="jekyll-feed" />
-                <marker date="1509266477000" expanded="true" signature="6017:6023" ph="jemoji" />
-                <marker date="1509266477000" expanded="true" signature="6058:6150" ph="whitelist: &lt;5 items&gt;" />
-                <marker date="1509266477000" expanded="true" signature="6073:6088" ph="jekyll-paginate" />
-                <marker date="1509266477000" expanded="true" signature="6093:6107" ph="jekyll-sitemap" />
-                <marker date="1509266477000" expanded="true" signature="6112:6123" ph="jekyll-gist" />
-                <marker date="1509266477000" expanded="true" signature="6128:6139" ph="jekyll-feed" />
-                <marker date="1509266477000" expanded="true" signature="6144:6150" ph="jemoji" />
-                <marker date="1509266477000" expanded="true" signature="6685:6738" ph="category_archive: &lt;2 keys&gt;" />
-                <marker date="1509266477000" expanded="true" signature="6711:6717" ph="liquid" />
-                <marker date="1509266477000" expanded="true" signature="6726:6738" ph="/categories/" />
-                <marker date="1509266477000" expanded="true" signature="6739:6781" ph="tag_archive: &lt;2 keys&gt;" />
-                <marker date="1509266477000" expanded="true" signature="6760:6766" ph="liquid" />
-                <marker date="1509266477000" expanded="true" signature="6775:6781" ph="/tags/" />
-                <marker date="1509266477000" expanded="true" signature="7089:7152" ph="compress_html: &lt;2 keys&gt;" />
-                <marker date="1509266477000" expanded="true" signature="7117:7120" ph="all" />
-                <marker date="1509266477000" expanded="true" signature="7123:7152" ph="ignore: &lt;1 key&gt;" />
-                <marker date="1509266477000" expanded="true" signature="7141:7152" ph="development" />
-                <marker date="1509266477000" expanded="true" signature="7166:7371" ph="defaults: &lt;1 item&gt;" />
-                <marker date="1509266477000" expanded="true" signature="7191:7230" ph="scope: &lt;2 keys&gt;" />
-                <marker date="1509266477000" expanded="true" signature="7210:7212" ph="" />
-                <marker date="1509266477000" expanded="true" signature="7225:7230" ph="posts" />
-                <marker date="1509266477000" expanded="true" signature="7235:7371" ph="values: &lt;6 keys&gt;" />
-                <marker date="1509266477000" expanded="true" signature="7257:7263" ph="single" />
-                <marker date="1509266477000" expanded="true" signature="7286:7290" ph="true" />
-                <marker date="1509266477000" expanded="true" signature="7308:7312" ph="true" />
-                <marker date="1509266477000" expanded="true" signature="7329:7333" ph="true" />
-                <marker date="1509266477000" expanded="true" signature="7347:7351" ph="true" />
-                <marker date="1509266477000" expanded="true" signature="7367:7371" ph="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -167,6 +162,7 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-10-31-coding-L5_PassingCars.md" />
         <option value="$PROJECT_DIR$/_data/navigation.yml" />
+        <option value="$PROJECT_DIR$/_posts/research/2017-11-02-research-ffnn.md" />
       </list>
     </option>
   </component>
@@ -178,7 +174,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="58" />
     <option name="y" value="128" />
     <option name="width" value="1400" />
@@ -202,8 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -244,10 +238,30 @@
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
               <item name="research" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="ffnn" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -258,6 +272,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\research" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts" />
     </key>
@@ -296,23 +311,23 @@
       <workItem from="1508123458230" duration="33339000" />
       <workItem from="1508373865371" duration="43811000" />
       <workItem from="1508986168005" duration="19513000" />
-      <workItem from="1509542991570" duration="62000" />
+      <workItem from="1509542991570" duration="204000" />
+      <workItem from="1509611427579" duration="3673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126696000" />
+    <option name="totallyTimeSpent" value="130511000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="895" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15508413" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2430998" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16135882" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16029724" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -356,7 +371,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/2017-09-23-research-convex optimization.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-09-23-research-convex optimization.md" />
     <entry file="file://$PROJECT_DIR$/_pages/about.md" />
     <entry file="file://$PROJECT_DIR$/_pages/home.md" />
@@ -448,66 +462,12 @@
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-16-research-lrcn.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-03-news-Theano development ends.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-17-research-multi-speaker Tacotron in TensorFlow.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/2017-09-20-research-eXplainable AI(XAI) references.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="115">
-            <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-09-22-research-status of dropout usage.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="399">
-            <caret line="21" column="36" lean-forward="false" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-09-20-research-eXplainable AI(XAI) references.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2017-09-22-research-status of dropout usage.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-17-coding-L1_BinaryGap.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-23-coding-L2_CyclicRotation.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/2017-09-23-research-convex optimization.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="418">
-            <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="12" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-09-12-news-new Tensorboard API.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="131" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2017-09-23-research-convex optimization.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/2017-09-12-news-new Tensorboard API.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-25-coding-L3_FrogJmp.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-26-coding-L4_MissingInteger.md" />
     <entry file="file://$PROJECT_DIR$/_posts/2017-10-19-research-activation functions.md" />
@@ -563,12 +523,21 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-09-23-research-convex optimization.md" />
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-09-22-research-status of dropout usage.md" />
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-17-research-multi-speaker Tacotron in TensorFlow.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-19-research-activation functions.md" />
     <entry file="file://$PROJECT_DIR$/_posts/coding/2017-10-23-coding-L2_CyclicRotation.md" />
     <entry file="file://$PROJECT_DIR$/_posts/coding/2017-10-25-coding-L3_FrogJmp.md" />
     <entry file="file://$PROJECT_DIR$/_posts/coding/2017-10-26-coding-L4_MissingInteger.md" />
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-09-20-research-eXplainable AI(XAI) references.md" />
     <entry file="file://$PROJECT_DIR$/_posts/coding/2017-10-17-coding-L1_BinaryGap.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-25-research-multi-neural machine translation.md" />
+    <entry file="file://$PROJECT_DIR$/_posts/coding/2017-10-31-coding-L5_PassingCars.md" />
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="702">
+          <caret line="72" column="11" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -577,56 +546,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="72" column="11" lean-forward="false" selection-start-line="72" selection-start-column="2" selection-end-line="72" selection-end-column="11" />
-          <folding>
-            <marker date="1509266477000" expanded="true" signature="3165:3203" ph="analytics: &lt;2 keys&gt;" />
-            <marker date="1509266477000" expanded="true" signature="5933:6023" ph="plugins: &lt;5 items&gt;" />
-            <marker date="1509266477000" expanded="true" signature="5946:5961" ph="jekyll-paginate" />
-            <marker date="1509266477000" expanded="true" signature="5966:5980" ph="jekyll-sitemap" />
-            <marker date="1509266477000" expanded="true" signature="5985:5996" ph="jekyll-gist" />
-            <marker date="1509266477000" expanded="true" signature="6001:6012" ph="jekyll-feed" />
-            <marker date="1509266477000" expanded="true" signature="6017:6023" ph="jemoji" />
-            <marker date="1509266477000" expanded="true" signature="6058:6150" ph="whitelist: &lt;5 items&gt;" />
-            <marker date="1509266477000" expanded="true" signature="6073:6088" ph="jekyll-paginate" />
-            <marker date="1509266477000" expanded="true" signature="6093:6107" ph="jekyll-sitemap" />
-            <marker date="1509266477000" expanded="true" signature="6112:6123" ph="jekyll-gist" />
-            <marker date="1509266477000" expanded="true" signature="6128:6139" ph="jekyll-feed" />
-            <marker date="1509266477000" expanded="true" signature="6144:6150" ph="jemoji" />
-            <marker date="1509266477000" expanded="true" signature="6685:6738" ph="category_archive: &lt;2 keys&gt;" />
-            <marker date="1509266477000" expanded="true" signature="6711:6717" ph="liquid" />
-            <marker date="1509266477000" expanded="true" signature="6726:6738" ph="/categories/" />
-            <marker date="1509266477000" expanded="true" signature="6739:6781" ph="tag_archive: &lt;2 keys&gt;" />
-            <marker date="1509266477000" expanded="true" signature="6760:6766" ph="liquid" />
-            <marker date="1509266477000" expanded="true" signature="6775:6781" ph="/tags/" />
-            <marker date="1509266477000" expanded="true" signature="7089:7152" ph="compress_html: &lt;2 keys&gt;" />
-            <marker date="1509266477000" expanded="true" signature="7117:7120" ph="all" />
-            <marker date="1509266477000" expanded="true" signature="7123:7152" ph="ignore: &lt;1 key&gt;" />
-            <marker date="1509266477000" expanded="true" signature="7141:7152" ph="development" />
-            <marker date="1509266477000" expanded="true" signature="7166:7371" ph="defaults: &lt;1 item&gt;" />
-            <marker date="1509266477000" expanded="true" signature="7191:7230" ph="scope: &lt;2 keys&gt;" />
-            <marker date="1509266477000" expanded="true" signature="7210:7212" ph="" />
-            <marker date="1509266477000" expanded="true" signature="7225:7230" ph="posts" />
-            <marker date="1509266477000" expanded="true" signature="7235:7371" ph="values: &lt;6 keys&gt;" />
-            <marker date="1509266477000" expanded="true" signature="7257:7263" ph="single" />
-            <marker date="1509266477000" expanded="true" signature="7286:7290" ph="true" />
-            <marker date="1509266477000" expanded="true" signature="7308:7312" ph="true" />
-            <marker date="1509266477000" expanded="true" signature="7329:7333" ph="true" />
-            <marker date="1509266477000" expanded="true" signature="7347:7351" ph="true" />
-            <marker date="1509266477000" expanded="true" signature="7367:7371" ph="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-19-research-activation functions.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="211">
+            <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="18" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-25-research-multi-neural machine translation.md" />
-    <entry file="file://$PROJECT_DIR$/_posts/coding/2017-10-31-coding-L5_PassingCars.md" />
     <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="36" lean-forward="false" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="228">
+          <caret line="23" column="53" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="53" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-02-research-ffnn.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="492">
+            <caret line="41" column="46" lean-forward="false" selection-start-line="41" selection-start-column="46" selection-end-line="41" selection-end-column="46" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
