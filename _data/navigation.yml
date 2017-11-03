@@ -20,6 +20,8 @@ dl:
     children:
       - title: "Convex optimization problem"
         url: /research/research-convex-optimization/
+      - title: "Gradient descent algorithm (soon...)"
+        url: /research/research-gradient-descent-algorithm/
       - title: "Activation function"
         url: /research/research-activation-functions/
       - title: "Feed-forward neural network"
