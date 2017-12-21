@@ -23,9 +23,33 @@ We are going to talk about how the capsule network works and what the difference
 
 # Introduction
 
+## Drawback of Convolutional Neural Networks (CNNs)
+CNNs have been suffered from a couple of drawbacks,
+  - CNNs give poor performance if there is rotation, tilt or any other different orientation in image.
+  - Each layer in CNN understands an image at a much more granular level (slow increase in receptive field).
+
+In order to handle these problem, people attempt to use several techniques,
+  - **Data Augmentation**: artificially creates new data from original training data through different ways of processing or combination of multiple processing, such as shifts, flips, rotation, shear and so on.
+  - **Pooling**: creates summaries of each sub-region and helps to reduce training time.
+  And it gives the model to have positional and translational invariance in object detection.
+  
+However, both attempt still have limitation,
+  - Using **Data Augmentation** to deal with every transformation of images is inefficient and impossible to cover all possibilities.
+  - Positional invariance from **Pooling** can cause false positive for images which have the same components but not in a correct order.
+  In the example images of ship below, we can easily see both are different, but CNN can consider both are matching.
+![Disfiguration transformation ship]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/transformation ship.png){: .align-center}
+  
+What we need is not invariance but equivariance,
+  - **Invariance** makes a CNN tolerant to small changes in the view point.
+  - **Equivariance** makes a CNN understand the rotation or proportion change and adapt itself accordingly so that the spatial positioning inside an image is not lost.
+  In the images of ship below, even though both are ship, CNN will reduce its size to detect smaller ship, but Capsule Networks will handle this problem.
+![Proportional transformation ship]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/proportional transformation ship.png){: .align-center}
+
+# Capsule Network
+
 
 ![Example architecture of LRCN]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/capsnet.png){: .align-center}
 
 # References
 - Paper: Dynamic Routing Between Capsules [[Link](https://arxiv.org/abs/1710.09829)]
-- Deep Learning book [[Link](http://www.deeplearningbook.org/)]
+- Blog: Hacker Noon [[Link](https://hackernoon.com/what-is-a-capsnet-or-capsule-network-2bfbe48769cc)]
