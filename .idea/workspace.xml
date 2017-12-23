@@ -30,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2017-12-20-research-capsule-network.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="611">
-                <caret line="76" column="60" lean-forward="false" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
+              <first_editor relative-caret-position="326">
+                <caret line="70" column="9" lean-forward="false" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -322,7 +322,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153816000" />
+    <option name="totallyTimeSpent" value="155244000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -610,8 +610,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-12-20-research-capsule-network.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="611">
-            <caret line="76" column="60" lean-forward="false" selection-start-line="76" selection-start-column="60" selection-end-line="76" selection-end-column="60" />
+          <first_editor relative-caret-position="326">
+            <caret line="70" column="9" lean-forward="false" selection-start-line="70" selection-start-column="9" selection-end-line="70" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor>

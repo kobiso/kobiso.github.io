@@ -68,7 +68,7 @@ s_{j}=\sum_i c_{ij} \hat{u}_{j\mid i} \\
 \hat{u}_{j\mid i} = W_{ij}u_{i} \\
 c_{ij}=\frac{\exp{(b_{ij})}}{\sum_k \exp{(b_{ik})}}
 $${: .text-center}
-  - $$s_{ij}$$ is a weighted sum over all **prediction vectors** $$\hat{u}_{j\mid i}$$ from the capsules in the layer below
+  - $$s_{j}$$ is a weighted sum over all **prediction vectors** $$\hat{u}_{j\mid i}$$ from the capsules in the layer below
   - $$\hat{u}_{j\mid i}$$ is calculated by multiplying the output $$u_{i}$$ of a capsule in the layer below by a weight matrix $$W_{ij}$$
   - $$c_{ij}$$ are **coupling coefficients** between capsule &i& and all the capsules in the layer above which sum to 1 and are determined by a **routing softmax**
   - $$b_{ij}$$ are the log prior probabilities that capsule $$i$$ should be coupled to capsule $$j$$
