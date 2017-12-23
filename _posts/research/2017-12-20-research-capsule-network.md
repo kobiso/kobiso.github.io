@@ -46,7 +46,35 @@ What we need is not invariance but equivariance,
 ![Proportional transformation ship]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/proportional transformation ship.png){: .align-center}
 
 # Capsule Network
+## Capsules
+> A **capsule** is a group of neurons whose activity vector represents the instantiation parameters of a specific type of entity such as an object or an object part.
 
+- **Activity vector**
+  - **Length**: estimated probability that the entity exists
+  - **Orientation**: object's estimated pose parameters
+  
+![Activity vector]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/activity vector.png){: .align-center}
+
+## Squashing
+> **Squashing** is a non-linear function to ensure that short vectors get shrunk to almost zero length and long vectors get shrunk to a length slightly below 1.
+
+$$
+v_{j}=\frac{\parallel s_{j} \parallel^{2}}{1+{\parallel s_{j} \parallel}^{2}}\frac{s_{j}}{\parallel s_{j} \parallel}
+$${: .text-center}
+where $$v_{j}$$ is the vector output of capsule $$j$$ and $$s_{j}$$ is its total input.
+
+$$
+s_{j}=\sum_i c_{ij} \hat{u}_{j\mid i} \\
+\hat{u}_{j\mid i} = W_{ij}u_{i} \\
+c_{ij}=\frac{\exp{(b_{ij})}}{\sum_k \exp{(b_{ik})}}
+$${: .text-center}
+  - $$s_{ij}$$ is a weighted sum over all **prediction vectors** $$\hat{u}_{j\mid i}$$ from the capsules in the layer below
+  - $$\hat{u}_{j\mid i}$$ is calculated by multiplying the output $$u_{i}$$ of a capsule in the layer below by a weight matrix $$W_{ij}$$
+  - $$c_{ij}$$ are **coupling coefficients** between capsule &i& and all the capsules in the layer above which sum to 1 and are determined by a **routing softmax**
+  - $$b_{ij}$$ are the log prior probabilities that capsule $$i$$ should be coupled to capsule $$j$$
+
+![Routing algorithm]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/routing algorithm.png){: .align-center}
+{: .full}
 
 ![Example architecture of LRCN]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/capsnet.png){: .align-center}
 
