@@ -55,7 +55,7 @@ What we need is not invariance but equivariance,
   
 ![Activity vector]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/activity vector.png){: .align-center}
 
-## Squashing
+## Routing Algorithm
 > **Squashing** is a non-linear function to ensure that short vectors get shrunk to almost zero length and long vectors get shrunk to a length slightly below 1.
 
 $$
@@ -72,6 +72,9 @@ $${: .text-center}
   - $$\hat{u}_{j\mid i}$$ is calculated by multiplying the output $$u_{i}$$ of a capsule in the layer below by a weight matrix $$W_{ij}$$
   - $$c_{ij}$$ are **coupling coefficients** between capsule &i& and all the capsules in the layer above which sum to 1 and are determined by a **routing softmax**
   - $$b_{ij}$$ are the log prior probabilities that capsule $$i$$ should be coupled to capsule $$j$$
+  
+The initial coupling coefficients are iteratively refined by measuring the agreement between the current output $$v_{j}$$ of each capsule $$j$$ in the layer above and the prediction $$\hat{u}_{j\mid i}$$ made by capsule $$i$$.
+The agreement is calculated by scalar product of $$a_{ij}=v_{j} \cdot \hat{u}_{j\mid i}$$.
 
 ![Routing algorithm]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/routing algorithm.png){: .align-center}
 {: .full}
