@@ -28,14 +28,14 @@ dl:
         url: /research/research-ffnn/
   - title: Paper & Project Review
     children:
-      - title: "LRCN"
-        url: /research/research-lrcn/
+      - title: "Capsule Network"
+        url: /research/research-capsule-network/
       - title: "Multi-speaker Tacotron"
         url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
       - title: "Multi-neural machine translation"
         url: /research/research-multi-neural-machine-translation/
-      - title: "Capsule Network (working...)"
-        url: /research/research-capsule-network/
+      - title: "LRCN"
+        url: /research/research-lrcn/
   - title: Deep Learning Related
     children:
       - title: "Dropout usage"
