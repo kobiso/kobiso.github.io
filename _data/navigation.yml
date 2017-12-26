@@ -18,13 +18,13 @@ main:
 dl:
   - title: Deep Learning Basic
     children:
-      - title: "Convex optimization problem"
+      - title: "Convex Optimization Problem"
         url: /research/research-convex-optimization/
-      - title: "Gradient descent algorithm (soon...)"
+      - title: "Gradient Descent Algorithm (soon...)"
         url: /research/research-gradient-descent-algorithm/
-      - title: "Activation function"
+      - title: "Activation Function"
         url: /research/research-activation-functions/
-      - title: "Feed-forward neural network"
+      - title: "Feed-Forward Neural Network"
         url: /research/research-ffnn/
   - title: Paper & Project Review
     children:
@@ -32,15 +32,15 @@ dl:
         url: /research/research-capsule-network/
       - title: "Multi-speaker Tacotron"
         url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
-      - title: "Multi-neural machine translation"
+      - title: "Multi-neural Machine Translation"
         url: /research/research-multi-neural-machine-translation/
-      - title: "LRCN"
+      - title: "Long-term Recurrent ConvNet"
         url: /research/research-lrcn/
   - title: Deep Learning Related
     children:
-      - title: "Dropout usage"
+      - title: "Dropout Usage"
         url: /research/research-status-of-dropout-usage/
-      - title: "XAI references"
+      - title: "XAI References"
         url: /research/research-eXplainable-AI(XAI)-references/
 
 coding:
