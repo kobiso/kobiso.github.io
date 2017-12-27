@@ -30,6 +30,8 @@ dl:
     children:
       - title: "Capsule Network"
         url: /research/research-capsule-network/
+      - title: "Faster R-CNN (writing...)"
+        url: /research/research-faster-rcnn/
       - title: "Multi-speaker Tacotron"
         url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
       - title: "Multi-neural Machine Translation"
