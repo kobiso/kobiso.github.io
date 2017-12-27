@@ -30,11 +30,12 @@ Faster R-CNN is an object detecting network proposed in 2015, and achieved state
   - To improve object detection networks in terms of speed and accuracy
 
 - **Solution Proposed: Faster R-CNN**
-  - **Faster R-CNN** is a single network of combination of **RPN** and **Fast R-CNN** by sharing their convolutional features.
+  - **Faster R-CNN** is a single network of combination of RPN and Fast R-CNN by sharing their convolutional features.
   - Introduce a **Region Proposal Network (RPN)** that shares full-image convolutional features with the detection network to get cost-free region proposals. 
   
 - **Contribution**
-  - Achieved state-of-the-art object detection accuracy on PASCAL VOC 2007, 2012, and MS COCO datasets with only 300 proposals per image.
+  - For the very deep VGG-16 model, proposed detection system has a frame rate of 5fps on a GPU.
+  - Achieved state-of-the-art object detection accuracy on PASCAL VOC 2007, 2012, and MS COCO datasets with only 300 proposals per image.  
   - In ILSVRC and COCO 2015 competitions, Faster R-CNN and RPN are the foundations of the 1st-place winning entries in several tracks.
   
 ## R-CNN Series
