@@ -3,7 +3,7 @@ title: "Programmers Level2. productMatrix"
 categories:
   - Coding challenge
 tags:
-  - Codility
+  - Programmers
 header:
   teaser: /assets/images/programmers.png
   overlay_image: /assets/images/programmers.png
