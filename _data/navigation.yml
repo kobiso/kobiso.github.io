@@ -62,3 +62,5 @@ coding:
     children:
       - title: "Level2. productMatrix"
         url: /coding challenge/coding-P_L2_productMatrix/
+      - title: "Level3. nlcm"
+        url: /coding challenge/coding-P_L3_nlcm/
