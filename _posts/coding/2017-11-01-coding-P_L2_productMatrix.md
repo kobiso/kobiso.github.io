@@ -19,6 +19,7 @@ Sharing answer codes of mine about [Programmers Level2. productMatrix](https://p
 
 # Level 2: productMatrix
 
+## Problem Statement
 The product $$C$$ of two matrices $$A$$ and $$B$$ id defined as
 
 $$

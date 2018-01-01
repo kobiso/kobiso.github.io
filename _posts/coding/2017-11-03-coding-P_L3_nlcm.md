@@ -19,6 +19,7 @@ Sharing answer codes of mine about [Programmers Level3. nlcm](https://programmer
 
 # Level 3: N Least Common Multiple
 
+## Problem Statement
 Least Common Multiple (LCM) means the smallest common number among the multiple of two numbers.
 For example, LCM of 2 and 7 would be 14.
 By extending the definition, the NLCM is the LCM of N numbers.
