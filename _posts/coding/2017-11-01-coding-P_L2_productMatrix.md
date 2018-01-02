@@ -1,5 +1,5 @@
 ---
-title: "Programmers Level2. productMatrix"
+title: "Programmers Level2. Matrix Multiplication"
 categories:
   - Coding challenge
 tags:
@@ -17,7 +17,7 @@ Sharing answer codes of mine about [Programmers Level2. productMatrix](https://p
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
-# Level 2: productMatrix
+# Level 2: Matrix Multiplication
 
 ## Problem Statement
 The product $$C$$ of two matrices $$A$$ and $$B$$ id defined as

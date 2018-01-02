@@ -1,5 +1,5 @@
 ---
-title: "Programmers Level4. findLargestSquare"
+title: "Programmers Level4. Find Largest Square"
 categories:
   - Coding challenge
 tags:

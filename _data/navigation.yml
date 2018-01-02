@@ -48,7 +48,7 @@ dl:
 coding:
   - title: Codility
     children:
-      - title: "Lesson1. Binary Gap"
+      - title: "Lesson1. BinaryGap"
         url: /coding challenge/coding-L1_BinaryGap/
       - title: "Lesson2. CyclicRotation"
         url: /coding challenge/coding-L2_CyclicRotation/
@@ -60,9 +60,11 @@ coding:
         url: /coding challenge/coding-L5_PassingCars/
   - title: Programmers
     children:
-      - title: "Level2. productMatrix"
+      - title: "Level2. Matrix Multiplication"
         url: /coding challenge/coding-P_L2_productMatrix/
-      - title: "Level3. nlcm"
+      - title: "Level3. N Least Common Multiple"
         url: /coding challenge/coding-P_L3_nlcm/
-      - title: "Level4. findLargestSquare"
+      - title: "Level4. Find Largest Square"
         url: /coding challenge/coding-P_L4_findLargestSquare/
+      - title: "Level4. Expressions of a Number"
+        url: /coding challenge/coding-P_L4_expressions/

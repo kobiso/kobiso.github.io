@@ -1,5 +1,5 @@
 ---
-title: "Programmers Level3. nlcm"
+title: "Programmers Level3. N Least Common Multiple"
 categories:
   - Coding challenge
 tags:
