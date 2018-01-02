@@ -30,6 +30,8 @@ dl:
     children:
       - title: "Capsule Network"
         url: /research/research-capsule-network/
+      - title: "You Only Look Once (YOLO) (writing...)"
+        url: /research/research-cnn/
       - title: "Faster R-CNN"
         url: /research/research-faster-rcnn/
       - title: "Multi-speaker Tacotron"
