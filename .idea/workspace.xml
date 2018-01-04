@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -42,12 +41,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-03-research-cnn.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-01-03-research-cnn.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="510">
-                <caret line="108" column="24" lean-forward="true" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+              <first_editor relative-caret-position="434">
+                <caret line="104" column="2" lean-forward="true" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -57,12 +56,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-04-research-rnn.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="2018-01-04-research-rnn.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-114">
-                <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <first_editor relative-caret-position="391">
+                <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -245,8 +244,8 @@
         <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-yolo9000.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-12-21-coding-P_L5_change124.md" />
         <option value="$PROJECT_DIR$/_data/navigation.yml" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
       </list>
     </option>
   </component>
@@ -395,12 +394,12 @@
       <workItem from="1513318215591" duration="733000" />
       <workItem from="1513746730369" duration="3233000" />
       <workItem from="1513830760017" duration="7265000" />
-      <workItem from="1514854925053" duration="45776000" />
+      <workItem from="1514854925053" duration="46374000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="238624000" />
+    <option name="totallyTimeSpent" value="239222000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -809,11 +808,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-114">
-            <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <first_editor relative-caret-position="434">
+            <caret line="104" column="2" lean-forward="true" selection-start-line="104" selection-start-column="2" selection-end-line="104" selection-end-column="2" />
             <folding />
           </first_editor>
           <second_editor>
@@ -822,11 +821,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="510">
-            <caret line="108" column="24" lean-forward="true" selection-start-line="108" selection-start-column="24" selection-end-line="108" selection-end-column="24" />
+          <first_editor relative-caret-position="391">
+            <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>

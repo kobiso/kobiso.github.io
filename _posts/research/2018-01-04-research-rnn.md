@@ -96,22 +96,6 @@ Because the layers and time steps of deep neural networks relate to each other t
 - The central plus sign helps them preserve a constant error when it must be backpropagated at depth.
 - Instead of determining the subsequent cell state by multiplying its current state with new input, they add the two and that makes the difference.
 
-## LSTM Hyperparameter Tuning
-Here are a few ideas to keep in mind when manually optimizing hyperparameters for RNNs:
-
-- Watch out for overfitting, which happens when a neural network essentially “memorizes” the training data. Overfitting means you get great performance on training data, but the network’s model is useless for out-of-sample prediction.
-- Regularization helps: regularization methods include l1, l2, and dropout among others.
-- So have a separate test set on which the network doesn’t train.
-- The larger the network, the more powerful, but it’s also easier to overfit. Don’t want to try to learn a million parameters from 10,000 examples – parameters > examples = trouble.
-- More data is almost always better, because it helps fight overfitting.
-- Train over multiple epochs (complete passes through the dataset).
-- Evaluate test set performance at each epoch to know when to stop (early stopping).
-- The learning rate is the single most important hyperparameter. Tune this using deeplearning4j-ui; see this graph
-- In general, stacking layers can help.
-- For LSTMs, use the softsign (not softmax) activation function over tanh (it’s faster and less prone to saturation (~0 gradients)).
-- Updaters: RMSProp, AdaGrad or momentum (Nesterovs) are usually good choices. AdaGrad also decays the learning rate, which can help sometimes.
-- Finally, remember data normalization, MSE loss function + identity activation function for regression, Xavier weight initialization
-
 # Gated Recurrent Unit (GRU)
 - A gated recurrent unit (GRU) is basically an LSTM without an output gate, which therefore fully writes the contents from its memory cell to the larger net at each time step.
 
