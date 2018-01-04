@@ -76,9 +76,57 @@ Convolutional neural network usually use three main types of layers: **Convoluti
 ![Spatial arrangement]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/spatial arrangement.png){: .align-center}
  {: .full}
     
-
 ## Pooling Layer
-## Fully-Connected Layer  
+- **What is pooling layer?**
+  - Pooling layer is to progressively reduce the spatial size of the representation to reduce the amount of parameters and computation in the network, and hence to also control overfitting.
+  - It operates independently on every depth slice of the input and resizes it spatially, using the MAX operation.
+  - The most common form is with fiters of size 2x2 applied with a stride of 2 downsamples every depth slice.
+  - The depth dimension remains unchanged.
+  
+![Pooling layer]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/pooling.png){: .align-center}
+ {: .full}
+  
+- **Pooling layer**
+  - Accepts a volume of size $$W_1 \times H_1 \times D_1$$
+  - Requires two hyperparameters: their spatial extent $$F$$, the stride $$S$$
+  - Produces a volume of size $$W_2 \times H_2 \times D_2$$ where:
+    - $$W_2 = (W_1 - F) / S + 1$$ 
+    - $$H_2 = (H_1 - F) / S + 1$$ 
+    - $$D_2 = D_1$$ 
+  - Introduces zero parameters since it computes a fixed function of the input
+  - It is not common to use zero-padding for pooling layers
+  
+- **General pooling**
+  - Only two commonly seen variations of the max pooling layer found in practice:
+    - A pooling layer with $$F=3, S=2$$ (called overlapping pooling)
+    - A pooling layer with $$F=2, S=2$$
+    - Pooling sizes with larger receptive fields are too destructive.
+  - There are other functions, such as *average pooling* and *L2-norm pooling*. But they has fallen out of favor compared to the max pooling.
+  
+- **Getting rid of pooling**
+  - Discarding pooling layers has also been found to be important in training good generative models, such as variational autoencoders (VAEs) or generative adversarial networks(GANs).
+  
+## Fully-Connected Layer
+- Neurons in a fully connected layer have full connections to all activations in the previous layer.
+- Their activations can bence be computed with a matrix multiplication followed by a bias offset.
+- This layer work as a classification purpose.
+ 
+# Several CNN Models  
+- **LeNet**: The first successful applications of CNN were developed in 1990's.
+- **AlexNet**: The first work that popularized CNN in Computer Vision.
+  - The network had a very similar architecture to LeNet, but was deeper, bigger, and feature Convolutional Layers stacked on top of each other
+  - Previously it was common to only have a single CONV layer always immediately followed by a POOL layer) 
+- **ZF Net**: It was an improvement on AlexNet by tweaking the architecture hyperparameters
+  - In particular by expanding the size of the middle convolutional layers and making the stride and filter size on the first layer smaller.
+- **GoogLeNet**: Its main contribution was the development of an *Inception Module* that dramatically reduced the number of parameters in the network (4M, compared to AlexNet with 60M).
+  - Additionally, this paper uses Average Pooling instead of Fully Connected layers at the top of the ConvNet, eliminating a large amount of parameters that do not seem to matter much.
+  - Thare are also several followup versions to the GoogLeNet, most recently Inception-v4.
+- **VGGNet**: Its main contribution was in showing that the depth of the network is a critical component for good performance.
+  - Their final best network contains 16 CONV/FC layers and features an extremely homogeneous architecture that only performs 3x3 convolutions and 2x2 pooling from the beginning to the end.
+  - A downside of the VGGNet is that it is more expensive to evaluate and uses a lot more memory and parameters (140M).
+  - Most of these parameters are in the first fully connected layer, and it was since found that these FC layers can be removed with no performance downgrade, significantly reducing the number of necessary parameters.
+- **ResNet**: Residual Network features special skip connections and a heavy use of batch normalization.
+  - The architecture is also missing fully connected layers at the end of the network.
 
 # References
 - Standfard CS231n lecture note [[Link](http://cs231n.github.io/convolutional-networks/#pool)]

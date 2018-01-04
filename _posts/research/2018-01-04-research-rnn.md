@@ -5,8 +5,8 @@ categories:
 tags:
   - RNN
 header:
-  teaser: /assets/images/rnn/activations.jpg
-  overlay_image: /assets/images/rnn/activations.jpg
+  teaser: /assets/images/rnn/lstm2.png
+  overlay_image: /assets/images/rnn/lstm2.png
   overlay_filter: 0.4
 sidebar:
   nav: "dl"
