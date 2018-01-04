@@ -26,6 +26,8 @@ dl:
         url: /research/research-activation-functions/
       - title: "Feed-Forward Neural Network"
         url: /research/research-ffnn/
+      - title: "Recurrent Neural Network"
+        url: /research/research-rnn/
       - title: "Convolutional Neural Network"
         url: /research/research-cnn/
   - title: Paper & Project Review
