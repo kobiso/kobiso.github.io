@@ -18,6 +18,8 @@ main:
 dl:
   - title: Deep Learning Basic
     children:
+      - title: "Probability (writing...)"
+        url: /research/research-cnn/
       - title: "Convex Optimization Problem"
         url: /research/research-convex-optimization/
       - title: "Gradient Descent Algorithm (soon...)"
