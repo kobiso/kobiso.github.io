@@ -84,5 +84,5 @@ coding:
         url: /coding challenge/coding-P_L5_setAlign/
   - title: Data Structure
     children:
-      - title: "Array and String"
-        url: /coding challenge/coding-DS_arrays&strings/
+      - title: "Hash Table"
+        url: /data structure/coding-DS_hash-table/
