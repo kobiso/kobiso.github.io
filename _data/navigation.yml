@@ -82,3 +82,7 @@ coding:
         url: /coding challenge/coding-P_L5_change124/
       - title: "Level5. Set Align"
         url: /coding challenge/coding-P_L5_setAlign/
+  - title: Data Structure
+    children:
+      - title: "Array and String"
+        url: /coding challenge/coding-DS_arrays&strings/
