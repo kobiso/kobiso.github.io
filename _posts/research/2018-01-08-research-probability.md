@@ -146,6 +146,18 @@ $${: .text-center}
   - $$Cov(X,Y) > 0$$: $$Y$$ increases when $$X$$ increases
   - $$Cov(X,Y) > 0$$: $$Y$$ decreases when $$X$$ increases
   - $$Cov(X,Y) = 0$$: there is no linear relation between $$X$$ and $$Y$$, they are independent, but not always.
+  
+- **Covariance matrix** of a random vector $$x \in R^n$$ is an $$n \times n$$ matrix, such that
+$$ Cov(x)_{i,j} = Cov(x_i, X_j)$$
+  - The diagonal elements of the covariance give the variance:
+  $$ Cov(x)_{i,i} = Var(x_i)$$
+  
+## Correlation  
+- **Correlation** normalize the contribution of each variable in order to measure only how much the variables are related, rather than also being affected by the scale of the separate variables.
+
+$$
+\rho = \frac{Cov(X, Y)}{\sqrt{Var(X)Var(Y)}}, -1\leq\rho\leq1
+$${: .text-center}
 
 # Common Probability Distribution
 # Useful Properties of Common Functions
