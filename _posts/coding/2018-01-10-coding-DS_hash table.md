@@ -51,9 +51,56 @@ Learn about hash table, hash function, hash code, its implementation and running
   - It gives $$O(\log N)$$ lookup time.
   - It potentially uses less space and is able to iterate through the keys in order, which can be useful sometimes.
   
+- Time complexity of dictionary in Python
+![Python time]({{ site.url }}{{ site.baseurl }}/assets/images/hash table/python time.png){:height="100%" width="100%"}{: .align-center}
+
+# Quiz
+- **Is Double**: Find the first recurring character in a string.
+
+## Naive answer code
+```python
+# Naive way takes O(n^2)
+def isDouble_naive(str):
+  # For each 'i'th char, we check whether it occurs double
+  for i in range(len(str)):
+    for j in range(i+1, len(str)):
+      if str[i] == str[j]:
+        return str[i]
+  return None
+```
+
+## Better way using 'dictionary'
+```python
+# Better way using dict takes O(n)
+def isDouble_dict(str):
+  # Using dictionary (hash table)
+  ht = dict()
+  for c in str:
+    if c not in ht: # O(1) for average case, O(n) for worst case
+      ht[c]=1 # O(1)
+    else:
+      return c
+  return None
+```
+
+## Better way using 'set'
+```python
+# Better way using set takes O(n)  
+def isDouble_set(str):
+  # Using dictionary (hash table)
+  ht = set()
+  for c in str:
+    if c not in ht: # O(1) for average case, O(n) for worst case
+      ht.add(c) # O(1)
+    else:
+      return c
+  return None
+```
+  
 # Quiz
 - **Is Unique**: Implement an algorithm to determine if a string has all unique characters. What if you cannot use additional data structures?
-- Naive answer code
+
+## Naive answer code
 ```python
 def isunique_naive(string):
     for i in range(len(string)):
@@ -62,7 +109,7 @@ def isunique_naive(string):
     return True # All unique characters  
 ```
 
-- Clever answer code
+## Clever answer code
 ```python
 # O(N)
 def isunique(string):
