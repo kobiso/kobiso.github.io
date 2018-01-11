@@ -90,7 +90,63 @@ P(a,b,c) = P(a \mid b,c)P(b \mid c)P(c)
 $${: .text-center}
 
 # Independence and Conditional Independence
+- Two random variables $${\tt x}$$ and $${\tt y}$$ are **independent** ($${\tt x}\perp{\tt y}$$) if their probability distribution can be expressed as a product of two factors, one involving only $${\tt x}$$ and one involving only $${\tt y}$$:
+
+$$
+\forall x \in {\tt x}, y \in {\tt y}, p({\tt x} = x, {\tt y} = y)= p({\tt x} = x)p({\tt y} = y)
+$${: .text-center}
+
+- Two random variables $${\tt x}$$ and $${\tt y}$$ are **conditionally independent** ($${\tt x}\perp{\tt y}\mid {\tt z}$$) given a random variable $${\tt z}$$
+if the conditional probability distribution over $${\tt x}$$ and $${\tt y}$$ factorizes in this way for every value of $${\tt z}$$:
+
+$$
+\forall x \in {\tt x}, y \in {\tt y}, z \in {\tt z}, p({\tt x} = x, {\tt y} = y \mid {\tt z} = z)= p({\tt x} = x\mid {\tt z} = z)p({\tt y} = y\mid {\tt z} = z)
+$${: .text-center}
+
 # Expectation, Variance and Covariance
+## Expectation
+- **Expectation** and **expected value** of some function $$f(x)$$ with respect to a probability distribution $$P(x)$$ is the average or mean value that $$f$$ takes on when $$x$$ is drawn from $$P$$.
+- For discrete variables:
+
+$$
+E_{x \sim P}[f(x)]\sum_x P(x)f(x)
+$${: .text-center}
+
+- For continuous variables:
+
+$$
+E_{x \sim P}[f(x)] \int P(x)f(x) dx
+$${: .text-center}
+
+- Expectations are linear (when $$\alpha$$ and $$\beta$$ are not dependent on $$x$$):
+
+$$
+E_x[\alpha f(x) + \beta g(x)] = \alpha E_x[f(x)] + \beta E_x[g(x)]
+$${: .text-center}
+
+## Variance
+- **Variance** gives a measure of how much the values of a function of a random variable $$x$$ vary as we sample different values of $$x$$ from its probability distribution
+
+$$
+Var(f(x)) = E[(f(x) - E[f(x)])^2]
+$${: .text-center}
+
+- When the variance is low, the values of $$f(x)$$ cluster near their expected value.
+- The square root of the variance is known as the **standard deviation**.
+
+## Covariance
+- **Covariance** gives some sense of how much two values are linearly related to each other, as well as the scale of these variables:
+
+$$
+Cov(f(x), g(y)) = E[(f(x)-E[f(x)])(g(y)-E[g(y)])]
+$${: .text-center}
+
+- High absolute values of the covariance mean that the values change very much and are both far from their respective means at the same time.
+![Covariance]({{ site.url }}{{ site.baseurl }}/assets/images/probability/cov.png){: .align-center}
+  - $$Cov(X,Y) > 0$$: $$Y$$ increases when $$X$$ increases
+  - $$Cov(X,Y) > 0$$: $$Y$$ decreases when $$X$$ increases
+  - $$Cov(X,Y) = 0$$: there is no linear relation between $$X$$ and $$Y$$, they are independent, but not always.
+
 # Common Probability Distribution
 # Useful Properties of Common Functions
 # Bayes' Rule
