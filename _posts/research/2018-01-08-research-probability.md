@@ -164,6 +164,59 @@ $${: .text-center}
 # Bayes' Rule
 # Technical Details of Continuous Variables
 # Information Theory
+> **Information theory** is a branch of applied mathematics that revovles around quantifying how much information is present in a signal.
+
+- In the context of machine learning, a few key ideas from information theory to characterize probability distributions or quantify similarity between probability distributions.
+- The basic intuition is that learning that an unlikely event has occurred is more informative than learning that a likely event has occurred.
+  - Likely events should have low information content, and in the extreme case, events that are guaranteed to happen should have no information content whatsoever.
+  - Less likely events should have higher information content.
+  - Independent events should have additive information.
+  
+## Self-information
+- Self-information of an event $${\tt x} =x$$:
+  - Using natural logarithm $$\log$$ with base $$e$$
+  - $$I(x)$$ is written in units of *nats*.
+  - Self-information deals only with a single outcome.
+  
+$$
+I(x) = -\log P(x)
+$${: .text-center} 
+
+## Shannon entropy
+- Shannon entropy: Quantify the amount of uncertainty in an entire probability distribution:
+![Entropy]({{ site.url }}{{ site.baseurl }}/assets/images/probability/entropy.png){: .align-center}
+ - Shannon entropy of a distribution is the expected amount of information in an event drawn from that distribution.
+ - Distributions that are nearly deterministic have low entropy, distribution that are closer to uniform have high entropy as shown in the figure.
+ - When x is continuous, the Shannon entropy is known as the *differential entropy*.
+
+$$
+H(x) = E_{x \sim P} [I(x)] = - E_{x \sim P} [logI(x)]
+$${: .text-center}
+
+## Kullback-Leibler (KL) divergence
+- If we have two separate probability distributions $$P(x)$$ and $$Q(x)$$ over the same random variable $$x$$, we can measure how different these two distributions are using the KL divergence:
+
+$$
+D_{KL}(P\parallel Q) = E_{x\sim P}\left[ \log\frac{P(x)}{Q(x)} \right]= E_{x\sim P}[\log P(x) - \log Q(x)]
+$${: .text-center}
+
+- KL divergence useful properties
+  - It is non-negative
+  - KL divergence is 0 if and only if $$P$$ and $$Q$$ are the same distribution in the case of discrete variables,
+  or equal "almost everywhere" in the case of continuous variables.
+  - It is often conceptualized as measuring some sort of distance between two distributions.
+    - However, it is not a true distance measure because it is not symmetric: $$D_{KL}(P\parallel Q) \neq D_{KL}(Q\parallel P)$$.
+  
+## Cross-entropy
+- A quantity that is closely related to the KL divergence is the *cross-entropy*.
+
+$$
+H(P,Q) = H(P) + D_{KL}(P\parallel Q)= -E_{x\sim P} \log Q(x)
+$${: .text-center} 
+
+- Minimizing the cross-entropy with respect to $$Q$$ is equivalent to minimizing the KL divergence, because $$Q$$ does not participate in the omitted term.
+- $$0\log 0$$ is treated as $$\lim_{x\rightarrow0}x\log x = 0$$
+
 # Structured Probabilistic Models
 
 # Maximum Likelihood Estimation (MLE)

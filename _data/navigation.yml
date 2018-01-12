@@ -19,7 +19,7 @@ dl:
   - title: Deep Learning Basic
     children:
       - title: "Probability (writing...)"
-        url: /research/research-cnn/
+        url: /research/research-probability/
       - title: "Convex Optimization Problem"
         url: /research/research-convex-optimization/
       - title: "Gradient Descent Algorithm (soon...)"
