@@ -290,18 +290,41 @@ $${: .text-center}
    To compute $$p$$ with MLE, we can just divide the number of fronts by the total number of times.
    
 - Consider a set of $$n$$ examples $$X = (x_1, x_2, x_3, \ldots, x_n)$$ drawn independently from the true but unknown data generating distribution but unknown data generating distribution $$f(x)$$.
-  - Let $$f(x;\theta)$$ be a parametric family of probability distributions over the same space indexed by $$\theta$$
-  - The **likelihood** can be defined as,  
+  - Let $$p_{model}(x;\theta)$$ be a parametric family of probability distributions over the same space indexed by $$\theta$$
+  - The **likelihood** can be defined as,
+    
 $$
-\mathcal L (x_1, x_2, \ldots, x_n;\theta) = \mathcal L (X;\theta) = f(X;\theta) = f(x_1, x_2, \ldots, x_n;\theta)
+\mathcal L (x_1, x_2, \ldots, x_n;\theta) = \mathcal L (X;\theta) = p_{model}(X;\theta) = p_{model}(x_1, x_2, \ldots, x_n;\theta)
 $${: .text-center}
+
   - **MLE $$\theta_{ML}$$** which is to maximize the likelihood can be defined as,
   
 $$
-\theta_{ML} = \arg\max_\theta \mathcal L (X;\theta) = \arg\max_\theta f(X;\theta) = \arg\max_\theta \prod_{i=1}^m f(x^{(i)};\theta)
+\theta_{ML} = \arg\max_\theta \mathcal L (X;\theta) = \arg\max_\theta p_{model}(X;\theta) = \arg\max_\theta \prod_{i=1}^m p_{model}(x^{(i)};\theta)
 $${: .text-center}      
 
-## Maximum a Posteriori Estimation (MAP)
+- This product over many probabilities can cause inconvenience such as numerical underflow.
+  - So, take the logarithm of the likelihood and transform a product into a sum
+  
+$$
+\theta_{ML} = \arg\max_\theta \sum_{i=1}^m \log p_{model}(x^{(i)};\theta)
+$${: .text-center}    
+
+- MLE has a drawback that it is too sensitive to given observation or data.
+  - e.g. If we throw a coin $$n$$ number of time and got $$n$$ number of front, MLE can consider it is a coin with only front.
+
+# Maximum a Posteriori Estimation (MAP)
+- In order to handle the MLE's drawback, we use **maximum a posteriori estimation (MAP)**.
+  - MAP estimate parameter which has the maximum probability given data, instead of maximizing the probability of data given parameter (*MLE*).
+  - MAP estimate chooses the point of maximal posterior probability or maximal probability density in the more common case of continuous $$\theta$$.
+  - As we can only observe $$p(x \mid \theta)$$ (*likelihood*), we use **Bayes' Theroem** to use $$p(\theta \mid x)$$.
+  
+$$
+\theta_{MAP} = \arg\max_\theta p(\theta \mid x) = \arg\max_\theta log p(\theta \mid x) + \log p(\theta)
+$${: .text-center}
+
+- MAP Bayesian inference has the advantage of leveraging information that is brought by the prior and connot be found in the training data. 
+  - This additional information helps to reduce the variance in the MAP point estimate compared to the MLE.
 
 # References
 - Deep Learning book [[Link](http://www.deeplearningbook.org/)]

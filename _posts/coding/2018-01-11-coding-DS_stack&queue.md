@@ -93,6 +93,60 @@ len(queue) # len(Q)
 - 'n' is the number of elements currently in the container. 'k' is either the value of a parameter or the number of elements in the parameter.
 ![Deque time]({{ site.url }}{{ site.baseurl }}/assets/images/stack&queue/deque time.png){: .align-center}
 
+# Quiz
+Stack related quiz [Game of Two Stacks](https://www.hackerrank.com/challenges/game-of-two-stacks/problem) in [HackerRank](https://www.hackerrank.com)
+
+## Answer code in Python 3
+```python
+#!/bin/python3
+
+import sys
+
+g = int(input().strip())
+for a0 in range(g):
+    n,m,x = input().strip().split(' ')
+    n,m,x = [int(n),int(m),int(x)]
+    a = list(map(int, input().strip().split(' ')))
+    b = list(map(int, input().strip().split(' ')))
+    # your code goes here
+    
+    sum = 0
+    count = 0
+    max_count =0
+    tempA = []
+    
+    # Inverse 'a' and 'b' list to use as stack
+    a.reverse() 
+    b.reverse()
+    
+    # Pop from stack A and sum until it exceeds the limit
+    while len(a)!=0:
+        if sum + a[-1] <= x:
+            sum += a[-1]
+            count += 1
+            tempA.append(a.pop()) # Save pop-ed element from stack A
+        else:
+            break
+    max_count = count # Save current max_count
+    
+    # Pop from stack B and plus it with 'sum' 
+    while len(b)!=0:
+        sum += b.pop()
+        count += 1
+        
+        # If 'sum' exceeds the limit, discard one from tempA
+        while sum > x and len(tempA)!=0:
+            sum -= tempA.pop()
+            count -= 1
+        
+        if sum <= x and max_count < count:
+            max_count = count
+        elif sum > x:
+            break
+
+    print (max_count)
+```
+
 # References
 - Book: Cracking the coding interview [[Link](http://www.crackingthecodinginterview.com/)]
 - Book: Data structures and algorithms in python [[Link](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich-ebook/dp/B00CTZ290I)]
