@@ -160,9 +160,76 @@ $$
 $${: .text-center}
 
 # Common Probability Distribution
-# Useful Properties of Common Functions
+## Bernoulli Distribution
+- **Bernoulli distribution** is a distribution over a single binary random variable.
+  - It is controlled by a single parameter \phi \in [0,1]$$, which gives the probability of the random variable being equal to 1.
+  - It has the following properties:
+![Bernoulli]({{ site.url }}{{ site.baseurl }}/assets/images/probability/bernoulli.png){: .align-center}  
+
+## Multinoulli Distribution
+- **Multinoulli** or **categorical** distribution is a distribution over a single discrete variable with $$k$$ different states, where $$k$$ is finite.
+  - It is parameterized by a vector $$p\in [0,1]^{k-1}$$, where $$p_i$$ gives the probability of the $$i$$-th state.
+  - $$k$$-th state's propability is given by $$1-1^T p$$
+  - It is often used to refer to distributions over categories of objects.
+
+## Gaussian Distribution
+- **Gaussian** or **normal** distribution is the most commonly used distribution over real numbers.
+  - The mean $$\mu\in R$$, the standard deviation $$\sigma\in(0, \infty)$$ and the variance by $$\sigma^2$$.
+
+$$
+N(x; \mu, \sigma^2) = \sqrt{\frac{1}{2\pi\sigma^2}}\exp{(-\frac{1}{2\sigma^2})(x-\mu)^2}
+$${: .text-center}
+
+![Gaussian]({{ site.url }}{{ site.baseurl }}/assets/images/probability/normal distribution.png){: .align-center}  
+
+- When we need to frequently evaluate the PDF, a more efficient way of parametrizing the distribution is to use a parameter $$\beta \in (0,\infty)$$
+ to control the *precision* or inverse variance of the distribution:
+ 
+$$
+N(x; \mu, \beta^{-1}) = \sqrt{\frac{\beta}{2\pi}}\exp{(-\frac{1}{2}\beta)(x-\mu)^2}
+$${: .text-center}
+
+- The normal distribution generalizes to $$R^n$$, in which case it is known as the **multivariate normal distribution**.
+  - It is parameterized with a positive definite symmetric matrix $${\bf\Sigma}$$.
+  
+$$
+N(x; \mu, {\bf\Sigma}) = \sqrt{\frac{1}{(2\pi)^n\det({\bf\Sigma})}}\exp{(-\frac{1}{2}(x-\mu)^T{\bf\Sigma}^{-1}(x-\mu))}
+$${: .text-center}
+
+## Exponential and Laplace Distributions
+- **Exponential distribution** is often used when we want to have a probability distribution with a sharp point at $$x=0$$.
+  - It uses the indicator function $$1_{x\geq 0}$$ to assign probability zero to all negative values of $$x$$.
+  
+$$
+p(x;\lambda)=\lambda1_{1\geq 0}\exp(-\lambda x)
+$${: .text-center}
+
+- A closely related probability distribution that allows us to place a sharp peak of probability mass at an arbitrary point &&\mu&& is the **Laplace distribution**.
+
+$$
+Laplace(x;\mu,\gamma)=\frac{1}{2\gamma}\exp(-\frac{\mid x-\mu \mid}{\gamma})
+$${: .text-center}
+
+## Mixtures of Distributions
+- **Mixtures of Distribution** is a distributions made up of several component distributions.
+  - The choice of which component distribution generates the sample is determined by sampling a component identity from a multinoulli distribution
+  - $$P(c)$$ is the multinoulli distribution over component identities.
+  
+$$
+P(x)=\sum_i P(c=i)P(x\mid c=i)
+$${: .text-center}
+
 # Bayes' Rule
-# Technical Details of Continuous Variables
+- When we know $$P(y \mid x)$$ and need to know $$P(x \mid y)$$, if we also know $$P(x)$$ we can compute it using **Bayes' rule**.
+  - $$P(y \mid x)$$: *likelihood* which is an observation
+  - $$P(x)$$: *prior* which is an preliminary information about the state
+  - $$P(x \mid y)$$: *posterior* which is a probability of the state given the data
+  - $$P(y)$$: *evidence* which is usually feasible to compute $$P(y) = \sum_x P(y \mid x)P(x)$$.
+  
+$$
+P(x \mid y) = \frac{P(x)P(y \mid x)}{P(y)}
+$${: .text-center}
+
 # Information Theory
 > **Information theory** is a branch of applied mathematics that revovles around quantifying how much information is present in a signal.
 
@@ -216,8 +283,6 @@ $${: .text-center}
 
 - Minimizing the cross-entropy with respect to $$Q$$ is equivalent to minimizing the KL divergence, because $$Q$$ does not participate in the omitted term.
 - $$0\log 0$$ is treated as $$\lim_{x\rightarrow0}x\log x = 0$$
-
-# Structured Probabilistic Models
 
 # Maximum Likelihood Estimation (MLE)
 - **Maximum Likelihood Estimation (MLE)** is a way of parameter estimation or random variable with given observation or data.
