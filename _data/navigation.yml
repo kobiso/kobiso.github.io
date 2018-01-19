@@ -48,6 +48,8 @@ dl:
         url: /research/research-multi-neural-machine-translation/
       - title: "Long-term Recurrent ConvNet"
         url: /research/research-lrcn/
+      - title: "Batch Normalization"
+        url: /research/research-batch-norm/
   - title: Deep Learning Related
     children:
       - title: "Dropout Usage"
