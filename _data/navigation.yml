@@ -90,3 +90,5 @@ coding:
         url: /data structure/coding-DS_hash-table/
       - title: "Stack & Queue"
         url: /data structure/coding-DS_stack&queue/
+      - title: "Tree"
+        url: /data structure/coding-DS_tree/
