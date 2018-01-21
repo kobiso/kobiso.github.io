@@ -18,7 +18,7 @@ main:
 dl:
   - title: Deep Learning Basic
     children:
-      - title: "Probability (writing...)"
+      - title: "Probability"
         url: /research/research-probability/
       - title: "Convex Optimization Problem"
         url: /research/research-convex-optimization/
@@ -34,6 +34,8 @@ dl:
         url: /research/research-cnn/
   - title: Paper & Project Review
     children:
+      - title: "Generative Adversarial Nets"
+        url: /research/research-GAN/
       - title: "Capsule Network"
         url: /research/research-capsule-network/
       - title: "YOLO 9000 (writing...)"
@@ -89,6 +91,8 @@ coding:
       - title: "DS. Array Manipulation"
         url: /coding challenge/coding-HR_array-manipulation/
       - title: "DS. Find the Running Median"
+        url: /coding challenge/coding-HR_finding-running-median/
+      - title: "DS. Is this a Binary Search Tree"
         url: /coding challenge/coding-HR_finding-running-median/
       - title: "Alg. Recursive Digit Sum"
         url: /coding challenge/coding-HR_recursive-digit-sum/

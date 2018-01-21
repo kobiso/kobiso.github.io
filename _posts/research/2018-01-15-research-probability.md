@@ -15,7 +15,6 @@ author_profile: false
 ---
 
 Learn about probability which are the basics of artificial intelligence and deep learning.
-(This article is still writing...)
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
@@ -109,13 +108,13 @@ $${: .text-center}
 - For discrete variables:
 
 $$
-E_{x \sim P}[f(x)]\sum_x P(x)f(x)
+E_{x \sim P}[f(x)] = \sum_x P(x)f(x)
 $${: .text-center}
 
 - For continuous variables:
 
 $$
-E_{x \sim P}[f(x)] \int P(x)f(x) dx
+E_{x \sim p}[f(x)] = \int p(x)f(x) dx
 $${: .text-center}
 
 - Expectations are linear (when $$\alpha$$ and $$\beta$$ are not dependent on $$x$$):
@@ -162,7 +161,7 @@ $${: .text-center}
 # Common Probability Distribution
 ## Bernoulli Distribution
 - **Bernoulli distribution** is a distribution over a single binary random variable.
-  - It is controlled by a single parameter \phi \in [0,1]$$, which gives the probability of the random variable being equal to 1.
+  - It is controlled by a single parameter $$\phi \in [0,1]$$, which gives the probability of the random variable being equal to 1.
   - It has the following properties:
 ![Bernoulli]({{ site.url }}{{ site.baseurl }}/assets/images/probability/bernoulli.png){: .align-center}  
 
