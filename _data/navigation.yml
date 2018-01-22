@@ -104,3 +104,5 @@ coding:
         url: /data structure/coding-DS_stack&queue/
       - title: "Tree"
         url: /data structure/coding-DS_tree/
+      - title: "Graph"
+        url: /data structure/coding-DS_graph/
