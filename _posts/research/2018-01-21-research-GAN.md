@@ -74,9 +74,6 @@ $${: .text-center}
 ![Why]({{ site.url }}{{ site.baseurl }}/assets/images/gan/why.png){: .align-center}
 {: .full}
 
-## Implementation Example
-![Framework]({{ site.url }}{{ site.baseurl }}/assets/images/gan/framework.png){: .align-center}
-
 # Variants of GAN
 ## Deep Convolutional GAN (DCGAN), 2015
 - **DCGAN** used convolution for discriminator and deconvolution for generator.

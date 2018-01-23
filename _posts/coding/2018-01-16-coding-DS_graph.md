@@ -123,6 +123,57 @@ def BFS(g, s, discovered):
 - To see why this is faster, consider a graph where every node has at most k adjacent nodes and the shortest path from nod s to node t has length d.
   - In breadth-first search, it takes $$O(k^d)$$ times since it search up to k nodes in one level and do this d times.
   - In bidirectional search, it takes $$O(k^{d/2})$$ times since two searches would collide after approximately $$d/2$$ levels.
+  
+# Minimum Spanning Tree
+## Problem Definition
+- Given an undirected, weighted graph G, we are interested in finding a tree T that contains all the vertices in G and minimizes the sum
+
+$$
+w(T) = \sum_{(u,v) \text{in }T} w(u,v)
+$${: .text-center}  
+
+- **Spanning tree**: a tree that contains every vertex of a connected graph G.
+- **Minimum Spanning Tree (MST)** problem is to compute a spanning tree T with smallest total weight.
+
+- **Proposition**
+> Let $$G$$ be a weighted connected graph, and let $$V_1$$ and $$V_2$$ be a partition of the vertices of $$G$$ into two disjoint nonempty set.
+Furthermore, let $$e$$ be an edge in $$G$$ with minimum weight from among those with one endpoint in $$V_1$$ and the other in $$V_2$$.
+**There is a minimum spanning tree $$T$$ that has $$e$$ as one of its edges.**
+
+![Proposition]({{ site.url }}{{ site.baseurl }}/assets/images/graph/proposition.png){: .align-center}{:height="80%" width="80%"}
+
+## Kruskal's Algorithm
+- **Kruskal's Algorithm** maintains a *forest* of clusters, repeatedly merging pairs of clusters until a single cluster spans the graph which is greedy method.
+
+```python
+# Compute a MST of a graph using Kruskal's algorithm
+# Return a list of edges that comprise the MST.
+# The elements of the graph's edges are assumed to be eights.
+def MST_Kruskal(g):
+    tree = [] # list of edges in spanning tree
+    pq = HeapPriorityQueue() # entries are edges in G, with weights as key
+    forest = Partition() # keeps track of forest clusters
+    position = {} # map each node to its Partition entry
+    
+    for v in g.vertices():
+        position[v] = forest.make_group(v)
+        
+    for e in g.edges():
+        pq.add(e.element(), e) # edge's element is assumed to be its weight
+        
+    size = g.vertex_count()
+    while len(tree) != size-1 and not pq.is_empty():
+        # tree not spanning and unprocessed edges remain
+        weight, edge = pq.remove_min()
+        u, v = edge.endpoints()
+        a = forest.find(position[u])
+        b = forest.find(position[v])
+        if a!=b:
+            tree.append(edge)
+            forest.union(a,b)
+            
+    return tree
+```
 
 # References
 - Book: Cracking the coding interview [[Link](http://www.crackingthecodinginterview.com/)]
