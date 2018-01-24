@@ -98,6 +98,8 @@ coding:
         url: /coding challenge/coding-HR_recursive-digit-sum/
       - title: "Alg. Lily's Homework"
         url: /coding challenge/coding-HR_lilys-homework/
+
+cs:
   - title: Data Structure
     children:
       - title: "Hash Table"
@@ -108,3 +110,7 @@ coding:
         url: /data structure/coding-DS_tree/
       - title: "Graph"
         url: /data structure/coding-DS_graph/
+  - title: Algorithm
+    children:
+      - title: "Sorting"
+        url: /algorithm/coding-AL_sorting/

@@ -10,7 +10,7 @@ header:
   overlay_image: /assets/images/hash table/hash table.png
   overlay_filter: 0.4
 sidebar:
-  nav: "coding"
+  nav: "cs"
 author_profile: false
 ---
 

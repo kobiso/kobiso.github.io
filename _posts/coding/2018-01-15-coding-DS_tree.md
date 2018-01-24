@@ -13,7 +13,7 @@ header:
   overlay_image: /assets/images/tree/tree.jpg
   overlay_filter: 0.4
 sidebar:
-  nav: "coding"
+  nav: "cs"
 author_profile: false
 ---
 
