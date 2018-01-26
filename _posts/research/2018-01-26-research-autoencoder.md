@@ -5,6 +5,8 @@ categories:
 tags:
   - autoencoder
   - PCA
+  - RBM
+  - DBN
 header:
   teaser: /assets/images/autoencoder/structure.png
   overlay_image: /assets/images/autoencoder/structure.png
@@ -20,7 +22,7 @@ Recently, the autoencoder concept has become more widely used for learning gener
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
-# Autoencoder
+# Autoencoder, 1989
 - For the intuitive understanding, **autoencoder** compresses (learns) the input and then reconstruct (generates) of it.
   - It is **unsupervised learning** model which does not need label.  
 
@@ -83,8 +85,109 @@ The first paper suggested autoencoder [(Baldi, P. and Hornik, K. 1989)](http://c
 - with non-linear layers before and after the code, it should be possible to efficiently represent data that lies on or near a non-linear manifold.
   - The encoder converts coordinates in the input space to coordinates on the manifold.
   - The decoder does the inverse mapping  
+  
+# Deep Autoencoder, 2006
+Before we talk about deep autoencoder, we have to know about restricted boltzmann machine and deep belief networks.
+  
+## Restricted Boltzmann Machine (RBM)
+- **Restricted Boltzmann Machine (RBM)** is a generative stochastic artificial neural network that can learn a probability distribution over its set of inputs.
+  - RBM is a variant of Boltzmann machines with the restriction that their neurons much form a bipartite graph and there are no connections between nodes within a group. 
+  - This restriction allows for more efficient training algorithm, in particular the gradient-based contrastive divergence algorithm.
+
+![RBM]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/rbm.png){: .align-center}
+  
+- The standard type of RBM has binary-valued (Boolean/Bernoulli) hidden and visible units, and consists of a matrix of weights $$W$$, bias term $$a_i$$ for the visible units and $$b_j$$ for the hidden units.
+  - This model contains joint probability of $$v$$ and $$h$$ which can be described with energy function form,
+
+$$
+p(v,h) = \frac{e^{-E(v,h)}}{Z} \\
+\mbox{ where } E(v,h) := -\sum_i a_i v_i - \sum_j b_j h_j - \sum_i \sum_j v_i w_{ij} h_j \\
+\mbox{ and } Z = \sum_{v,h} e^{-E(x,h)}
+$${: .text-center}
+
+- RBM will be trained in a way that best describes the given data, that is, the parameter that maximizes $$p(v)$$ is learned.
+  - This usually described with log likelihood as,
+  
+$$
+\theta = \arg\max_\theta \log \mathcal L (v) = \arg\max_\theta \sum_{v \in V} \log P(v).
+$${: .text-center}
+
+- RBM reduced training and inference time compared to Boltzmann machine
+  - And it can be used in both supervised and unsupervised learning such as dimensionality reduction, classification, collaborative filtering, feature learning, topic modeling.
+
+## Deep Belief Network (DBN)
+- **Deep Belief Network (DBN)** is a generative graphical model, composed of multiple layers of hidden units with connections between the layers but not between units within each layer.
+  - It can consist of stacking RBM from the bottom and update parameters
+  - When trained on a set of examples without supervision, a DBN can learn to probabilistically reconstruct its inputs.
+  - The layers then act as feature detectors.
+  - After this learning step, a DBN can be further trained with supervision to perform classification.
+
+![DBN]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/dbn.png){: .align-center}
+
+- When $$h^k$$ is the hidden variable of k-th layers, DBN probabilistic model can be described as,
+
+$$
+P(x, h^1, \ldots, h^\ell) = \bigg( \prod_{k=1}^{\ell-2} P(h^k|h^{k-1}) \bigg) P(h^{\ell-1},h^{\ell})
+$${: .text-center}
+
+- Pre-training with DBN and fine-tuning with backpropagation reduced overfitting problem and improved performance on MNIST dataset classification.
+  - Unsupervised pre-training with DBN also showed better performance than before.
+  - However, these days, when there is enough big data set, random initialization gives better performance than pre-training with DBN.
+  
+## Deep Autoencoder (Stacked Autoencoder)
+- Deep autoencoder is a nice way to do non-linear dimensionality reduction
+  - Provide flexible mappings both ways
+  - The learning time is linear (or better) in the number of training cases
+  - The final encoding model is fairly compact and fast
+  - It also showed good reconstruction performance
+  
+- However, it turned out to be very difficult to optimize deep autoencoders using backpropagation
+  - With small initial weights the backpropagated gradient dies
+  
+- Now, we have a better ways to optimize them
+  - Use unsupervised layer-by-layer pre-training.
+  - Or just initialize the weights carefully as in Echo-State Nets.
+
+![Deep Autoencoder]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/deep autoencoder.png){: .align-center}
+
+- **Training process**
+  1. Pretraining: Learn a stack of RBMs, each having only one layer of feature detector and the learned feature activations of one RBM are used as the "data" for training next RBM in the stack.
+  2. Unrolling: Create a deep autoencoder, use transpose of encoder weight for decoder weight.
+  3. Fine-tuning: Fine-tune the model using backpropagation of error derivatives
+
+# Denoising Autoencoder, 2008
+- **Denoising autoencoder** take a partially corrupted input while training to recover the original undistorted input.
+  - A good representation is one that can be obtained robustly from a corrupted input and that will be useful for recovering the corresponding clean input.
+  - This definition contains the following implicit assumptions
+    - The higher level representations are relatively stable and robust to the corruption of the input.
+    - It is necessary to extract features that are useful for representation of the input distribution.
+    
+![Denoising AE]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/denoising ae.png){: .align-center}
+  
+- To train an autoencoder to denoise data, it is necessary to perform preliminary stochastic mapping $$\mathbf{x}\rightarrow\mathbf{\tilde{x}}$$ in order to corrupt the data
+  - And use $$\mathbf{\tilde{x}}$$ as input for a normal autoencoder
+  - The loss should be still computed for the initial input $$\mathcal{L}(\mathbf{x},\mathbf{\tilde{x}'})$$ instead of $$\mathcal{L}(\mathbf{\tilde{x}},\mathbf{\tilde{x}'})$$.
+
+# Sparse Autoencoder, 2008
+- By imposing sparsity on the hidden units during training (having a larger number of hidden units than inputs), an autoencoder can learn useful structures in the input data.
+  - This allows sparse representations of inputs which is useful in pretraining for classification tasks.
+  - Sparsity may be achieved by additional terms in the loss function during training or by manually zeroing all but the few strongest hidden unit activations.
+
+![Sparse AE]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/sae.png){: .align-center}
+
+# Stacked Denoising Autoencoder, 2010
+- A **stacked denoising autoencoder** is a stacked of denoising autoencoder by feeding the latent representation (output code) of the denoising autoencoder as input to the next layer.
+  - A key function of SDAs is unsupervised pre-training, layer by layer, as input is fed through.
+  - Once each layer is pre-trained to conduct feature selection and extraction on the input from the preceding layer, a second stage of supervised fine-tuning can follow.
+
+![Stacked Denoising AE]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/sda.png){: .align-center}
+
+# Variational Autoencoder, 2013
+
+![Variational AE]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/vae.png){: .align-center}
 
 # References
 - Wikipedia: Autoencoder [[Link](https://en.wikipedia.org/wiki/Autoencoder)]
 - Youtube: From PCA to autoencoders [Neural Networks for Machine Learning] [[Link](https://www.youtube.com/watch?v=hbU7nbVDzGE)]
 - Paper: Neural Networks and Principal Component Analysis: Learning from Examples Without Local Minima [[Link](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.408.1839&rep=rep1&type=pdf)]
+- Paper: Reduction the Dimensionality of Data with Neural Network, Science [[Link](https://www.cs.toronto.edu/~hinton/science.pdf)]
