@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_yet another minimax problem.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
     </list>
@@ -21,19 +22,19 @@
       <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="107" column="3" lean-forward="false" selection-start-line="107" selection-start-column="3" selection-end-line="107" selection-end-column="3" />
+            <state relative-caret-position="440">
+              <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-08-coding-HR_yet another minimax problem.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_yet another minimax problem.md">
+      <file leaf-file-name="2018-01-26-research-autoencoder.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="323">
-                <caret line="17" column="88" lean-forward="false" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
+              <first_editor relative-caret-position="614">
+                <caret line="89" column="47" lean-forward="false" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -43,57 +44,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-12-coding-HR_fibonacci modified.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_fibonacci modified.md">
+      <file leaf-file-name="2018-01-22-research-ai terms.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="513">
-                <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-01-12-coding-HR_game of two stacks.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_game of two stacks.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="19">
-                <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="38" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-01-12-coding-HR_bear and steady gene.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_bear and steady gene.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="39" column="26" lean-forward="false" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-01-16-research-batch norm.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="300">
-                <caret line="132" column="125" lean-forward="false" selection-start-line="132" selection-start-column="98" selection-end-line="132" selection-end-column="125" />
+              <first_editor relative-caret-position="152">
+                <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -156,8 +112,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2017-10-26-coding-L4_MissingInteger.md" />
-        <option value="$PROJECT_DIR$/_posts/2017-10-25-research-multi-neural machine translation.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-10-19-research-activation functions.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-10-17-research-multi-speaker Tacotron in TensorFlow.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-10-16-research-lrcn.md" />
@@ -189,7 +143,6 @@
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-10-coding-DS_arrays&amp;strings.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-08-research-probability.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-13-research-temp.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-01-11-coding-HR_array manipulation.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-11-coding-HR_recursive digit sum.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_finding running median.md" />
@@ -206,7 +159,10 @@
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_bear and steady gene.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_game of two stacks.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_yet another minimax problem.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md" />
         <option value="$PROJECT_DIR$/_data/navigation.yml" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
       </list>
     </option>
   </component>
@@ -260,7 +216,25 @@
               <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
-              <item name="coding" type="462c0819:PsiDirectoryNode" />
+              <item name="research" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="autoencoder" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -280,8 +254,8 @@
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\yolo9000" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\research" />
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
       <recent name="C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io\_posts\research" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts" />
     </key>
@@ -328,23 +302,23 @@
       <workItem from="1513830760017" duration="7265000" />
       <workItem from="1514854925053" duration="118349000" />
       <workItem from="1516015810473" duration="2043000" />
-      <workItem from="1516324001583" duration="75205000" />
+      <workItem from="1516324001583" duration="86577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="388445000" />
+    <option name="totallyTimeSpent" value="399817000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16822916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2430998" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24840765" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15711252" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -388,20 +362,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_layouts/single.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="33" column="21" lean-forward="false" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/_sass/minimal-mistakes/_page.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="26" column="32" lean-forward="false" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_layouts/archive.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -629,19 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-02-research-ffnn.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="703">
-            <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="18" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/coding/2017-12-28-coding-P_L5_setAlign.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -772,19 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="360">
-            <caret line="171" column="71" lean-forward="false" selection-start-line="171" selection-start-column="71" selection-end-line="171" selection-end-column="71" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-15-coding-HR_lilys homework.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -876,11 +810,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md">
+    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_game of two stacks.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="300">
-            <caret line="132" column="125" lean-forward="false" selection-start-line="132" selection-start-column="98" selection-end-line="132" selection-end-column="125" />
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="19">
+            <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="38" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_yet another minimax problem.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="475">
+            <caret line="25" column="53" lean-forward="false" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_fibonacci modified.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
@@ -902,11 +862,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_fibonacci modified.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-02-research-ffnn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="513">
-            <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <first_editor relative-caret-position="457">
+            <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="18" />
             <folding />
           </first_editor>
           <second_editor>
@@ -915,11 +875,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_game of two stacks.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="528">
+            <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="104" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="19">
-            <caret line="1" column="38" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="38" />
+          <first_editor relative-caret-position="274">
+            <caret line="171" column="71" lean-forward="false" selection-start-line="171" selection-start-column="71" selection-end-line="171" selection-end-column="71" />
             <folding />
           </first_editor>
           <second_editor>
@@ -930,17 +903,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="107" column="3" lean-forward="false" selection-start-line="107" selection-start-column="3" selection-end-line="107" selection-end-column="3" />
+        <state relative-caret-position="440">
+          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_yet another minimax problem.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="323">
-            <caret line="17" column="88" lean-forward="false" selection-start-line="17" selection-start-column="88" selection-end-line="17" selection-end-column="88" />
+          <first_editor relative-caret-position="152">
+            <caret line="8" column="44" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="614">
+            <caret line="89" column="47" lean-forward="false" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
             <folding />
           </first_editor>
           <second_editor>

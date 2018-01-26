@@ -32,6 +32,8 @@ dl:
         url: /research/research-rnn/
       - title: "Convolutional Neural Network"
         url: /research/research-cnn/
+      - title: "Autoencoder"
+        url: /research/research-autoencoder/
   - title: Paper & Project Review
     children:
       - title: "Generative Adversarial Nets"
@@ -54,6 +56,8 @@ dl:
         url: /research/research-batch-norm/
   - title: Deep Learning Related
     children:
+      - title: "AI Terms"
+        url: /research/research-ai-terms/
       - title: "Dropout Usage"
         url: /research/research-status-of-dropout-usage/
       - title: "XAI References"
