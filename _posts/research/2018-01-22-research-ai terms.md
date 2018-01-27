@@ -16,6 +16,46 @@ author_profile: false
 This post will be about artificial intelligence related terms including linear algebra, probability distribution, machine learning and deep learning
 
 {% include toc title="Table of Contents" icon="file-text" %}
+# D
+## Discriminative Model
+- **Discriminative model** directly estimate class probability (*posterior probability*) $$p(y \mid x)$$ given input
+  - Some methods do not have probabilistic interpretation, but fit a function $$f(x)$$, and assign to classes based on it
+  - Focus on the decision boundary
+  - More powerful with lots of examples
+  - Not designed to use unlabeled data
+  - Only supervised tasks
+
+![Generative vs Discriminative1]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/generative-discriminative.jpg){: .align-center}
+
+- **Examples**: Gaussians, Naive-Bayesian, Mixtures of multinomial, Mixtures of Gaussians, Hidden Markov Models, Bayesian Networks, Morkov Random Fields
+
+- Check the [**generative model**]({{ site.url }}{{ site.baseurl }}/research/research-ai-terms/#generative-model) for comparison
+
+- **Reference**
+  - Wikipedia: Discriminative Model [[Link](https://en.wikipedia.org/wiki/Discriminative_model)]
+  - Youtube: Generative vs. discriminative learning [[Link](https://www.youtube.com/watch?v=XtYMRq7f7KA)]
+
+# G
+## Generative Model
+- **Generative model** compute of *posterior probability* $$p(y \mid x)$$ using **bayes rule** to infer distribution over class given input
+  - Model the density of inputs $$x$$ from each class $$p(x \mid y)$$
+  - Estimate class prior probability $$p(y)$$
+  - Probabilistic model of each class
+  - Natural use of unlabeled data
+  
+$$
+p(y \mid x) = \frac{p(x \mid y)p(y)}{p(x)}, \quad p(x) = \sum_y p(y)p(x \mid y)
+$${: .text-center}
+
+![Generative vs Discriminative2]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/gd.png){: .align-center}
+  
+- **Examples**: Logistic Regression, Gaussian Process, Regularization Networks, Support Vector Machines, Neural Networks  
+  
+- Check the [**discriminative model**]({{ site.url }}{{ site.baseurl }}/research/research-ai-terms/#discriminative-model) for comparison
+  
+- **Reference**
+  - Wikipedia: Generative Model [[Link](https://en.wikipedia.org/wiki/Generative_model)]
+  - Youtube: Generative vs. discriminative learning [[Link](https://www.youtube.com/watch?v=XtYMRq7f7KA)]
 
 # L
 ## Local Minimum Problem
