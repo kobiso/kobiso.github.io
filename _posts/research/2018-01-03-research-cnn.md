@@ -128,6 +128,12 @@ Convolutional neural network usually use three main types of layers: **Convoluti
 - **ResNet**: Residual Network features special skip connections and a heavy use of batch normalization.
   - The architecture is also missing fully connected layers at the end of the network.
 
+# Famous Convolution Fiter
+- Depending on the element values (convolution filters), a kernel can cause a wide range of effects.
+
+![Kernel]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/kernel.png){: .align-center}
+
 # References
 - Standfard CS231n lecture note [[Link](http://cs231n.github.io/convolutional-networks/#pool)]
 - Deep Learning book [[Link](http://www.deeplearningbook.org/)]
+- Wikipedia: kernel (image processing) [[Link](https://en.wikipedia.org/wiki/Kernel_(image_processing))]

@@ -5,8 +5,8 @@ categories:
 tags:
   - autoencoder
 header:
-  teaser: /assets/images/ai terms/pca.png
-  overlay_image: /assets/images/ai terms/pca.png
+  teaser: /assets/images/ai terms/local minima.png
+  overlay_image: /assets/images/ai terms/local minima.png
   overlay_filter: 0.4
 sidebar:
   nav: "dl"
@@ -17,6 +17,26 @@ This post will be about artificial intelligence related terms including linear a
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
+# L
+## Local Minimum Problem
+- **Local minimum problem** happens when the backpropagation network converge into a *local minima* instead of the desired **global minimum** since the error value is very complex function with many parameter values of weights.
+  - The backpropagation algorithm employs gradient descent by following the slope of error value downward along with the change in all the weight values.
+  - The weight values are constantly adjusted until the error value is no longer decreasing.
+
+![Local Minima]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/local minima.png){: .align-center}
+  
+- Local minimum problem can be avoided with several solutions
+  - Utilize **momentum** which gradually increases the weight adjustment rate
+  - Use **stochastic gradient descent** is more likely to jump out of a local minimum and find a global minimum, but still can get stuck in local minimum.
+    - In stochastic gradient descent, the parameters are estimated for every observation (mini-batch), as opposed the whole sample (full-batch) in regular gradient descent. 
+    - This gives lots of randomness and the path of stochastic gradient descent wanders over more places.
+  - Adding noise to the weights while being updated
+  
+- Check the [**saddle point**]({{ site.url }}{{ site.baseurl }}/research/research-ai-terms/#saddle-point) for comparison
+
+- **Reference**
+  - ECE Edu: Local Minimum problem [[Link](http://www.ece.utep.edu/research/webfuzzy/docs/kk-thesis/kk-thesis-html/node23.html)]
+  
 # M
 ## Mean Squared Error
 **Mean squared error(MSE)** or **mean squared deviation (MSD)** of an estimator measures the average of the squares of the errors or deviations.
@@ -52,3 +72,17 @@ $${: .text-cetner}
 - **Reference**
   - Wikipedia: Principal component analysis [[Link](https://en.wikipedia.org/wiki/Principal_component_analysis)]
   - Blog: Principal component analysis explained visually [[Link](http://setosa.io/ev/principal-component-analysis/)]
+  
+# S
+## Saddle Point
+- **Saddle point** is a point on the surface of a function where the slopes (derivatives) of orthogonal function components defining the surface become zero but are not a local extremum on both axes.
+  - The critical point with a relative minimum along one axial direction and at a relative maximum along the other axial direction.
+  - When we optimize neural networks, for most of the trajectory we optimize, the *critical points* (the points where the derivative is zero or close to zero) are saddle points.
+  - Saddle points, unlike local minima, are easily escapable
+  
+![Saddle Point]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/saddle.png){: .align-center}
+
+- Check the [**local minimum problem**]({{ site.url }}{{ site.baseurl }}/research/research-ai-terms/#local-minimum-problem) for comparison
+
+- **Reference**
+  - Wikipedia: Saddle point [[Link](https://en.wikipedia.org/wiki/Saddle_point)]
