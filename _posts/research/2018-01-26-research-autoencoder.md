@@ -183,11 +183,48 @@ $${: .text-center}
 ![Stacked Denoising AE]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/sda.png){: .align-center}
 
 # Variational Autoencoder, 2013
+- **Variational autoencoder** is a generative model for complex data and large dataset proposed in 2013 by [Kingma et al.](https://arxiv.org/abs/1312.6114) and [Rezende et al.](https://arxiv.org/abs/1401.4082).
+  - It can generate images of fictional celebrity faces and high-resolution digital artwork.
+  - It achieved state-of-the-art machine learning results in image generation and reinforcement learning. 
 
 ![Variational AE]({{ site.url }}{{ site.baseurl }}/assets/images/autoencoder/vae.png){: .align-center}
+
+## Encoder
+- The *encoder* is a neural network and its input is a datapoint $$x$$, output is a hidden representation $$z$$, and it has weights and biases $$\theta$$.
+  - The representation space $$z$$ is less than the input space and it is referred to as a *bottleneck* because the encoder must learn an efficient compression of the data into this lower-dimensional space.
+  - The lower-dimensional space is stochastic where the encoder outputs parameters to $$q_{\theta}(z \mid x)$$ which is a Gaussian probability density.
+  - We can sample from this distribution to get noisy values of the representations $$z$$.
+
+## Decoder
+- The **decoder** is another neural network and its input is the representation $$z$$, output is the parameters to the probability distribution of the data, and it has weights and biases $$\phi$$.
+  - The decoder is denoted by $$p_{\phi}(x \mid z)$$.
+  - The decoder gets as input the latent representation of a digit $$z$$ and decodes it into real-valued numbers between 0 and 1 (when it is Bernoulli parameters).
+  - Information is lost because it goes from a smaller to a larger dimensionality and this can be measured by reconstruction log-likelihood $$\log p_{\phi}(x \mid z)$$.
+  - This measure tells us how effectively the decoder has learned to reconstruct an input image $$x$$ given its latent representation $$z$$. 
+
+## Loss Function
+- THe **loss function** of the variational autoencoder is the negative log-likelihood with a regularizer.
+  - Because there are no global representations that are shared by all datapoints, we can decompose the loss function into only terms that depend on a single datapoint $$l_i$$.
+  - The total loss is then $$\sum_{i=1}^N l_i$$ for $$N$$ total data points.
+  - The loss function $$l_i$$ for datapoint $$x_i$$ is:
+
+$$
+l_i(\theta, \phi) = -E_{z \sim q_{\theta}(z \mid x_i)}[\log p_{\phi}(x_i \mid z)] + KL(q_{\theta}(z \mid x_i) \parallel p(z))
+$${: .text-center}
+
+- The first term is the **reconstruction loss**, or expected negative log-likelihood of the $$i$$-th datapoint.
+  - This term encourages the decoder to learn to reconstruct the data.
+  - If the decoder's output does not reconstruct the data well, it will incur a large cost in this loss function.
+  
+- The second term is a **regularizer** that is the Kullback-Leibler divergence between the encoder's distribution $$q_{\theta}(z \mid x)$$ and p(z).
+  - The divergence measures how much information is lost when using $$q$$ to represent $$p$$ and how close $$q$$ is to $$p$$.
+
+- We train the variational autoencoder using gradient descent to optimize the loss with respect to the parameters of the encoder and decoder.
+  - For stochastic gradient descent with step size $$\rho$$, the encoder parameters are updated using $$\theta \leftarrow \theta - \rho \frac{\partial l}{\partial \theta}$$ and the decoder is updated similarly.
 
 # References
 - Wikipedia: Autoencoder [[Link](https://en.wikipedia.org/wiki/Autoencoder)]
 - Youtube: From PCA to autoencoders [Neural Networks for Machine Learning] [[Link](https://www.youtube.com/watch?v=hbU7nbVDzGE)]
 - Paper: Neural Networks and Principal Component Analysis: Learning from Examples Without Local Minima [[Link](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.408.1839&rep=rep1&type=pdf)]
 - Paper: Reduction the Dimensionality of Data with Neural Network, Science [[Link](https://www.cs.toronto.edu/~hinton/science.pdf)]
+- Blog: Tutorial - What is a variational autoencoder? [[Link](https://jaan.io/what-is-variational-autoencoder-vae-tutorial/)]

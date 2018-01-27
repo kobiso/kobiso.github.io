@@ -34,6 +34,19 @@ This post will be about artificial intelligence related terms including linear a
 - **Reference**
   - Wikipedia: Discriminative Model [[Link](https://en.wikipedia.org/wiki/Discriminative_model)]
   - Youtube: Generative vs. discriminative learning [[Link](https://www.youtube.com/watch?v=XtYMRq7f7KA)]
+  
+## Deterministic Model
+- **Deterministic model** is a mathematical model in which outcomes are precisely determined through known relationships among states and events, without room for random variation.
+  - A deterministic model always performs the same way for a given set of same initial conditions.
+  - It hypothesized an exact relationship between variables which allows one to make predictions and see how one variable affects the other.
+
+- **Example**: (Deterministic) Neural Network, (Deterministic) Regression model
+  
+- Check the [**probabilistic model**]({{ site.url }}{{ site.baseurl }}/research/research-ai-terms/#probabilistic-model) for comparison
+
+- **Reference**
+  - Wikipedia: Mathematical Model [[Link](https://en.wikipedia.org/wiki/Mathematical_model)]
+  - Youtube: Deterministic vs Probabilistic Model [[Link](https://www.youtube.com/watch?v=XLPgHer5Cp8)]
 
 # G
 ## Generative Model
@@ -112,6 +125,20 @@ $${: .text-cetner}
 - **Reference**
   - Wikipedia: Principal component analysis [[Link](https://en.wikipedia.org/wiki/Principal_component_analysis)]
   - Blog: Principal component analysis explained visually [[Link](http://setosa.io/ev/principal-component-analysis/)]
+  
+## Probabilistic Model
+- **Probabilistic (stochastic) model** is a mathematical representation of a random phenomenon which is defined by its sample space, events within the sample space, and probabilities.
+  - Unlike the deterministic model, the probabilistic model includes elements of randomness.
+  - This model is likely to produce different results even with the same initial conditions.
+  - There is always an element of chance or uncertainty involved which implies that there are possible alternate solutions.
+  
+- **Example**: (Probabilistic) Regression models, Probability tress, Monte Carlo, Markov models, Stochastic Neural Network
+  
+- Check the [**deterministic model**]({{ site.url }}{{ site.baseurl }}/research/research-ai-terms/#deterministic-model) for comparison
+  
+- **Reference**
+  - Wikipedia: Mathematical Model [[Link](https://en.wikipedia.org/wiki/Mathematical_model)]
+  - Youtube: Deterministic vs Probabilistic Model [[Link](https://www.youtube.com/watch?v=XLPgHer5Cp8)]
   
 # S
 ## Saddle Point
