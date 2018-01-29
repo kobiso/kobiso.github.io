@@ -112,6 +112,8 @@ coding:
         url: /coding challenge/coding-HR_lilys-homework/
       - title: "Alg. Short Palindrome"
         url: /coding challenge/coding-HR_short-palindrome/
+      - title: "Alg. Recursive Digit Sum"
+        url: /coding challenge/coding-HR_recursive-digit-sum/
 
 cs:
   - title: Data Structure
