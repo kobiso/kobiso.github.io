@@ -6,17 +6,15 @@ tags:
   - approximate inference
   - variational inference
 header:
-  teaser: /assets/images/approximate inference/inference.png
-  overlay_image: /assets/images/approximate inference/inference.png
+  teaser: /assets/images/approximate inference/background.png
+  overlay_image: /assets/images/approximate inference/background.png
   overlay_filter: 0.4
 sidebar:
   nav: "dl"
 author_profile: false
 ---
 
-**Autoencoder** is an artificial neural network used for unsupervised learning of efficient codings.
-The aim of an autoencoder is to learn a representation (encoding) for a set of data, typically for the purpose of dimensionality reduction.
-Recently, the autoencoder concept has become more widely used for learning generative models of data.
+**Approximate inference** methods make it possible to learn realistic models from big data by trading off computation time for accuracy, when exact learning and inference are computationally intractable.
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
@@ -31,16 +29,20 @@ Recently, the autoencoder concept has become more widely used for learning gener
   - So, exact inference requires an exponential amount of time in these models.
 
 # Inference as Optimization
-- Approximate inference algorithms may be derived by approximating the underlying optimization problem.
+- **Decomposition of Log-Likelihood**
+  - Approximate inference algorithms may be derived by approximating the underlying optimization problem.
   - To construct the optimization problem, we would like to compute the log probability of the observed data, $$\log p(v; \theta)$$.
   - Sometimes, it is difficult to compute $$\log p(v;\theta)$$ if it is costly to marginalize out $$h$$.
   - Instead, we can compute a lower bound $$\mathcal{L}(v,\theta,q)$$ on $$\log p(v;\theta)$$
   - This bound is called the *evidence lower bound (ELBO)* or the negative *variational free energy*.
-  - where $$q$$ is an arbitrary probability distribution over $$h$$, the ELBO is defined to be:
+  - Where $$q$$ is an arbitrary probability distribution over $$h$$, the ELBO is defined to be:
   
 $$
 \mathcal{L}(v,\theta,q) = \log p(v;\theta) - D_{KL}(q(h \mid v) \parallel p(h \mid v; \theta))
 $${: .text-center}
+
+![Decomposition]({{ site.url }}{{ site.baseurl }}/assets/images/approximate inference/decomposition.png){: .align-center}
+{: .full}
   
 - Because the difference between $$\log p(v)$$ and $$\mathcal{L}(v,\theta,q)$$ is given by the KL divergence and because the KL divergence is always non-negative, we can see that $$\mathcal{L}$$ always has at most the same value as the desired log probability.
   - The two are equal if and only if $$q$$ is the same distribution as $$p(h \mid v)$$.
@@ -67,10 +69,37 @@ $${: .text-center}
   - We can get tighter or looser bounds that are cheaper or more expensive to compute depending on how we choose to approach this optimization problem.
   
 # Expectation Maximization
+- **Expectation Maximization (EM)** is an algorithm for maximizing a lower bound $$\mathcal{L}$$ which is popular training algorithm for models with latent variables.
+  - EM is not an approach to approximate inference, but rather an approach to learning with an approximate posterior.
+  - EM is widely used algorithm for MLE and MAP problem of probabilistic model with latent variable. 
+  
+- The EM algorithm consists of alternating between two steps until convergence:
+
+1. **E-step (Expectation step)**
+  - We maximize $$\mathcal{L}$$ with respect to $$q$$.
+  - Let $$\theta^0$$ denote that value of the parameters at the beginning of the step.
+  - Set $$q(h^i \mid v) = p(h^i \mid v^i; \theta^0)$$ for all indices $$i$$ of the training examples $$v^i$$ we want to train on.
+  - By this we mean $$q$$ is defined in terms of the current parameter value of $$\theta^0$$; if we vary $$\theta$$ then $$p(h \mid v;\theta)$$ will change but $$q(h \mid v)$$ will remain equal to $$p(h \mid v;\theta^0)$$.
+  - E.g. In K-means clustering, E-step assigns the data points to the nearest centroid.
+  
+![E-step]({{ site.url }}{{ site.baseurl }}/assets/images/approximate inference/estep.png){: .align-center}
+{: .full}
+  
+2. **M-step (Maximization step)**
+  - We maximize $$\mathcal{L}$$ with respect to $$\theta$$.
+  - Completely or partially maximize with respect to $$\theta$$ using your optimization algorithm of choice.
+  - E.g. In K-means clustering, M-step update the centroid positions given the assignments.
+  
+![M-step]({{ site.url }}{{ site.baseurl }}/assets/images/approximate inference/mstep.png){: .align-center}
+{: .full}
+
+![EM]({{ site.url }}{{ site.baseurl }}/assets/images/approximate inference/em algorithm.png){: .align-center}
+{: .full}
 
 # Variational Inference
 - **Variational inference** is that we approximate the true distribution $$p(h \mid v)$$ by seeking an approximate distribution $$q(h \mid v)$$ that is as close to the true one as possible.
 
 # References
 - Deep Learning book [[Link](http://www.deeplearningbook.org/)]
-- Wikipedia: Autoencoder [[Link](https://en.wikipedia.org/wiki/Autoencoder)]
+- Pattern Recognition and Machine Learning, Bishop [[Link](http://users.isr.ist.utl.pt/~wurmd/Livros/school/Bishop%20-%20Pattern%20Recognition%20And%20Machine%20Learning%20-%20Springer%20%202006.pdf)]
+- Wikipedia: Approximate Inference [[Link](https://en.wikipedia.org/wiki/Approximate_inference)]
