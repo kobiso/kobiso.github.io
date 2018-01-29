@@ -20,6 +20,8 @@ dl:
     children:
       - title: "Probability"
         url: /research/research-probability/
+      - title: "Approximate Inference"
+        url: /research/research-approximate-inference/
       - title: "Convex Optimization Problem"
         url: /research/research-convex-optimization/
       - title: "Gradient Descent Algorithm (soon...)"
@@ -108,6 +110,8 @@ coding:
         url: /coding challenge/coding-HR_yet-another-minimax-problem/
       - title: "Alg. Lily's Homework"
         url: /coding challenge/coding-HR_lilys-homework/
+      - title: "Alg. Short Palindrome"
+        url: /coding challenge/coding-HR_short-palindrome/
 
 cs:
   - title: Data Structure

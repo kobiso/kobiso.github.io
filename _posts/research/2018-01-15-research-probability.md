@@ -220,14 +220,21 @@ $${: .text-center}
 
 # Bayes' Rule
 - When we know $$P(y \mid x)$$ and need to know $$P(x \mid y)$$, if we also know $$P(x)$$ we can compute it using **Bayes' rule**.
-  - $$P(y \mid x)$$: *likelihood* which is an observation
-  - $$P(x)$$: *prior* which is an preliminary information about the state
-  - $$P(x \mid y)$$: *posterior* which is a probability of the state given the data
-  - $$P(y)$$: *evidence* which is usually feasible to compute $$P(y) = \sum_x P(y \mid x)P(x)$$.
+  - $$P(x \mid y)$$: **posterior** which is a probability of the state (event) $$x$$ given the data (event) $$y$$
+    - It is a *conditional probability* that the likelihood of event $$x$$ occurring given that $$y$$ is true.
+  - $$P(y \mid x)$$: **likelihood** which is an observation
+    - It is a *conditional probability* that the likelihood of event $$y$$ occurring given that $$x$$ is true.
+  - $$P(x)$$: **prior** of $$x$$ which is an preliminary information about the state
+    - It is a *marginal probability* that the probability of observing $$x$$.
+  - $$P(y)$$: **prior** or **evidence** of $$y$$ which is usually feasible to compute $$P(y) = \sum_x P(y \mid x)P(x)$$ or $$P(y) = \int_x P(y \mid x)$$.
+    - It is a *marginal probability* that the probability of observing $$y$$.
   
+- **Bayes' Rule** where $$x$$ and $$y$$ are events and $$p(y) \neq 0$$:
+ 
 $$
 P(x \mid y) = \frac{P(x)P(y \mid x)}{P(y)}
 $${: .text-center}
+
 
 # Information Theory
 > **Information theory** is a branch of applied mathematics that revovles around quantifying how much information is present in a signal.
@@ -288,7 +295,7 @@ $${: .text-center}
   - e.g. Imagine if we want to predict $$p$$ by throwing a coin with the probability of $$p$$ of front and $$1-p$$ of back.
    To compute $$p$$ with MLE, we can just divide the number of fronts by the total number of times.
    
-- Consider a set of $$n$$ examples $$X = (x_1, x_2, x_3, \ldots, x_n)$$ drawn independently from the true but unknown data generating distribution but unknown data generating distribution $$f(x)$$.
+- Consider a set of $$n$$ examples $$X = (x_1, x_2, x_3, \ldots, x_n)$$ drawn independently from the true but unknown data generating distribution $$f(x)$$.
   - Let $$p_{model}(x;\theta)$$ be a parametric family of probability distributions over the same space indexed by $$\theta$$
   - The **likelihood** can be defined as,
     
@@ -319,7 +326,7 @@ $${: .text-center}
   - As we can only observe $$p(x \mid \theta)$$ (*likelihood*), we use **Bayes' Theroem** to use $$p(\theta \mid x)$$.
   
 $$
-\theta_{MAP} = \arg\max_\theta p(\theta \mid x) = \arg\max_\theta log p(\theta \mid x) + \log p(\theta)
+\theta_{MAP} = \arg\max_\theta p(\theta \mid x) = \arg\max_\theta log p(x \mid \theta) + \log p(\theta)
 $${: .text-center}
 
 - MAP Bayesian inference has the advantage of leveraging information that is brought by the prior and connot be found in the training data. 

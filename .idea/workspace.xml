@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/coding/2018-01-18-coding-HR_short palindrome.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/research/2018-01-29-research-approximate inference.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,19 +24,19 @@
       <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="630">
+              <caret line="113" column="57" lean-forward="false" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-26-research-autoencoder.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
+      <file leaf-file-name="2018-01-29-research-approximate inference.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-29-research-approximate inference.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="453">
-                <caret line="221" column="51" lean-forward="false" selection-start-line="221" selection-start-column="51" selection-end-line="221" selection-end-column="51" />
+              <first_editor relative-caret-position="591">
+                <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -42,12 +46,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-03-research-cnn.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md">
+      <file leaf-file-name="2018-01-18-coding-HR_short palindrome.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-18-coding-HR_short palindrome.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="572">
-                <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+              <first_editor relative-caret-position="380">
+                <caret line="26" column="78" lean-forward="false" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -61,8 +65,38 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="456">
-                <caret line="42" column="58" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="58" />
+              <first_editor relative-caret-position="78">
+                <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="113" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-01-15-research-probability.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="503">
+                <caret line="332" column="42" lean-forward="false" selection-start-line="332" selection-start-column="42" selection-end-line="332" selection-end-column="42" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-01-26-research-autoencoder.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="479">
+                <caret line="221" column="141" lean-forward="false" selection-start-line="221" selection-start-column="141" selection-end-line="221" selection-end-column="141" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -83,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>/* type-size for headline in markdown */</find>
       <find>/* font-size for body of posts */</find>
       <find>math</find>
       <find>mathjax</find>
@@ -113,6 +146,7 @@
       <find>it is contro</find>
       <find>implementa</find>
       <find>%</find>
+      <find>bayes</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io</dir>
@@ -125,9 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/research/2017-10-19-research-activation functions.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2017-10-17-research-multi-speaker Tacotron in TensorFlow.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2017-10-16-research-lrcn.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-09-23-research-convex optimization.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-09-22-research-status of dropout usage.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-10-23-coding-L2_CyclicRotation.md" />
@@ -159,7 +190,6 @@
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-11-coding-HR_recursive digit sum.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_finding running median.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_binary search tree.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-21-research-GAN.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-16-coding-HR_lilys homework.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-16-coding-DS_graph.md" />
@@ -172,10 +202,14 @@
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_game of two stacks.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_yet another minimax problem.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md" />
-        <option value="$PROJECT_DIR$/_data/navigation.yml" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-29-research-Approximate Inference.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-29-research-approximate inference.md" />
+        <option value="$PROJECT_DIR$/_data/navigation.yml" />
+        <option value="$PROJECT_DIR$/_posts/coding/2018-01-18-coding-HR_short palindrome.md" />
       </list>
     </option>
   </component>
@@ -267,8 +301,8 @@
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\yolo9000" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\research" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\research" />
       <recent name="C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io\_posts\research" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts" />
     </key>
@@ -315,12 +349,12 @@
       <workItem from="1513830760017" duration="7265000" />
       <workItem from="1514854925053" duration="118349000" />
       <workItem from="1516015810473" duration="2043000" />
-      <workItem from="1516324001583" duration="117714000" />
+      <workItem from="1516324001583" duration="129957000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="430954000" />
+    <option name="totallyTimeSpent" value="443197000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -375,14 +409,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_layouts/archive.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-10-25-research-multi-neural machine translation.md" />
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-16-research-lrcn.md" />
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-09-22-research-status of dropout usage.md" />
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-17-research-multi-speaker Tacotron in TensorFlow.md" />
@@ -888,27 +914,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="274">
-            <caret line="171" column="71" lean-forward="false" selection-start-line="171" selection-start-column="71" selection-end-line="171" selection-end-column="71" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="58" column="24" lean-forward="false" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -922,11 +927,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="456">
-            <caret line="42" column="58" lean-forward="false" selection-start-line="42" selection-start-column="57" selection-end-line="42" selection-end-column="58" />
+          <first_editor relative-caret-position="479">
+            <caret line="221" column="141" lean-forward="false" selection-start-line="221" selection-start-column="141" selection-end-line="221" selection-end-column="141" />
             <folding />
           </first_editor>
           <second_editor>
@@ -935,11 +940,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="453">
-            <caret line="221" column="51" lean-forward="false" selection-start-line="221" selection-start-column="51" selection-end-line="221" selection-end-column="51" />
+          <first_editor relative-caret-position="503">
+            <caret line="332" column="42" lean-forward="false" selection-start-line="332" selection-start-column="42" selection-end-line="332" selection-end-column="42" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="78">
+            <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="113" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-29-research-approximate inference.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="591">
+            <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="113" column="57" lean-forward="false" selection-start-line="113" selection-start-column="57" selection-end-line="113" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-18-coding-HR_short palindrome.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="380">
+            <caret line="26" column="78" lean-forward="false" selection-start-line="26" selection-start-column="78" selection-end-line="26" selection-end-column="78" />
             <folding />
           </first_editor>
           <second_editor>

@@ -49,6 +49,7 @@ This post will be about artificial intelligence related terms including linear a
   - Youtube: Deterministic vs Probabilistic Model [[Link](https://www.youtube.com/watch?v=XLPgHer5Cp8)]
 
 # G
+
 ## Generative Model
 - **Generative model** compute of *posterior probability* $$p(y \mid x)$$ using **bayes rule** to infer distribution over class given input
   - Model the density of inputs $$x$$ from each class $$p(x \mid y)$$
@@ -70,7 +71,21 @@ $${: .text-center}
   - Wikipedia: Generative Model [[Link](https://en.wikipedia.org/wiki/Generative_model)]
   - Youtube: Generative vs. discriminative learning [[Link](https://www.youtube.com/watch?v=XtYMRq7f7KA)]
 
+## Graphical Model
+
 # L
+## Latent Variable
+- **Latent variables** are variables that are not directly observed but are rather inferred from other variables that are observed (directly measured).
+
+- **Reference**
+  - Wikipedia: Latent variable [[Link](https://en.wikipedia.org/wiki/Latent_variable)]
+## Latent Variable Model
+- **Latent variable model** is a statistical model that relates a set of observable variables to a set of latent variables.
+  - It aims to explain observed variables in terms of latent variables.
+
+- **Reference**
+  - Wikipedia: Latent variable model [[Link](https://en.wikipedia.org/wiki/Latent_variable_model)]
+  
 ## Local Minimum Problem
 - **Local minimum problem** happens when the backpropagation network converge into a *local minima* instead of the desired **global minimum** since the error value is very complex function with many parameter values of weights.
   - The backpropagation algorithm employs gradient descent by following the slope of error value downward along with the change in all the weight values.
