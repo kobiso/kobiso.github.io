@@ -60,6 +60,8 @@ dl:
     children:
       - title: "AI Terms"
         url: /research/research-ai-terms/
+      - title: "Vision Technique"
+        url: /research/research-vision-technique/
       - title: "Dropout Usage"
         url: /research/research-status-of-dropout-usage/
       - title: "XAI References"
