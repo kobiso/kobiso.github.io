@@ -4,6 +4,11 @@ categories:
   - Research
 tags:
   - RNN
+  - vanishing gradient
+  - exploding gradient
+  - CEC
+  - LSTM
+  - GRU
 header:
   teaser: /assets/images/rnn/lstm2.png
   overlay_image: /assets/images/rnn/lstm2.png
@@ -63,12 +68,39 @@ $${: .text-center}
     
 ## Vanishing and Exploding Gradients
 Because the layers and time steps of deep neural networks relate to each other through multiplication, derivatives are susceptible to vanishing or exploding.
+Let's define $$h_t$$ of RNN as,
+
+$$
+h_{t}=tanh(W_{hh}h_{t-1} + W_{xh}X_{t} + b_{h})
+$${: .text-center}
+
+When we compute derivative of $$h_T$$ with respect to $$h_t$$ $$(T>t)$$, it can be defined by using *chain rule*,
+
+$$
+\frac{\partial h_{T}}{\partial h_{t}} = 
+\frac{\partial h_{T}}{\partial h_{T-1}} * 
+\frac{\partial h_{T-1}}{\partial h_{T-2}} *
+... * 
+\frac{\partial h_{t+1}}{\partial h_{t}}, \\
+
+\frac{\partial h_{T}}{\partial h_{T-1}}=W_{hh}*tanh'(W_{hh}h_{T-1} + W_{xh}X_{T} + b_{h}) \\
+\frac{\partial h_{T-1}}{\partial h_{T-2}}=W_{hh}*tanh'(W_{hh}h_{T-2} + W_{xh}X_{T-1} + b_{h}) \\
+... \\
+\frac{\partial h_{t+1}}{\partial h_{t}}=W_{hh}*tanh'(W_{hh}h_{t} + W_{xh}X_{t+1} + b_{h})
+$${: .text-center}
+
+So, it can be,
+
+$$
+\frac{\partial h_{T}}{\partial h_{t}}=W_{hh}^{T-t}*\prod_{i=t}^{T-1}{tanh'(W_{hh}h_{i} + W_{xh}X_{i+1} + b_{h})}
+$${: .text-center}
 
 - **Exploding gradient**
-  - The gradients become very large due to a single or multiple gradient values becoming very high.
+  - The gradients will be exploded if the gradient formula is deep (large $$T-t$$) and a single or multiple gradient values becoming very high (if $$W_{hh} > 1$$).
   - This is less concerning than vanishing gradient problem because it can be easily solved by clipping the gradients at a predefined threshold value.
 
 - **Vanishing gradient problem**
+  - The gradients will be vanished if the gradient formula is deep (large $$T-t$$) and a single or multiple gradient values becoming very low (if -1 < $$W_{hh} < 1$$).
   - Calculating the error after several time step with respect to the first one, there will be a long dependency.
   - If any one of the gradients approached 0, all the gradient would rush to zero exponentially fast due to the multiplication of chain rule.
   - This state would no longer help the network to learn anything which is known as **vanishing gradient problem**.
@@ -76,15 +108,32 @@ Because the layers and time steps of deep neural networks relate to each other t
 
 ![Sigmoid vanishing problem]({{ site.url }}{{ site.baseurl }}/assets/images/rnn/sigmoid vanishing.png){: .align-center}
 
+- **Tanh** is better than **Sigmoid**
+  - Since the RNN is sensitive by vanishing gradient problem, it is better to use activation function which can last gradient longer.
+  - In the **Sigmoid** figure below, it will be vulnerable because the maximum of $$dSigmoid(x)/dx$$ is about 0.25. 
+![Sigmoid]({{ site.url }}{{ site.baseurl }}/assets/images/rnn/sigmoid.png){: .align-center}
+  - In the **Tanh** figure below, it will be better than Sigmoid because the maximum of $$dtanh(x)/dx$$ is about 1.
+![Tanh]({{ site.url }}{{ site.baseurl }}/assets/images/rnn/tanh.png){: .align-center}
+
 # Long Short-Term Memory Unit (LSTM)
 
 ## What is LSTM?
 - LSTM help preserve the error that can be backpropagated through time and layers.
-- Information can be stored in, written to, or read from a cell.
-- The cell makes decisions about what to store, and when to allow reads, writes and erasures, via gates that open and close.
-- This is done by opening or shutting each gate and recombine their open and shut states at each steps.
-- These gates are analog with the range 0-1 and have the advantage over digital of being differentiable, and therefore suitable for backpropagation.
-- The figure below shows how data flows through a memory cell and is controlled by its gates
+  - Gradient vanishing happened because error $$\delta$$ is multiplied by scaling factors $$\delta_i = \sigma '(y_i)W_{ji}\delta_j$$ (connection from unit i to j)
+  - LSTM overcomes this problem by having **Constant Error Carrousel (CEC)**.
+  - CEC enables error propagation of arbitrary time steps by setting $$W_{ii}=1$$ and $$\sigma(x)=x$$.
+![CEC]({{ site.url }}{{ site.baseurl }}/assets/images/rnn/cec.png){: .align-center}  
+  - CEC with *input gate* and *output gate* is LSTM unit.
+  - Gates are for controlling error flow depending on the context.
+  - Forget gates is LSTM variants which explicitly reset the value in CEC.
+
+- LSTM architecture
+  - Information can be stored in, written to, or read from a cell.
+  - The cell makes decisions about what to store, and when to allow reads, writes and erasures, via gates that open and close.
+  - This is done by opening or shutting each gate and recombine their open and shut states at each steps.
+  - These gates are analog with the range 0-1 and have the advantage over digital of being differentiable, and therefore suitable for backpropagation.
+  - The figure below shows how data flows through a memory cell and is controlled by its gates
+
 ![LSTM1]({{ site.url }}{{ site.baseurl }}/assets/images/rnn/lstm.png){: .align-center}
 
 ## Comparison between RNN and LSTM

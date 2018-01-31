@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/cnn/conv1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/cnn/conv2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/cnn/conv3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/cnn/conv4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/cnn/fft.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -48,12 +41,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-22-research-ai terms.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-01-22-research-ai terms.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="266">
-                <caret line="131" column="3" lean-forward="false" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
+              <first_editor relative-caret-position="323">
+                <caret line="134" column="96" lean-forward="false" selection-start-line="134" selection-start-column="96" selection-end-line="134" selection-end-column="96" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-01-04-research-rnn.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="513">
+                <caret line="102" column="165" lean-forward="false" selection-start-line="102" selection-start-column="165" selection-end-line="102" selection-end-column="165" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -152,7 +160,6 @@
         <option value="$PROJECT_DIR$/_posts/research/2018-01-02-research-yolo.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-yolo9000.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-12-21-coding-P_L5_change124.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-12-27-coding-P_L5_setAlign.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-10-coding-DS_arrays&amp;strings.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-08-research-probability.md" />
@@ -182,6 +189,7 @@
         <option value="$PROJECT_DIR$/_posts/research/2018-01-30-research-vision technique.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
       </list>
     </option>
   </component>
@@ -239,6 +247,19 @@
               <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="rnn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,12 +331,12 @@
       <workItem from="1514854925053" duration="118349000" />
       <workItem from="1516015810473" duration="2043000" />
       <workItem from="1516324001583" duration="139756000" />
-      <workItem from="1517228380748" duration="18809000" />
+      <workItem from="1517228380748" duration="23369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="471805000" />
+    <option name="totallyTimeSpent" value="476365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -541,19 +562,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="1650">
             <caret line="130" column="22" lean-forward="false" selection-start-line="130" selection-start-column="22" selection-end-line="130" selection-end-column="22" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1444">
-            <caret line="76" column="119" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="119" />
             <folding />
           </first_editor>
           <second_editor>
@@ -951,8 +959,21 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="266">
-            <caret line="131" column="3" lean-forward="false" selection-start-line="131" selection-start-column="3" selection-end-line="131" selection-end-column="3" />
+          <first_editor relative-caret-position="323">
+            <caret line="134" column="96" lean-forward="false" selection-start-line="134" selection-start-column="96" selection-end-line="134" selection-end-column="96" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="513">
+            <caret line="102" column="165" lean-forward="false" selection-start-line="102" selection-start-column="165" selection-end-line="102" selection-end-column="165" />
             <folding />
           </first_editor>
           <second_editor>
