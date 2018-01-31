@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-20-research-regularization.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="696">
+              <first_editor relative-caret-position="912">
                 <caret line="48" column="80" lean-forward="false" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
                 <folding />
               </first_editor>
@@ -78,7 +76,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="234">
+              <first_editor relative-caret-position="912">
                 <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
                 <folding />
               </first_editor>
@@ -89,7 +87,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-15-research-probability.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-01-15-research-probability.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
@@ -104,11 +102,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="2018-01-26-research-autoencoder.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="778">
+                <caret line="159" column="60" lean-forward="false" selection-start-line="159" selection-start-column="60" selection-end-line="159" selection-end-column="60" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="2018-01-03-research-cnn.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="234">
+              <first_editor relative-caret-position="3135">
                 <caret line="165" column="25" lean-forward="false" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
                 <folding />
               </first_editor>
@@ -130,7 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ht</find>
       <find>width</find>
       <find>layout</find>
       <find>teaser</find>
@@ -160,6 +172,7 @@
       <find>convolutional layer</find>
       <find>their activation</find>
       <find>to change</find>
+      <find>overfitting</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io</dir>
@@ -212,7 +225,6 @@
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_game of two stacks.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_yet another minimax problem.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-29-research-Approximate Inference.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-18-coding-HR_short palindrome.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-29-research-approximate inference.md" />
@@ -223,6 +235,7 @@
         <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
       </list>
     </option>
   </component>
@@ -234,11 +247,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="41" />
-    <option name="y" value="14" />
-    <option name="width" value="350" />
-    <option name="height" value="250" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="20" />
+    <option name="y" value="7" />
+    <option name="width" value="175" />
+    <option name="height" value="125" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -365,23 +378,24 @@
       <workItem from="1516015810473" duration="2043000" />
       <workItem from="1516324001583" duration="139756000" />
       <workItem from="1517228380748" duration="27802000" />
-      <workItem from="1517380787056" duration="3804000" />
+      <workItem from="1517380787056" duration="3808000" />
+      <workItem from="1517394910945" duration="1363000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="484602000" />
+    <option name="totallyTimeSpent" value="485969000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1936" height="1056" extended-state="7" />
+    <frame x="-4" y="-4" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17864583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2430998" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2611465" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2611465" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -902,19 +916,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="218">
-            <caret line="22" column="2" lean-forward="false" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="2" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="589">
@@ -952,7 +953,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-20-research-regularization.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="696">
+          <first_editor relative-caret-position="912">
             <caret line="48" column="80" lean-forward="false" selection-start-line="48" selection-start-column="80" selection-end-line="48" selection-end-column="80" />
             <folding />
           </first_editor>
@@ -965,7 +966,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
+          <first_editor relative-caret-position="3135">
             <caret line="165" column="25" lean-forward="false" selection-start-line="165" selection-start-column="25" selection-end-line="165" selection-end-column="25" />
             <folding />
           </first_editor>
@@ -978,7 +979,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
+          <first_editor relative-caret-position="912">
             <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
             <folding />
           </first_editor>
@@ -993,6 +994,19 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="234">
             <caret line="66" column="43" lean-forward="false" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="778">
+            <caret line="159" column="60" lean-forward="false" selection-start-line="159" selection-start-column="60" selection-end-line="159" selection-end-column="60" />
             <folding />
           </first_editor>
           <second_editor>

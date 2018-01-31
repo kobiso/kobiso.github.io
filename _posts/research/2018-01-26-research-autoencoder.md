@@ -82,7 +82,7 @@ The first paper suggested autoencoder [(Baldi, P. and Hornik, K. 1989)](http://c
 - The M hidden units will span the same space as the first M components found by PCA.
   - Their weight vectors may not be orthogonal.
   - They will tend to have equal variances.
-- with non-linear layers before and after the code, it should be possible to efficiently represent data that lies on or near a non-linear manifold.
+- With non-linear layers before and after the code, it should be possible to efficiently represent data that lies on or near a non-linear manifold.
   - The encoder converts coordinates in the input space to coordinates on the manifold.
   - The decoder does the inverse mapping  
   
@@ -130,7 +130,7 @@ $$
 P(x, h^1, \ldots, h^\ell) = \bigg( \prod_{k=1}^{\ell-2} P(h^k|h^{k-1}) \bigg) P(h^{\ell-1},h^{\ell})
 $${: .text-center}
 
-- Pre-training with DBN and fine-tuning with backpropagation reduced overfitting problem and improved performance on MNIST dataset classification.
+- Pre-training with DBN and fine-tuning with backpropagation improved performance on MNIST dataset classification.
   - Unsupervised pre-training with DBN also showed better performance than before.
   - However, these days, when there is enough big data set, random initialization gives better performance than pre-training with DBN.
   
