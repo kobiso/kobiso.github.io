@@ -64,6 +64,8 @@ dl:
         url: /research/research-ai-terms/
       - title: "Vision Technique"
         url: /research/research-vision-technique/
+      - title: "Deep Learning Tools (writing...)"
+        url: /research/research-deep-learning-tools/
       - title: "Dropout Usage"
         url: /research/research-status-of-dropout-usage/
       - title: "XAI References"
