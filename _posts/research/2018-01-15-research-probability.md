@@ -64,7 +64,7 @@ $$
 \forall x \in {\tt x}, P({\tt x}= x ) = \sum_y P({\tt x}= x , {\tt y}= y ) 
 $${: .text-center}
 
-- For **continuous variables**, we need t ouse integration instead of summation:
+- For **continuous variables**, we need to use integration instead of summation:
 
 $$
 p(x) = \int p(x,y)dy 

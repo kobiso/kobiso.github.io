@@ -46,7 +46,7 @@ $${: .text-center}
     - Which is a standard tool for condensing very large or very small values into a logistic space, as well as making gradients workable for backpropagation.
 
 ## Backpropagation Through Time (BPTT)
-- In case of a backward propagation in RNN, it goes back in time to change to change the weights, which is called Back Propagation Through Time (BPTT).
+- In case of a backward propagation in RNN, it goes back in time to change the weights, which is called Back Propagation Through Time (BPTT).
 - The error is calculated as a **cross entropy loss**:
   - $$y_t$$: the predicted value, $$\bar{y}_t$$: the actual value
   

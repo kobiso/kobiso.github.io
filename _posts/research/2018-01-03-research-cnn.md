@@ -27,7 +27,7 @@ The red input layer in CNN holds the image, so its width and height would be the
 {: .full}
 
 - **Regular neural network do not scale well to full images**
-  - Fully-connected structure does not scale to larger image. (e.g. $$200 \times 200 \times 3$$ would lead lead to neurons that have 120,000 weights).
+  - Fully-connected structure does not scale to larger image. (e.g. $$200 \times 200 \times 3$$ would lead to neurons that have 120,000 weights).
   
 - **3D volumes of neurons**
   - CNN have neurons arranged in 3 dimensions: width, height, depth (depth: third dimension of an activation volume).
@@ -91,10 +91,10 @@ FFT convolution uses the **overlap-add method** shown in below figure.
 Convolutional neural network usually use three main types of layers: **Convolutional Layer, Pooling Layer, Fully-Connected Layer**.
 
 - Example architecture for overview: a simple CNN for CIFAR-10 classification could have the architecture [INPUT - CONV - RELU - POOL - FC]
-  - **INPUT** [32x32x3] will holdl the raw pixel values of the image, in this case an image of width 32, height 32, and with three color channels R,G,B.
+  - **INPUT** [32x32x3] will hold the raw pixel values of the image, in this case an image of width 32, height 32, and with three color channels R,G,B.
   - **CONV** layer will compute the output of neurons that are connected to local regions in the input, each computing a dot product between their weights and a small region they are connected to the input volume.
   This may result in volume such as [32x32x12] if we decided to use 12 filters.
-  - **RELU** layer will apply an elementwise activation function, such as the $$max(0,x)$$ thresholding at zero. This leaves the size of the volume unchanged [32x32x12].
+  - **RELU** layer will apply an element-wise activation function, such as the $$max(0,x)$$ thresholding at zero. This leaves the size of the volume unchanged [32x32x12].
   - **POOL** layer will perform a downsampling operation along the spatial dimensions (width, height), resulting in volume such as [16x16x12].
   - **FC** layer will compute the class scores, resulting in volume of size [1x1x10], where each of the 10 numbers correspond to a class score as of CIFAR-10.
   
@@ -163,7 +163,7 @@ Convolutional neural network usually use three main types of layers: **Convoluti
   
 ## Fully-Connected Layer
 - Neurons in a fully connected layer have full connections to all activations in the previous layer.
-- Their activations can bence be computed with a matrix multiplication followed by a bias offset.
+- Their activations can hence be computed with a matrix multiplication followed by a bias offset.
 - This layer work as a classification purpose.
  
 # Several CNN Models  
