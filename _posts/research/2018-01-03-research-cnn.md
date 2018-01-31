@@ -4,6 +4,8 @@ categories:
   - Research
 tags:
   - CNN
+  - convolution
+  - FFT
 header:
   teaser: /assets/images/cnn/activations.jpg
   overlay_image: /assets/images/cnn/activations.jpg
@@ -32,6 +34,59 @@ The red input layer in CNN holds the image, so its width and height would be the
   - The neurons in a layer will only be connected to a small region of the layer, instead of all of the neurons in a fully-connected manner.
   - CNN will reduce the full image into a single vector of class scores, arranged along the depth dimension.
   
+# Convolution
+## Naive Convolution
+- **Time Complexity**
+  - When the image size $$N \times N$$ and filter size $$a \times b$$
+  - Time complexity of 1D convolution will be $$O(N^2)$$.
+  - Time complexity of 2D convolution will be $$O(abN^2) \approx O(N^4)$$.
+  - Time complexity of 3D convolution will be $$O(N^6)$$.
+
+## Convolution by Matrix Computation
+By using **matrix computation**, the convolution computation can be done faster than the naive way.
+It can be done by using a doubly block circulant matrix which is a special case of [Toeplitz matrix](https://en.wikipedia.org/wiki/Toeplitz_matrix).
+
+When you have 2d input $$x$$ with size $$n \times n$$ and 2d kernel $$k$$ with size $$m \times m$$, and you want to calculate the convolution $$x*k$$,
+you can unroll $$k$$ into a sparse matrix of size $$(n-m+1)^2 \times n^2$$ and unroll $$x$$ into a long vector $$x^2 \times 1$$.
+You compute a multiplication of the sparse matrix with a vector and convert the resulting vector with size $$(n-m+1)^2 \times 1$$ into a $$n-m+1$$ square matrix.
+
+For example, 
+
+![Conv1]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/conv1.png){: .align-center}{:height="35%" width="35%"}
+
+The constructed matrix with a vector will be,
+
+![Conv2]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/conv2.png){: .align-center}{:height="60%" width="60%"}
+
+which will be equal to,
+
+![Conv3]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/conv3.png){: .align-center}{:height="45%" width="45%"}
+
+The result is equal to convolution by doing a sliding window of $$k$$ over $$x$$.
+
+The other way around is possible as well, for example,
+
+![Conv4]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/conv4.png){: .align-center}
+{: .full}
+
+- **Time Complexity**
+  - When the image size $$N \times N$$ and filter size $$a \times b$$, Time complexity of 2D convolution will be $$O(N^3)$$.
+
+## Convolution by Fast Fourier Transform (FFT)
+By using **Fast Fourier Transform (FFT)**, the convolution computation can be done faster.
+FFT convolution uses the principle that multiplication in the frequency domain corresponds to convolution in the time domain.
+The input signal is transformed into the frequency domain using the DFT, multiplied by the frequency response of the filter, and then transformed back into the time domain using the Inverse DFT.
+FFT convolution uses the **overlap-add method** shown in below figure. 
+
+![FFT]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/fft.png){: .align-center}
+{: .full}
+
+- **Time Complexity**
+  - When the image size $$N \times N$$ and filter size $$a \times b$$
+  - Time complexity of 1D convolution will be $$O(N \log N)$$.
+  - Time complexity of 2D convolution will be $$O(N^2 \log_2 N)$$.
+  - Time complexity of 3D convolution will be $$O(N^3 \log_3 N)$$.
+
 # CNN Layers
 Convolutional neural network usually use three main types of layers: **Convolutional Layer, Pooling Layer, Fully-Connected Layer**.
 
@@ -137,3 +192,5 @@ Convolutional neural network usually use three main types of layers: **Convoluti
 - Standfard CS231n lecture note [[Link](http://cs231n.github.io/convolutional-networks/#pool)]
 - Deep Learning book [[Link](http://www.deeplearningbook.org/)]
 - Wikipedia: kernel (image processing) [[Link](https://en.wikipedia.org/wiki/Kernel_(image_processing))]
+- PPT: Convolution as matrix multiplication [[Link](https://www.slideshare.net/EdwinEfranJimnezLepe/convolution-as-matrix-multiplication)]
+- Book: The Scientist and Engineer's Guide to Digital Signal Processing [[Link](http://www.dspguide.com/)]
