@@ -126,6 +126,8 @@ coding:
         url: /coding challenge/coding-L4_MissingInteger/
       - title: "Lesson5. PassingCars"
         url: /coding challenge/coding-L5_PassingCars/
+      - title: "Lesson6. MaxProductOfThree"
+        url: /coding challenge/coding-L6_MaxProductOfThree/
 
 cs:
   - title: Data Structure
