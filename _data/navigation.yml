@@ -8,8 +8,14 @@ main:
   #   url: /year-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-   - title: "Categories"
-     url: /categories/
+   - title: "Deep Learning"
+     url: /research/research-probability/
+   - title: "D.S & Algorithm"
+     url: /data structure/coding-DS_hash-table/
+   - title: "Coding Challenge"
+     url: /coding challenge/coding-HR_array-manipulation/
+   #- title: "Categories"
+   #  url: /categories/
    - title: "Tags"
      url: /tags/
    - title: "Archives"
@@ -24,8 +30,8 @@ dl:
         url: /research/research-approximate-inference/
       - title: "Convex Optimization Problem"
         url: /research/research-convex-optimization/
-      - title: "Gradient Descent Algorithm (soon...)"
-        url: /research/research-gradient-descent-algorithm/
+      - title: "Optimization (writing...)"
+        url: /research/research-optimization/
       - title: "Activation Function"
         url: /research/research-activation-functions/
       - title: "Regularization (writing...)"
@@ -44,7 +50,7 @@ dl:
         url: /research/research-GAN/
       - title: "Capsule Network"
         url: /research/research-capsule-network/
-      - title: "YOLO 9000 (writing...)"
+      - title: "YOLO 9000 (soon...)"
         url: /research/research-yolo9000/
       - title: "You Only Look Once (YOLO)"
         url: /research/research-yolo/

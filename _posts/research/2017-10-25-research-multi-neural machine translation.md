@@ -100,7 +100,7 @@ $${: .text-center}
 
 $$
 c_i = \sum_{j=1}^{T_x}\alpha_{ij}h{j} \\
-\alpha_{ij}=\frac{exp(e_{ij})}{\sum_{k=1}^{T_x}exp_(e_{ik})}
+\alpha_{ij}=\frac{\exp (e_{ij})}{\sum_{k=1}^{T_x}\exp (e_{ik})}
 $${: .text-center}
 
 - **Alignment model $$(a)$$** parameterizes it as a feedforward neural network which is jointly trained with all the other components of the system.
