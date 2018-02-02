@@ -168,3 +168,11 @@ $${: .text-cetner}
 
 - **Reference**
   - Wikipedia: Saddle point [[Link](https://en.wikipedia.org/wiki/Saddle_point)]
+  
+## Sparse Data
+- **Sparse data** is data that is easily compressed.
+  - Depending on the type of data that you're working with, it usually involves empty slots where data would go.
+  - Matrices, for instance, that are have lots of zeroes can be compressed and take up significantly less space in memory.
+
+- **Reference**
+  - Web: Data Modeling - What means "Data is dense/sparse" ? [[Link](https://gerardnico.com/wiki/data/modeling/dense_sparse)]

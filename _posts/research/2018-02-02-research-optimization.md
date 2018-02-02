@@ -65,7 +65,7 @@ $${: .text-center}
   - Gradient descent uses the gradient of error function $$F$$ respect to the parameters.
   - It updates the parameters in the opposite direction of the gradient of the loss function.
   
-![Gradient Descent]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/gradient descent.png)
+![Gradient Descent]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/gradient descent.png){:height="90%" width="90%"}
 
 - **Learning Rate**
   - Learning rate is an amount of decreasing function of each time.
@@ -77,7 +77,7 @@ $${: .text-center}
   - But it will perform only one update, hence it can be very slow and hard to control for datasets which are very large and don't fit in the memory.
   - Also, it computes redundant updates for large data sets.
 
-![Learning Rate]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/learning rate.png){:height="90%" width="90%"}
+![Learning Rate]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/learning rate.png)
 
 ## Stochastic Gradient Descent
 **Stochastic gradient descent (SGD)** is a stochastic approximation of the gradient descent and iterative method for minimizing an objective function.
@@ -89,7 +89,7 @@ First SGD was used with each training example (one batch), but these days, we us
   - The computational cost of below operation is $$O(m)$$ which the time to take a single gradient step becomes prohibitively long as the training set size $$m$$ grows.
   
 $$
-\triangledown_{\theta}J(\theta)=\frac{1}{m}\sum_{i=1}{m}\triangledown_{\theta}L(x^i,y^i,\theta)
+\triangledown_{\theta}J(\theta)=\frac{1}{m}\sum_{i=1}^{m}\triangledown_{\theta}L(x^i,y^i,\theta)
 $${: .text-center}
 
 - **Insight**
@@ -102,7 +102,7 @@ $${: .text-center}
 The estimate of the gradient using minibatch is formed as, 
 
 $$
-g = \frac{1}{m'}\sum_{i=1}{m'}\triangledown_{\theta}L(x^i,y^i,\theta) \\
+g = \frac{1}{m'}\sum_{i=1}^{m'}\triangledown_{\theta}L(x^i,y^i,\theta) \\
 \theta \leftarrow \theta - \epsilon g
 $${: .text-center}
 
@@ -132,9 +132,197 @@ where $$\epsilon$$ is the learning rate.
   - The saddle points are usually surrounded by a plateau of the same error, which makes it notoriously hard for SGD to escape, as the gradient is close to zero in all dimensions.
 
 # Optimizing the Gradient Descent
+There are various algorithms further optimized gradient descent algorithm
 
+## Momentum
+SGD has high variance oscillations and it makes hard to reach convergence.
+In order to handle this problem, **momentum** is introduced to accelerate SGD by navigating along the relevant direction and softens the oscillations in irrelevant directions.
+SGD with momentum remembers the update $$\triangledown w$$ at each iteration, and determines the next update as a linear combination of the gradient and the previous update.
+
+$$
+\Delta w := \alpha \Delta w - \eta \nabla Q_i(w) \\
+w := w + \Delta w \\
+$${: .text-center}
+
+that leads to:
+
+$$
+w := w - \eta \nabla Q_i(w) + \alpha \Delta w 
+$${: .text-center}
+
+where the parameter $$w$$ which minimizes $$Q(w)$$ is to be estimated, and $$\eta$$ is learning rate.
+The momentum term $$\alpha$$ increases for dimensions whose gradients point in the same directions and reduces updates for dimensions whose gradients change directions.
+
+- **Pros**
+  - Unlike standard SGD, it tends to keep traveling in the same direction, preventing oscillations.
+  - It leads faster and stable convergence.
+  
+- **Cons**
+  - When it reach the minima, the momentum is usually high and it does not knows to slow down at that point which could cause to miss the minima entirely and continue to move up.
+
+## Nesterov Accelerated Gradient
+**Nesterov Accelerated Gradient (NAG)** solve the problem of *momentum* technique which could cause to miss the minima because of high momentum at the point.
+This technique first make a big jump based on the previous momentum then calculate the gradient and then make an correction which results in an parameter update.
+This anticipatory update prevents us to go too fast and not miss the minima and makes it more responsive to changes.
+
+![Nesterov]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/nesterov.png)
+{: .full}
+
+Computing $$w - \alpha \Delta w$$ gives us an approximation of the next position of the parameters.
+We can look ahead by calculating the gradient not w.r.t. our current parameters $$w$$ but w.r.t. the approximate future position of our parameters:
+
+$$
+\Delta w := \alpha \Delta w - \eta \nabla Q_i(w - \alpha \Delta w) \\
+w := w + \Delta w \\
+$${: .text-center}
+
+that leads to:
+
+$$
+w := w - \eta \nabla Q_i(w) + \alpha \Delta w 
+$${: .text-center}
+
+## Adagrad
+**Adagrad** that maintains a per-parameter learning rate that improves performance on problems with sparse gradients. 
+It increases the learning rate for more sparse parameters and decreases the learning rate for less sparse ones.
+This strategy often improves convergence performance over standard SGD in settings where data is sparse and sparse parameters are more informative.
+Examples of such applications include natural language processing and image recognition.
+It has a base learning rate $$\eta$$, but this is multiplied with the elements of a vector $$G_{j,j}$$ which is the diagonal of the outer product matrix.
+
+$$
+G = \sum_{\tau=1}^t g_\tau g_\tau^\mathsf{T}
+$${: .text-center}
+
+where $$g_\tau = \nabla Q_i(w)$$, the gradient, at iteration $$\tau$$. The diagonal is given by
+
+$$
+G_{j,j} = \sum_{\tau=1}^t g_{\tau,j}^2
+$${: .text-center}
+
+This vector is updated after every iteration. The formula for an update is now
+
+$$
+w := w - \eta\, \mathrm{diag}(G)^{-\frac{1}{2}} \circ g
+$${: .text-center}
+
+or, written as per-parameter updates,
+
+$$
+w_j := w_j - \frac{\eta}{\sqrt{G_{j,j}}} g_j
+$${: .text-center}
+
+- **Pros**
+  - We do not need to manually tune the learning rate.
+  
+- **Cons**
+  - Its learning rate $$-\eta$$ is always decreasing and decaying.
+  - This happens due to the accumulation of each squared gradients in the denominator, since every added term is positive.
+  - This causes the learning rate to shrink and eventually become so small, that the model just stops learning entirely.
+  - As the learning rate gets smaller and smaller, it gives very slow convergence.
+
+## AdaDelta
+**AdaDelta** is an extension of *Adagrad* which handled the *decaying learning rate* problem of *Adagrad*.
+Instead of accumulating all previous squared gradients, *adadelta* limits the window of accumulated past gradients to some fixed size $$w$$.
+
+The sum of gradients is recursively defined as a decaying average of all past squared gradients.
+The running average $$E[g^2]_t$$ at time step $$t$$ then depends only on the previous average and the current gradient
+ 
+$$
+E[g^2]_t = \gamma E[g^2]_{t-1} + (1 - \gamma) g^2_t
+$$
+
+We set $$\gamma$$ to a similar value as the momentum term, around 0.9. For clarity, we now rewrite our vanilla SGD update in terms of the parameter update vector $$\Delta \theta_t$$:
+
+$$
+\begin{align}
+\begin{split}
+\Delta \theta_t &= - \eta \cdot g_{t, i} \\
+\theta_{t+1} &= \theta_t + \Delta \theta_t \end{split}
+\end{align}
+$$
+
+The parameter update vector of Adagrad that we derived previously thus takes the form:
+
+$$
+\Delta \theta_t = - \dfrac{\eta}{\sqrt{G_{t} + \epsilon}} \odot g_{t}
+$$
+
+We now simply replace the diagonal matrix $$G_t$$ with the decaying average over past squared gradients $$E[g^2]_t$$:
+
+$$
+\Delta \theta_t = - \dfrac{\eta}{\sqrt{E[g^2]_t + \epsilon}} g_{t}
+$$
+
+As the denominator is just the root mean squared (RMS) error criterion of the gradient, we can replace it with the criterion short-hand:
+
+$$
+\Delta \theta_t = - \dfrac{\eta}{RMS[g]_{t}} g_t
+$$
+
+- **Pros**
+  - Removed the decaying learning rate problem of AdaGrad
+  - We do not need to set a default learning rate.
+  
+## RMSProp
+**Root Mean Square Propagation (RMSProp)** that also maintains per-parameter learning rates that are adapted based on the average of recent magnitudes of the gradients for the weight (e.g. how quickly it is changing).
+This means the algorithm does well on online and non-stationary problems (e.g. noisy).
+
+## Adam
+**Adaptive Moment Estimation (Adam)** is another method that computes adaptive learning rates for each parameter which is combination between AdaGrad and RMSProp.
+(simply thinking, calculating individual learning rate for each parameter and individual momentum)
+In addition to storing an exponentially decaying average of past squared gradients $$v_t$$ like *Adadelta* and *RMSprop*, Adam also keeps an exponentially decaying average of past gradients $$m_t$$, similar to momentum:
+
+$$
+\begin{align}
+\begin{split}
+m_t &= \beta_1 m_{t-1} + (1 - \beta_1) g_t \\  
+v_t &= \beta_2 v_{t-1} + (1 - \beta_2) g_t^2  
+\end{split}
+\end{align}
+$$
+
+$$m_t$$ and $$v_t$$ are estimates of the first moment (the mean) and the second moment (the uncentered variance) of the gradients respectively.
+As $$m_t$$ and $$v_t$$ are initialized as vectors of 0's, the authors of Adam observe that they are biased towards zero, especially during the initial time steps, and especially when the decay rates are small.
+
+They counteract these biases by computing bias-corrected first and second moment estimates:
+
+$$
+\begin{align}
+\begin{split}
+\hat{m}_t &= \dfrac{m_t}{1 - \beta^t_1} \\
+\hat{v}_t &= \dfrac{v_t}{1 - \beta^t_2} \end{split}
+\end{align}
+$$
+
+They then use these to update the parameters just as we have seen in Adadelta and RMSprop, which yields the Adam update rule:
+
+$$
+\theta_{t+1} = \theta_{t} - \dfrac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t
+$$
+
+The authors propose default values of 0.9 for $$\beta_1$$, 0.999 for $$\beta_2$$, and $$10^{-8}$$ for $$\epsilon$$.
+They show empirically that Adam works well in practice and compares favorably to other adaptive learning-method algorithms.
+
+## Visualization of Algorithms
+As shown in below images, the adaptive learning-rate methods, i.e. Adagrad, Adadelta, RMSprop, and Adam are most suitable and provide the best convergence for these scenarios.
+
+- In the below image, we see their behaviour on the contours of a loss surface over time.
+  - Note that Adagrad, Adadelta, and RMSprop almost immediately head off in the right direction and converge similarly fast, while Momentum and NAG are led off-track,
+  - NAG, however, is quickly able to correct its course due to its increased responsiveness by looking ahead and heads to the minimum.
 ![SGD optimization on loss surface contours]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/sgd loss surface.gif)
+
+- In the below image, it shows the behaviour of the algorithms at a saddle point.
+  - Notice here that SGD, Momentum, and NAG find it difficulty to break symmetry.
+  - Although the two latter eventually manage to escape the saddle point, while Adagrad, RMSprop, and Adadelta quickly head down the negative slope.
+
 ![SGD optimization on saddle point]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/sgd saddle point.gif)
+
+## Which Optimizer to Use?
+- If the input data is sparse, then using one of the adaptive learning rate methods will give the best results.
+  - One benefit of using them is that you would not need to tune the learning rate.
+  
+- If you want fast convergence and train a deep or complex network, choose one of the adaptive learning rate methods.
+  - Adam works well in practice and outperforms other adaptive techniques.
 
 # References
 - Book: Deep Learning book [[Link](http://www.deeplearningbook.org/)]
@@ -142,3 +330,5 @@ where $$\epsilon$$ is the learning rate.
 - Wikipedia: Gradient [[Link](https://en.wikipedia.org/wiki/Gradient)]
 - Wikipedia: Gradient Descent [[Link](https://en.wikipedia.org/wiki/Gradient_descent)]
 - Wikipedia: Stochastic gradient descent [[Link](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)]
+- Web: CS231n Convolutional Neural Networks for Visual Recognition [[Link](http://cs231n.github.io/neural-networks-3/)]
+- Blog: An overview of gradient descent optimization algorithms[[Link](http://ruder.io/optimizing-gradient-descent/index.html#adadelta)]
