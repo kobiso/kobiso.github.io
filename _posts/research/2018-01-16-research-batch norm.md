@@ -27,7 +27,7 @@ It was published and presented in International Conference on Machine Learning (
   - This slows down the training by requiring lower learning rates and careful parameter initialization. 
   
 - **Research Objective**
-  - To address the internal covariate shift problem anc accelerate the training of deep neural nets.
+  - To address the internal covariate shift problem and accelerate the training of deep neural nets.
 
 - **Solution Proposed: Batch Normalization**
   - Batch normalization takes a step towards reducing internal covariate shift, and in doing so dramatically accelerates the training of deep neural nets.
@@ -53,7 +53,7 @@ It was published and presented in International Conference on Machine Learning (
 
 # Reducing Internal Covariate Shift with Whitening
 - **Whitening**: One naive approach to reduce internal covariate shift by normalizing the input distribution into normal distribution with zero mean and unit variance (LeCun 1998, Wiesler & Ney 2011).
-  - With a given column data $$X\in R^{d\times n}$$, wrhitening transform is,
+  - With a given column data $$X\in R^{d\times n}$$, whitening transform is,
 
 $$
 \hat{X} = Cov(X)^{-1/2} X \\
