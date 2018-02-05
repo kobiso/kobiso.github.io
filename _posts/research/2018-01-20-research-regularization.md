@@ -49,7 +49,7 @@ So, it is important how $$\lambda$$ is chosen as well.
 Simply thinking that we add $$\frac{1}{2}\lambda W^2$$ on the loss function and after computing gradient descent, $$W$$ will be updated by,
 
 $$
-W \leftarrow \eta(\frac{\partial L}{\partial W} + \lambda W)
+W \leftarrow W - \eta(\frac{\partial L}{\partial W} + \lambda W)
 $${: .text-center} 
 
 So, $$\lambda W$$ will work as penalty according to the amount of $$W$$.  
