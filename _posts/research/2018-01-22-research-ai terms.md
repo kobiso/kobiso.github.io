@@ -16,6 +16,23 @@ author_profile: false
 This post will be about artificial intelligence related terms including linear algebra, probability distribution, machine learning and deep learning
 
 {% include toc title="Table of Contents" icon="file-text" %}
+
+# C
+## Collaborative Filtering
+- **Collaborative filtering (CF)** is a technique used by recommender system and it has two sense, a narrow one and a general one.
+  1. In the narrow sense, collaborative filtering is a method of making automatic predictions (*filtering*) about the interests of a user by collecting preferences or taste information from many users (*collaborating*).
+  2. In the more general sense, collaborative filtering is the process of filtering for information or patterns using techniques involving collaboration among multiple agents, viewpoints, data sources, etc. 
+
+- CF based on users' past behavior have two categories:
+  1. **User-based**: measure the similarity between target users and other users
+  2. **Item-based**: measure the similarity between the items that target users rates/interacts with and other items
+  
+- The key idea behind CF is that similar users share the same interest and that similar items are liked by a user.
+
+- **Reference**
+  - Wikipedia: Collaborative Filtering [[Link](https://en.wikipedia.org/wiki/Collaborative_filtering)]
+  - Blog: Introduction to Recommender System [[Link](https://hackernoon.com/introduction-to-recommender-system-part-1-collaborative-filtering-singular-value-decomposition-44c9659c5e75)]
+
 # D
 ## Discriminative Model
 - **Discriminative model** directly estimate class probability (*posterior probability*) $$p(y \mid x)$$ given input
