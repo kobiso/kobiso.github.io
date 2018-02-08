@@ -46,6 +46,8 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper & Project Review
     children:
+      - title: "Attention Is All You Need"
+        url: /research/research-attention-is-all-you-need/
       - title: "Generative Adversarial Nets"
         url: /research/research-GAN/
       - title: "Capsule Network"
