@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md" afterPath="$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" afterPath="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,27 +27,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-02-07-research-attention is all you need.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md">
+      <file leaf-file-name="2018-02-02-research-optimization.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="570">
-                <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-                <folding />
-              </first_editor>
-              <second_editor>
-                <js_state />
-              </second_editor>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-01-20-research-regularization.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-20-research-regularization.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="433">
-                <caret line="46" column="92" lean-forward="false" selection-start-line="46" selection-start-column="92" selection-end-line="46" selection-end-column="119" />
+              <first_editor relative-caret-position="495">
+                <caret line="358" column="74" lean-forward="true" selection-start-line="358" selection-start-column="74" selection-end-line="358" selection-end-column="74" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -169,12 +155,12 @@
         <option value="$PROJECT_DIR$/_posts/research/2017-10-25-research-multi-neural machine translation.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-12-20-research-capsule-network.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-11-02-coding-L6_MaxProductOfThree.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-20-research-regularization.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
         <option value="$PROJECT_DIR$/_data/navigation.yml" />
         <option value="$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
       </list>
     </option>
   </component>
@@ -239,13 +225,6 @@
               <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="attention is all you need" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -323,18 +302,18 @@
       <workItem from="1516324001583" duration="139756000" />
       <workItem from="1517228380748" duration="27802000" />
       <workItem from="1517380787056" duration="3808000" />
-      <workItem from="1517394910945" duration="55013000" />
+      <workItem from="1517394910945" duration="59257000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="539619000" />
+    <option name="totallyTimeSpent" value="543863000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14791666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10208333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2430998" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -909,19 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="398">
-            <caret line="324" column="39" lean-forward="false" selection-start-line="324" selection-start-column="39" selection-end-line="324" selection-end-column="39" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -961,14 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-20-research-regularization.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -986,7 +944,28 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="570">
-            <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+            <caret line="30" column="63" lean-forward="false" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="53" column="46" lean-forward="false" selection-start-line="53" selection-start-column="46" selection-end-line="53" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="495">
+            <caret line="358" column="74" lean-forward="true" selection-start-line="358" selection-start-column="74" selection-end-line="358" selection-end-column="74" />
             <folding />
           </first_editor>
           <second_editor>

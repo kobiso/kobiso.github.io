@@ -4,6 +4,13 @@ categories:
   - Research
 tags:
   - optimization
+  - gradient descent
+  - SGD
+  - Adam
+  - NAG
+  - RMSprop
+  - Adagrad
+  - Adadelta
 header:
   teaser: /assets/images/optimization/sgd loss surface.gif
   overlay_image: /assets/images/optimization/sgd loss surface.gif
@@ -49,7 +56,9 @@ Second Order Derivative provide us with a quadratic surface which touches the cu
 
 # Optimization for Deep Learning
 ## Gradient Descent
-**Gradient Descent** is a first order iterative optimization algorithm for finding the minimum of a function.
+- **Point**: **Gradient descent** computes the gradient of the cost function w.r.t. to the parameters for the entire training data set.
+ 
+**Gradient descent** is a first order iterative optimization algorithm for finding the minimum of a function.
 To find a local minimum of a function using gradient descent, one takes steps proportional to the *negative* of the gradient of the function at the current point.
 If instead one takes steps proportional to the *positive* of the gradient, one approaches a local maximum of the function which is known as **gradient ascent**.
 
@@ -80,6 +89,8 @@ $${: .text-center}
 ![Learning Rate]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/learning rate.png)
 
 ## Stochastic Gradient Descent
+- **Point**: **Stochastic gradient descent** performs a parameter update for each training example $$x^i$$ and label $$y^i$$.
+
 **Stochastic gradient descent (SGD)** is a stochastic approximation of the gradient descent and iterative method for minimizing an objective function.
 First SGD was used with each training example (one batch), but these days, we used mini-batch for better performance which also called *mini batch gradient descent*.
 
@@ -135,7 +146,12 @@ where $$\epsilon$$ is the learning rate.
 There are various algorithms further optimized gradient descent algorithm
 
 ## Momentum
-SGD has high variance oscillations and it makes hard to reach convergence.
+- **Point**: As *SGD* has trouble navigating ravines, **Momentum** accelerate SGD to converge in ravines.
+
+![Ravine]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/ravine.png)
+{: .full}
+
+SGD has high variance oscillations and it makes hard to reach convergence, especially in ravines.
 In order to handle this problem, **momentum** is introduced to accelerate SGD by navigating along the relevant direction and softens the oscillations in irrelevant directions.
 SGD with momentum remembers the update $$\triangledown w$$ at each iteration, and determines the next update as a linear combination of the gradient and the previous update.
 
@@ -161,6 +177,8 @@ The momentum term $$\alpha$$ increases for dimensions whose gradients point in t
   - When it reach the minima, the momentum is usually high and it does not knows to slow down at that point which could cause to miss the minima entirely and continue to move up.
 
 ## Nesterov Accelerated Gradient
+- **Point**: As the *momentum* sometimes do not stop on the minima because of high momentum, **NAG** solve the problem by jumping based on the previous momentum first, and then calculate the gradient.
+
 **Nesterov Accelerated Gradient (NAG)** solve the problem of *momentum* technique which could cause to miss the minima because of high momentum at the point.
 This technique first make a big jump based on the previous momentum then calculate the gradient and then make an correction which results in an parameter update.
 This anticipatory update prevents us to go too fast and not miss the minima and makes it more responsive to changes.
@@ -183,7 +201,9 @@ w := w - \eta \nabla Q_i(w) + \alpha \Delta w
 $${: .text-center}
 
 ## Adagrad
-**Adagrad** that maintains a per-parameter learning rate that improves performance on problems with sparse gradients. 
+- **Point**: **Adagrad** adapts the learning rate to the parameters, performing larger updates for infrequent and smaller updates for frequent parameters.
+
+**Adagrad** that maintains a per-parameter learning rate that improves performance on problems with sparse gradients (data). 
 It increases the learning rate for more sparse parameters and decreases the learning rate for less sparse ones.
 This strategy often improves convergence performance over standard SGD in settings where data is sparse and sparse parameters are more informative.
 Examples of such applications include natural language processing and image recognition.
@@ -220,8 +240,10 @@ $${: .text-center}
   - This causes the learning rate to shrink and eventually become so small, that the model just stops learning entirely.
   - As the learning rate gets smaller and smaller, it gives very slow convergence.
 
-## AdaDelta
-**AdaDelta** is an extension of *Adagrad* which handled the *decaying learning rate* problem of *Adagrad*.
+## Adadelta
+- **Point**: **Adadelta** handled the *decaying learning rate* problem by restricting the window of accumulated past gradients to some fixed size.
+
+**Adadelta** is an extension of *Adagrad* which handled the *decaying learning rate* problem of *Adagrad*.
 Instead of accumulating all previous squared gradients, *adadelta* limits the window of accumulated past gradients to some fixed size $$w$$.
 
 The sum of gradients is recursively defined as a decaying average of all past squared gradients.
@@ -263,13 +285,25 @@ $$
   - Removed the decaying learning rate problem of AdaGrad
   - We do not need to set a default learning rate.
   
-## RMSProp
-**Root Mean Square Propagation (RMSProp)** that also maintains per-parameter learning rates that are adapted based on the average of recent magnitudes of the gradients for the weight (e.g. how quickly it is changing).
+## RMSprop
+- **Point**: **RMSprop** also handled the *decaying learning rate* problem of *Adagrad* that is identical to the first update vector of *Adadelta*.
+
+**Root Mean Square Propagation (RMSprop)** that also maintains per-parameter learning rates that are adapted based on the average of recent magnitudes of the gradients for the weight (e.g. how quickly it is changing).
 This means the algorithm does well on online and non-stationary problems (e.g. noisy).
 
+$$
+\begin{align}
+\begin{split}
+E[g^2]_t &= 0.9 E[g^2]_{t-1} + 0.1 g^2_t \\  
+\theta_{t+1} &= \theta_{t} - \dfrac{\eta}{\sqrt{E[g^2]_t + \epsilon}} g_{t}
+\end{split}
+\end{align}
+$$
+
 ## Adam
-**Adaptive Moment Estimation (Adam)** is another method that computes adaptive learning rates for each parameter which is combination between AdaGrad and RMSProp.
-(simply thinking, calculating individual learning rate for each parameter and individual momentum)
+- **Point**: **Adam** is an *adaptive learning rate* method and also storing an exponentially decaying average of past squared gradient like *Adadelta* and *RMSprop*.
+
+**Adaptive Moment Estimation (Adam)** is another method that computes adaptive learning rates for each parameter which is combination between Adagrad and RMSprop.
 In addition to storing an exponentially decaying average of past squared gradients $$v_t$$ like *Adadelta* and *RMSprop*, Adam also keeps an exponentially decaying average of past gradients $$m_t$$, similar to momentum:
 
 $$
@@ -303,7 +337,7 @@ $$
 The authors propose default values of 0.9 for $$\beta_1$$, 0.999 for $$\beta_2$$, and $$10^{-8}$$ for $$\epsilon$$.
 They show empirically that Adam works well in practice and compares favorably to other adaptive learning-method algorithms.
 
-## Visualization of Algorithms
+# Visualization of Algorithms
 As shown in below images, the adaptive learning-rate methods, i.e. Adagrad, Adadelta, RMSprop, and Adam are most suitable and provide the best convergence for these scenarios.
 
 - In the below image, we see their behaviour on the contours of a loss surface over time.
@@ -317,7 +351,7 @@ As shown in below images, the adaptive learning-rate methods, i.e. Adagrad, Adad
 
 ![SGD optimization on saddle point]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/sgd saddle point.gif)
 
-## Which Optimizer to Use?
+# Which Optimizer to Use?
 - If the input data is sparse, then using one of the adaptive learning rate methods will give the best results.
   - One benefit of using them is that you would not need to tune the learning rate.
   
