@@ -181,10 +181,10 @@ $$
 
 ## Machine Translation Results: WMT-14
 On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) 
-outperforms the best previously reported models (including ensembles) by more than 2:0 BLEU, establishing a new state-of-the-art BLEU score of 28:4.
+outperforms the best previously reported models (including ensembles) by more than 2.0 BLEU, establishing a new state-of-the-art BLEU score of 28.4.
 
-On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41:0, 
-outperforming all of the previously published single models, at less than 1=4 the training cost of the previous state-of-the-art model.
+On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41.0, 
+outperforming all of the previously published single models, at less than 1/4 the training cost of the previous state-of-the-art model.
 
 ![Result Graph]({{ site.url }}{{ site.baseurl }}/assets/images/attention is all you need/result graph.png){: .align-center}
 {: .full}
