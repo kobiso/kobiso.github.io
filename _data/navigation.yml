@@ -102,20 +102,6 @@ coding:
         url: /coding challenge/coding-HR_short-palindrome/
       - title: "Alg. Recursive Digit Sum"
         url: /coding challenge/coding-HR_recursive-digit-sum/
-  - title: Programmers
-    children:
-      - title: "Level2. Matrix Multiplication"
-        url: /coding challenge/coding-P_L2_productMatrix/
-      - title: "Level3. N Least Common Multiple"
-        url: /coding challenge/coding-P_L3_nlcm/
-      - title: "Level4. Find Largest Square"
-        url: /coding challenge/coding-P_L4_findLargestSquare/
-      - title: "Level4. Expressions of a Number"
-        url: /coding challenge/coding-P_L4_expressions/
-      - title: "Level5. Number Expression with 1,2,4"
-        url: /coding challenge/coding-P_L5_change124/
-      - title: "Level5. Set Align"
-        url: /coding challenge/coding-P_L5_setAlign/
   - title: Codility
     children:
       - title: "Lesson1. BinaryGap"
@@ -132,6 +118,22 @@ coding:
         url: /coding challenge/coding-L6_MaxProductOfThree/
       - title: "Lesson8. EquiLeader"
         url: /coding challenge/coding-L8_EquiLeader/
+      - title: "Lesson9. MaxProfit"
+        url: /coding challenge/coding-L9_MaxProfit/
+  - title: Programmers
+    children:
+      - title: "Level2. Matrix Multiplication"
+        url: /coding challenge/coding-P_L2_productMatrix/
+      - title: "Level3. N Least Common Multiple"
+        url: /coding challenge/coding-P_L3_nlcm/
+      - title: "Level4. Find Largest Square"
+        url: /coding challenge/coding-P_L4_findLargestSquare/
+      - title: "Level4. Expressions of a Number"
+        url: /coding challenge/coding-P_L4_expressions/
+      - title: "Level5. Number Expression with 1,2,4"
+        url: /coding challenge/coding-P_L5_change124/
+      - title: "Level5. Set Align"
+        url: /coding challenge/coding-P_L5_setAlign/
 
 cs:
   - title: Data Structure
