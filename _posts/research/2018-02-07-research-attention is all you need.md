@@ -3,7 +3,8 @@ title: "Attention Is All You Need"
 categories:
   - Research
 tags:
-  - optimization
+  - attention
+  - NMT
 header:
   teaser: /assets/images/attention is all you need/transformer.png
   overlay_image: /assets/images/attention is all you need/transformer.png
@@ -13,7 +14,7 @@ sidebar:
 author_profile: false
 ---
 
-The paper "Attention is all you need" from google propose a novel neural network architecture based on a self-attention mechanism that believe to be particularly well-suited for language understanding.
+The paper **"Attention is all you need"** from google propose a novel neural network architecture based on a self-attention mechanism that believe to be particularly well-suited for language understanding.
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
@@ -90,7 +91,7 @@ So, why not use (self-)attention for the representations?
   - Each sub-layer has residual connections, followed by layer normalization.
   - Modify the self-attention sub-layer in the decoder stack to prevent positions from attending to subsequent positions.
   
-- How Transformer works example
+- Example of how Transformer works
 ![Example]({{ site.url }}{{ site.baseurl }}/assets/images/attention is all you need/transformer.gif){: .align-center}
 
 ## Scaled Dot-Product Attention
@@ -117,9 +118,11 @@ The Transformer uses *dot-product attention* and scaling factor of $$\frac{1}{\s
 - Dot-product is quicker to calculate, it is more resistant to sparsity.
 - It is easy to respond as in research.
 - When $$d_k$$ is large, it is assumed that the gradient becomes smaller as the dot product becomes larger, so scaling by $$\sqrt{d_k}$$.
+- Below table is time complexity comparison among attention, recurrent, and convolutional
 
-![Time]({{ site.url }}{{ site.baseurl }}/assets/images/attention is all you need/time.png){: .align-center}
-- Almost every time, $$d$$ (usually 1000) is larger than $$n$$ (usually 20), so attention ($$n^2d$$) is way faster than recurrent ($$nd^2$$).
+![Time]({{ site.url }}{{ site.baseurl }}/assets/images/attention is all you need/time.png){: .align-center}{:height="80%" width="80%"}
+
+- Almost every time, $$d$$ (usually 1000) is larger than $$n$$ (usually 20), so attention ($$O(n^2d)$$) is way faster than recurrent ($$O(nd^2)$$).
 
 ## Multi-Head Attention
 - What's missing from Self-Attention?
@@ -137,6 +140,63 @@ On each of these projected versions of queries, keys and values we then perform 
 ![Multi-Head]({{ site.url }}{{ site.baseurl }}/assets/images/attention is all you need/multi-head.png){: .align-center}
 
 Multi-head attention allows the model to jointly attend to information from different representation subspaces at different positions.
+
+$$
+MultiHead(Q,K,V) = Concat(head_1, ..., head_h)W^O \\
+\text{where } head_i = Attention(QW_i^Q, KW_i^K, VW_i^V), \\
+W_i^Q\in \mathbb{R}^{d_{model}\times d_k}, W_i^K\in \mathbb{R}^{d_{model}\times d_k}, W_i^V\in \mathbb{R}^{d_{model}\times d_v}.
+$$
+
+## Point-wise Feed-Forward Networks
+- Feed-forward network which is applied to each position separately and identically.
+- Consists of two linear transformations with ReLU activation in between.
+
+$$
+FFN(x) = max(o, xW_1 + b_1)W_2 + b_2
+$$
+
+## Positional Encoding
+- Transmit location information since there is no recurrent or convolutional layer.
+- There are many choices of positional encodings, in this work, sine and cosine functions of different frequencies are used.
+
+$$
+PE_(pos,2i) = sin(pos/1000^{2i/d_{model}}) \\
+PE_(pos,2i+1) = cos(pos/1000^{2i/d_{model}})
+$$
+
+# Experiments
+- **Data and Batch Processing**
+  - WMT 2014 English - German Dataset and WMT 2014 English - French Language Data
+  - German: 4.5million sentence pairs and 37,000 tokens
+  - French: 36M sentences and split tokens into a 32,000 - sentence pairs are batched together with approximate sequence length
+  
+- **Hardware and schedule**
+  - One machine with 8 NVIDIA P100 GPUs
+  - Base model
+    - Approximately 0.4 seconds per each training step
+    - Total 100,000 step learning = 12 hours training
+  - Great model (big)
+    - Step time 1.0 seconds
+    - learning at 300,000 steps, 3.5 days
+
+## Machine Translation Results: WMT-14
+On the WMT 2014 English-to-German translation task, the big transformer model (Transformer (big) in Table 2) 
+outperforms the best previously reported models (including ensembles) by more than 2:0 BLEU, establishing a new state-of-the-art BLEU score of 28:4.
+
+On the WMT 2014 English-to-French translation task, our big model achieves a BLEU score of 41:0, 
+outperforming all of the previously published single models, at less than 1=4 the training cost of the previous state-of-the-art model.
+
+![Result Graph]({{ site.url }}{{ site.baseurl }}/assets/images/attention is all you need/result graph.png){: .align-center}
+{: .full}
+
+![Result Table]({{ site.url }}{{ site.baseurl }}/assets/images/attention is all you need/result table.png){: .align-center}
+
+## Variations on the Transformer
+To evaluate the importance of different components of the Transformer, the authors varied the base model
+in different ways, measuring the change in performance on English-to-German translation on the development set, newstest2013.
+
+![Variations]({{ site.url }}{{ site.baseurl }}/assets/images/attention is all you need/variations.png){: .align-center}
+{: .full}
 
 # References
 - Google Research Blog: Transformer: A Novel Neural Network Architecture for Language Understanding [[Link](https://research.googleblog.com/2017/08/transformer-novel-neural-network.html)]

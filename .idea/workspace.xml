@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md" afterPath="$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +30,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="590">
-                <caret line="138" column="92" lean-forward="false" selection-start-line="138" selection-start-column="92" selection-end-line="138" selection-end-column="92" />
+              <first_editor relative-caret-position="570">
+                <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -83,7 +82,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>layout</find>
       <find>teaser</find>
       <find>infty`</find>
       <find>saturate</find>
@@ -113,6 +111,7 @@
       <find>to change</find>
       <find>overfitting</find>
       <find>&amp;i</find>
+      <find>how</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io</dir>
@@ -324,12 +323,12 @@
       <workItem from="1516324001583" duration="139756000" />
       <workItem from="1517228380748" duration="27802000" />
       <workItem from="1517380787056" duration="3808000" />
-      <workItem from="1517394910945" duration="52493000" />
+      <workItem from="1517394910945" duration="55013000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="537099000" />
+    <option name="totallyTimeSpent" value="539619000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -986,8 +985,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="590">
-            <caret line="138" column="92" lean-forward="false" selection-start-line="138" selection-start-column="92" selection-end-line="138" selection-end-column="92" />
+          <first_editor relative-caret-position="570">
+            <caret line="30" column="63" lean-forward="true" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
             <folding />
           </first_editor>
           <second_editor>
