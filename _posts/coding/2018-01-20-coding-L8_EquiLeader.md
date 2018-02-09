@@ -1,5 +1,5 @@
 ---
-title: "Codility Lesson6: MaxProductOfThree"
+title: "Codility Lesson8: EquiLeader"
 categories:
   - Coding challenge
 tags:
@@ -13,31 +13,31 @@ sidebar:
 author_profile: false
 ---
 
-Sharing an answer code of mine about [MaxProductOfThree problem of Codility lesson 6](https://app.codility.com/programmers/lessons/6-sorting/max_product_of_three/start/).
+Sharing an answer code of mine about [EquiLeader problem of Codility lesson 8](https://app.codility.com/programmers/lessons/8-leader/equi_leader/start/).
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
-# Lesson 6: MaxProductOfThree
-A non-empty zero-indexed array A consisting of N integers is given. The product of triplet (P, Q, R) equates to A[P] * A[Q] * A[R] (0 ≤ P < Q < R < N).
+# Lesson 8: EquiLeader
+A non-empty zero-indexed array A consisting of N integers is given.
 
-For example, array A such that:
+The leader of this array is the value that occurs in more than half of the elements of A.
 
-$$
-  A[0] = -3\\
-  A[1] = 1\\
-  A[2] = 2\\
-  A[3] = -2\\
-  A[4] = 5\\
-  A[5] = 6\\
-$$
+An equi leader is an index S such that 0 ≤ S < N − 1 and two sequences A[0], A[1], ..., A[S] and A[S + 1], A[S + 2], ..., A[N − 1] have leaders of the same value.
 
-contains the following example triplets:
+For example, given array A such that:
 
-- (0, 1, 2), product is −3 * 1 * 2 = −6
-- (1, 2, 4), product is 1 * 2 * 5 = 10
-- (2, 4, 5), product is 2 * 5 * 6 = 60
+    A[0] = 4
+    A[1] = 3
+    A[2] = 4
+    A[3] = 4
+    A[4] = 4
+    A[5] = 2
+    
+we can find two equi leaders:
 
-Your goal is to find the maximal product of any triplet.
+0, because sequences: (4) and (3, 4, 4, 4, 2) have the same leader, whose value is 4.
+2, because sequences: (4, 3, 4) and (4, 4, 2) have the same leader, whose value is 4.
+The goal is to count the number of equi leaders.
 
 Write a function:
 
@@ -45,48 +45,63 @@ Write a function:
 def solution(A)
 ```
 
-that, given a non-empty zero-indexed array A, returns the value of the maximal product of any triplet.
+that, given a non-empty zero-indexed array A consisting of N integers, returns the number of equi leaders.
 
-For example, given array A such that:
+For example, given:
 
-$$
-  A[0] = -3\\
-  A[1] = 1\\
-  A[2] = 2\\
-  A[3] = -2\\
-  A[4] = 5\\
-  A[5] = 6\\
-$$
-
-the function should return 60, as the product of triplet (2, 4, 5) is maximal.
+    A[0] = 4
+    A[1] = 3
+    A[2] = 4
+    A[3] = 4
+    A[4] = 4
+    A[5] = 2
+    
+the function should return 2, as explained above.
 
 Assume that:
 
-- N is an integer within the range [3..100,000];
-- each element of array A is an integer within the range [−1,000..1,000].
+- N is an integer within the range [1..100,000];
+- each element of array A is an integer within the range [−1,000,000,000..1,000,000,000].
 
 Complexity:
 
-- expected worst-case time complexity is O(N*log(N));
-- expected worst-case space complexity is O(1), beyond input storage (not counting the storage required for input arguments).
+- expected worst-case time complexity is O(N);
+- expected worst-case space complexity is O(N), beyond input storage (not counting the storage required for input arguments).
 
 # Answer Code in Python 3
 
-- Time complexity: $$O(N\log N)$$
+- Time complexity: $$O(N)$$
 
 ```python
-# Time complexity: O(N*log(N))
+# Time complexity: O(n)
 # you can write to stdout for debugging purposes, e.g.
 # print("this is a debug message")
-import math
 
 def solution(A):
     # write your code in Python 3.6
-    max = -math.inf
-    A.sort()
-    for i in range(0, -4, -1):
-        if max < A[0 + i] * A[1 + i] * A[2 + i]:
-            max = A[0 + i] * A[1 + i] * A[2 + i]
-
-    return max
+    candidate = None
+    candidate_length = 0
+    for i in range(len(A)):
+        if candidate_length == 0:
+            candidate_length += 1
+            candidate = A[i]
+        else:
+            if candidate != A[i]:
+                candidate_length -= 1
+            else:
+                candidate_length += 1
+    
+    num_leader = A.count(candidate)
+    if num_leader <= len(A) // 2: return 0
+    else: leader = candidate
+    
+    equi = 0
+    leader_now = 0
+    for i in range(0, len(A)-1):
+        if leader == A[i]:
+            leader_now += 1
+        if leader_now > (i+1) // 2 and num_leader - leader_now > (len(A)-(i+1)) // 2:
+            equi += 1
+            
+    return equi        
 ```
