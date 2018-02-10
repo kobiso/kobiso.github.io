@@ -79,6 +79,10 @@ The agreement is calculated by scalar product of $$a_{ij}=v_{j} \cdot \hat{u}_{j
 ![Routing algorithm]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/routing algorithm.png){: .align-center}
 {: .full}
 
+## Capsule V.S. Neuron
+![Capsule v.s. Neuron]({{ site.url }}{{ site.baseurl }}/assets/images/capsule network/capsuleVSneuron.png){: .align-center}
+{: .full}
+
 ## Margin Loss for Digit Existence
 For each digit capsule $$k$$, loss function $$L_k$$ is a separate margin loss as, 
 
