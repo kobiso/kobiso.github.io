@@ -34,6 +34,8 @@ dl:
         url: /research/research-optimization/
       - title: "Activation Function"
         url: /research/research-activation-functions/
+      - title: "Loss Function"
+        url: /research/research-loss-functions/
       - title: "Regularization (writing...)"
         url: /research/research-regularization/
       - title: "Feed-Forward Neural Network"
