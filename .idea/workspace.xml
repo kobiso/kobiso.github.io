@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2017-12-20-research-capsule-network.md" afterPath="$PROJECT_DIR$/_posts/research/2017-12-20-research-capsule-network.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/tensorflow/dataset.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/images/tensorflow/envir.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/research/2017-11-10-research-Keras.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/_posts/research/2017-11-10-research-deep learning tools.md" afterPath="$PROJECT_DIR$/_posts/research/2017-11-11-research-TensorFlow.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/deep learning tools/dataset.png" afterPath="$PROJECT_DIR$/assets/images/keras/dataset.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/assets/images/deep learning tools/envir.png" afterPath="$PROJECT_DIR$/assets/images/keras/envir.png" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,19 +26,19 @@
       <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="94" column="40" lean-forward="false" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
+            <state relative-caret-position="572">
+              <caret line="76" column="21" lean-forward="false" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-21-coding-L9_MaxProfit.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-21-coding-L9_MaxProfit.md">
+      <file leaf-file-name="2017-11-11-research-TensorFlow.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-11-research-TensorFlow.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="684">
-                <caret line="36" column="84" lean-forward="false" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+              <first_editor relative-caret-position="399">
+                <caret line="348" column="29" lean-forward="false" selection-start-line="348" selection-start-column="29" selection-end-line="348" selection-end-column="29" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -41,12 +48,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2017-12-20-research-capsule-network.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/_posts/research/2017-12-20-research-capsule-network.md">
+      <file leaf-file-name="2017-11-10-research-Keras.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-10-research-Keras.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="381">
-                <caret line="75" column="27" lean-forward="false" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+              <first_editor relative-caret-position="399">
+                <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -82,7 +89,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>teaser</find>
       <find>infty`</find>
       <find>saturate</find>
       <find>Lesson3</find>
@@ -112,6 +118,7 @@
       <find>overfitting</find>
       <find>&amp;i</find>
       <find>how</find>
+      <find>deep learning</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io</dir>
@@ -124,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/research/2017-12-27-research-faster-rcnn.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-10-31-coding-L5_PassingCars.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-10-31-coding-P_L2_productMatrix.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-11-01-coding-P_L2_productMatrix.md" />
@@ -163,7 +169,6 @@
         <option value="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2017-11-10-research-deep learning tools.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-10-25-research-multi-neural machine translation.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-11-02-coding-L6_MaxProductOfThree.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-16-research-batch norm.md" />
@@ -172,9 +177,11 @@
         <option value="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-02-07-research-attention is all you need.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-20-coding-L8_EquiLeader.md" />
-        <option value="$PROJECT_DIR$/_data/navigation.yml" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-21-coding-L9_MaxProfit.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-12-20-research-capsule-network.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2017-11-10-research-deep learning tools.md" />
+        <option value="$PROJECT_DIR$/_data/navigation.yml" />
+        <option value="$PROJECT_DIR$/_posts/research/2017-11-11-research-TensorFlow.md" />
       </list>
     </option>
   </component>
@@ -186,7 +193,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="850" />
     <option name="y" value="304" />
     <option name="width" value="350" />
@@ -243,6 +250,20 @@
             <path>
               <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="keras" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="tensorflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kobiso.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kobiso.github.io" type="462c0819:PsiDirectoryNode" />
               <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -265,8 +286,9 @@
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\yolo9000" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\research" />
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
       <recent name="C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io\_posts\research" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts" />
     </key>
@@ -316,15 +338,15 @@
       <workItem from="1516324001583" duration="139756000" />
       <workItem from="1517228380748" duration="27802000" />
       <workItem from="1517380787056" duration="3808000" />
-      <workItem from="1517394910945" duration="63821000" />
+      <workItem from="1517394910945" duration="73854000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="548427000" />
+    <option name="totallyTimeSpent" value="558460000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18697916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -376,18 +398,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/coding/2017-10-26-coding-L4_MissingInteger.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="285">
-            <caret line="15" column="166" lean-forward="false" selection-start-line="15" selection-start-column="83" selection-end-line="15" selection-end-column="166" />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/coding/2017-10-31-coding-L5_PassingCars.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -833,19 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-10-research-deep learning tools.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2165">
-            <caret line="157" column="8" lean-forward="false" selection-start-line="157" selection-start-column="8" selection-end-line="157" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/research/2017-10-25-research-multi-neural machine translation.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -963,14 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="94" column="40" lean-forward="false" selection-start-line="94" selection-start-column="40" selection-end-line="94" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-21-coding-L9_MaxProfit.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -989,6 +978,40 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="381">
             <caret line="75" column="27" lean-forward="false" selection-start-line="75" selection-start-column="27" selection-end-line="75" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="76" column="21" lean-forward="false" selection-start-line="76" selection-start-column="21" selection-end-line="76" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-10-research-Keras.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="399">
+            <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2017-11-11-research-TensorFlow.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="399">
+            <caret line="348" column="29" lean-forward="false" selection-start-line="348" selection-start-column="29" selection-end-line="348" selection-end-column="29" />
             <folding />
           </first_editor>
           <second_editor>
