@@ -75,9 +75,9 @@ dl:
       - title: "Vision Technique"
         url: /research/research-vision-technique/
       - title: "TensorFlow"
-        url: /research/research-tensorflow/
+        url: /research/research-TensorFlow/
       - title: "Keras (writing...)"
-        url: /research/research-keras/
+        url: /research/research-Keras/
       - title: "Dropout Usage"
         url: /research/research-status-of-dropout-usage/
       - title: "XAI References"
