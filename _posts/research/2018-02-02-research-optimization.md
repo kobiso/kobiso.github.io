@@ -200,6 +200,7 @@ $$
 w := w - \eta \nabla Q_i(w) + \alpha \Delta w 
 $${: .text-center}
 
+# Algorithms with Adaptive Learning Rates
 ## Adagrad
 - **Point**: **Adagrad** adapts the learning rate to the parameters, performing larger updates for infrequent and smaller updates for frequent parameters.
 
@@ -285,10 +286,10 @@ $$
   - Removed the decaying learning rate problem of AdaGrad
   - We do not need to set a default learning rate.
   
-## RMSprop
-- **Point**: **RMSprop** also handled the *decaying learning rate* problem of *Adagrad* that is identical to the first update vector of *Adadelta*.
+## RMSProp
+- **Point**: **RMSProp** also handled the *decaying learning rate* problem of *Adagrad* that is identical to the first update vector of *Adadelta*.
 
-**Root Mean Square Propagation (RMSprop)** that also maintains per-parameter learning rates that are adapted based on the average of recent magnitudes of the gradients for the weight (e.g. how quickly it is changing).
+**Root Mean Square Propagation (RMSProp)** that also maintains per-parameter learning rates that are adapted based on the average of recent magnitudes of the gradients for the weight (e.g. how quickly it is changing).
 This means the algorithm does well on online and non-stationary problems (e.g. noisy).
 
 $$
