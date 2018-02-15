@@ -158,3 +158,5 @@ cs:
     children:
       - title: "Sorting"
         url: /algorithm/coding-AL_sorting/
+      - title: "Dynamic Programming"
+        url: /algorithm/coding-AL_dynamic-programming/
