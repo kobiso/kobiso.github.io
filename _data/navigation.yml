@@ -126,6 +126,8 @@ coding:
         url: /coding challenge/coding-L9_MaxProfit/
       - title: "Lesson15. MinAbsSumOfTwo"
         url: /coding challenge/coding-L15_MinAbsSumOfTwo/
+      - title: "Lesson16. TieRopes"
+        url: /coding challenge/coding-L16_TieRopes/
   - title: Programmers
     children:
       - title: "Level2. Matrix Multiplication"

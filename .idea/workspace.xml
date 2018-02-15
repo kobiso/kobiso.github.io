@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/coding/2018-01-22-coding-L15_MinAbsSumOfTwo.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_posts/coding/2018-01-23-coding-L16_TieRopes.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" afterPath="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,19 +21,34 @@
       <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="127" column="56" lean-forward="false" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="56" />
+            <state relative-caret-position="570">
+              <caret line="129" column="51" lean-forward="false" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-22-coding-L15_MinAbsSumOfTwo.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-01-22-coding-L15_MinAbsSumOfTwo.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-22-coding-L15_MinAbsSumOfTwo.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="304">
-                <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+              <first_editor relative-caret-position="-1539">
+                <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-01-23-coding-L16_TieRopes.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-23-coding-L16_TieRopes.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="342">
+                <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -172,7 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/coding/2017-11-01-coding-P_L2_productMatrix.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-11-03-coding-P_L3_nlcm.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-11-04-coding-P_L4_findLargestSquare.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-11-05-coding-P_L4_expressions.md" />
@@ -221,8 +234,9 @@
         <option value="$PROJECT_DIR$/_posts/research/2017-11-11-research-TensorFlow.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-02-12-research-loss functions.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
-        <option value="$PROJECT_DIR$/_data/navigation.yml" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-22-coding-L15_MinAbsSumOfTwo.md" />
+        <option value="$PROJECT_DIR$/_data/navigation.yml" />
+        <option value="$PROJECT_DIR$/_posts/coding/2018-01-23-coding-L16_TieRopes.md" />
       </list>
     </option>
   </component>
@@ -371,12 +385,12 @@
       <workItem from="1516324001583" duration="139756000" />
       <workItem from="1517228380748" duration="27802000" />
       <workItem from="1517380787056" duration="3808000" />
-      <workItem from="1517394910945" duration="92668000" />
+      <workItem from="1517394910945" duration="94059000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="577274000" />
+    <option name="totallyTimeSpent" value="578665000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -431,18 +445,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/coding/2017-11-03-coding-P_L3_nlcm.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="437">
-            <caret line="23" column="40" lean-forward="false" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/coding/2017-11-05-coding-P_L4_expressions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -1036,8 +1038,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="127" column="56" lean-forward="false" selection-start-line="127" selection-start-column="42" selection-end-line="127" selection-end-column="56" />
+        <state relative-caret-position="570">
+          <caret line="129" column="51" lean-forward="false" selection-start-line="129" selection-start-column="51" selection-end-line="129" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1045,8 +1047,21 @@
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-22-coding-L15_MinAbsSumOfTwo.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="304">
-            <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+          <first_editor relative-caret-position="-1539">
+            <caret line="19" column="27" lean-forward="false" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-23-coding-L16_TieRopes.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="342">
+            <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor>
