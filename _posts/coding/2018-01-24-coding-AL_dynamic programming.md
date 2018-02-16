@@ -56,6 +56,7 @@ The number of coins needed must satisfy the following rules:
   $$dp[i,j] = min(dp[i,j-c_i] + 1, dp[i-1,j])$$
 
 The following table shows all the solutions to sub-problems considered for the example.
+
 ![Coin]({{ site.url }}{{ site.baseurl }}/assets/images/dynamic programming/coin.png){: .align-center}{:height="60%" width="60%"}
 
 ## Implementation
@@ -91,6 +92,39 @@ def dynamic_coin_changing(C, k):
         for j in range(C[i-1], k+1):
             dp[j] = min(dp[j-C[i-1]] + 1, dp[j])
     return dp
+```
+
+# Frog Problem
+## Problem Statement
+A small frog wants to get from posiiton 0 to $$k$$ ($$1 \leq k \leq 10000$$).
+The frog can jump over any one of $$n$$ fixed distance $$s_0, s_1, ..., s_{n-1} (1\leq s_i \leq k)$$.
+The goal is to count the number of different ways in which the frog can jump to position $$k$$.
+To avoid overflow, it is sufficient to return the result modulo $$q$$, where $$q$$ is a given number.
+
+## Approach with Dynamic Programming
+Create an array $$dp$$ consisting of $$k$$ elements, such that $$dp[j]$$ will be the number of ways in which the frog can jump to position $$j$$.
+We update consecutive cells of array $$dp$$.
+There is exactly one way for the frog to jump to position 0, so $$dp[0]=1$$.
+
+The number of ways in which the frog can jump to position $$j$$ with a final jump of $$s_i$$ is $$dp[j-s_i]$$.
+Thus, the number of ways in which the frog can get to position $$j$$ is increased by the number of ways of getting to position $$j-s_i$$, for every jump $$s_i$$.
+More precisely, $$dp[j]$$ is increased by the value of $$dp[j-s_i]$$ modulo $$q$$.
+
+![Frog]({{ site.url }}{{ site.baseurl }}/assets/images/dynamic programming/frog.png){: .align-center}{:height="50%" width="50%"}
+
+## Implementation
+- Time complexity: $$O(nk)$$
+- Space complexity: $$O(k)$$
+
+```python
+def frog(S, k, q):
+    n = len(S)
+    dp = [1] + [0]*k #[1] for the case of jumping to position 0
+    for j in range(1, k+1):
+        for i in range(n):
+            if S[i] <= j:
+                dp[j] = (dp[j] + dp[j - S[i]] % q
+    return dp[k]
 ```
 
 # References
