@@ -128,6 +128,8 @@ coding:
         url: /coding challenge/coding-L15_MinAbsSumOfTwo/
       - title: "Lesson16. TieRopes"
         url: /coding challenge/coding-L16_TieRopes/
+      - title: "Lesson17. NumberSolitaire"
+        url: /coding challenge/coding-L17_NumberSolitaire/
   - title: Programmers
     children:
       - title: "Level2. Matrix Multiplication"

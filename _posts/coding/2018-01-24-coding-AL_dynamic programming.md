@@ -70,7 +70,7 @@ import math
 def dynamic_coin_changing(C, k):
     n = len(C)
     # Create two-dimensional array with all zeros
-    dp = [[0]*(k+1) for _ in range(n+1)] # same with [[0]*(k+1)]*(n+1)
+    dp = [[0]*(k+1) for _ in range(n+1)] # not same with [[0]*(k+1)]*(n+1)
     dp[0] = [0] + [math.inf] * k
     for i in range(1, n+1):
         for j in range(C[i-1]):
