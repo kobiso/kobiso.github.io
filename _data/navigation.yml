@@ -160,5 +160,7 @@ cs:
     children:
       - title: "Sorting"
         url: /algorithm/coding-AL_sorting/
+      - title: "Binary Search"
+        url: /algorithm/coding-AL_binary-search/
       - title: "Dynamic Programming"
         url: /algorithm/coding-AL_dynamic-programming/
