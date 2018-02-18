@@ -72,7 +72,7 @@ Learn about graph, graph representations, graph traversals and their running tim
 
 def DFS(g, u, discovered):
     for e in g.incident_edges(u): # for every outgoing edge from u
-        v = e.opposit(u) # the other vertex connected by u
+        v = e.opposite(u) # the other vertex connected by u
         if v not in discovered: # v is an unvisited vertex
             discovered[v] = e # e is the tree edge that discovered v
             DFS(g, v, discovered) # recursively explore from v
@@ -120,8 +120,8 @@ def BFS(g, s, discovered):
   
 ![Bidirectional]({{ site.url }}{{ site.baseurl }}/assets/images/graph/bid.png){: .align-center}
 
-- To see why this is faster, consider a graph where every node has at most k adjacent nodes and the shortest path from nod s to node t has length d.
-  - In breadth-first search, it takes $$O(k^d)$$ times since it search up to k nodes in one level and do this d times.
+- To see why this is faster, consider a graph where every node has at most $$k$$ adjacent nodes and the shortest path from node $$s$$ to node $$t$$ has length $$d$$.
+  - In breadth-first search, it takes $$O(k^d)$$ times since it search up to $$k$$ nodes in one level and do this $$d$$ times.
   - In bidirectional search, it takes $$O(k^{d/2})$$ times since two searches would collide after approximately $$d/2$$ levels.
   
 # Minimum Spanning Tree
