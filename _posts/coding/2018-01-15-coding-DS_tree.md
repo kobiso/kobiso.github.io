@@ -119,7 +119,7 @@ Algorithm inorder(p):
 
 ## Extract Minimum Element
 - First, we remove the minimum element and swap it with the last element in the heap.
-  - Then, we bubble down this element, swapping it with one of its children until the mi-heap property is restored.
+  - Then, we bubble down this element, swapping it with one of its children until the min-heap property is restored.
   - Takes $$O(\log n)$$ time, where $$n$$ is the number of nodes in the heap.
 ![Remove]({{ site.url }}{{ site.baseurl }}/assets/images/tree/remove.png){: .align-center}
 
@@ -131,10 +131,10 @@ Algorithm inorder(p):
   - Functions: heappush(L,e), heappop(L), heappushpop(L,e), heapreplace(L,e), heapify(L), nlargest(k,iterable), nsmallest(k,iterable) 
   
 # Tries (Prefix Trees)
-- **Trie** is a variant of an n-ary tree in shich characters are stored at each node.
+- **Trie** is a variant of an n-ary tree in which characters are stored at each node.
   - Each path down the tree may represent a word.
   - The * nodes (null nodes) are often used to indicate complete words.
-  - A node in a trie could have anywhere from 1 through $$\text{alphabet_size}+1$$ children (or, 0 if a bollean flag is used instead of a * node).
+  - A node in a trie could have anywhere from 1 through $$\text{alphabet_size}+1$$ children (or, 0 if a boolean flag is used instead of a * node).
   - A trie can check if a string is a valid prefix in $$O(k)$$ time, where $$k$$ is the length of the string.
   
 ![Trie]({{ site.url }}{{ site.baseurl }}/assets/images/tree/trie.jpg){: .align-center}{:height="70%" width="70%"}
