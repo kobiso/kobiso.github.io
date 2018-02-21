@@ -48,6 +48,8 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper & Project Review
     children:
+      - title: "Hide-and-Seek"
+        url: /research/research-hide-and-seek/
       - title: "Attention Is All You Need"
         url: /research/research-attention-is-all-you-need/
       - title: "Generative Adversarial Nets"

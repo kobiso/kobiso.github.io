@@ -17,6 +17,23 @@ This post will be about artificial intelligence related terms including linear a
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
+# B
+## Bootstrapping
+- **Bootstrapping** is any test or metric that relies on random sampling with replacement.
+  - It allows assigning measures of accuracy to sample estimates.
+  - Bootstrapping is the practice of estimating properties of an estimator by measuring those properties when sampling from an approximating distribution.
+
+- **Bootstrapping sample** is a random sample conducted with replacement.
+  - Steps:
+  1. Randomly select an observation from the original data.
+  2. "Write it down"
+  3. "Put it back" (i.e. any observation can be selected more than once)
+  - Repeat steps 1-3 $$N$$ times: $$N$$ is the number of observations in the original sample.    
+
+- **Reference**
+  - Wikipedia: Bootstrapping (statistics) [[Link](https://en.wikipedia.org/wiki/Bootstrapping_(statistics))]
+  - Youtube: Bootstrapping Sampling [Link](https://www.youtube.com/watch?v=tTZybQTE0dw)]
+
 # C
 ## Collaborative Filtering
 - **Collaborative filtering (CF)** is a technique used by recommender system and it has two sense, a narrow one and a general one.
@@ -193,3 +210,17 @@ $${: .text-cetner}
 
 - **Reference**
   - Web: Data Modeling - What means "Data is dense/sparse" ? [[Link](https://gerardnico.com/wiki/data/modeling/dense_sparse)]
+  
+# W
+## Weakly Supervised Learning
+- **Weakly supervised learning** is a term covering a variety of studies that attempt to construct predictive models by learning with weak supervision (incomplete, inexact and inaccurate supervision).
+  - **Bootstrapping** is one of weakly supervised learning method, which is also called self-training, it is a form of learning that is designed to use less training examples.
+    - It starts with a few training examples, trains a classifier, and uses thought-to-be positive examples as yielded by this classifier for retraining.
+    - As the set of training examples grow, the classifier improves, provided that not too many negative examples are misclassified as positive, which could lead to deterioration of performance.
+
+![Weakly]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/weakly.png){: .align-center}
+{: .full}
+
+- **Reference**
+  - Stack Overflow: What is weakly supervised learning (bootstrapping)? [[Link](https://stackoverflow.com/questions/18944805/what-is-weakly-supervised-learning-bootstrapping)]
+  - Paper: A brief introduction to weakly supervised learning [[Link](https://watermark.silverchair.com/nwx106.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAegwggHkBgkqhkiG9w0BBwagggHVMIIB0QIBADCCAcoGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMMLy1On1YQARqVEpQAgEQgIIBm_eusvyUAgChrY5LWDKOAD9z_1qliTEzSJqbFJMufOOE7b7h7L5IG1Qh0sCIS5ZUuwnrQBSDQwpBxQrc2rLL8vMw_Z1iZJCK1rAhglqbD2ZckZ9fcvJ-x1FAYR3ewOpc2udHGv_CUB2A9GHRRD7vR-z4yjBCXPqyBWjn6LVwttPOygFjPKUrxhhrfJKX05o3iNbn0HBQ75skLkLe4BpWHrSDWLnGWMSJFSoLPFmK2xKwBuQJdct9kMeTOFVQxJxDe0VaGTmD_BC0o_YLaH9eXNtC7UqV6yTO0ddURj_Zwwgf09FkpeJNZsaQHnNpOJVNvDOSxA_Go8GkSv-6lgMtBc1OB5zlOAGHqeNPX4BxnIsHIYKS3yJfbx9qdSjG93s-wZyJUqG17eq2JGFEnj4vJ7H7NoPkR8KJRcZrddYfCx__XRYWnd8g8hOnaqpZF14G3nK5zfrf1L6YW-XNRsq0pmiRSyp9VN_cBNM1v4vk1Y_D0_vn7uF3mLkx6nfiJzfljrIfR4R7Ki3TmIdeuRf0KMMgLVGWxGsjAHdp7w)]
