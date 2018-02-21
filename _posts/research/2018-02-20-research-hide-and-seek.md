@@ -52,7 +52,7 @@ It was presented in International Conference on Computer Vision (ICCV) 2017 by K
 ## Weakly-supervised Object Localization
 - **Goal**: To learn an object localizer that can predict both the category label as well as the bounding box for the object-of-interest in a new test image $$I_test$$
   - Given a set of images $$I_{set}={I_1, I_2, ..., I_N}$$ where each image $$I$$ is labeled only with its category label.
-  - In order to learn the object localizer, we train a CNN which simultaneously learns to localize the object while performing the image classification task.
+  - In order to learn the object localizer, the authors train a CNN which simultaneously learns to localize the object while performing the image classification task.
   - Existing localizing method only focus on discriminative object parts, since they are sufficient for optimizing the classification task.
   
 - In order to make the network to learn all of the relevant parts of an object, HaS randomly hide patches of each input image $$I$$ during training.
@@ -92,11 +92,11 @@ For a trained network to generalize well to new test data, the activation distri
   - Set the RGB value $$v$$ of a hidden pixel to be equal to the mean RGB vector of the images over the entire dataset.  
   
 - **Why would this work?**
-  - Essentially, we are assuming that in expectation, the output of a patch will be equal to that of an average-valued patch.
+  - Essentially, the authors are assuming that in expectation, the output of a patch will be equal to that of an average-valued patch.
   - The outputs of both the second and third cases will be matched with the expected output during testing (i.e., of a fully-visible patch).
   
 - This process is related to the scaling procedure in *dropout*.
-  - Empirically, we find that setting the hidden pixel in this way is crucial for the network to behave similarly during training and testing. 
+  - Empirically, the authors find that setting the hidden pixel in this way is crucial for the network to behave similarly during training and testing. 
 
 ### Object Localization Network Architecture
 HaS approach of hiding patches is independent of the network architecture and can be used with any CNN designed for object localization.
@@ -128,6 +128,25 @@ $$
   - Applied thresholding on the map to obtain the start and end times for the action class.
   
 # Experiments
+## Datasets and Evaluation Metrics
+- **Experiment of Object Localization**
+  - Used *ILSVRC 2016* dataset
+  - Used three evaluation metrics to measure performance:
+  1. Top-1 localization accuracy (*Top-1 Loc*): fraction of images for which the predicted class with the highest probability is the same as the ground-truth class
+  and the predicted bounding box for the class has more than 50% Intersection over Union (IoU) with the ground-truth box.
+  2. Localization accuracy with known ground-truth class (*GT-known Loc*): fraction of images for which the predicted bounding box for the ground-truth class has more than 50% IoU with the ground-truth box.
+  3. Classification accuracy (*Top-1 Clas*): measure the impact of Hide-and-Seek on image classification performance
+  
+- **Experiemnt of Action Localization**
+  - Used *THUMOS 2014* dataset
+  - For evaluation, computed mean average precision (mAP), and consider a prediction to be correct if it has IoU > $$\theta$$ with ground-truth.
+
+## Implementation Details
+- **Models for Object Localization**
+  - Used AlexNet-GAP and GoogLeNet-GAP
+  - For both AlexNet-GAP and GoogLeNet-GAP, the output of the last conv layer goes to a global average pooling (GAP) layer, followed by a softmax layer for classification.
+
+- For **action localization**, the authors compute C3D fc7 features using a model pre-trained on Sports 1 million.
 
 # References
 - Paper: Hide-and-Seek: Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization [[Link](https://arxiv.org/abs/1704.04232)]

@@ -45,8 +45,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-20-research-hide-and-seek.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="589">
-                <caret line="129" column="13" lean-forward="false" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+              <first_editor relative-caret-position="338">
+                <caret line="86" column="46" lean-forward="true" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -112,8 +112,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>grid__wrapper</find>
-      <find>5</find>
       <find>header image</find>
       <find>page__hero</find>
       <find>side</find>
@@ -142,6 +140,8 @@
       <find>nod</find>
       <find>%</find>
       <find>$</find>
+      <find>we</find>
+      <find>we</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io</dir>
@@ -352,12 +352,12 @@
       <workItem from="1516324001583" duration="139756000" />
       <workItem from="1517228380748" duration="27802000" />
       <workItem from="1517380787056" duration="3808000" />
-      <workItem from="1517394910945" duration="135088000" />
+      <workItem from="1517394910945" duration="137564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="619694000" />
+    <option name="totallyTimeSpent" value="622170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1032,8 +1032,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-20-research-hide-and-seek.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="589">
-            <caret line="129" column="13" lean-forward="false" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+          <first_editor relative-caret-position="338">
+            <caret line="86" column="46" lean-forward="true" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
             <folding />
           </first_editor>
           <second_editor>
