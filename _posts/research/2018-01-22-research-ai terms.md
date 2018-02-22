@@ -107,6 +107,14 @@ $${: .text-center}
 
 ## Graphical Model
 
+# I
+## Image Localization, Detection, Segmentation
+
+![Image]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/image.png){: .align-center}
+
+- **Reference**
+  - Slide: Stanford CS231 [[Link](http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture11.pdf)]
+
 # L
 ## Latent Variable
 - **Latent variables** are variables that are not directly observed but are rather inferred from other variables that are observed (directly measured).
