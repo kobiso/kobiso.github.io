@@ -21,6 +21,7 @@ author_profile: false
 # Summary
 - **Problem Statement**
   - Prior work on object detection repurposes classifiers to perform detection.
+  - Prior work on object detection is not fast enough or have complex multistage training pipeline.
   
 - **Research Objective**
   - To boost up the speed of prior object detection method while having similar performance with state-of-the-art detection systems
@@ -77,13 +78,13 @@ This enables end-to-end training and real-time speeds while maintaining high ave
 
 - **Multi-part loss function**
 ![YOLO loss]({{ site.url }}{{ site.baseurl }}/assets/images/yolo/yolo loss.png){: .align-center}
-![YOLO notation]({{ site.url }}{{ site.baseurl }}/assets/images/yolo/yolo notation.png){: .align-center}
+![YOLO notation]({{ site.url }}{{ site.baseurl }}/assets/images/yolo/yolo notation.png){: .align-center}{:height="80%" width="80%"}
 
   - $$\lambda_{coord}$$: parameter for bounding box coordinate prediction
   - $$\lambda_{noobj}$$: parameter for confidence prediction when boxes do not contain objects
   
 # Limitations of YOLO
-- YOLO imposes strong spatial constraints on bounding box predictions sice each grid cell only predicts two boxes and can only have one class.
+- YOLO imposes strong spatial constraints on bounding box predictions since each grid cell only predicts two boxes and can only have one class.
   - This spatial constraint limits the number of nearby objects and small objects that appear in groups, such as flocks of birds.
 - Since YOLO learns to predict bounding boxes from data, it struggles to generalize to objects in new or unusual aspect ratios or configurations.
 - A small error in a large box is generally benign but a small error in a small box has a much greater effect on IOU.
@@ -91,13 +92,13 @@ This enables end-to-end training and real-time speeds while maintaining high ave
   
 # Comparison to R-CNN Series
 - While Fast and Faster R-CNN offer speed and accuracy improvements over R-CNN, both still fall short of real-time performance.
-- Instead of trying to optimize individual components of a large detection pipeline, YOLO throws out the pipeline entirely and is fast by desing.
+- Instead of trying to optimize individual components of a large detection pipeline, YOLO throws out the pipeline entirely and is fast by design.
 - YOLO is a general purpose detector that learns to detect a variety of objects simultaneously.
 
 # Experiment
 
 ## Real-Time Systems on PASCAL VOC 2007
-![YOLO result1]({{ site.url }}{{ site.baseurl }}/assets/images/yolo/yolo result1.png){: .align-center}
+![YOLO result1]({{ site.url }}{{ site.baseurl }}/assets/images/yolo/yolo result1.png){: .align-center}{:height="80%" width="80%"}
 
 - Fast YOLO is the fastest detedtor on record and is still twice as accurate as any other real-time detector.
 - YOLO is 10 mAP more accurate than the fast version while still well above real-time in speed.
@@ -110,7 +111,7 @@ This enables end-to-end training and real-time speeds while maintaining high ave
 - Fast R-CNN makes much fewer localization errors but far more background errors.
   
 ## Model combination experiments on VOC 2007
-![YOLO result3]({{ site.url }}{{ site.baseurl }}/assets/images/yolo/yolo result3.png){: .align-center}
+![YOLO result3]({{ site.url }}{{ site.baseurl }}/assets/images/yolo/yolo result3.png){: .align-center}{:height="80%" width="80%"}
 
 - Other vesions of Fast R-CNN provide only a small benefit while YOLO provides a significant performance boost.
   
