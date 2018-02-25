@@ -56,7 +56,7 @@ Second Order Derivative provide us with a quadratic surface which touches the cu
 
 # Optimization for Deep Learning
 ## Gradient Descent
-- **Point**: **Gradient descent** computes the gradient of the cost function w.r.t. to the parameters for the entire training data set.
+- **Point**: **Gradient descent** computes the gradient of the cost function w.r.t. the parameters for the entire training data set.
  
 **Gradient descent** is a first order iterative optimization algorithm for finding the minimum of a function.
 To find a local minimum of a function using gradient descent, one takes steps proportional to the *negative* of the gradient of the function at the current point.
@@ -76,23 +76,23 @@ $${: .text-center}
   
 ![Gradient Descent]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/gradient descent.png){:height="90%" width="90%"}
 
+- **Drawback of Gradient Descent**
+  - The traditional batch gradient descent will calculate the gradient of the whole data set.
+  - But it will perform only one update, hence it can be very slow and hard to control for datasets which are very large and don't fit in the memory.
+  - Also, it computes redundant updates for large data sets.
+  
 - **Learning Rate**
   - Learning rate is an amount of decreasing function of each time.
   - Large learning rate could make it bounce back and forth around the minimum.
   - Small learning rate makes it search with a small step and converge very slow. 
   
-- **Drawback of Gradient Descent**
-  - The traditional batch gradient descent will calculate the gradient of the whole data set.
-  - But it will perform only one update, hence it can be very slow and hard to control for datasets which are very large and don't fit in the memory.
-  - Also, it computes redundant updates for large data sets.
-
 ![Learning Rate]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/learning rate.png)
 
 ## Stochastic Gradient Descent
 - **Point**: **Stochastic gradient descent** performs a parameter update for each training example $$x^i$$ and label $$y^i$$.
 
 **Stochastic gradient descent (SGD)** is a stochastic approximation of the gradient descent and iterative method for minimizing an objective function.
-First SGD was used with each training example (one batch), but these days, we used mini-batch for better performance which also called *mini batch gradient descent*.
+First SGD was used with each training example (one batch), but these days, we used mini-batch for better performance which is also called *mini batch gradient descent*.
 
 - **Motivation**
   - A recurring problem in machine learning is that large training sets are necessary for good generalization, but it cause more computationally expensive.
@@ -131,7 +131,7 @@ where $$\epsilon$$ is the learning rate.
   
 - **Cons**
   - The problem of SGD is that due to the frequent updates and fluctuations, it ultimately complicates that convergence to the exact minimum and will keep overshooting.
-  - This can be solve by slowly decreasing the learning rate $$\epsilon$$, SGD shows the same convergence pattern as standard gradient descent.
+  - This can be solved by slowly decreasing the learning rate $$\epsilon$$, SGD shows the same convergence pattern as standard gradient descent.
 
 ## Challenges of Gradient Descent
 1. Choosing a proper learning rate is difficult.

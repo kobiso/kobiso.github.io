@@ -58,7 +58,7 @@ Machine learning can be explained in two ways,
 
 # Marginal Probability
 - **Marginal probability distribution** is a probability distribution over a subset of probability distribution over a set of variables (**joint probability distribution**).
-- For **discrete random variables** $$\tt{x}$$, $$\tt{y}$$ and we know $$P(\tt{x}, \tt{y})$$, we can find $$P(\tt{x})$$ with the *sum rule*:
+- For **discrete random variables** $$\tt{x}$$, $$\tt{y}$$ and we know $$P(\tt{x}, \tt{y} )$$, we can find $$P(\tt{x} )$$ with the *sum rule*:
 
 $$
 \forall x \in {\tt x}, P({\tt x}= x ) = \sum_y P({\tt x}= x , {\tt y}= y ) 
@@ -143,7 +143,7 @@ $${: .text-center}
 - High absolute values of the covariance mean that the values change very much and are both far from their respective means at the same time.
 ![Covariance]({{ site.url }}{{ site.baseurl }}/assets/images/probability/cov.png){: .align-center}
   - $$Cov(X,Y) > 0$$: $$Y$$ increases when $$X$$ increases
-  - $$Cov(X,Y) > 0$$: $$Y$$ decreases when $$X$$ increases
+  - $$Cov(X,Y) < 0$$: $$Y$$ decreases when $$X$$ increases
   - $$Cov(X,Y) = 0$$: there is no linear relation between $$X$$ and $$Y$$, they are independent, but not always.
   
 - **Covariance matrix** of a random vector $$x \in R^n$$ is an $$n \times n$$ matrix, such that
@@ -203,7 +203,7 @@ $$
 p(x;\lambda)=\lambda1_{1\geq 0}\exp(-\lambda x)
 $${: .text-center}
 
-- A closely related probability distribution that allows us to place a sharp peak of probability mass at an arbitrary point &&\mu&& is the **Laplace distribution**.
+- A closely related probability distribution that allows us to place a sharp peak of probability mass at an arbitrary point $$\mu$$ is the **Laplace distribution**.
 
 $$
 Laplace(x;\mu,\gamma)=\frac{1}{2\gamma}\exp(-\frac{\mid x-\mu \mid}{\gamma})

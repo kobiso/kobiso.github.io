@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/_posts/coding/2018-01-17-coding-AL_sorting.md" afterPath="$PROJECT_DIR$/_posts/coding/2018-01-17-coding-AL_sorting.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" afterPath="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
+      <change beforePath="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" afterPath="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,19 +22,19 @@
       <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
+            <state relative-caret-position="1026">
               <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-02-12-research-loss functions.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-02-12-research-loss functions.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-12-research-loss functions.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="357">
-                <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+              <first_editor relative-caret-position="190">
+                <caret line="76" column="123" lean-forward="false" selection-start-line="76" selection-start-column="96" selection-end-line="76" selection-end-column="123" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -45,7 +48,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-20-research-hide-and-seek.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="623">
+              <first_editor relative-caret-position="2489">
                 <caret line="131" column="39" lean-forward="false" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
                 <folding />
               </first_editor>
@@ -60,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-16-coding-DS_graph.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1243">
+              <first_editor relative-caret-position="2584">
                 <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
                 <folding />
               </first_editor>
@@ -75,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="361">
+              <first_editor relative-caret-position="2071">
                 <caret line="109" column="3" lean-forward="false" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
                 <folding />
               </first_editor>
@@ -90,8 +93,53 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-02-research-yolo.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="342">
-                <caret line="33" column="65" lean-forward="false" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
+              <first_editor relative-caret-position="466">
+                <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-01-15-research-probability.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="257">
+                <caret line="205" column="131" lean-forward="false" selection-start-line="205" selection-start-column="131" selection-end-line="205" selection-end-column="131" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-01-17-coding-AL_sorting.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-17-coding-AL_sorting.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1243">
+                <caret line="156" column="52" lean-forward="false" selection-start-line="156" selection-start-column="52" selection-end-line="156" selection-end-column="52" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2018-02-02-research-optimization.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="74">
+                <caret line="133" column="22" lean-forward="false" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -112,9 +160,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header image</find>
-      <find>page__hero</find>
-      <find>side</find>
       <find>sidebar</find>
       <find>off</find>
       <find>docs</find>
@@ -126,7 +171,6 @@
       <find>it is contro</find>
       <find>implementa</find>
       <find>bayes</find>
-      <find>marginal</find>
       <find>convolutional layer</find>
       <find>their activation</find>
       <find>to change</find>
@@ -140,8 +184,12 @@
       <find>nod</find>
       <find>$</find>
       <find>we</find>
-      <find>we</find>
       <find>%</find>
+      <find>desing</find>
+      <find>marginal</find>
+      <find>mu&amp;&amp;</find>
+      <find>w.r.t.</find>
+      <find>learning rate</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io</dir>
@@ -154,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-yolo9000.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-12-21-coding-P_L5_change124.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-12-27-coding-P_L5_setAlign.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-10-coding-DS_arrays&amp;strings.md" />
@@ -168,7 +215,6 @@
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-16-coding-HR_lilys homework.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-10-coding-DS_hash table.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-11-coding-DS_stack&amp;queue.md" />
-        <option value="$PROJECT_DIR$/_posts/coding/2018-01-17-coding-AL_sorting.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_fibonacci modified.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_bear and steady gene.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_game of two stacks.md" />
@@ -179,7 +225,6 @@
         <option value="$PROJECT_DIR$/_posts/research/2018-01-30-research-vision technique.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-04-research-rnn.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-26-research-autoencoder.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-10-25-research-multi-neural machine translation.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2017-11-02-coding-L6_MaxProductOfThree.md" />
@@ -192,7 +237,6 @@
         <option value="$PROJECT_DIR$/_posts/research/2017-11-10-research-deep learning tools.md" />
         <option value="$PROJECT_DIR$/_posts/research/2017-11-11-research-TensorFlow.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-02-12-research-loss functions.md" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-22-coding-L15_MinAbsSumOfTwo.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-23-coding-L16_TieRopes.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-02-24-coding-AL_dynamic programming.md" />
@@ -205,6 +249,10 @@
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-16-coding-DS_graph.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-02-20-research-hide-and-seek.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-02-research-yolo.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md" />
+        <option value="$PROJECT_DIR$/_posts/coding/2018-01-17-coding-AL_sorting.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md" />
       </list>
     </option>
   </component>
@@ -217,7 +265,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="-1495" />
+    <option name="y" value="51" />
     <option name="width" value="1294" />
     <option name="height" value="1407" />
   </component>
@@ -239,7 +288,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,7 +333,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,6 +371,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="" />
@@ -352,23 +404,27 @@
       <workItem from="1516324001583" duration="139756000" />
       <workItem from="1517228380748" duration="27802000" />
       <workItem from="1517380787056" duration="3808000" />
-      <workItem from="1517394910945" duration="143335000" />
+      <workItem from="1517394910945" duration="145181000" />
+      <workItem from="1519433591082" duration="33000" />
+      <workItem from="1519433652198" duration="33000" />
+      <workItem from="1519436069648" duration="7209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="627941000" />
+    <option name="totallyTimeSpent" value="637062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11302083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23489584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2430998" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19002123" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25902337" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -547,18 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-17-coding-AL_sorting.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="437">
-            <caret line="23" column="79" lean-forward="false" selection-start-line="23" selection-start-column="79" selection-end-line="23" selection-end-column="79" />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-11-coding-DS_stack&amp;queue.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -688,19 +732,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="912">
             <caret line="48" column="65" lean-forward="false" selection-start-line="48" selection-start-column="65" selection-end-line="48" selection-end-column="65" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="234">
-            <caret line="66" column="43" lean-forward="false" selection-start-line="66" selection-start-column="43" selection-end-line="66" selection-end-column="43" />
             <folding />
           </first_editor>
           <second_editor>
@@ -852,19 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="589">
-            <caret line="218" column="2" lean-forward="false" selection-start-line="218" selection-start-column="2" selection-end-line="218" selection-end-column="2" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-22-coding-L15_MinAbsSumOfTwo.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -969,22 +987,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-02-research-yolo.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="342">
-            <caret line="33" column="65" lean-forward="false" selection-start-line="33" selection-start-column="65" selection-end-line="33" selection-end-column="65" />
-            <folding />
-          </first_editor>
-          <second_editor>
-            <js_state />
-          </second_editor>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
+        <state relative-caret-position="1026">
           <caret line="54" column="44" lean-forward="false" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
           <folding />
         </state>
@@ -993,7 +998,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-16-coding-DS_graph.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1243">
+          <first_editor relative-caret-position="2584">
             <caret line="136" column="0" lean-forward="false" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
             <folding />
           </first_editor>
@@ -1006,7 +1011,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-20-research-hide-and-seek.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="623">
+          <first_editor relative-caret-position="2489">
             <caret line="131" column="39" lean-forward="false" selection-start-line="131" selection-start-column="39" selection-end-line="131" selection-end-column="39" />
             <folding />
           </first_editor>
@@ -1019,7 +1024,7 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="361">
+          <first_editor relative-caret-position="2071">
             <caret line="109" column="3" lean-forward="false" selection-start-line="109" selection-start-column="3" selection-end-line="109" selection-end-column="3" />
             <folding />
           </first_editor>
@@ -1032,8 +1037,60 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-12-research-loss functions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="357">
-            <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <first_editor relative-caret-position="190">
+            <caret line="76" column="123" lean-forward="false" selection-start-line="76" selection-start-column="96" selection-end-line="76" selection-end-column="123" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-02-research-yolo.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="466">
+            <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-15-research-probability.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="257">
+            <caret line="205" column="131" lean-forward="false" selection-start-line="205" selection-start-column="131" selection-end-line="205" selection-end-column="131" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-17-coding-AL_sorting.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1243">
+            <caret line="156" column="52" lean-forward="false" selection-start-line="156" selection-start-column="52" selection-end-line="156" selection-end-column="52" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-02-research-optimization.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="74">
+            <caret line="133" column="22" lean-forward="false" selection-start-line="133" selection-start-column="22" selection-end-line="133" selection-end-column="22" />
             <folding />
           </first_editor>
           <second_editor>

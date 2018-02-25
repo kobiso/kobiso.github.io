@@ -146,6 +146,26 @@ def quick_sort(S):
   - Then, we sort each of these groupings by the next digit.
 - Runtime: $$O(kn)$$ ($$n$$ is the number of elements and $$k$$ is the number of passes of the sorting algorithm)
 
+# Comparison and Non-comparison Sort
+## Comparison Sort
+- **Comparison sort** is a type of sorting algorithm that only reads the list elements through a single comparison operation and 
+determines which of two elements should occur first in the final sorted list.
+  - Comparison: $$a_i < a_j, a_i \leq a_j, ...$$
+  - Examples : Bubble sort, Insertion sort, Selection sort, Quick sort, Heap sort, Merge sort, Odd-even sort, Cocktail sort, Cycle sort, Merge insertion sort, Smoothsort, Timsort
+  
+- **Limitations of Comparison Sorting**
+  - To sort $$n$$ elements, comparison sorts must make $$\Omega(n\log n)$$ comparisons in the worst case.
+  - That is a comparison sort must have lower bound of $$\Omega(n\log n)$$ comparison operations, which is known as linear or linearithmic time.
+
+## Non-comparison Sort
+- **Non-comparison sort** perform sorting without comparing the elements rather by making certain assumptions about the data.
+  - Examples:
+  1. Counting sort (indexes using key values)
+  2. Radix sort( examines individual bits of keys)
+  3. Bucket sort( examines bits of keys)
+  - These are linear sorting algorithms.
+  - They make certain assumptions about the data.
+
 # Sorting Algorithm Comparison
 
 ![Comparison]({{ site.url }}{{ site.baseurl }}/assets/images/sorting/sorting.jpg){: .align-center}
@@ -155,3 +175,4 @@ def quick_sort(S):
 - Book: Cracking the coding interview [[Link](http://www.crackingthecodinginterview.com/)]
 - Book: Data structures and algorithms in python [[Link](https://www.amazon.com/Structures-Algorithms-Python-Michael-Goodrich-ebook/dp/B00CTZ290I)]
 - Wikipedia: Sorting algorithm [[Link](https://en.wikipedia.org/wiki/Sorting_algorithm)]
+- Slide: Counting sort(Non Comparison Sort) [[Link](https://www.slideshare.net/shimulsakhawat/counting-sortnon-comparison-sort)]
