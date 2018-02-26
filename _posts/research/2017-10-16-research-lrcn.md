@@ -22,7 +22,7 @@ Today, we are going to see one of the combination between CNN and RNN for video 
 [The Long-term Recurrent Convolutional Network (LRCN)](https://arxiv.org/pdf/1411.4389.pdf) is proposed by Jeff Donahue et al. in 2016.
 It is a combination of CNN and RNN, end-to-end trainable and suitable for large-scale visual understanding tasks such as video description, activity recognition and image captioning.
 The recurrent convolutional models are deeper in that they learn compositional representations in space and time, when the previous models assumed a fixed visual representation or perform simple temporal averaging for sequential processing.
-And it can be trained ot learn temporal dynamics and convolutional perceptual representations as it is directly connected to convolutional network.   
+And it can be trained or learn temporal dynamics and convolutional perceptual representations as it is directly connected to convolutional network.   
 
 ![Example architecture of LRCN]({{ site.url }}{{ site.baseurl }}/assets/images/lrcn.png){: .align-center}
 

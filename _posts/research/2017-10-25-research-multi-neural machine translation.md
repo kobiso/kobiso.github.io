@@ -39,7 +39,7 @@ This article is a quick summary of the paper.
 - **RNN Encoder - Decoder model** is previous work of the author on the paper *"Learning Phrase Representations using RNN Encoder–Decoder for Statistical Machine Translation"* in 2014.
 - RNN Encoder - Decoder model is usually known as a *sequence-to-sequence (seq2seq)* model and it has advantage to understand the sentence correctly since the whole context of the sentence should be considered through context vector $$c$$ that is encoded from input sentence.
 
-![RNN Encoder - Decoder]({{ site.url }}{{ site.baseurl }}/assets/images/neural machine translation by jointly learning to align and translate/encoderdecoder.png){: .align-center}
+![RNN Encoder - Decoder]({{ site.url }}{{ site.baseurl }}/assets/images/neural machine translation by jointly learning to align and translate/encoderdecoder.png){: .align-center}{:height="70%" width="70%"}
 
 - **Encoder**
   - Reads the input sentences, a sequence of vectors $$x=(x_1, ..., x_{T_x})$$, into a vector $$c$$.
