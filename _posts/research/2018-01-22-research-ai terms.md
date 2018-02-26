@@ -121,6 +121,7 @@ $${: .text-center}
 
 - **Reference**
   - Wikipedia: Latent variable [[Link](https://en.wikipedia.org/wiki/Latent_variable)]
+  
 ## Latent Variable Model
 - **Latent variable model** is a statistical model that relates a set of observable variables to a set of latent variables.
   - It aims to explain observed variables in terms of latent variables.
