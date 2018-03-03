@@ -17,6 +17,7 @@ author_profile: false
 
 "Hide-and-Seek: Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization" proposed a weakly-supervised framework to improve object localization in images and action localization in videos.
 It was presented in International Conference on Computer Vision (ICCV) 2017 by Krishna Kumar Singh and Yong Jae Lee.
+(This article is still writing...)
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
