@@ -4,6 +4,8 @@ categories:
   - Research
 tags:
   - lrcn
+  - cnn
+  - rnn
 header:
   teaser: /assets/images/lrcn.png
   overlay_image: /assets/images/lrcn.png
