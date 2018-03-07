@@ -48,28 +48,28 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper & Project Review
     children:
-      - title: "Hide-and-Seek"
+      - title: "17' Hide-and-Seek"
         url: /research/research-hide-and-seek/
-      - title: "Attention Is All You Need"
+      - title: "17' Attention Is All You Need"
         url: /research/research-attention-is-all-you-need/
-      - title: "Generative Adversarial Nets"
-        url: /research/research-GAN/
-      - title: "Capsule Network"
+      - title: "17' Capsule Network"
         url: /research/research-capsule-network/
-      - title: "YOLO 9000 (soon...)"
+      - title: "17' YOLO 9000 (soon...)"
         url: /research/research-yolo9000/
-      - title: "You Only Look Once (YOLO)"
-        url: /research/research-yolo/
-      - title: "Faster R-CNN"
-        url: /research/research-faster-rcnn/
-      - title: "Multi-speaker Tacotron"
+      - title: "17' Multi-speaker Tacotron"
         url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
-      - title: "Multi-neural Machine Translation"
-        url: /research/research-multi-neural-machine-translation/
-      - title: "Long-term Recurrent ConvNet"
+      - title: "16' You Only Look Once (YOLO)"
+        url: /research/research-yolo/
+      - title: "16' Long-term Recurrent ConvNet"
         url: /research/research-lrcn/
-      - title: "Batch Normalization"
+      - title: "15' Faster R-CNN"
+        url: /research/research-faster-rcnn/
+      - title: "15' Multi-neural Machine Translation"
+        url: /research/research-multi-neural-machine-translation/
+      - title: "15' Batch Normalization"
         url: /research/research-batch-norm/
+      - title: "14' Generative Adversarial Nets"
+        url: /research/research-GAN/
   - title: Deep Learning Related
     children:
       - title: "AI Terms"
