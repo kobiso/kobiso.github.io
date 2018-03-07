@@ -17,7 +17,6 @@ author_profile: false
 
 "Hide-and-Seek: Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization" proposed a weakly-supervised framework to improve object localization in images and action localization in videos.
 It was presented in International Conference on Computer Vision (ICCV) 2017 by Krishna Kumar Singh and Yong Jae Lee.
-(This article is still writing...)
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
@@ -148,6 +147,46 @@ $$
   - For both AlexNet-GAP and GoogLeNet-GAP, the output of the last conv layer goes to a global average pooling (GAP) layer, followed by a softmax layer for classification.
 
 - For **action localization**, the authors compute C3D fc7 features using a model pre-trained on Sports 1 million.
+
+## Experimental Results
+**Object Localization Quantitative Results**
+
+- Localization accuracy on ILSVRC validation data with different patch sizes (16, 32, 44, 56) for hiding.
+
+![Experiment1]({{ site.url }}{{ site.baseurl }}/assets/images/hide-and-seek/experiment1.png){: .align-center}{:height="75%" width="75%"}
+
+- Localization accuracy on ILSVRC validation data compared to state-of-the-art.
+
+![Experiment2]({{ site.url }}{{ site.baseurl }}/assets/images/hide-and-seek/experiment2.png){: .align-center}{:height="70%" width="70%"}
+
+**Object Localization Qualitative Results**
+
+- Compared Hide-and-Seek approach with AlexNet-GAP on the ILVRC validation data.
+  - Hide-and-Seek approach localizes multiple relevant parts of an object whereas AlexNet-GAP mainly focuses only on the most discriminative parts.
+  
+![Experiment3]({{ site.url }}{{ site.baseurl }}/assets/images/hide-and-seek/experiment3.png){: .align-center}{:height="75%" width="75%"}
+
+**Further Analysis of Hide-and-Seek**
+
+- Comparison with dropout
+
+![Experiment4]({{ site.url }}{{ site.baseurl }}/assets/images/hide-and-seek/experiment4.png){: .align-center}{:height="75%" width="75%"}
+
+- Global average pooling (GAP) vs. global max pooling (GMP)
+
+![Experiment5]({{ site.url }}{{ site.baseurl }}/assets/images/hide-and-seek/experiment5.png){: .align-center}{:height="70%" width="70%"}
+
+- Applying Hide-and-Seek to the first conv layer
+
+![Experiment6]({{ site.url }}{{ site.baseurl }}/assets/images/hide-and-seek/experiment6.png){: .align-center}{:height="75%" width="75%"}
+
+- Varying the hiding probability
+
+![Experiment7]({{ site.url }}{{ site.baseurl }}/assets/images/hide-and-seek/experiment7.png){: .align-center}{:height="70%" width="70%"}
+
+- Action localization accuracy on THUMOS validation data
+
+![Experiment8]({{ site.url }}{{ site.baseurl }}/assets/images/hide-and-seek/experiment8.png){: .align-center}{:height="80%" width="80%"}
 
 # References
 - Paper: Hide-and-Seek: Forcing a Network to be Meticulous for Weakly-supervised Object and Action Localization [[Link](https://arxiv.org/abs/1704.04232)]
