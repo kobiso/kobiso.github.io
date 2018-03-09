@@ -223,9 +223,16 @@ $${: .text-cetner}
 # W
 ## Weakly Supervised Learning
 - **Weakly supervised learning** is a term covering a variety of studies that attempt to construct predictive models by learning with weak supervision (incomplete, inexact and inaccurate supervision).
-  - **Bootstrapping** is one of weakly supervised learning method, which is also called self-training, it is a form of learning that is designed to use less training examples.
-    - It starts with a few training examples, trains a classifier, and uses thought-to-be positive examples as yielded by this classifier for retraining.
-    - As the set of training examples grow, the classifier improves, provided that not too many negative examples are misclassified as positive, which could lead to deterioration of performance.
+  - It can be supervision with noisy labels. (e.g. bootstrapping, where the bootstrapping procedure may mislabel some examples)
+ 
+- **Three types of weak supervision**
+  1. **Incomplete supervision**: where only a subset of training data is given with labels
+  2. **Inexact supervision**: where the training data are given with only coarse-grained labels
+  3. **Inaccurate supervision**: where the given labels are not always ground-truth  
+  
+- **Bootstrapping** is one of weakly supervised learning method, which is also called self-training, it is a form of learning that is designed to use less training examples.
+  - It starts with a few training examples, trains a classifier, and uses thought-to-be positive examples as yielded by this classifier for retraining.
+  - As the set of training examples grow, the classifier improves, provided that not too many negative examples are misclassified as positive, which could lead to deterioration of performance.
 
 ![Weakly]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/weakly.png){: .align-center}
 {: .full}
