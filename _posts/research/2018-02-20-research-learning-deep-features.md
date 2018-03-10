@@ -71,7 +71,48 @@ to avoid the use of fully-connected layers to minimize the number of parameters 
   - This is because, when doing the average of a map, the value can be maximized by finding all discriminative parts of an object as all low activations reduce the output of the particular map.
   - Besides, for GMP, low scores for all image regions except the most discriminative one do not impact the score as performed a max.
   - By several experiements, while GMP achieves similar classification performance as GAP, GAP outperforms GMP for localization.
+  
+# Weakly-supervised Object Localization
+The authors evaluated the localization ability of CAM when trained on the ILSVRC 2014 benchmark dataset.
+
+## Setup
+- **CNN Models**
+  - Used popular CNNS: AlexNet, VGGnet, GoogLeNet
+  - Removed the fully-connected layers before the final output and replace them with GAP followed by a fully-connected softmax layer.
+  - *Mapping resolution*: the localization ability of the networks improved when the last convolutional layer before GAP had a higher spatial resolution.
+    - For AlexNet, the layers after *conv5* (i.e., *pool5* to *prob*) resulting in a mapping resolution of $$13 \times 13$$ are removed.
+    - For VGGnet, the layers after *conv5-3* (i.e., *pool5* to *prob*) resulting in a mapping resolution of $$14 \times 14$$ are removed.
+    - For GoogLeNet, the layers after *inception4e* (i.e., *pool4* to *prob*) resulting in a mapping resolution of $$14 \times 14$$ are removed.
+  - To each networks, a convolutional layer of size $$3 \times 3$$, stride 1, pad 1 with 1024 units are added, followed by a GAP layer and a softmax layer.
+  - Each networks were fine-tuned on the images of ILSVRC.
+  
+## Results
+- **Classification**
+  - Below table summarizes the classification performance.
+  - There is a small performance drop of 1~2% when removing the additional layers from the various networks.
+  - It shows that GoogLeNet-GAP and GoogLeNet-GMP have similar performance on classification.  
+  
+![classification1]({{ site.url }}{{ site.baseurl }}/assets/images/learning deep features/classification1.png){: .align-center}{:height="80%" width="80%"}
+
+- **Localization on the ILSVRC validation set**
+  - Below table and figure are the results of localization performance on the ILSVRC validation set.
+  - GAP networks outperform all the baseline approaches with GoogLeNet-GAP achieving the lowest localization error.
+  
+![classification2]({{ site.url }}{{ site.baseurl }}/assets/images/learning deep features/classification2.png){: .align-center}{:height="80%" width="80%"}
+
+![localization2]({{ site.url }}{{ site.baseurl }}/assets/images/learning deep features/localization2.png){: .align-center}
+{: .full}
+
+- **Localization on the ILSVRC test set**
+  - Below table and figure are the results of localization performance on the ILSVRC test set.
+  - GoogLeNet-GAP with heuristics achieves a top-5 error rate in a weakly-supervised setting, which is close to the top-5 error rate of AlexNet in a fully-supervised setting.
+  
+![classification3]({{ site.url }}{{ site.baseurl }}/assets/images/learning deep features/classification3.png){: .align-center}{:height="80%" width="80%"}
+
+![localization3]({{ site.url }}{{ site.baseurl }}/assets/images/learning deep features/localization3.png){: .align-center}
+{: .full}
 
 # References
 - Paper: Learning Deep Features for Discriminative Localization [[Link](https://arxiv.org/abs/1512.04150)]
 - Web: Implementation by the paper author [[Link](http://cnnlocalization.csail.mit.edu/)]
+- Paper: Network In Network [[Link](https://arxiv.org/pdf/1312.4400.pdf)]
