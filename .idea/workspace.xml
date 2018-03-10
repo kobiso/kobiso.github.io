@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/assets/images/learning deep features/global_average_pooling.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
+      <change beforePath="$PROJECT_DIR$/_posts/research/2018-02-20-research-learning-deep-features.md" afterPath="$PROJECT_DIR$/_posts/research/2018-02-20-research-learning-deep-features.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +32,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-20-research-learning-deep-features.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="494">
-                <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+              <first_editor relative-caret-position="583">
+                <caret line="76" column="89" lean-forward="false" selection-start-line="76" selection-start-column="89" selection-end-line="76" selection-end-column="89" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -46,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="598">
+              <first_editor relative-caret-position="1046">
                 <caret line="232" column="64" lean-forward="false" selection-start-line="232" selection-start-column="64" selection-end-line="232" selection-end-column="64" />
                 <folding />
               </first_editor>
@@ -61,8 +62,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-12-research-loss functions.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1444">
-                <caret line="76" column="123" lean-forward="false" selection-start-line="76" selection-start-column="96" selection-end-line="76" selection-end-column="123" />
+              <first_editor relative-caret-position="361">
+                <caret line="76" column="96" lean-forward="false" selection-start-line="76" selection-start-column="96" selection-end-line="76" selection-end-column="123" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -283,11 +284,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\learning deep features" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\research" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images" />
       <recent name="C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io\_posts\research" />
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\autoencoder" />
@@ -347,12 +348,12 @@
       <workItem from="1519433591082" duration="33000" />
       <workItem from="1519433652198" duration="33000" />
       <workItem from="1519436069648" duration="22295000" />
-      <workItem from="1520575690234" duration="10585000" />
+      <workItem from="1520575690234" duration="20412000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="662733000" />
+    <option name="totallyTimeSpent" value="672560000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1002,11 +1003,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-12-research-loss functions.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1444">
-            <caret line="76" column="123" lean-forward="false" selection-start-line="76" selection-start-column="96" selection-end-line="76" selection-end-column="123" />
+          <first_editor relative-caret-position="1046">
+            <caret line="232" column="64" lean-forward="false" selection-start-line="232" selection-start-column="64" selection-end-line="232" selection-end-column="64" />
             <folding />
           </first_editor>
           <second_editor>
@@ -1015,11 +1016,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-12-research-loss functions.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="598">
-            <caret line="232" column="64" lean-forward="false" selection-start-line="232" selection-start-column="64" selection-end-line="232" selection-end-column="64" />
+          <first_editor relative-caret-position="361">
+            <caret line="76" column="96" lean-forward="false" selection-start-line="76" selection-start-column="96" selection-end-line="76" selection-end-column="123" />
             <folding />
           </first_editor>
           <second_editor>
@@ -1031,8 +1032,8 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-02-20-research-learning-deep-features.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="494">
-            <caret line="29" column="26" lean-forward="false" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+          <first_editor relative-caret-position="583">
+            <caret line="76" column="89" lean-forward="false" selection-start-line="76" selection-start-column="89" selection-end-line="76" selection-end-column="89" />
             <folding />
           </first_editor>
           <second_editor>
