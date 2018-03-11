@@ -48,7 +48,7 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper & Project Review
     children:
-      - title: "17' Inception (writing...)"
+      - title: "17' Inception (-v4, -ResNet) (writing...)"
         url: /research/research-inception/
       - title: "17' Hide-and-Seek"
         url: /research/research-hide-and-seek/

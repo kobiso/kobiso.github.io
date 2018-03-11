@@ -1,5 +1,5 @@
 ---
-title: "Inception"
+title: "Inception-v4 and Inception-ResNet"
 categories:
   - Research
 tags:
