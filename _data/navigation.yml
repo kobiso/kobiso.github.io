@@ -48,6 +48,8 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper & Project Review
     children:
+      - title: "17' Inception (writing...)"
+        url: /research/research-inception/
       - title: "17' Hide-and-Seek"
         url: /research/research-hide-and-seek/
       - title: "17' Attention Is All You Need"
