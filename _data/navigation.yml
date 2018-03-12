@@ -72,6 +72,8 @@ dl:
         url: /research/research-multi-neural-machine-translation/
       - title: "15' Batch Normalization"
         url: /research/research-batch-norm/
+      - title: "14' Network In Network"
+        url: /research/research-NIN/
       - title: "14' Generative Adversarial Nets"
         url: /research/research-GAN/
   - title: Deep Learning Related
