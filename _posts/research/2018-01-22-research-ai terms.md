@@ -237,6 +237,10 @@ $${: .text-cetner}
 ![Weakly]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/weakly.png){: .align-center}
 {: .full}
 
+![Supervision]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/weak supervision.png){: .align-center}{:height="90%" width="90%"}
+*Figure: Hierarchy tree of supervision.*
+{: .text-center}
+
 - **Reference**
   - Stack Overflow: What is weakly supervised learning (bootstrapping)? [[Link](https://stackoverflow.com/questions/18944805/what-is-weakly-supervised-learning-bootstrapping)]
   - Paper: A brief introduction to weakly supervised learning [[Link](https://watermark.silverchair.com/nwx106.pdf?token=AQECAHi208BE49Ooan9kkhW_Ercy7Dm3ZL_9Cf3qfKAc485ysgAAAegwggHkBgkqhkiG9w0BBwagggHVMIIB0QIBADCCAcoGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMMLy1On1YQARqVEpQAgEQgIIBm_eusvyUAgChrY5LWDKOAD9z_1qliTEzSJqbFJMufOOE7b7h7L5IG1Qh0sCIS5ZUuwnrQBSDQwpBxQrc2rLL8vMw_Z1iZJCK1rAhglqbD2ZckZ9fcvJ-x1FAYR3ewOpc2udHGv_CUB2A9GHRRD7vR-z4yjBCXPqyBWjn6LVwttPOygFjPKUrxhhrfJKX05o3iNbn0HBQ75skLkLe4BpWHrSDWLnGWMSJFSoLPFmK2xKwBuQJdct9kMeTOFVQxJxDe0VaGTmD_BC0o_YLaH9eXNtC7UqV6yTO0ddURj_Zwwgf09FkpeJNZsaQHnNpOJVNvDOSxA_Go8GkSv-6lgMtBc1OB5zlOAGHqeNPX4BxnIsHIYKS3yJfbx9qdSjG93s-wZyJUqG17eq2JGFEnj4vJ7H7NoPkR8KJRcZrddYfCx__XRYWnd8g8hOnaqpZF14G3nK5zfrf1L6YW-XNRsq0pmiRSyp9VN_cBNM1v4vk1Y_D0_vn7uF3mLkx6nfiJzfljrIfR4R7Ki3TmIdeuRf0KMMgLVGWxGsjAHdp7w)]
