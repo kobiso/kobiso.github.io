@@ -37,10 +37,12 @@ The red input layer in CNN holds the image, so its width and height would be the
 # Convolution
 ## Naive Convolution
 - **Time Complexity**
+  - When the image size $$N$$ and filter size $$a$$
+    - Time complexity of 1D convolution will be $$O(aN) \approx O(N^2)$$.
   - When the image size $$N \times N$$ and filter size $$a \times b$$
-  - Time complexity of 1D convolution will be $$O(N^2)$$.
-  - Time complexity of 2D convolution will be $$O(abN^2) \approx O(N^4)$$.
-  - Time complexity of 3D convolution will be $$O(N^6)$$.
+    - Time complexity of 2D convolution will be $$O(abN^2) \approx O(N^4)$$.
+  - When the image size $$N \times N \times N$$ and filter size $$a \times b \times c$$
+    - Time complexity of 3D convolution will be $$O(abcN^3) \approx O(N^6)$$.
 
 ## Convolution by Matrix Computation
 By using **matrix computation**, the convolution computation can be done faster than the naive way.
@@ -81,11 +83,13 @@ FFT convolution uses the **overlap-add method** shown in below figure.
 ![FFT]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/fft.png){: .align-center}
 {: .full}
 
-- **Time Complexity**
+- **Time Complexity**  
+  - When the image size $$N$$ and filter size $$a$$
+    - Time complexity of 1D convolution will be $$O(N \log N)$$.
   - When the image size $$N \times N$$ and filter size $$a \times b$$
-  - Time complexity of 1D convolution will be $$O(N \log N)$$.
-  - Time complexity of 2D convolution will be $$O(N^2 \log_2 N)$$.
-  - Time complexity of 3D convolution will be $$O(N^3 \log_3 N)$$.
+    - Time complexity of 2D convolution will be $$O(N^2 \log_2 N)$$.
+  - When the image size $$N \times N \times N$$ and filter size $$a \times b \times c$$
+    - Time complexity of 3D convolution will be $$O(N^3 \log_3 N)$$.
 
 # CNN Layers
 Convolutional neural network usually use three main types of layers: **Convolutional Layer, Pooling Layer, Fully-Connected Layer**.
