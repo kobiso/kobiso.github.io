@@ -63,7 +63,7 @@ $${: .text-center}
   - In practice, early in learning, when *G* is poor, *D* can reject samples with high confidence because they are clearly different from the training data.
   - In this case, the gradient is relatively small at $$D(G(z))=0$$ which makes $$\log (1-D(G(z)))$$ saturates.
   ![Saturate]({{ site.url }}{{ site.baseurl }}/assets/images/gan/saturate.png){: .align-center}
-  - Rather than training *G* to minimize $$\log (1-D(G(z)))$$, we can tran *G* to maximize $$\log D(G(z))$$.
+  - Rather than training *G* to minimize $$\log (1-D(G(z)))$$, we can train *G* to maximize $$\log D(G(z))$$.
   - This objective function results in the same fixed point of the dynamics of *G* and *D* but provides much stronger gradients early in learning.
   ![Non-Saturate]({{ site.url }}{{ site.baseurl }}/assets/images/gan/non-saturate.png){: .align-center}
   
