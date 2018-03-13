@@ -90,7 +90,7 @@ $$
 The square loss function is both convex and smooth and matches the 0–1 when $$yf(\vec{x})= 0$$ and when $$yf(\vec{x}) = 1$$.
 
 ## Hinge Loss
-The **hinge loss** is used for maximum-margin classification task, most notably for *support vector machines (SVMs).
+The **hinge loss** is used for maximum-margin classification task, most notably for *support vector machines (SVMs)*.
 For an intended output $$t=±1$$, a classifier score $$y$$ which should be the raw output of the classifier's decision function, not the predicted class label.
 
 $$
