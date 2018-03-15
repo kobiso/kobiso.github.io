@@ -56,8 +56,6 @@ dl:
         url: /research/research-attention-is-all-you-need/
       - title: "17' Capsule Network"
         url: /research/research-capsule-network/
-      - title: "17' YOLO 9000 (soon...)"
-        url: /research/research-yolo9000/
       - title: "17' Multi-speaker Tacotron"
         url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
       - title: "16' Learning Deep Features"
