@@ -309,6 +309,8 @@ $$
 \theta_{ML} = \arg\max_\theta \mathcal L (X;\theta) = \arg\max_\theta p_{model}(X;\theta) = \arg\max_\theta \prod_{i=1}^m p_{model}(x^{(i)};\theta)
 $${: .text-center}      
 
+- "In what value of unknown parameter $$\theta$$, does the observed data $$X$$ get the highest probability?"     
+
 - This product over many probabilities can cause inconvenience such as numerical underflow.
   - So, take the logarithm of the likelihood and transform a product into a sum
   
