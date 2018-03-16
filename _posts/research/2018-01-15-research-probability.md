@@ -3,8 +3,10 @@ title: "Probability"
 categories:
   - Research
 tags:
-  - Probability
+  - probability
   - Information theory
+  - MLE
+  - MAP
 header:
   teaser: /assets/images/probability/pdf.png
   overlay_image: /assets/images/probability/pdf.png
@@ -320,10 +322,28 @@ $${: .text-center}
 
 - MLE has a drawback that it is too sensitive to given observation or data.
   - e.g. If we throw a coin $$n$$ number of time and got $$n$$ number of front, MLE can consider it is a coin with only front.
+  
+## MLE Usage
+
+$$\theta_{ML} = \arg\max_\theta p_{model}(X;\theta)$$   
+
+- **Neural Network**
+  - In training NN, we usually minimize the negative log-likelihood (cross-entropy) which is equivalent to *MLE*.
+    - The only constraint to use the negative log-likelihood is to have an output lyaer that can be interpreted as a probability distribution, which we usually we softmax.   
+  - MLE applied to deep networks is called *Backpropagation*.
+    - To choose the optimal values of $$\theta$$, we use gradient descent where we continually update $$\theta$$ in a way that leads to a step up with respect to likelihood.
+  - Regularization terms can be added and sometimes can be interpreted as prior distributions over the parameters, in that case we are looking for the **maximum a posteriori (MAP)**.
+
+![MLE]({{ site.url }}{{ site.baseurl }}/assets/images/probability/mle.png){: .align-center}{:height="70%" width="70%"}
+*Figure: MLE training for neural networks.*
+{: .text-center}
+
+- **Linear, logistic regression and multiclass logistic regression**
+- **Conditional random field (CRF)**
+- **Hidden Markov Model (HMM)**
 
 # Maximum a Posteriori Estimation (MAP)
-- In order to handle the MLE's drawback, we use **maximum a posteriori estimation (MAP)**.
-  - MAP estimate parameter which has the maximum probability given data, instead of maximizing the probability of data given parameter (*MLE*).
+- **Maximum a posteriori estimation (MAP)** estimate parameter which has the maximum probability given data, instead of maximizing the probability of data given parameter (*MLE*).
   - MAP estimate chooses the point of maximal posterior probability or maximal probability density in the more common case of continuous $$\theta$$.
   - As we can only observe $$p(x \mid \theta)$$ (*likelihood*), we use **Bayes' Theroem** to use $$p(\theta \mid x)$$.
   
@@ -333,6 +353,28 @@ $${: .text-center}
 
 - MAP Bayesian inference has the advantage of leveraging information that is brought by the prior and connot be found in the training data. 
   - This additional information helps to reduce the variance in the MAP point estimate compared to the MLE.
+  
+- **MLE vs. MAP**
+  - Assume we train a logistic regression model,
+    - MLE training: pick $$W$$ to maximize $$P(Y \mid X, W)$$
+    - MLE training: pick $$W$$ to maximize $$P(W \mid X, Y)$$
+  - If a prior information is given as part of the problem, then use MAP.
+    - If not, we cannot use MAP and MLE is a reasonable approach.
+  
+## MAP Usage
+- **Neural Network**
+  - MAP is closely related to the method of MLE, but employs an augmented optimization objective which incorporates a prior distribution over the quantity one want to estimate.
+  - MAP estimation can therefore be seen as a regularization of MLE.
+
+![MAP]({{ site.url }}{{ site.baseurl }}/assets/images/probability/map.png){: .align-center}{:height="70%" width="70%"}
+*Figure: MAP training for neural networks.*
+{: .text-center}
+
+- **Bayesian Neural Network**
+- **Hidden Markov Model (HMM)**
 
 # References
-- Deep Learning book [[Link](http://www.deeplearningbook.org/)]
+- Book: Deep Learning book [[Link](http://www.deeplearningbook.org/)]
+- Web: Standford CS109 Deep Learning Lecture material [[Link](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/pdfs/41%20DeepLearning.pdf)]
+- Web: CMU Neural Network Lecture material [[Link](http://www.cs.cmu.edu/~awm/15781/slides/NNets-10-4-05.pdf)]
+- Wikipedia: Maximum a posteriori estimation [[Link](https://en.wikipedia.org/wiki/Maximum_a_posteriori_estimation)]
