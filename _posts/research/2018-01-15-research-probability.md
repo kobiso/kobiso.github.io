@@ -5,6 +5,7 @@ categories:
 tags:
   - probability
   - Information theory
+  - entropy
   - MLE
   - MAP
 header:

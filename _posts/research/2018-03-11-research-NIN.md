@@ -5,6 +5,7 @@ categories:
 tags:
   - NIN
   - gap
+  - CNN
 header:
   teaser: /assets/images/NIN/gap.png
   overlay_image: /assets/images/NIN/gap.png
