@@ -6,6 +6,7 @@ tags:
   - hide-and-seek
   - object detection
   - weakly-supervised object
+  - CAM
 header:
   teaser: /assets/images/hide-and-seek/main idea.png
   overlay_image: /assets/images/hide-and-seek/main idea.png

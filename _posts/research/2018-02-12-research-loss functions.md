@@ -4,6 +4,7 @@ categories:
   - Research
 tags:
   - loss function
+  - cross entropy
 header:
   teaser: /assets/images/loss functions/norm.png
   overlay_image: /assets/images/loss functions/norm.png
