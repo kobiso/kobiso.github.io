@@ -55,6 +55,29 @@ $${: .text-center}
 So, $$\lambda W$$ will work as penalty according to the amount of $$W$$.  
 
 # Dropout
+**Dropout** [[N. Srivastava et al., 2014](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)] is one of the simplest and the most powerful regularization techniques.
+It prevents units from complex co-adapting by randomly dropping units from the network.
+
+![Dropout]({{ site.url }}{{ site.baseurl }}/assets/images/regularization/dropout.png){: .align-center}
+{: .full}
+*Figure: Comparison between network with dropout and without dropout.*
+{: .text-center}
+
+- **In the training stage**
+  - It randomly drops units using *dropout rate*
+  - It has the effect of sampling a large number of different thinned networks.
+  - **Dropout rate**: probability that a unit will be retained.
+    - Optimal dropout rate is suggested around 0.5 in hidden layers and close to 1 for in input layer.   
+    - As it is a hyperparameter, it can be decided empirically. 
+    
+- **In the inference stage**
+  - A single unthinned network is used (no dropout applied)
+  - Weights of the unthinned network has to be multiplied by the dropout rate to keep the output the same as training stage.
+  - It approximates the effect of averaging the predictions of all thinned networks from the training process. (as *ensemble learning*)
+  
+- **Drawbacks of dropout**
+  - It increases training time because of noisy parameter updates caused when each training step tries to train a different architecture.
 
 # References
 - Blog: L1 and L2 Regularization Methods [[Link](https://towardsdatascience.com/l1-and-l2-regularization-methods-ce25e7fc831c)]
+- Paper: Dropout: A Simple Way to Prevent Neural Networks from Overfitting [[Link](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)]
