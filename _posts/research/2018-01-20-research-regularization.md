@@ -27,6 +27,8 @@ Overfitting problem usually caused by large weight value $$W$$, so common way of
 Regularization parameter $$\lambda$$ penalizes all the parameters except intercept so that it will decrease the importance given to higher terms and will bring the model towards less complex equation. 
 
 ![Regularization]({{ site.url }}{{ site.baseurl }}/assets/images/regularization/regularization.png){: .align-center}{:height="70%" width="70%"} 
+*Figure 1: Example of cost function with regularization term.*
+{: .text-center}
 
 # L1/L2 Regularization
 ## L1 Regularization
@@ -36,6 +38,8 @@ If $$\lambda$$ is very large, it will add too much weight and it will lead to un
 So, it is important how $$\lambda$$ is chosen.
 
 ![L1]({{ site.url }}{{ site.baseurl }}/assets/images/regularization/l1.png){: .align-center}{:height="45%" width="45%"} 
+*Figure 2: L1 regularization.*
+{: .text-center}
 
 ## L2 Regularization (weight decay)
 **L2 Regularization** also called *Ridge Regression* is one of the most commonly used regularization technique. 
@@ -45,6 +49,8 @@ If $$\lambda$$ is very large, it will add too much weight and it will lead to un
 So, it is important how $$\lambda$$ is chosen as well.
 
 ![L2]({{ site.url }}{{ site.baseurl }}/assets/images/regularization/l2.png){: .align-center}{:height="45%" width="45%"}
+*Figure 3: L2 regularization.*
+{: .text-center}
 
 Simply thinking that we add $$\frac{1}{2}\lambda W^2$$ on the loss function and after computing gradient descent, $$W$$ will be updated by,
 
@@ -60,7 +66,7 @@ It prevents units from complex co-adapting by randomly dropping units from the n
 
 ![Dropout]({{ site.url }}{{ site.baseurl }}/assets/images/regularization/dropout.png){: .align-center}
 {: .full}
-*Figure: Comparison between network with dropout and without dropout.*
+*Figure 4: Comparison between network with dropout and without dropout.*
 {: .text-center}
 
 - **In the training stage**
