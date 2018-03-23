@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 
 # Site Settings
 locale                   : "en"
-title                    : "DL Board"
+title                    : "Home"
 title_separator          : "-"
 name                     : "ByungSoo Ko"
 description              : "an master's student researcher in deep learning"

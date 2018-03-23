@@ -10,16 +10,16 @@ main:
   #   url: /sitemap/
    - title: "Deep Learning"
      url: /research/research-probability/
-   - title: "D.S & Algorithm"
-     url: /data structure/coding-DS_hash-table/
+   - title: "Algorithm"
+     url: /data structure/coding-DS_graph/
    - title: "Coding Challenge"
      url: /coding challenge/coding-HR_array-manipulation/
    #- title: "Categories"
    #  url: /categories/
-   - title: "Tags"
-     url: /tags/
-   - title: "Archives"
-     url: /year-archive/
+#   - title: "Tags"
+#     url: /tags/
+#   - title: "Archives"
+#     url: /year-archive/
 
 dl:
   - title: Deep Learning Basic
@@ -156,14 +156,14 @@ coding:
 cs:
   - title: Data Structure
     children:
+      - title: "Graph"
+        url: /data structure/coding-DS_graph/
+      - title: "Tree"
+        url: /data structure/coding-DS_tree/
       - title: "Hash Table"
         url: /data structure/coding-DS_hash-table/
       - title: "Stack & Queue"
         url: /data structure/coding-DS_stack&queue/
-      - title: "Tree"
-        url: /data structure/coding-DS_tree/
-      - title: "Graph"
-        url: /data structure/coding-DS_graph/
   - title: Algorithm
     children:
       - title: "Sorting"
