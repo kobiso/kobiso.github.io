@@ -48,7 +48,7 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper & Project Review
     children:
-      - title: "17' Click Supervision (writing...)"
+      - title: "17' Click Supervision"
         url: /research/research-click-supervision/
       - title: "17' Inception (-v4, -ResNet) (writing...)"
         url: /research/research-inception/

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d749bc1f-707a-4953-8ec7-a04fbdc733a0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/_data/navigation.yml" afterPath="$PROJECT_DIR$/_data/navigation.yml" />
+      <change beforePath="$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md" afterPath="$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,32 +17,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="74" column="39" lean-forward="false" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
+            <state relative-caret-position="209">
+              <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="2018-05-10-research-click supervision.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-05-10-research-click supervision.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="1015">
-                <caret line="74" column="2" lean-forward="false" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
+              <first_editor relative-caret-position="323">
+                <caret line="17" column="159" lean-forward="false" selection-start-line="17" selection-start-column="159" selection-end-line="17" selection-end-column="159" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -57,8 +46,8 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="825">
-                <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+              <first_editor relative-caret-position="768">
+                <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="9" />
                 <folding />
               </first_editor>
               <second_editor>
@@ -184,9 +173,9 @@
         <option value="$PROJECT_DIR$/_posts/research/2018-02-12-research-loss functions.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-20-research-regularization.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
-        <option value="$PROJECT_DIR$/_data/navigation.yml" />
-        <option value="$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md" />
+        <option value="$PROJECT_DIR$/_data/navigation.yml" />
       </list>
     </option>
   </component>
@@ -339,12 +328,12 @@
       <workItem from="1520575690234" duration="27986000" />
       <workItem from="1520747785169" duration="9841000" />
       <workItem from="1520819038159" duration="35538000" />
-      <workItem from="1525915224443" duration="10182000" />
+      <workItem from="1525915224443" duration="18100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="735695000" />
+    <option name="totallyTimeSpent" value="743613000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1273" y="0" width="1294" height="1407" extended-state="0" />
@@ -905,14 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-03-11-research-NIN.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="SPLIT">
@@ -965,19 +946,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="74" column="39" lean-forward="false" selection-start-line="74" selection-start-column="39" selection-end-line="74" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="825">
-            <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+          <first_editor relative-caret-position="768">
+            <caret line="247" column="0" lean-forward="false" selection-start-line="247" selection-start-column="0" selection-end-line="247" selection-end-column="9" />
             <folding />
           </first_editor>
           <second_editor>
@@ -989,13 +962,29 @@
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="1015">
-            <caret line="74" column="2" lean-forward="false" selection-start-line="74" selection-start-column="2" selection-end-line="74" selection-end-column="2" />
+          <first_editor relative-caret-position="323">
+            <caret line="17" column="159" lean-forward="false" selection-start-line="17" selection-start-column="159" selection-end-line="17" selection-end-column="159" />
             <folding />
           </first_editor>
           <second_editor>
             <js_state />
           </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="30" column="1" lean-forward="false" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
