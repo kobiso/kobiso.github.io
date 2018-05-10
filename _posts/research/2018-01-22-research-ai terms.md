@@ -172,6 +172,16 @@ $${: .text-cetner}
 - **Reference**
   - Wikipedia: Mean squared error [[Link](https://en.wikipedia.org/wiki/Mean_squared_error)]
   
+  
+# O
+
+# Object Proposal
+**Object proposal** is a hypothesis that is proposed which is not yet a successful detection but just a proposal that needs to be verified and refined.
+  - It can be wrong but the trick is to reduce the chances of object detection being wrong.
+
+- **Reference**
+  - Quora: What's the difference between object detection and object proposals? [[Link](https://www.quora.com/Whats-the-difference-between-object-detection-and-object-proposals)]
+
 # P
 ## Principal Component Analysis (PCA)
 **Principal component analysis (PCA)** is a dimension-reduction tool that can be used to reduce a large set of variables to a small set that still contains most of the information in the large set.
