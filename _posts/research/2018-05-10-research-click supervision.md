@@ -23,11 +23,14 @@ It was presented in the Conference on Computer Vision and Pattern Recognition (C
 
 - **Problem Statement**
   - Manually drawing bounding boxes for training object class detectors is time consuming.
+  - Even though object detectors can be trained under weak supervision, the resulting detectors deliver lower accuracy.
+  
+- **Research Objective**
+  - To minimize human annotation effort while producing high-quality detectors.
   
 - **Proposed Solution**
-  - Greatly reduce annotation time by proposing center-click annotation
-    - Annotators click on the center of an imaginary bounding box
-    - Incorporate these clicks into existing Multiple Instance Learning techniques for weakly supervised object localization    
+  - Propose annotating objects by clicking on their centers    
+  - Incorporate those clicks into existing Multiple Instance Learning techniques for weakly supervised object localization    
   
 - **Contribution**
   - Delivers high-quality detectors, performing substantially better than those produced by weakly supervised techniques, with a modest extra annotation effort
@@ -110,7 +113,7 @@ $$
   - $$\sigma _{bc}$$: controls how quickly the $$S_{bc}$$ decreases as $$c_p$$ gets farther from $$c$$.
   
 $$
-S_{bc}(p; c, \sigma _{bc}) = e^{-\frac{\parallel c_p - c \parallel ^2}{2\sigma ^2 _{bc}}} \cdots
+S_{bc}(p; c, \sigma _{bc}) = e^{-\frac{\parallel c_p - c \parallel ^2}{2\sigma ^2 _{bc}}}
 $$
 
 ### Use in Re-localization
@@ -131,7 +134,7 @@ Moreover, we can estimate the object area based on the distance between the two 
 By averaging the positions of two clicks we can estimate the object center more accurately.
 
 $$
-c = \frac{c_1}{c_2}
+c = \frac{(c_1 + c_2)}{2} \\
 S_{bc}(p; c, \sigma _{bc}) = e^{-\frac{\parallel c_p - c \parallel ^2}{2\sigma ^2 _{bc}}}
 $$
 
@@ -154,8 +157,18 @@ $$
 
 # Experimental Results
 
-![Result]({{ site.url }}{{ site.baseurl }}/assets/images/click supervision/result.png){: .align-center}{: .full}
+![Result1]({{ site.url }}{{ site.baseurl }}/assets/images/click supervision/result.png){: .align-center}{: .full}
 *Figure 3: Examples of objects localized on the trainval set of PASCAL VOC 2007 using one-click (blue), two-click (green) and the reference MIL (red)*
+{: .text-center}
+
+![Result2]({{ site.url }}{{ site.baseurl }}/assets/images/click supervision/result2.png){: .align-center}{:height="80%" width="80%"}
+*Figure 4: Evaluation on PASCAL VOC 2007.
+Correct Localization (CorLoc) and mean average precision (mAP) performance against human annotation time in hours(log-scale)*
+{: .text-center}
+
+![Result3]({{ site.url }}{{ site.baseurl }}/assets/images/click supervision/result3.png){: .align-center}{:height="80%" width="80%"}
+*Figure 5: Evaluation on MSCOCO.
+CorLoc and mAP performance against human annotation time in hours(log-scale)*
 {: .text-center}
 
 # References
