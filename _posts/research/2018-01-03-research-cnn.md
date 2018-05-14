@@ -169,6 +169,17 @@ Convolutional neural network usually use three main types of layers: **Convoluti
 - Neurons in a fully connected layer have full connections to all activations in the previous layer.
 - Their activations can hence be computed with a matrix multiplication followed by a bias offset.
 - This layer work as a classification purpose.
+
+## Softmax Loss
+
+Cross-entropy loss with softmax function as below figure is one of the most common used supervision components in CNNs.
+The **softmax loss** is defined in [this paper](https://arxiv.org/abs/1612.02295) as the combination of a cross-entropy loss, a softmax function and the last fully connected layer.
+It has been used widely because of its simplicity and clear probabilistic interpretation.
+Despite its popularity, [this paper](https://arxiv.org/abs/1612.02295) have shown that it has limitation of the lack of encouraging the discriminability of CNN features.
+
+![Softmax loss]({{ site.url }}{{ site.baseurl }}/assets/images/cnn/softmax loss.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Cross-entropy loss together with softmax function is one of the most common used supervision components in CNN*
+{: .text-center}
  
 # Several CNN Models  
 - **LeNet**: The first successful applications of CNN were developed in 1990's.
