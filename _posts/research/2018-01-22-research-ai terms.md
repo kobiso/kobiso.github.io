@@ -172,7 +172,19 @@ $${: .text-cetner}
 - **Reference**
   - Wikipedia: Mean squared error [[Link](https://en.wikipedia.org/wiki/Mean_squared_error)]
   
-  
+## Multiple Instance Learning (MIL)
+**Multiple instance learning (MIL)** is a variation on supervised learning.
+Instead of receiving a set of instances which are individually labeled, the learner receives a set of labeled bags, each containing many instances.
+
+Given an image, we want to know its target class based on its visual content.
+For instance, the target might be "beach", where the image contains both "sand" and "water"
+In MIL terms, the image is described as a bag $$X={X_1, \cdots, X_N}$$, where each $$X_i$$ is the feature vector (called *instance*) extracted from the corresponding $$i$$-th region in the image
+ and $$N$$ is the total regions (instances) partitioning the image.
+The bag is labeled *positive* ("beach") if it contains both "sand" region instances and "water" region instances.
+
+- **Reference**
+  - Wikipedia: Multiple-instance learning [[Link](https://en.wikipedia.org/wiki/Multiple-instance_learning)]
+
 # O
 
 # Object Proposal
