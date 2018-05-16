@@ -76,6 +76,8 @@ dl:
         url: /research/research-NIN/
       - title: "14' Generative Adversarial Nets"
         url: /research/research-GAN/
+      - title: "Paper Skim"
+        url: /research/research-paper-skim/
   - title: Deep Learning Related
     children:
       - title: "AI Terms"

@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="navigation.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1558">
-              <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
+            <state relative-caret-position="19">
+              <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -52,8 +52,8 @@
       <file leaf-file-name="_config.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="152">
+              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="473">
+              <first_editor relative-caret-position="19">
                 <caret line="123" column="2" selection-start-line="123" selection-start-column="2" selection-end-line="123" selection-end-column="2" />
               </first_editor>
               <second_editor />
@@ -70,12 +70,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="2018-01-22-research-ai terms.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="2018-01-22-research-ai terms.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="489">
-                <caret line="181" column="37" lean-forward="true" selection-start-line="181" selection-start-column="37" selection-end-line="181" selection-end-column="37" />
+              <first_editor relative-caret-position="3781">
+                <caret line="199" column="53" selection-start-line="199" selection-start-column="53" selection-end-line="199" selection-end-column="53" />
               </first_editor>
               <second_editor />
             </state>
@@ -103,7 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>it is contro</find>
       <find>implementa</find>
       <find>bayes</find>
       <find>convolutional layer</find>
@@ -133,6 +132,7 @@
       <find>weakly</find>
       <find>board</find>
       <find>full</find>
+      <find>multiple</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\Surface pro4\Google 드라이브\Github\kobiso.github.io</dir>
@@ -148,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_binary search tree.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-16-coding-HR_lilys homework.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-10-coding-DS_hash table.md" />
         <option value="$PROJECT_DIR$/_posts/coding/2018-01-11-coding-DS_stack&amp;queue.md" />
@@ -197,8 +196,9 @@
         <option value="$PROJECT_DIR$/assets/css/main.scss" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md" />
         <option value="$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/_posts/research/2018-05-15-research-Multi-fold MIL.md" />
       </list>
     </option>
   </component>
@@ -216,9 +216,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1909" />
-    <option name="width" value="1940" />
-    <option name="height" value="2111" />
+    <option name="x" value="429" />
+    <option name="y" value="378" />
+    <option name="width" value="1866" />
+    <option name="height" value="1398" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -242,6 +243,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -274,7 +276,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -284,18 +285,18 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\USER\Google 드라이브\Github\kobiso.github.io\_posts\research" />
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\research" />
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\NIN" />
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\learning deep features" />
+      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\inception" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\autoencoder" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\graph" />
       <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\yolo9000" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\research" />
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\NIN" />
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images\learning deep features" />
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\_posts\coding" />
-      <recent name="D:\GoogleDrive\Github\kobiso.github.io\assets\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -359,24 +360,25 @@
       <workItem from="1526264048443" duration="2155000" />
       <workItem from="1526290473726" duration="1229000" />
       <workItem from="1526291734867" duration="108000" />
-      <workItem from="1526351108554" duration="1474000" />
+      <workItem from="1526351108554" duration="3398000" />
+      <workItem from="1526375762390" duration="1286000" />
+      <workItem from="1526460057358" duration="70000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="758023000" />
+    <option name="totallyTimeSpent" value="761303000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1273" y="0" width="1293" height="1407" extended-state="0" />
-    <editor active="true" />
+    <frame x="286" y="252" width="1244" height="932" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12978889" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18536586" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50416666" side_tool="true" weight="0.2430998" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49583334" visible="true" weight="0.17292644" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49583334" weight="0.31421447" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -397,7 +399,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-13-research-temp.md" />
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-08-coding-HR_finding running median.md" />
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-12-coding-HR_binary search tree.md" />
     <entry file="file://$PROJECT_DIR$/_posts/coding/2018-01-15-coding-HR_lilys homework.md" />
@@ -463,13 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1558">
-          <caret line="82" column="33" selection-start-line="82" selection-start-column="33" selection-end-line="82" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-03-research-cnn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -480,30 +474,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="3781">
+            <caret line="199" column="53" selection-start-line="199" selection-start-column="53" selection-end-line="199" selection-end-column="53" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/research/2018-05-15-research-Multi-fold MIL.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="361">
+            <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/_posts/research/2018-05-10-research-click supervision.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="473">
+          <first_editor relative-caret-position="19">
             <caret line="123" column="2" selection-start-line="123" selection-start-column="2" selection-end-line="123" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/research/2018-01-22-research-ai terms.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="489">
-            <caret line="181" column="37" lean-forward="true" selection-start-line="181" selection-start-column="37" selection-end-line="181" selection-end-column="37" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_data/navigation.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
         </state>
       </provider>
     </entry>
