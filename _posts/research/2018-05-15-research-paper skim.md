@@ -99,6 +99,33 @@ So, this post will be keep updating by the time.
 ## References
 - Paper: [Scalable Deep Learning Logo Detection](https://arxiv.org/pdf/1803.11417.pdf)
 
+# What's the point: semantic segmentation with point supervision
+- Conference: ICCV2016
+
+## Summary
+
+- **Problem Statement**
+  - Detailed per-pixel annotations enable training accurate models but are very time-consuming to obtain
+  - Image-level class labels are an order of magnitude cheaper but result in less accurate models
+  
+- **Research Objective**
+  - To take a natural step (point) from image-level annotation towards stronger supervision
+  
+- **Proposed Solution**
+  - Annotators *point* to an object if one exists
+  - Incorporate this point supervision along with a novel objectness potential in the training loss function of a CNN model.
+  
+- **Contribution**
+  - Experimental results on the PASCAL VOC 2012 benchmark reveal that the combined effect of point-level supervision and objectness potential yields an improvement of 12.9% mIOU over image-level supervision
+  - Models trained with point-level supervision are more accurate than models trained with image-level, squiggle-level or full supervision given a fixed annotation budget
+
+![Segmentation Method]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/segmentation method.png){: .align-center}{:height="100%" width="100%"}
+*Figure:(Top): Overview of our semantic segmentation training framework. (Bottom): Different levels of training supervision*
+{: .text-center}
+
+## References
+- Paper: [What's the point: semantic segmentation with point supervision](http://calvin.inf.ed.ac.uk/wp-content/uploads/Publications/bearman16cvpr.pdf)
+
 <!--
 # Weakly Supervised Object Localization with Multi-fold Multiple Instance Learning, TPAMI16
 - Conference: TPAMI2016

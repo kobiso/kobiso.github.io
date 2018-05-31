@@ -62,8 +62,6 @@ dl:
         url: /research/research-capsule-network/
       - title: "17' Multi-speaker Tacotron"
         url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
-      - title: "16' What's the Point"
-        url: /research/research-what's-the-point/
       - title: "16' Learning Deep Features"
         url: /research/research-learning-deep-features/
       - title: "16' You Only Look Once (YOLO)"
