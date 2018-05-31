@@ -1,9 +1,9 @@
 ---
-title: "Paper Skim"
+title: "Paper Skimming"
 categories:
   - Research
 tags:
-  - paper skim
+  - paper skimming
 header:
   teaser: /assets/images/paper skim/land mark.png
   overlay_image: /assets/images/paper skim/land mark.png
@@ -70,6 +70,34 @@ So, this post will be keep updating by the time.
 
 ## References
 - Paper: [Unsupervised Learning of Object Landmarks by Factorized Spatial embeddings](https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/thewlis17unsupervised.pdf)
+
+# Scalable Deep Learning Logo Detection
+- Conference: Arxiv
+- Institute: Queen Mary University of London, Vision Semantics Ltd.
+
+## Summary
+- **Problem Statement**
+  - Existing logo detection methods usually consider a small number of logo classes and limited images per class with a strong assumption of requiring tedious object bounding box annotations.
+  - This is not scalable to real-world dynamic applications.
+  
+- **Research Objective**
+  - To handle the problem by exploring the webly data learning principle without the need for exhaustive manual labelling.
+  - To learn scalable logo detection method
+  
+- **Proposed Solution**
+  - Propose a novel incremental learning approach, called Scalable Logo Self-co-Learning (SL<sup>2</sup>)
+  - It is capable of automatically self-discovering informative training images from noisy web data for progressively improving model capability in a cross-model co-learning manner.
+  
+- **Contribution**
+  - Introduce a very large (2,190,757 images of 194 logo classes) logo dataset "WebLogo-2M"
+  - Proposed SL<sup>2</sup> method is superior over the state-of-the-art and weekly supervised detection and contemporary webly data learning approaches.
+
+![Algorithm]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/logo.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Logo detection performance on WebLogo-2M.*
+{: .text-center}
+
+## References
+- Paper: [Scalable Deep Learning Logo Detection](https://arxiv.org/pdf/1803.11417.pdf)
 
 <!--
 # Weakly Supervised Object Localization with Multi-fold Multiple Instance Learning, TPAMI16

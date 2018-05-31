@@ -62,6 +62,8 @@ dl:
         url: /research/research-capsule-network/
       - title: "17' Multi-speaker Tacotron"
         url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
+      - title: "16' What's the Point"
+        url: /research/research-what's-the-point/
       - title: "16' Learning Deep Features"
         url: /research/research-learning-deep-features/
       - title: "16' You Only Look Once (YOLO)"
@@ -78,7 +80,7 @@ dl:
         url: /research/research-NIN/
       - title: "14' Generative Adversarial Nets"
         url: /research/research-GAN/
-      - title: "Paper Skim"
+      - title: "Paper Skimming"
         url: /research/research-paper-skim/
   - title: Deep Learning Related
     children:
