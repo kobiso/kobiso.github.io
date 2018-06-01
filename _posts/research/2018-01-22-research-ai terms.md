@@ -149,6 +149,18 @@ $${: .text-center}
   - ECE Edu: Local Minimum problem [[Link](http://www.ece.utep.edu/research/webfuzzy/docs/kk-thesis/kk-thesis-html/node23.html)]
   
 # M
+
+## Metric Learning
+** Metric Learning** is the task of learning a distance function over objects.
+A metric or distance function has to obey four axioms: non-negativity, Identity of indiscernibles, symmetry and subadditivity / triangle inequality. In practice, metric learning algorithms ignore the condition of identity of indiscernibles and learn a pseudo-metric.
+
+![Metric learning]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/metric learning.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Example of metric learning application*
+{: .text-center}
+
+- **Reference**
+  - Wikipedia: [Similarity learning](https://en.wikipedia.org/wiki/Mean_squared_error)
+
 ## Mean Squared Error
 **Mean squared error(MSE)** or **mean squared deviation (MSD)** of an estimator measures the average of the squares of the errors or deviations.
 The MSE is a measure of the quality of an estimator which is always non-negative, and values closer to zero are better.
