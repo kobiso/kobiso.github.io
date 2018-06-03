@@ -13,7 +13,7 @@ locale                   : "en"
 title                    : "Home"
 title_separator          : "-"
 name                     : "ByungSoo Ko"
-description              : "an master's student researcher in deep learning"
+description              : "Research Engineer in deep learning and Computer Vision"
 url                      : "https://kobiso.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "ByungSoo Ko"
   avatar           : "/assets/images/me.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Researcher / Areas of Research: Artificial Intelligence, Deep Learning, Neural Network / Research Disciplines: Computer Science"
-  location         : "Daejeon, Korea"
+  bio              : "Research Engineer in Deep Learning and Computer Vision"
+  location         : # "South Korea"
   email            : "kobiso62@gmail.com"
   uri              : "https://kobiso.github.io/"
   bitbucket        :
@@ -98,7 +98,7 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         : "byungsoo-ko-151013b8" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "byungsooko" # "byungsoo-ko-151013b8" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
   soundcloud       :
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
