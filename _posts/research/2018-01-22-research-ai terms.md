@@ -34,6 +34,14 @@ This post will be about artificial intelligence related terms including linear a
   - Wikipedia: Bootstrapping (statistics) [[Link](https://en.wikipedia.org/wiki/Bootstrapping_(statistics))]
   - Youtube: Bootstrapping Sampling [Link](https://www.youtube.com/watch?v=tTZybQTE0dw)]
 
+## Blob Detection
+In computer vision, **blob detection* methods are aimed at detecting regions in a digital image that differ in properties, such as brightness or color, compared to surrounding regions.
+Informally, a blob is a region of an image in which some properties are constant or approximately constant; all the points in a blob can be considered in some sense to be similar to each other.
+The most common method for blob detection is *convolution*.
+
+- **Reference**
+  - Wikipedia: [Blob detection](https://en.wikipedia.org/wiki/Blob_detection)
+
 # C
 ## Collaborative Filtering
 - **Collaborative filtering (CF)** is a technique used by recommender system and it has two sense, a narrow one and a general one.
