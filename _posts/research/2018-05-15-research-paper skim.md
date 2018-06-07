@@ -126,6 +126,39 @@ So, this post will be keep updating by the time.
 ## References
 - Paper: [What's the point: semantic segmentation with point supervision](http://calvin.inf.ed.ac.uk/wp-content/uploads/Publications/bearman16cvpr.pdf)
 
+# Learning a rotation invariant detector with rotatable bounding box
+- Conference: CVPR2018
+
+## Summary
+
+- **Problem Statement**
+  - Detection of arbitrarily rotated objects is a challenging task due to the difficulties of locating the multi-angle objects and separating them effectively from the background.
+  - The existing methods are not robust to angle varies of the objects because of the use of traditional bounding box, which is a rotation variant structure for locating rotated objects.
+  
+- **Research Objective**
+  - To suggest object detector which is rotation invariant
+  
+- **Proposed Solution**
+  - Propose rotatable bounding box (RBox) and detector (DRBox) which can handle the situation where the orientation angles of the objects are arbitrary.
+  - The training of DRBox forces the detection networks to learn the correct orientation angle of the objects, so that the rotation invariant property can be achieved.
+
+![RBox]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/rbox.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Comparision of traditional bounding box and rotatable bounding box.*
+{: .text-center}
+
+![DRBox]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/drbox.png){: .align-center}{:height="80%" width="80%"}
+*Figure: The networks structure of DRBox. The networks structure of DRBox is similar with other box based methods except for the use of multi-angle prior RBoxes. DRBox searches for objects using sliding and rotation prior RBoxes on input image and then output locations of objects besides with their orientation angles.*
+{: .text-center}
+
+  
+- **Contribution**
+  - Compared with *Faster R-CNN* and *CNN*, DRBox performs much better than traditional bounding box based methods do on the given tasks, and is more robust against rotation of input image and target objects.
+  - DRBox correctly outputs the orientation angles of the objects.
+
+## References
+- [Paper] [Learning a rotation invariant detector with rotatable bounding box](https://arxiv.org/pdf/1711.09405.pdf)
+- [Github] [DRBox](https://github.com/liulei01/DRBox)
+
 <!--
 # Weakly Supervised Object Localization with Multi-fold Multiple Instance Learning, TPAMI16
 - Conference: TPAMI2016
