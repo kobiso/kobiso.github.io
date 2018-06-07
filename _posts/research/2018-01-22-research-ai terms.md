@@ -173,7 +173,7 @@ In a more general context, the Hamming distance is one of several string metrics
 # M
 
 ## Metric Learning
-** Metric Learning** is the task of learning a distance function over objects.
+**Metric Learning** is the task of learning a distance function over objects.
 A metric or distance function has to obey four axioms: non-negativity, Identity of indiscernibles, symmetry and subadditivity / triangle inequality. In practice, metric learning algorithms ignore the condition of identity of indiscernibles and learn a pseudo-metric.
 
 ![Metric learning]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/metric learning.png){: .align-center}{:height="80%" width="80%"}
