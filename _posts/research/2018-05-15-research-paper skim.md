@@ -156,8 +156,41 @@ So, this post will be keep updating by the time.
   - DRBox correctly outputs the orientation angles of the objects.
 
 ## References
-- [Paper] [Learning a rotation invariant detector with rotatable bounding box](https://arxiv.org/pdf/1711.09405.pdf)
-- [Github] [DRBox](https://github.com/liulei01/DRBox)
+- Paper: [Learning a rotation invariant detector with rotatable bounding box](https://arxiv.org/pdf/1711.09405.pdf)
+- Github: [DRBox](https://github.com/liulei01/DRBox)
+
+# Oriented Response Networks
+- Conference: CVPR2017
+
+## Summary
+
+- **Problem Statement**
+  - Deep Convolution Neural Networks (DCNNs) ability in handling significant local and global image rotations remains limited.
+  
+- **Research Objective**
+  - To suggest orientation invariant deep feature for DCNNs
+  
+- **Proposed Solution**
+  - Propose Active Rotating Filters (ARFs) that actively rotate during convolution and produce feature maps with location and orientation explicitly encoded.
+  - An ARF acts as a virtual filter bank containing the filter itself and its multiple unmaterialised rotated versions.
+
+![ARF]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/arf1.png){: .align-center}{:height="80%" width="80%"}
+*Figure: An ARF is a filter of the size W X W X N, and viewed as N-directional points on a W X W grid. The form of the ARF enables it to effectively define relative rotations, e.g., the head rotation of a bird about its body. An ARF actively rotates during convolution; thus it acts as a virtual filter bank containing the canonical filter itself and its multiple unmaterialised rotated versions. In this example, the location and orientation of birds in different postures are captured by the ARF and explicitly encoded into a feature map.*
+{: .text-center}
+  
+- **Contribution**
+  - Specified Active Rotating Filters and Oriented Response Convolution, improved the most fundamental module of DCNN and endowed DCNN the capability of explicitly encoding hierarchical orientation information.
+  - Applied such orientation information to rotation-invariant image classification and object orientation estimation.
+  - Upgraded successful DCNNs including VGG, ResNet, TI-Pooling and STN to ORNs, achieving state-of-the-art performance with significantly fewer network parameters on popular benchmarks.
+
+![ARF result]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/arf2.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Results on the natural image classification benchmark. In the second column, k is the widening factor corresponding to the number of filters in each layer.*
+{: .text-center}
+
+
+## References
+- Paper: [Oriented Response Networks](https://arxiv.org/pdf/1701.01833.pdf)
+- [Project page](http://yzhou.work/ORN/)
 
 <!--
 # Weakly Supervised Object Localization with Multi-fold Multiple Instance Learning, TPAMI16
