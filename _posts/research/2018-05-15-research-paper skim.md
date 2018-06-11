@@ -192,6 +192,40 @@ So, this post will be keep updating by the time.
 - Paper: [Oriented Response Networks](https://arxiv.org/pdf/1701.01833.pdf)
 - [Project page](http://yzhou.work/ORN/)
 
+# Unsupervised representation learning by predicting image rotations
+- Conference: ICLR2018
+
+## Summary
+
+- **Problem Statement**
+  - In computer vision task, they usually require massive amounts of manually labeled data, which is both expensive and impractical to scale.
+  - Therefore, unsupervised semantic feature learning is important.
+  
+- **Research Objective**
+  - To learn ConvNet based semantic features in an unsupervised manner.
+  
+- **Proposed Solution**
+  - Propose to learn image features by training ConvNets to recognize the 2d rotation that is applied to the image that it gets as input.
+
+![url1]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/url1.png){: .align-center}
+{: .full}
+
+*Figure: Proposed self-supervised task. Given four possible geometric transformations, the 0, 90, 180, 270 degrees rotations, proposed method train a ConvNet model $$F(.)$$ to recognize the rotation that is applied to the image that it gets as input. $$F^y(X^{y^*})$$ is the probability of rotation transformation $$y$$ predicted by model $$F(.)$$ when it gets as input an image that has been transformed by the rotation transformation $$y^*$$.*
+{: .text-center}
+  
+- **Contribution**
+  - Offers a powerful supervisory signal for semantic feature learning
+  - In all of various evaluation, proposed self-supervised formulation demonstrates state-of-the-art results with dramatic improvements w.r.t. prior unsupervised approaches.
+  - Proposed self-supervised learning approach significantly narrows the gap between unsupervised and supervised feature learning.
+
+![url2]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/url2.png){: .align-center}{:height="100%" width="100%"}
+*Figure: Task & Dataset Generalization: PASCAL VOC 2007 classification and detection results, and PASCAL VOC 2012 segmentation results.*
+{: .text-center}
+
+## References
+- Paper: [Unsupervised representation learning by predicting image rotations](https://arxiv.org/pdf/1803.07728.pdf)
+- [Code](https://github.com/gidariss/FeatureLearningRotNet)
+
 <!--
 # Weakly Supervised Object Localization with Multi-fold Multiple Instance Learning, TPAMI16
 - Conference: TPAMI2016
