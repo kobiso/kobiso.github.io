@@ -226,6 +226,49 @@ So, this post will be keep updating by the time.
 - Paper: [Unsupervised representation learning by predicting image rotations](https://arxiv.org/pdf/1803.07728.pdf)
 - [Code](https://github.com/gidariss/FeatureLearningRotNet)
 
+# Arbitrary-oriented scene text detection via rotation proposals
+- Conference: IEEE Transactions on Multimedia 2018
+
+## Summary
+
+- **Problem Statement**
+  - In real-world applications, a large number of the text regions are not horizontal.
+  - Thus, recent years' horizontal-specific methods cannot be widely applied in practice.
+  
+- **Research Objective**
+  - To detect arbitrary-oriented text in natural scene images
+  
+- **Proposed Solution**
+  - Propose the *Rotation Region Proposal Networks (RRPN)*, which are designed to generate inclined proposals with text orientation angle information.
+  - The angle information is then adapted for bounding box regression to make the proposals more accurately fit into the text region in terms of the orientation.
+  - The *Rotation Region-of-Interest (RRoI)* pooling layer is proposed to project arbitrary-oriented proposals to a feature map for a text region classifier.
+
+![Comparison]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/rotated text detection1.png){: .align-center}{:height="80%" width="80%"}
+*Figure: First row: text detection based on horizontal bounding box proposal and bounding box regression of Faster-RCNN. Second row: detection using rotation region proposal and bounding box regression with orientation step.*
+{: .text-center}
+
+![Pipeline]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/rotated text detection2.png){: .align-center}
+{: .full}
+
+*Figure: Rotation-based text detection pipeline.*
+{: .text-center}
+  
+- **Contribution**
+  - Proposed solution has the ability to predict the orientation of a text line using a region-proposal-based approach; thus, the proposals can better fit the text region, and the ranged text region can be easily rectified and is more convenient for text reading.
+  - RRoI pooling layer and learning of the rotated proposal are incorporated into the region-proposal-based architecture, which ensures the computational efficiency of text detection compared with segmentation-based text detection systems.
+  - Propose strategies for the refinement of region proposals with arbitrary orientation to improve the performance of arbitrary-oriented text detection
+
+![Result]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/rotated text detection3.png){: .align-center}
+{: .full}
+
+*Figure: Comparison with state-of-the-art approaches on three benchmarks. Bold text denotes the top result, while underlined text corresponds to the second runner-up.*
+{: .text-center}
+
+
+## References
+- Paper: [Arbitrary-oriented scene text detection via rotation proposals](https://arxiv.org/pdf/1703.01086.pdf)
+- [Code](https://github.com/mjq11302010044/RRPN)
+
 <!--
 # Weakly Supervised Object Localization with Multi-fold Multiple Instance Learning, TPAMI16
 - Conference: TPAMI2016
