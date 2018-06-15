@@ -137,6 +137,16 @@ In a more general context, the Hamming distance is one of several string metrics
 - **Reference**
   - Slide: Stanford CS231 [[Link](http://cs231n.stanford.edu/slides/2017/cs231n_2017_lecture11.pdf)]
 
+## Invariance vs. Equivariance
+**Invariance** to a transformation means if you take the input and transform it then the representation you get the same as the representation of the original, i.e. represent(x) = represent(transform(x))
+
+**Equivariance** to a transformation means if you take the input and transform it then the representation you get is a transformation of the representation of the original, i.e. transform(represent(x)) = represent(transform(x)).
+
+Replicated feature detectors are equivariant with respect to translation, which means that if you translate the input then the representation you get is a translation of the representation of the original.
+
+- **Reference**
+  - Reddit: [Difference between invariance and equivariance(in terms of convolutional neural networks)](https://www.reddit.com/r/MachineLearning/comments/2q01z5/difference_between_invariance_and_equivariancein/)
+
 # L
 ## Latent Variable
 - **Latent variables** are variables that are not directly observed but are rather inferred from other variables that are observed (directly measured).
