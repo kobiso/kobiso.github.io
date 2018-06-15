@@ -80,6 +80,8 @@ dl:
         url: /research/research-NIN/
       - title: "14' Generative Adversarial Nets"
         url: /research/research-GAN/
+      - title: "Rotation Invariance & Equivariance"
+        url: /research/research-rotation/
       - title: "Paper Skimming"
         url: /research/research-paper-skim/
   - title: Deep Learning Related
