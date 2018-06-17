@@ -15,7 +15,7 @@ sidebar:
 author_profile: false
 ---
 
-This post is a summary or paper skimming on rotation invariance and equivariance related research.
+This post is a summary and paper skimming on rotation invariance and equivariance related research.
 So, this post will be keep updating by the time.
 
 {% include toc title="Table of Contents" icon="file-text" %}
@@ -27,7 +27,7 @@ So, this post will be keep updating by the time.
   - [Paper](https://arxiv.org/pdf/1703.01086.pdf)
 - [Learning a Rotation Invariant Detector with Rotatable Bounding Box]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#learning-a-rotation-invariant-detector-with-rotatable-bounding-box), CVPR2018 submitted?
   - [Paper](https://arxiv.org/pdf/1711.09405.pdf), [Code-Caffe](https://github.com/liulei01/DRBox), [Related GitHub](https://github.com/uoip/SSD-variants)
-- Rotational Rectification Network: Enabling Pedestrian Detection for Mobile Vision, WACV2018.
+- Rotational Rectification Network: Enabling Pedestrian Detection for Mobile Vision, WACV2018
   - [Paper](http://xinshuoweng.com/papers/R2N/WACV2018_proceedings.pdf), [Oral](http://xinshuoweng.com/papers/R2N/oral.pptx) 
 
 ## Feature Representation & Network
@@ -35,7 +35,7 @@ So, this post will be keep updating by the time.
   - [Paper](https://arxiv.org/pdf/1701.01833.pdf), [Torch-Code](http://yzhou.work/ORN/)
 - [Unsupervised Representation Learning by Predicting Image Rotations]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#unsupervised-representation-learning-by-predicting-image-rotations), ICLR2018
   - [Paper](https://arxiv.org/pdf/1803.07728.pdf)
-- Deep Rotation Equivariant Network, CoRR2017
+- [Deep Rotation Equivariant Network]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#deep-rotation-equivariant-network), Neurocomputing2018
   - [Paper](https://arxiv.org/pdf/1705.08623.pdf), [TF-Code](https://github.com/microljy/DREN)
 - Generic 3D Representation via Pose Estimation and Matching, ECCV2016
   - [Paper](http://3drepresentation.stanford.edu/)
@@ -43,7 +43,7 @@ So, this post will be keep updating by the time.
   - [Paper](http://visual.cs.ucl.ac.uk/pubs/harmonicNets/pdfs/worrallEtAl2017.pdf), [Project page](http://visual.cs.ucl.ac.uk/pubs/harmonicNets/index.html), [Code](https://github.com/deworrall92/harmonicConvolutions)
 
 ## Rotation Detection & Correction
-- [Blog][Correcting Image Orientation Using Convolutional Neural Networks]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#blog-correcting-image-orientation-using-convolutional-neural-networks)
+- [Blog] [Correcting Image Orientation Using Convolutional Neural Networks]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#blog-correcting-image-orientation-using-convolutional-neural-networks)
   - [Blog](https://d4nst.github.io/2017/01/12/image-orientation/), [Code](https://github.com/d4nst/RotNet)
 
 # Learning a rotation invariant detector with rotatable bounding box
@@ -212,13 +212,54 @@ So, this post will be keep updating by the time.
 - **RotNet on MNIST**
   - After 50 epochs, the network achieves an average angle error of 6-7 degrees in the validation set.
 
-![Comparison]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/rotnet2.png){: .align-center}{:height="100%" width="100%"}
+![MNIST]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/rotnet2.png){: .align-center}{:height="100%" width="100%"}
 
 - **RotNet on Google Street View**
   - After 10 epochs to get an average angle error of 1-2 degrees.
 
-![Comparison]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/rotnet3.png){: .align-center}{:height="100%" width="100%"}
+![Google Street View]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/rotnet3.png){: .align-center}{:height="100%" width="100%"}
 
 ## References
 - Blog: [Correcting Image Orientation Using Convolutional Neural Networks](https://d4nst.github.io/2017/01/12/image-orientation/)
 - Github: [RotNet](https://github.com/d4nst/RotNet)
+
+# Deep rotation equivariant network
+- Conference: Neurocomputing 2018
+
+## Summary
+
+- **Problem Statement**
+  - To learn rotation equivariance, feature maps should be copied and rotated four times in each layer which causes much running time and memory overhead.
+  
+- **Research Objective**
+  - To suggest a network which is rotation equivariant and efficient on speed and memory usage.
+  
+![Comparison]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/dren1.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Latent representations learnt by a CNN and a DREN. Features produced by a DREN is equivariant to rotation while that produced by a typical CNN is not.*
+{: .text-center}
+
+- **Proposed Solution**
+  - Propose the *Deep Rotation Equivariant Network* consisting of cycle layers, isotonic layers and decycle layers.
+  - Proposed layers apply rotation transformation on filters rather than feature maps
+ 
+![Model]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/dren4.png){: .align-center}
+{: .full}
+
+*Figure: The framework of Deep Rotation Equivariant Network. The gray panels represent input, feature maps and output. Each square represents a weight kernel. The letter ’T’ is utilized for distinguishing orientation clearly. The different colors of kernel background indicate that the kernel are not qualitatively equivalent. Although this figure seems similar to that one in [this paper](https://arxiv.org/pdf/1602.02660.pdf), there are 3 critical differences: 1. We apply rotation on the filters rather than the feature maps. 2. The matrix in an isotonic layer is different in order from the matrix of cyclic rolling operation in [this paper](https://arxiv.org/pdf/1602.02660.pdf). 3. The decycle layer is a special convolution layer, different from the cyclic pooling applied in [this paper](https://arxiv.org/pdf/1602.02660.pdf).*
+{: .text-center}
+
+- **Contribution**
+  - Evaluate DRENs on Rotated MNIST and CIFAR-10 datasets and demonstrate that it can improve the performance of state-of-the-art.
+  - Achieve a speed up of more than 2 times with even less memory overhead.  
+
+![MNIST]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/dren2.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Performance of various models on Rotated MNIST.*
+{: .text-center}
+
+![Cifar-10]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/dren3.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Performance of various models on CIFAR-10.*
+{: .text-center}
+
+## References
+- Paper: [Deep rotation equivariant network](https://arxiv.org/abs/1705.08623)
+- [Code](https://github.com/microljy/DREN)

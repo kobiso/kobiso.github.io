@@ -145,6 +145,7 @@ In a more general context, the Hamming distance is one of several string metrics
 Replicated feature detectors are equivariant with respect to translation, which means that if you translate the input then the representation you get is a translation of the representation of the original.
 
 - **Reference**
+  - Paper: [Deep rotation equivariant network](https://arxiv.org/abs/1705.08623)
   - Reddit: [Difference between invariance and equivariance(in terms of convolutional neural networks)](https://www.reddit.com/r/MachineLearning/comments/2q01z5/difference_between_invariance_and_equivariancein/)
 
 # L
