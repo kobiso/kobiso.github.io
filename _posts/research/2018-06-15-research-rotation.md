@@ -37,6 +37,8 @@ So, this post will be keep updating by the time.
   - [Paper](https://arxiv.org/pdf/1803.07728.pdf)
 - [Deep Rotation Equivariant Network]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#deep-rotation-equivariant-network), Neurocomputing2018
   - [Paper](https://arxiv.org/pdf/1705.08623.pdf), [TF-Code](https://github.com/microljy/DREN)
+- [Self-supervised learning of geometrically stable features through probabilistic introspection]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#self-supervised-learning-of-geometrically-stable-features-through-probabilistic-introspection)
+  - [Paper](https://www.robots.ox.ac.uk/~vedaldi//assets/pubs/novotny18self-supervised.pdf)
 - Generic 3D Representation via Pose Estimation and Matching, ECCV2016
   - [Paper](http://3drepresentation.stanford.edu/)
 - Harmonic Networks: Deep Translation and Rotation Equivariance, CVPR2017
@@ -263,3 +265,41 @@ So, this post will be keep updating by the time.
 ## References
 - Paper: [Deep rotation equivariant network](https://arxiv.org/abs/1705.08623)
 - [Code](https://github.com/microljy/DREN)
+
+# Self-supervised learning of geometrically stable features through probabilistic introspection
+- Conference: CVPR 2018
+
+## Summary
+
+- **Problem Statement**
+  - While several authors have looked at self-supervision for tasks such as image classification and segmentation, less work has been done on tasks that involve understanding the geometric properties of object categories.
+  
+- **Research Objective**
+  - Aim at extending it to geometry-oriented tasks such as semantic matching and part detection.
+  
+![Comparison]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/ssl1.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Proposed approach leverages correspondences obtained from synthetic warps in order to self-supervise the learning of a dense image representation. This results in highly localized and geometrically stable features. The use of a novel robust probabilistic formulation allows to additionally predict a pixel-level confidence map that estimates the matching ability of these features.*
+{: .text-center}
+
+- **Proposed Solution**
+  - Proposed approach learns dense distinctive visual descriptors from an unlabeled dataset of images using synthetic image transformations.
+  - It does so by means of a robust probabilistic formulation that can introspectively determine which image regions are likely to result in stable image matching.
+ 
+![Model]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/ssl2.png){: .align-center}
+{: .full}
+
+*Figure: Overview of our approach. Image $$x$$ is warped into image $$x′$$ using the transformation $$g^{−1}$$. Pairs of pixels and their labels (encoding whether they match or not according to $$g^{−1}$$) are used together with a probabilistic matching loss to train our architecture that predicts i) a dense image feature $$φ(x)$$ and ii) a pixel level confidence value $$σ(x)$$.*
+{: .text-center}
+
+- **Contribution**
+  - A network pre-trained in this manner requires significantly less supervision to learn semantic object parts compared to numerous pre-training alternatives.
+  - The pre-trained representation is excellent for semantic object matching.
+
+![Qualitative analysis]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/ssl3.png){: .align-center}
+{: .full}
+
+*Figure: Qualitative analysis of the learned equivariant feature representation $$φ$$ visualizing predicted confidence maps $$σ^{−1}$$ and several responses max($$[φ(x)]_c, 0$$) of different channels $$c$$ of the representation, for six different categories.*
+{: .text-center}
+
+## References
+- Paper: [Self-supervised learning of geometrically stable features through probabilistic introspection](https://www.robots.ox.ac.uk/~vedaldi//assets/pubs/novotny18self-supervised.pdf)
