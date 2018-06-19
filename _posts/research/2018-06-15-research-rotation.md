@@ -133,7 +133,7 @@ So, this post will be keep updating by the time.
 {: .full}
 
 *Figure: Proposed self-supervised task. Given four possible geometric transformations, the 0, 90, 180, 270 degrees rotations, proposed method train a ConvNet model $$F(.)$$ to recognize the rotation that is applied to the image that it gets as input. $$F^y(X^{y^*})$$ is the probability of rotation transformation $$y$$ predicted by model $$F(.)$$ when it gets as input an image that has been transformed by the rotation transformation $$y^*$$.*
-{: .text-center}
+{: .full .text-center}
   
 - **Contribution**
   - Offers a powerful supervisory signal for semantic feature learning
@@ -173,7 +173,7 @@ So, this post will be keep updating by the time.
 {: .full}
 
 *Figure: Rotation-based text detection pipeline.*
-{: .text-center}
+{: .full .text-center}
   
 - **Contribution**
   - Proposed solution has the ability to predict the orientation of a text line using a region-proposal-based approach; thus, the proposals can better fit the text region, and the ranged text region can be easily rectified and is more convenient for text reading.
@@ -184,7 +184,7 @@ So, this post will be keep updating by the time.
 {: .full}
 
 *Figure: Comparison with state-of-the-art approaches on three benchmarks. Bold text denotes the top result, while underlined text corresponds to the second runner-up.*
-{: .text-center}
+{: .full .text-center}
 
 
 ## References
@@ -248,7 +248,7 @@ So, this post will be keep updating by the time.
 {: .full}
 
 *Figure: The framework of Deep Rotation Equivariant Network. The gray panels represent input, feature maps and output. Each square represents a weight kernel. The letter ’T’ is utilized for distinguishing orientation clearly. The different colors of kernel background indicate that the kernel are not qualitatively equivalent. Although this figure seems similar to that one in [this paper](https://arxiv.org/pdf/1602.02660.pdf), there are 3 critical differences: 1. We apply rotation on the filters rather than the feature maps. 2. The matrix in an isotonic layer is different in order from the matrix of cyclic rolling operation in [this paper](https://arxiv.org/pdf/1602.02660.pdf). 3. The decycle layer is a special convolution layer, different from the cyclic pooling applied in [this paper](https://arxiv.org/pdf/1602.02660.pdf).*
-{: .text-center}
+{: .full .text-center}
 
 - **Contribution**
   - Evaluate DRENs on Rotated MNIST and CIFAR-10 datasets and demonstrate that it can improve the performance of state-of-the-art.
@@ -289,7 +289,7 @@ So, this post will be keep updating by the time.
 {: .full}
 
 *Figure: Overview of our approach. Image $$x$$ is warped into image $$x′$$ using the transformation $$g^{−1}$$. Pairs of pixels and their labels (encoding whether they match or not according to $$g^{−1}$$) are used together with a probabilistic matching loss to train our architecture that predicts i) a dense image feature $$φ(x)$$ and ii) a pixel level confidence value $$σ(x)$$.*
-{: .text-center}
+{: .full .text-center}
 
 - **Contribution**
   - A network pre-trained in this manner requires significantly less supervision to learn semantic object parts compared to numerous pre-training alternatives.
@@ -299,7 +299,7 @@ So, this post will be keep updating by the time.
 {: .full}
 
 *Figure: Qualitative analysis of the learned equivariant feature representation $$φ$$ visualizing predicted confidence maps $$σ^{−1}$$ and several responses max($$[φ(x)]_c, 0$$) of different channels $$c$$ of the representation, for six different categories.*
-{: .text-center}
+{: .full .text-center}
 
 ## References
 - Paper: [Self-supervised learning of geometrically stable features through probabilistic introspection](https://www.robots.ox.ac.uk/~vedaldi//assets/pubs/novotny18self-supervised.pdf)
