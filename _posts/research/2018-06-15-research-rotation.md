@@ -27,6 +27,8 @@ So, this post will be keep updating by the time.
   - [Paper](https://arxiv.org/pdf/1703.01086.pdf)
 - [Learning a Rotation Invariant Detector with Rotatable Bounding Box]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#learning-a-rotation-invariant-detector-with-rotatable-bounding-box), CVPR2018 submitted?
   - [Paper](https://arxiv.org/pdf/1711.09405.pdf), [Code-Caffe](https://github.com/liulei01/DRBox), [Related GitHub](https://github.com/uoip/SSD-variants)
+- [Real-Time Rotation-Invariant Face Detection with Progressive Calibration Networks](), CVPR2018
+  - [Paper](https://arxiv.org/pdf/1804.06039.pdf), [Code](https://github.com/Jack-CV/PCN)
 - Rotational Rectification Network: Enabling Pedestrian Detection for Mobile Vision, WACV2018
   - [Paper](http://xinshuoweng.com/papers/R2N/WACV2018_proceedings.pdf), [Oral](http://xinshuoweng.com/papers/R2N/oral.pptx) 
 
