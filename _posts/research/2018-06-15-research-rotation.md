@@ -27,7 +27,7 @@ So, this post will be keep updating by the time.
   - [Paper](https://arxiv.org/pdf/1703.01086.pdf)
 - [Learning a Rotation Invariant Detector with Rotatable Bounding Box]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#learning-a-rotation-invariant-detector-with-rotatable-bounding-box), CVPR2018 submitted?
   - [Paper](https://arxiv.org/pdf/1711.09405.pdf), [Code-Caffe](https://github.com/liulei01/DRBox), [Related GitHub](https://github.com/uoip/SSD-variants)
-- [Real-Time Rotation-Invariant Face Detection with Progressive Calibration Networks](), CVPR2018
+- [Real-Time Rotation-Invariant Face Detection with Progressive Calibration Networks]({{ site.url }}{{ site.baseurl }}/research/research-rotation/#real-time-rotation-invariant-face-detection), CVPR2018
   - [Paper](https://arxiv.org/pdf/1804.06039.pdf), [Code](https://github.com/Jack-CV/PCN)
 - Rotational Rectification Network: Enabling Pedestrian Detection for Mobile Vision, WACV2018
   - [Paper](http://xinshuoweng.com/papers/R2N/WACV2018_proceedings.pdf), [Oral](http://xinshuoweng.com/papers/R2N/oral.pptx) 
@@ -305,3 +305,42 @@ So, this post will be keep updating by the time.
 
 ## References
 - Paper: [Self-supervised learning of geometrically stable features through probabilistic introspection](https://www.robots.ox.ac.uk/~vedaldi//assets/pubs/novotny18self-supervised.pdf)
+
+# Real-time rotation-invariant face detection
+- Title: Real-time rotation-invariant face detection with progressive calibration networks
+- Conference: CVPR 2018
+
+## Summary
+
+- **Problem Statement**
+  - Rotation-invariant face detection is widelyrequired in unconstrained applications but still remains as a challenging task, due to the large variations of face appearances.
+  - Most existing methods compromise with speed or accuracy to handle the large rotation-in-plane (RIP) variations.
+  
+- **Research Objective**
+  - To perform rotation-invariant face detection
+
+- **Proposed Solution**
+  - Propose Progressive Calibration Networks (PCN) to perform rotation-invariant face detection in a coarse-to-fine manner
+  - PCN consists of three stages, each of which not only distinguishes the faces from non-faces, but also calibrates the RIP orientation of each face candidate to upright progressively.
+  - By dividing the calibration process into several progressive steps and only predicting coarse orientations in early stages, PCN can achieve precise and fast calibration.
+
+![Three strategies]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/rifd1.png){: .align-center}
+{: .full}
+
+*Figure: An overview of our proposed progressive calibration networks (PCN) for rotation-invariant face detection. Our PCN progressively calibrates the RIP orientation of each face candidate to upright for better distinguishing faces from non-faces. Specifically, PCN-1 first identifies face candidates and calibrates those facing down to facing up, halving the range of RIP angles from [-180º, 180º] to [-90º, 90º]. Then the rotated face candidates are further distinguished and calibrated to an upright range of [-45º, 45º] in PCN-2, shrinking the RIP ranges by half again. Finally, PCN-3 makes the accurate final decision for each face candidate to determine whether it is a face and predict the precise RIP angle.*
+{: .full .text-center}
+
+- **Contribution**
+  - By performing binary classification of face vs. non-face with gradually decreasing RIP ranges, PCN can accurately detect faces with full 360 RIP angles
+  - Such designs lead to a real-time rotation-invariant face detector.
+  - The experiments on multi-oriented FDDB and a challenging subset of WIDER FACE containing rotated faces in the wild show that proposed PCN achieves promising performance.
+
+![Result]({{ site.url }}{{ site.baseurl }}/assets/images/rotation/rifd2.png){: .align-center}
+{: .full}
+
+*Figure: Speed and accuracy comparison between different methods. The FDDB recall rate (%) is at 100 false positives.*
+{: .full .text-center}
+
+## References
+- Paper: [Real-time rotation-invariant face detection with progressive calibration networks](https://arxiv.org/pdf/1804.06039.pdf)
+- [Code-Caffe](https://github.com/Jack-CV/PCN)

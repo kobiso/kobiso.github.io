@@ -265,6 +265,19 @@ The bag is labeled *positive* ("beach") if it contains both "sand" region instan
   - Wikipedia: Mathematical Model [[Link](https://en.wikipedia.org/wiki/Mathematical_model)]
   - Youtube: Deterministic vs Probabilistic Model [[Link](https://www.youtube.com/watch?v=XLPgHer5Cp8)]
   
+# R
+## RIP vs. ROP
+- **Rotation-In-Plane (RIP)**: Rotation within a plane in two dimensional space
+
+- **Rotation-Off-Plane (ROP)**: Spatial rotation in three dimensional space
+
+![RIP and ROP]({{ site.url }}{{ site.baseurl }}/assets/images/ai terms/rip rop.png){: .align-center}{:height="80%" width="80%"}
+*Figure: Faces of RIP, ROP, respectively, and concomitance of both RIP and ROP.*
+{: .text-center}
+
+- **Reference**
+  - Paper: [High-performance rotation invariant multiview face detection](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=4107571)
+
 # S
 ## Saddle Point
 - **Saddle point** is a point on the surface of a function where the slopes (derivatives) of orthogonal function components defining the surface become zero but are not a local extremum on both axes.
