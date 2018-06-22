@@ -46,7 +46,7 @@ dl:
         url: /research/research-cnn/
       - title: "Autoencoder"
         url: /research/research-autoencoder/
-  - title: Paper & Project Review
+  - title: Paper Review
     children:
       - title: "17' Extreme Clicking"
         url: /research/research-extreme-clicking/
@@ -80,10 +80,14 @@ dl:
         url: /research/research-NIN/
       - title: "14' Generative Adversarial Nets"
         url: /research/research-GAN/
+  - title: Paper Skimming
+    children:
+      - title: "Detection & Segmentation"
+        url: /research/research-paper-skim/
+      - title: "Image Retrieval"
+        url: /research/research-image-retrieval/
       - title: "Rotation Invariance & Equivariance"
         url: /research/research-rotation/
-      - title: "Paper Skimming"
-        url: /research/research-paper-skim/
   - title: Deep Learning Related
     children:
       - title: "AI Terms"

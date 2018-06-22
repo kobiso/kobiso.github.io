@@ -1,5 +1,5 @@
 ---
-title: "Paper Skimming"
+title: "Detection & Segmentation"
 categories:
   - Research
 tags:
@@ -13,12 +13,30 @@ sidebar:
 author_profile: false
 ---
 
-This post is a summary and paper skimming on various subject of deep learning.
+This post is a summary and paper skimming on detection and segmentation related research.
 So, this post will be keep updating by the time.
 
 {% include toc title="Table of Contents" icon="file-text" %}
 
-# Revisiting Dilated Convolution: A Simple Approach for Weakly- and Semi- Supervised semantic Segmentation
+# Paper List
+
+## Segmentation
+- [Revisiting Dilated Convolution: A Simple Approach for Weakly- and Semi- Supervised semantic Segmentation]({{ site.url }}{{ site.baseurl }}/research/research-paper-skim/#revisiting-dilated-convolution), CVPR2018
+  - [Paper](https://arxiv.org/pdf/1805.04574)
+
+- [What’s the point: semantic segmentation with point supervision]({{ site.url }}{{ site.baseurl }}/research/research-paper-skim/#whats-the-point), ICCV2016
+  - [Paper](http://calvin.inf.ed.ac.uk/wp-content/uploads/Publications/bearman16cvpr.pdf)
+
+## Detection
+- [Unsupervised Learning of Object Landmarks by Factorized Spatial embeddings]({{{ site.url }}{{ site.baseurl }}/research/research-paper-skim/#unsupervised-learning-of-object-landmarks-by-factorized-spatial-embeddings), ICCV2016
+  - [Paper](https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/thewlis17unsupervised.pdf)
+
+- [Scalable Deep Learning Logo Detection]({{ site.url }}{{ site.baseurl }}/research/research-paper-skim/#scalable-deep-learning-logo-detection)
+  - [Paper](https://arxiv.org/pdf/1803.11417.pdf)
+
+
+# Revisiting Dilated Convolution
+- Title: Revisiting Dilated Convolution: A Simple Approach for Weakly- and Semi- Supervised semantic Segmentation
 - Conference: CVPR2018
 - Institute: UIUC, NUS, IBM, Tencent
 
@@ -43,7 +61,7 @@ So, this post will be keep updating by the time.
 {: .text-center}
 
 ## References
-- Paper: [Weakly Supervised Object Localization with Multi-fold Multiple Instance Learning](https://arxiv.org/pdf/1503.00949.pdf)
+- Paper: [Revisiting Dilated Convolution: A Simple Approach for Weakly- and Semi- Supervised semantic Segmentation](https://arxiv.org/pdf/1805.04574)
 
 # Unsupervised Learning of Object Landmarks by Factorized Spatial embeddings
 - Conference: ICCV2016
@@ -99,7 +117,8 @@ So, this post will be keep updating by the time.
 ## References
 - Paper: [Scalable Deep Learning Logo Detection](https://arxiv.org/pdf/1803.11417.pdf)
 
-# What's the point: semantic segmentation with point supervision
+# What's the point
+- Title: What’s the point: semantic segmentation with point supervision
 - Conference: ICCV2016
 
 ## Summary
@@ -125,50 +144,6 @@ So, this post will be keep updating by the time.
 
 ## References
 - Paper: [What's the point: semantic segmentation with point supervision](http://calvin.inf.ed.ac.uk/wp-content/uploads/Publications/bearman16cvpr.pdf)
-
-# Efficient diffusion on region manifolds
-- Title: Efficient diffusion on region manifolds: recovering small objects with compact CNN representations
-- Conference: CVPR2017
-
-## Summary
-
-- **Problem Statement**
-  - Query expansion is a popular method to improve the quality of image retrieval with both conventional and CNN representations.
-  - It has been so far limited to global image similarity.
-  
-- **Research Objective**
-  - Focuses on diffusion, a mechanism that captures the image manifold in the feature space.
-
-  
-- **Proposed Solution**
-  - The diffusion is carried out on descriptors of overlapping image regions rather than on a global image descriptor.
-  - An efficient off-line stage allows optional reduction in the number of stored regions.
-  - In the on-line stage, the proposed handling of unseen queries in the indexing stage removes additional computation to adjust the precomputed data.
-  - We perform diffusion through a sparse linear system solver, yielding practical query times well below one second.
-  
-![Diffusion]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/diffusion1.png){: .align-center}{:height="60%" width="60%"}
-*Figure:(Top): Diffusion on a synthetic dataset in $$\mathbb{R}^2$$. Dataset points, query points and their k-nearest neighbors are shown in blue, red, and green respectively. Contour lines correspond to ranking scores after diffusion. In this work, points are region descriptors.*
-{: .text-center}
-
-- **Contribution**
-  - Introduce a *regional diffusion mechanisum*, which handles one or more query vectors at the same cost. This approach significantly improves retrieval of small objects and cluttered scenes.
-  - A new approach to unseen queries with no computational overhead is proposed.
-  - Experimentally, it gives a significant boost in performance of image retrieval with compact CNN descriptors on standard benchmarks, especially when the query object covers only a small part of the image.
-
-![Quantitative analysis]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/diffusion2.png){: .align-center}{:height="90%" width="90%"}
-*Figure:(Top): Performance comparison to the state of the art. Points at 512D are extracted with VGG and at 2048D with
-ResNet101 . Regional diffusion with 5 regions uses GMM.*
-{: .text-center}
-
-![Qualitative analysis]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/diffusion3.png){: .align-center}
-{: .full}
-
-*Figure: Query examples from INSTRE, Oxford, and Paris datasets and retrieved images ranked by decreasing order of ranking difference between global and regional diffusion. We measure precision at the position where each image is retrieved and report this under each image for global(red) and regional(blue) diffusion. Average Precision (AP) is reported per query for the two methods.*
-{: .full .text-center}
-
-## References
-- Paper: [Efficient diffusion on region manifolds: recovering small objects with compact CNN representations](https://arxiv.org/pdf/1611.05113.pdf)
-- Code: [Matlab](https://github.com/ahmetius/diffusion-retrieval)
 
 <!--
 # Weakly Supervised Object Localization with Multi-fold Multiple Instance Learning, TPAMI16
