@@ -96,7 +96,7 @@ So, this post will be keep updating by the time.
   - In the on-line stage, the proposed handling of unseen queries in the indexing stage removes additional computation to adjust the precomputed data.
   - We perform diffusion through a sparse linear system solver, yielding practical query times well below one second.
   
-![Diffusion]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/diffusion1.png){: .align-center}{:height="60%" width="60%"}
+![Diffusion]({{ site.url }}{{ site.baseurl }}/assets/images/image retrieval/diffusion1.png){: .align-center}{:height="60%" width="60%"}
 *Figure:(Top): Diffusion on a synthetic dataset in $$\mathbb{R}^2$$. Dataset points, query points and their k-nearest neighbors are shown in blue, red, and green respectively. Contour lines correspond to ranking scores after diffusion. In this work, points are region descriptors.*
 {: .text-center}
 
@@ -105,12 +105,12 @@ So, this post will be keep updating by the time.
   - A new approach to unseen queries with no computational overhead is proposed.
   - Experimentally, it gives a significant boost in performance of image retrieval with compact CNN descriptors on standard benchmarks, especially when the query object covers only a small part of the image.
 
-![Quantitative analysis]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/diffusion2.png){: .align-center}{:height="90%" width="90%"}
+![Quantitative analysis]({{ site.url }}{{ site.baseurl }}/assets/images/image retrieval/diffusion2.png){: .align-center}{:height="90%" width="90%"}
 *Figure:(Top): Performance comparison to the state of the art. Points at 512D are extracted with VGG and at 2048D with
 ResNet101 . Regional diffusion with 5 regions uses GMM.*
 {: .text-center}
 
-![Qualitative analysis]({{ site.url }}{{ site.baseurl }}/assets/images/paper skim/diffusion3.png){: .align-center}
+![Qualitative analysis]({{ site.url }}{{ site.baseurl }}/assets/images/image retrieval/diffusion3.png){: .align-center}
 {: .full}
 
 *Figure: Query examples from INSTRE, Oxford, and Paris datasets and retrieved images ranked by decreasing order of ranking difference between global and regional diffusion. We measure precision at the position where each image is retrieved and report this under each image for global(red) and regional(blue) diffusion. Average Precision (AP) is reported per query for the two methods.*
