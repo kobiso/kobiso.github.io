@@ -80,6 +80,8 @@ dl:
         url: /research/research-NIN/
       - title: "14' Generative Adversarial Nets"
         url: /research/research-GAN/
+      - title: "04' Scale-Invariant Feature Transform (SIFT)"
+        url: /research/research-sift/
   - title: Paper Skimming
     children:
       - title: "Detection & Segmentation"
