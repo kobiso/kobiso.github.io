@@ -28,7 +28,7 @@ So, this post will be keep updating by the time.
   - [Paper](http://calvin.inf.ed.ac.uk/wp-content/uploads/Publications/bearman16cvpr.pdf)
 
 ## Detection
-- [Unsupervised Learning of Object Landmarks by Factorized Spatial embeddings]({{{ site.url }}{{ site.baseurl }}/research/research-paper-skim/#unsupervised-learning-of-object-landmarks-by-factorized-spatial-embeddings), ICCV2016
+- [Unsupervised Learning of Object Landmarks by Factorized Spatial embeddings]({{ site.url }}{{ site.baseurl }}/research/research-paper-skim/#unsupervised-learning-of-object-landmarks-by-factorized-spatial-embeddings), ICCV2016
   - [Paper](https://www.robots.ox.ac.uk/~vedaldi/assets/pubs/thewlis17unsupervised.pdf)
 
 - [Scalable Deep Learning Logo Detection]({{ site.url }}{{ site.baseurl }}/research/research-paper-skim/#scalable-deep-learning-logo-detection)

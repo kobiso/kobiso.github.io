@@ -90,6 +90,8 @@ dl:
         url: /research/research-image-retrieval/
       - title: "Rotation Invariance & Equivariance"
         url: /research/research-rotation/
+      - title: "Regularization & Optimization"
+        url: /research/research-regularization-and-optimization/
   - title: Deep Learning Related
     children:
       - title: "AI Terms"

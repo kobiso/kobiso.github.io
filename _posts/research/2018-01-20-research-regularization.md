@@ -84,6 +84,40 @@ It prevents units from complex co-adapting by randomly dropping units from the n
 - **Drawbacks of dropout**
   - It increases training time because of noisy parameter updates caused when each training step tries to train a different architecture.
 
+# Label Smoothing
+Most datasets have some amount of mistakes in the labels and it makes minimizing cost function be harsh.
+One way to handle this is to explicitly model the noise on labels.
+This is done through setting a probability $$\epsilon$$ for which it thinks the labels are correct.
+This probability is easily incorporated into the cross entropy cost function anlytically.
+**Label smoothing** is an example of this.
+
+- Output vectors provided
+  - $$y_{label} = [1,0,0, \cdots]$$
+
+- Softmax output form
+  - $$y_{out}=[0.87,0.001,0.04,\cdots]$$
+
+- **Label smoothing** replaces the label vector with
+  - $$y_{label}=[1-p,\frac{\epsilon}{K-1},\frac{\epsilon}{K-1},\cdots]$$
+  - It prevents the pursuit of hard probabilities without discouraging correct classification.
+
+- **Label smoothing** estimates the marginalized effect of label noise during training.
+  - When the prior label distribution is uniform, label smoothing is equivalent to adding the KL divergence between the uniform distribution $$u$$ and the network's predicted distribution $$p_\theta$$ to the negative log-likelihood.
+
+$$
+\mathcal{L}(\theta)=-\sum \log p_\theta (y\mid x)-D_{KL}(u \parallel p_\theta(y \mid x))
+$$
+
+## Examples
+
+- [Regularizing neural networks by penalizing confident output distributions]({{ site.url }}{{ site.baseurl }}/research/research-regularization-and-optimization/#regularizing-neural-networks-by-penalizing-confident-output-distributions), ICLR2017
+  - [Paper](https://arxiv.org/pdf/1701.06548.pdf)
+  - Proposed better regularization by connecting a maximum entropy based confidence penalty to label smoothing through the direction of the KL divergence
+
+- [Rethinking the Inception Architecture for Computer Vision](https://www.robots.ox.ac.uk/~vgg/rg/papers/reinception.pdf), CVPR2016, Google
+  - Used label-smoothing regularization (LSR) to encourage the model having less confidence so that it can avoid overfitting and increase the ability of the model to adapt.
+
 # References
 - Blog: L1 and L2 Regularization Methods [[Link](https://towardsdatascience.com/l1-and-l2-regularization-methods-ce25e7fc831c)]
 - Paper: Dropout: A Simple Way to Prevent Neural Networks from Overfitting [[Link](https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf)]
+- Slide: [Regularizatino for deep models, University of Waterloo](http://wavelab.uwaterloo.ca/wp-content/uploads/2017/04/Lecture_3.pdf)
