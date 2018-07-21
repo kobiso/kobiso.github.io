@@ -28,7 +28,7 @@ So, this post will be keep updating by the time.
 - [Efficient diffusion on region manifolds: recovering small objects with compact CNN representations]({{ site.url }}{{ site.baseurl }}/research/research-image-retrieval/#efficient-diffusion-on-region-manifolds), CVPR2017
   - [Paper](https://arxiv.org/pdf/1611.05113.pdf), [Code-Matlab](https://github.com/ahmetius/diffusion-retrieval)
 
-- [Particular object retrieval with integral max-pooling of cnn activations (RMAC)]({{ site.url }}{{ site.baseurl }}/research/research-image-retrieval/#R-MAC), ICLR2016
+- [Particular object retrieval with integral max-pooling of cnn activations (RMAC)]({{ site.url }}{{ site.baseurl }}/research/research-image-retrieval/#r-mac), ICLR2016
   - [Paper](https://arxiv.org/pdf/1511.05879)
 
 ## Metric Learning
@@ -137,4 +137,4 @@ ResNet101 . Regional diffusion with 5 regions uses GMM.*
   - This representation can deal with high resolution images of different aspect ratios and obtains a competitive accuracy.
 
 ## References
-- Paper: [Particular object retrieval with integral max-pooling of cnn activations(https://arxiv.org/pdf/1511.05879), ICLR2016
+- Paper: [Particular object retrieval with integral max-pooling of cnn activations](https://arxiv.org/pdf/1511.05879), ICLR2016
