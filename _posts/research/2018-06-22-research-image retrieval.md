@@ -21,16 +21,22 @@ So, this post will be keep updating by the time.
 
 # Paper List
 
-## Local Feature
+## Feature Representation
 - [Large-Scale Image Retrieval with Attentive Deep Local Features]({{ site.url }}{{ site.baseurl }}/research/research-image-retrieval/#large-scale-image-retrieval-with-attentive-deep-local-features), ICCV2017
   - [Paper](https://arxiv.org/pdf/1612.06321.pdf), [Code](https://github.com/tensorflow/models/tree/master/research/delf)
 
 - [Efficient diffusion on region manifolds: recovering small objects with compact CNN representations]({{ site.url }}{{ site.baseurl }}/research/research-image-retrieval/#efficient-diffusion-on-region-manifolds), CVPR2017
   - [Paper](https://arxiv.org/pdf/1611.05113.pdf), [Code-Matlab](https://github.com/ahmetius/diffusion-retrieval)
 
+- [Particular object retrieval with integral max-pooling of cnn activations (RMAC)]({{ site.url }}{{ site.baseurl }}/research/research-image-retrieval/#R-MAC), ICLR2016
+  - [Paper](https://arxiv.org/pdf/1511.05879)
+
 ## Metric Learning
 - [Improved deep metric learning with multi-class N-pair loss objective]({{ site.url }}{{ site.baseurl }}/research/research-n-pair-loss/), NIPS2016
   - [Paper](http://www.nec-labs.com/uploads/images/Department-Images/MediaAnalytics/papers/nips16_npairmetriclearning.pdf)
+
+- [Deep image retrieval: learning global representations for image search]({{ site.url }}{{ site.baseurl }}/research/research-deepir/), ECCV2016
+  - [Paper](https://arxiv.org/pdf/1604.01325)
 
 # Large-Scale Image Retrieval with Attentive Deep Local Features
 - Conference: ICCV2017
@@ -119,3 +125,16 @@ ResNet101 . Regional diffusion with 5 regions uses GMM.*
 ## References
 - Paper: [Efficient diffusion on region manifolds: recovering small objects with compact CNN representations](https://arxiv.org/pdf/1611.05113.pdf)
 - Code: [Matlab](https://github.com/ahmetius/diffusion-retrieval)
+
+# R-MAC
+- Title: Particular object retrieval with integral max-pooling of cnn activations
+- Conference: ICLR2016
+
+## Summary
+
+- **R-MAC**
+  - It aggregates several image regions into a compact feature vector of fixed length and is thus robust to scale and translation.
+  - This representation can deal with high resolution images of different aspect ratios and obtains a competitive accuracy.
+
+## References
+- Paper: [Particular object retrieval with integral max-pooling of cnn activations(https://arxiv.org/pdf/1511.05879), ICLR2016

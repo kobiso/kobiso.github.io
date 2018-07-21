@@ -64,6 +64,8 @@ dl:
         url: /research/research-capsule-network/
       - title: "17' Multi-speaker Tacotron"
         url: /research/research-multi-speaker-Tacotron-in-TensorFlow/
+      - title: "16' DeepIR"
+        url: /research/research-deepir/
       - title: "16' N-pair Loss"
         url: /research/research-n-pair-loss/
       - title: "16' Learning Deep Features"
