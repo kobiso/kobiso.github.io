@@ -50,6 +50,8 @@ dl:
     children:
       - title: "18' SENet"
         url: /research/research-senet/
+      - title: "18' Re-ID done right"
+        url: /research/research-reid/
       - title: "17' Extreme Clicking"
         url: /research/research-extreme-clicking/
       - title: "17' Click Supervision"
