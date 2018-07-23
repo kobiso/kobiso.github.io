@@ -5,8 +5,8 @@ categories:
 tags:
   - SENet
 header:
-  teaser: /assets/images/senet/seblock.png
-  overlay_image: /assets/images/senet/seblock.png
+  teaser: /assets/images/senet/senet.jpg
+  overlay_image: /assets/images/senet/senet.jpg
   overlay_filter: 0.4
 sidebar:
   nav: "dl"
