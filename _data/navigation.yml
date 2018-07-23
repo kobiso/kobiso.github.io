@@ -49,7 +49,7 @@ dl:
   - title: Paper Review
     children:
       - title: "18' SENet"
-        url: /research/research-senet/
+        url: /research/research-SENet/
       - title: "18' Re-ID done right"
         url: /research/research-reid/
       - title: "17' Extreme Clicking"
