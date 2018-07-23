@@ -62,7 +62,7 @@ The goal is to ensure that the network is able to increase its sensitivity to in
 
 This paper achieves this by two steps, *squeeze* and *excitation*.
 
-![SE block]({{ site.url }}{{ site.baseurl }}/assets/images/senet/seblock.png){: .align-center}{:height="100%" width="100%"}
+![SE block]({{ site.url }}{{ site.baseurl }}/assets/images/senet/senet.jpg){: .align-center}{:height="100%" width="100%"}
 *Figure 1: A Squeeze-and-Excitation block.*
 {: .text-center}
 
