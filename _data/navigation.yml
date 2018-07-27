@@ -48,6 +48,8 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper Review
     children:
+      - title: "18' CBAM"
+        url: /research/research-CBAM/
       - title: "18' SENet"
         url: /research/research-SENet/
       - title: "18' Re-ID done right"
