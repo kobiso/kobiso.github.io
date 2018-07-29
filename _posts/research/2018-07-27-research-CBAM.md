@@ -36,7 +36,7 @@ The authors are Sanghyun Woo, Jongchan Park, Joon-Young Lee, and In So Kweon fro
 # Convolutional Block Attention Module
 
 ![Overview]({{ site.url }}{{ site.baseurl }}/assets/images/cbam/overview.png){: .align-center}{:height="100%" width="100%"}
-*Figure 1: **The overview of CBAM.** The module has two sequential sub-modules: *channel* and *spatial*. The intermediate feature map is adaptively refined through our module (CBAM) at every convolutional block of deep networks.*
+*Figure 1: **The overview of CBAM.** The module has two sequential sub-modules: channel and spatial. The intermediate feature map is adaptively refined through our module (CBAM) at every convolutional block of deep networks.*
 {: .text-center}
 
 The overall attention process can be summarized as:
