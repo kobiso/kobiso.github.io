@@ -129,6 +129,22 @@ In a more general context, the Hamming distance is one of several string metrics
 - **Reference**
   - Wikipedia: [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance)
 
+## Hard Negative Mining
+- **Hard positive cases**: anchor and positive samples that are far apart
+- **Hard negative cases**: anchor and negative samples that are close together
+
+-**Hard-mining strategies**: Bootstrapping offers a lot of liberties on how the hard examples are chosen. One could for instance pick a limited number of false positives per image or one could fix a threshold and only pick a false positive if its score is superior to a fixed threshold (0.5 for instance).
+
+- **Hard negative class mining**: greadily selects negative classes in a relatively efficient manner, as opposed to negative "instance" mining. It is executed as follows:
+  1. Evaluate embedding vectors: choose randomly a large number of output classes C; for each class, randomly pass a few (one or two) examples to extract their embedding vectors.
+  2. Select negative classes: select one class randomly from C classes from step 1. Next, greedily add a new class that violates triplet constraint the most w.r.t. the selected classes till we reach N classes. When a tie appears, we randomly pick one of tied classes.
+  3. Finalize N-pair: draw two examples from each selected class from step 2.
+
+- **Reference**
+  - Paper: [Smart Mining for Deep Metric Learning](https://arxiv.org/pdf/1704.01285.pdf)
+  - Paper: [On the use of deep neural networks for the detection of small vehicles in ortho-images](https://hal.archives-ouvertes.fr/hal-01527906/document)
+  - Paper: [Improved Deep Metric Learning with Multi-class N-pair Loss Objective](http://www.nec-labs.com/uploads/images/Department-Images/MediaAnalytics/papers/nips16_npairmetriclearning.pdf)
+
 # I
 ## Image Localization, Detection, Segmentation
 
