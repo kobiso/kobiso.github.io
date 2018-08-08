@@ -38,6 +38,9 @@ So, this post will be keep updating by the time.
 - [Deep image retrieval: learning global representations for image search]({{ site.url }}{{ site.baseurl }}/research/research-deepir/), ECCV2016
   - [Paper](https://arxiv.org/pdf/1604.01325)
 
+- [End-to-end learning of deep visual representations for image retrieval](https://arxiv.org/abs/1610.07940), IJCV2017
+  - It is an extended version of ECCV2016 paper "Deep image retrieval: learning global representations for image search"
+
 # Large-Scale Image Retrieval with Attentive Deep Local Features
 - Conference: ICCV2017
 
