@@ -248,7 +248,7 @@ The bag is labeled *positive* ("beach") if it contains both "sand" region instan
 
 # O
 
-# Object Proposal
+## Object Proposal
 **Object proposal** is a hypothesis that is proposed which is not yet a successful detection but just a proposal that needs to be verified and refined.
   - It can be wrong but the trick is to reduce the chances of object detection being wrong.
 

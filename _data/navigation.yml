@@ -54,6 +54,8 @@ dl:
         url: /research/research-SENet/
       - title: "18' Re-ID done right"
         url: /research/research-reid/
+      - title: "18' Gradient Acceleration"
+        url: /research/research-gradient-acceleration/
       - title: "17' Extreme Clicking"
         url: /research/research-extreme-clicking/
       - title: "17' Click Supervision"
