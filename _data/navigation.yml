@@ -48,6 +48,8 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper Review
     children:
+      - title: "18' DeepLab"
+        url: /research/research-deeplab/
       - title: "18' CBAM"
         url: /research/research-CBAM/
       - title: "18' SENet"
