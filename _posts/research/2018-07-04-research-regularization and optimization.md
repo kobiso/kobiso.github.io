@@ -124,13 +124,13 @@ $$
 ![LR test]({{ site.url }}{{ site.baseurl }}/assets/images/regularization and optimization/sg1.png){: .align-center}
 {: .full}
 
-*Figure: Comparison of learning rate range test results.*
+*Figure 1: Comparison of learning rate range test results.*
 {: .full .text-center}
 
-- **Fig a.** shows typical curve from a LR range test, where the test accuracy has a distinct peak.
+- **Fig 1-a.** shows typical curve from a LR range test, where the test accuracy has a distinct peak.
   - The learning rate at this peak is the largest value to use as the maximum learning rate bound when using CLR
   - The minimum learning rate can be chosen by dividing the maximum by a factor of 3 or 4.
-- **Fig b.** shows that the test accuracy remains consistently high over this unusual range of large learning rates.
+- **Fig 1-b.** shows that the test accuracy remains consistently high over this unusual range of large learning rates.
   - This unusual behavior is indicative of potential for super-convergence.
 
 - **1 Cycle**: slight modification of cyclical learning rate policy for super-convergence
@@ -148,34 +148,48 @@ $$
 ![LR test]({{ site.url }}{{ site.baseurl }}/assets/images/regularization and optimization/sg2.png){: .align-center}
 {: .full}
 
-*Figure: Estimated learning rate from the simplified Hessian-free optimization while training. The computed optimal learning rates are in the range from 2 to 6.*
+*Figure 2: Estimated learning rate from the simplified Hessian-free optimization while training. The computed optimal learning rates are in the range from 2 to 6.*
 {: .full .text-center}
 
 
 ## Experiments
-![Exp1]({{ site.url }}{{ site.baseurl }}/assets/images/regularization and optimization/sg4.png){: .align-center}
-{: .full}
-
-*Figure: Comparisons of super-convergence to over a range of batch sizes. These results show that a large batch size is more effective than a small batch size for super-convergence training.*
-{: .full .text-center}
-
 ![Exp2]({{ site.url }}{{ site.baseurl }}/assets/images/regularization and optimization/sg3.png){: .align-center}
 {: .full}
 
-*Figure: Comparisons of super-convergence to typical training outcome with piecewise constant learning rate schedule.*
+*Figure 3: Comparisons of super-convergence to typical training outcome with piecewise constant learning rate schedule.*
 {: .full .text-center}
+
+- Fig 3-a provides a comparison of super-convergence with a **reduced number of training samples**.
+  - When the amount of training data is limited, the gap in performance between the result of standard training and super-convergence increases.
+- Fig 3-b illustrates the results for *Resnet-20* and *Resnet-110*.
+  - Resnet-20: CLR 90.4% vs. PC-LR: 88.6%, Resnet-110: CLR: 92.1% vs. PC-LR 91.0%
+  - The accuracy increase due to super-convergence is greater for the shallower architectures.
+
+![Exp1]({{ site.url }}{{ site.baseurl }}/assets/images/regularization and optimization/sg4.png){: .align-center}
+{: .full}
+
+*Figure 4: Comparisons of super-convergence to over a range of batch sizes. These results show that a large batch size is more effective than a small batch size for super-convergence training.*
+{: .full .text-center}
+
+- Fig 4 shows experiments on the effects of larger batch size and the generalization gap (the difference between the training and test accuracies).
+  - In Fig 4-a, super-convergence training gives improvement in performance with larger batch sizes.
+  - In Fig 4-b, it shows that the generalization gap are approximately equivalent for small and large mini-batch sizes.
 
 ![Exp3]({{ site.url }}{{ site.baseurl }}/assets/images/regularization and optimization/sg5.png){: .align-center}
 {: .full}
 
-*Figure: Final accuracy and standard deviation for various datasets and architectures. The total batch size (TBS) for all of the reported runs was 512. PL = learning rate policy or SS = stepsize in epochs, where two steps are in a cycle, WD = weight decay, CM = cyclical momentum. Either SS or PL is provide in the Table and SS implies the cycle learning rate policy.*
+*Figure 5: Final accuracy and standard deviation for various datasets and architectures. The total batch size (TBS) for all of the reported runs was 512. PL = learning rate policy or SS = stepsize in epochs, where two steps are in a cycle, WD = weight decay, CM = cyclical momentum. Either SS or PL is provide in the Table and SS implies the cycle learning rate policy.*
 {: .full .text-center}
 
 ![Exp4]({{ site.url }}{{ site.baseurl }}/assets/images/regularization and optimization/sg6.png){: .align-center}
 {: .full}
 
-*Figure: Training resnet and inception architectures on the imagenet dataset with the standard learning rate policy (blue curve) versus a 1cycle policy that displays super-convergence. Illustrates that deep neural networks can be trained much faster (20 versus 100 epochs) than by using the standard training methods.*
+*Figure 6: Training resnet and inception architectures on the imagenet dataset with the standard learning rate policy (blue curve) versus a 1cycle policy that displays super-convergence. Illustrates that deep neural networks can be trained much faster (20 versus 100 epochs) than by using the standard training methods.*
 {: .full .text-center}
+
+- In the Fig 6, experiments with Imagenet show that reducing regularization in the form of weight decay allows the use of larger learning rates and produces much faster convergence and higher final accuracies.
+  - The learning rate varying from 0.05 to 1.0, then down to 0.00005 in 20 epochs.
+  - In order to use such large learning rates, it was necessary to reduce the value for weight deay.
 
 ## Contribution
 - **This paper listed their contributions as:**
