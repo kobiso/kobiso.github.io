@@ -64,7 +64,7 @@ are recovered by the simple yet effective decoder module. The encoder module all
 ![Method]({{ site.url }}{{ site.baseurl }}/assets/images/deeplab/method.png){: .align-center}
 {: .full}
 
-*Figure 2: DeepLabv3+ extends DeepLabv3 by employing a encoderdecoder structure. The encoder module encodes multi-scale contextual information by applying atrous convolution at multiple scales, while the simple yet effective decoder module refnes the segmentation results along object boundaries.*
+*Figure 2: DeepLabv3+ extends DeepLabv3 by employing a encoder-decoder structure. The encoder module encodes multi-scale contextual information by applying atrous convolution at multiple scales, while the simple yet effective decoder module refines the segmentation results along object boundaries.*
 {: .full .text-center}
 
 ## Atrous Convolution
@@ -94,7 +94,7 @@ are recovered by the simple yet effective decoder module. The encoder module all
 - *Atrous separable convolution* significantly reduces the computation complexity of proposed model while maintaining similar (or better) performance.
 
 ![Conv1]({{ site.url }}{{ site.baseurl }}/assets/images/deeplab/conv.png){: .align-center}{:height="100%" width="100%"}
-*Figure 5: 3X3 Depthwise separable convolution decomposes a standard convolution into (a) a depthwise convolution (applying a single filter for each input channel) and (b) apointwise convolution (combining the outputs from depthwise convolution across channels). In this work, we explore atrous separable convolution where atrous convolution is adopted in the depthwise convolution, as shown in (c) with rate = 2.*
+*Figure 5: 3X3 Depthwise separable convolution decomposes a standard convolution into (a) a depthwise convolution (applying a single filter for each input channel) and (b) a pointwise convolution (combining the outputs from depthwise convolution across channels). In this work, we explore atrous separable convolution where atrous convolution is adopted in the depthwise convolution, as shown in (c) with rate = 2.*
 {: .text-center}
 
 ## DeepLabv3 as Encoder
