@@ -21,16 +21,16 @@ author_profile: false
 
 # Summary
 - **Research Objective**
-  - This paper describe a phenomenon, which named "super-convergence", where neural networks can be trained an order of magnitude faster than with standard training methods.
+  - This paper describe a phenomenon, which named **"super-convergence"**, where neural networks can be trained an order of magnitude faster than with standard training methods.
 
 - **Proposed Solution**
-  - One of the key elements of super-convergence is training with one learning rate cycle and a large maximum learning rate.
+  - One of the key elements of super-convergence is training with **one learning rate cycle** and a **large maximum learning rate**.
 
 - **Contribution**
-  - Systematically investigates a new training methodology with improved speed and performance.
-  - Demonstrates that large learning rates regularize training and other forms of regularization must be reduced to maintain an optimal balance of regularization.
-  - Derives a simplification of the second order, Hessian-free optimization method to estimate optimal learning rates which demonstrates that large learning rates find wide, flat minima.
-  - Demonstrates that the effects of super-convergence are increasingly dramatic when less labeled training data is available.
+  - Systematically investigates a new training methodology with **improved speed and performance**.
+  - Demonstrates that **large learning rates regularize training** and other forms of regularization must be reduced to maintain an optimal balance of regularization.
+  - Derives a simplification of the second order, **Hessian-free optimization** method to estimate optimal learning rates which demonstrates that large learning rates find wide, flat minima.
+  - Demonstrates that the effects of super-convergence are increasingly dramatic when **less labeled training data** is available.
 
 # Cyclical Learning Rates
 The idea of *Super-convergence* is based on the previous research of the author: [Cyclical learning rates for training neural networks](https://arxiv.org/abs/1506.01186).
@@ -95,14 +95,35 @@ The idea of *Super-convergence* is based on the previous research of the author:
   - Recognition of this principle permits general use of super-convergence.
   - Reducing other forms of regularization and regularizing with very large learning rates makes training significantly more efficient.
 
+## Optimizer
+- Investigation whether adaptive learning rate methods in a **piecewise constant training regime** would learn to adaptively use large learning rates to improve training speed and performance.
+  - Tested *Nesterov momentum*, *AdaDelta*, *AdaGrad*, *Adam* on Cifar-10 with the Resnet-56.
+  - None of these methods speed up the training process in a similar fashion to super-convergence.
+
+![Exp3]({{ site.url }}{{ site.baseurl }}/assets/images/super convergence/optimizer.png){: .align-center}
+{: .full}
+
+*Figure 4: Comparisons for Cifar-10, Resnet-56 of super-convergence to piecewise constant training regime.*
+{: .full .text-center}
+
+- Investigation whether adaptive learning methods with the 1cycle learning rate policy can bring super-convergence phenomenon.
+  - *Nesterov*, *AdaDelta*, and *AdaGrad* allowed super-convergence to occur.
+
 ## Estimating Optimal Learning Rates
 - This paper derives a simplification of the second order, Hessian-free optimization method to estimate optimal learning rates.
+  - It is not feasible to compute the Hessian matrix because of computation matter.
+  - Hessian expresses the curvature in all directions in a high dimensional space, but the only relevant curvature direction is in the direction of steepest descent that SGD will traverse.
+  - This concept is contained within Hessian-free optimization.
+  - The *AdaSecant* method builds an adaptive learning rate method by it and we can calculate optimal learning rate for each of the neurons.
+  - This paper suggests the way of estimating of the global learning rate from the weight specific rates by summing over the numerator and denominator.
 - The large learning rates indicated by these Figures is caused by small values of Hessian approximation and small values of the Hessian implies that SGD is finding flat and wide local minima.
+
+> In this paper we do not perform a full evaluation of the effectiveness of this technique as it is tangential to the theme of this work. We only use this method here to demonstrate that training with large learning rates are indicated by this approximation. We leave a full assessment and tests of this method to estimate optimal adaptive learning rates as future work.
 
 ![LR test]({{ site.url }}{{ site.baseurl }}/assets/images/super convergence/sg2.png){: .align-center}
 {: .full}
 
-*Figure 3: Estimated learning rate from the simplified Hessian-free optimization while training. The computed optimal learning rates are in the range from 2 to 6.*
+*Figure 5: Estimated learning rate from the simplified Hessian-free optimization while training. The computed optimal learning rates are in the range from 2 to 6.*
 {: .full .text-center}
 
 
@@ -110,38 +131,38 @@ The idea of *Super-convergence* is based on the previous research of the author:
 ![Exp2]({{ site.url }}{{ site.baseurl }}/assets/images/super convergence/sg3.png){: .align-center}
 {: .full}
 
-*Figure 4: Comparisons of super-convergence to typical training outcome with piecewise constant learning rate schedule.*
+*Figure 6: Comparisons of super-convergence to typical training outcome with piecewise constant learning rate schedule.*
 {: .full .text-center}
 
-- Fig 4-a provides a comparison of super-convergence with a **reduced number of training samples**.
+- Fig 6-a provides a comparison of super-convergence with a **reduced number of training samples**.
   - When the amount of training data is limited, the gap in performance between the result of standard training and super-convergence increases.
-- Fig 4-b illustrates the results for *Resnet-20* and *Resnet-110*.
+- Fig 6-b illustrates the results for *Resnet-20* and *Resnet-110*.
   - Resnet-20: CLR 90.4% vs. PC-LR: 88.6%, Resnet-110: CLR: 92.1% vs. PC-LR 91.0%
   - The accuracy increase due to super-convergence is greater for the shallower architectures.
 
 ![Exp1]({{ site.url }}{{ site.baseurl }}/assets/images/super convergence/sg4.png){: .align-center}
 {: .full}
 
-*Figure 5: Comparisons of super-convergence to over a range of batch sizes. These results show that a large batch size is more effective than a small batch size for super-convergence training.*
+*Figure 7: Comparisons of super-convergence to over a range of batch sizes. These results show that a large batch size is more effective than a small batch size for super-convergence training.*
 {: .full .text-center}
 
-- Fig 5 shows experiments on the effects of larger batch size and the generalization gap (the difference between the training and test accuracies).
-  - In Fig 5-a, super-convergence training gives improvement in performance with larger batch sizes.
-  - In Fig 5-b, it shows that the generalization gap are approximately equivalent for small and large mini-batch sizes.
+- Fig 7 shows experiments on the effects of larger batch size and the generalization gap (the difference between the training and test accuracies).
+  - In Fig 7-a, super-convergence training gives improvement in performance with larger batch sizes.
+  - In Fig 7-b, it shows that the generalization gap are approximately equivalent for small and large mini-batch sizes.
 
 ![Exp3]({{ site.url }}{{ site.baseurl }}/assets/images/super convergence/sg5.png){: .align-center}
 {: .full}
 
-*Figure 6: Final accuracy and standard deviation for various datasets and architectures. The total batch size (TBS) for all of the reported runs was 512. PL = learning rate policy or SS = stepsize in epochs, where two steps are in a cycle, WD = weight decay, CM = cyclical momentum. Either SS or PL is provide in the Table and SS implies the cycle learning rate policy.*
+*Figure 8: Final accuracy and standard deviation for various datasets and architectures. The total batch size (TBS) for all of the reported runs was 512. PL = learning rate policy or SS = stepsize in epochs, where two steps are in a cycle, WD = weight decay, CM = cyclical momentum. Either SS or PL is provide in the Table and SS implies the cycle learning rate policy.*
 {: .full .text-center}
 
 ![Exp4]({{ site.url }}{{ site.baseurl }}/assets/images/super convergence/sg6.png){: .align-center}
 {: .full}
 
-*Figure 7: Training resnet and inception architectures on the imagenet dataset with the standard learning rate policy (blue curve) versus a 1cycle policy that displays super-convergence. Illustrates that deep neural networks can be trained much faster (20 versus 100 epochs) than by using the standard training methods.*
+*Figure 9: Training resnet and inception architectures on the imagenet dataset with the standard learning rate policy (blue curve) versus a 1cycle policy that displays super-convergence. Illustrates that deep neural networks can be trained much faster (20 versus 100 epochs) than by using the standard training methods.*
 {: .full .text-center}
 
-- In the Fig 7, experiments with Imagenet show that reducing regularization in the form of weight decay allows the use of larger learning rates and produces much faster convergence and higher final accuracies.
+- In the Fig 9, experiments with Imagenet show that reducing regularization in the form of weight decay allows the use of larger learning rates and produces much faster convergence and higher final accuracies.
   - The learning rate varying from 0.05 to 1.0, then down to 0.00005 in 20 epochs.
   - In order to use such large learning rates, it was necessary to reduce the value for weight decay.
 
