@@ -338,6 +338,27 @@ $$
 The authors propose default values of 0.9 for $$\beta_1$$, 0.999 for $$\beta_2$$, and $$10^{-8}$$ for $$\epsilon$$.
 They show empirically that Adam works well in practice and compares favorably to other adaptive learning-method algorithms.
 
+## AdamW
+After the Adam optimizer was introduced, [few studies](https://arxiv.org/abs/1705.08292) began to discourage to us Adam and showed several experiments that SGD with momentum is performing better.
+In the end of 2017, Ilya Loshchilov and Frank Hutter announced improved version of Adam optimizer in the paper [The Marginal Value of Adaptive Gradient Methods in Machine Learning](https://arxiv.org/abs/1705.08292).
+They pointed out that the way weight decay is implemented in Adam in every library seems to be wrong and proposed a way to fix it called AdamW.
+
+The main contributions of the AdamW paper is to improve Adam's performance:
+- Decoupling weight decay from the gradient-based update
+  - The author suggest to use the original formulation of weight decay to decouple the gradient-based update from weight decay.
+- Normalizing the values of weight decay
+  - The author propose to parameterize the weight decay factor as a function of the total number of batch passes.
+  - This leads to a better invariance of the hyperparameter settings.
+
+![AdamW algorithom]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/adamw_algo.png){: .align-center}{:height="80%" width="80%"}
+{: .text-center}
+
+![Adamw]({{ site.url }}{{ site.baseurl }}/assets/images/optimization/adamw.png){: .align-center}
+{: .full}
+
+*Figure: Learning curves (top row) and generalization results (bottom row) obtained by a 26 2x96d ResNet trained with Adam and AdamW on CIFAR-10. See text for details. SuppFigure 5 (supplemental material) shows the same qualitative results for ImageNet32x32.*
+{: .full .text-center}
+
 # Visualization of Algorithms
 As shown in below images, the adaptive learning-rate methods, i.e. Adagrad, Adadelta, RMSprop, and Adam are most suitable and provide the best convergence for these scenarios.
 
@@ -359,6 +380,10 @@ As shown in below images, the adaptive learning-rate methods, i.e. Adagrad, Adad
 - If you want fast convergence and train a deep or complex network, choose one of the adaptive learning rate methods.
   - Adam works well in practice and outperforms other adaptive techniques.
 
+- Some people say Adam does not generalize as well as SGD with Momentum.
+  - Usually, it is because of choosing poor hyperparameters.
+  - Adam generally requires more regularization than SGD, so make sure to adjust regularization hyper-parameters.
+
 # References
 - Book: Deep Learning book [[Link](http://www.deeplearningbook.org/)]
 - Blog: Types of Optimization Algorithms used in Neural Networks and Ways to Optimize Gradient Descent [[Link](https://towardsdatascience.com/types-of-optimization-algorithms-used-in-neural-networks-and-ways-to-optimize-gradient-95ae5d39529f)]
@@ -367,3 +392,5 @@ As shown in below images, the adaptive learning-rate methods, i.e. Adagrad, Adad
 - Wikipedia: Stochastic gradient descent [[Link](https://en.wikipedia.org/wiki/Stochastic_gradient_descent)]
 - Web: CS231n Convolutional Neural Networks for Visual Recognition [[Link](http://cs231n.github.io/neural-networks-3/)]
 - Blog: An overview of gradient descent optimization algorithms[[Link](http://ruder.io/optimizing-gradient-descent/index.html#adadelta)]
+- Paper: [Fixing Weight Decay Regularization in Adam](https://arxiv.org/abs/1711.05101)
+- Paper: [The Marginal Value of Adaptive Gradient Methods in Machine Learning](https://arxiv.org/abs/1705.08292)
