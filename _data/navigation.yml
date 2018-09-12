@@ -56,6 +56,8 @@ dl:
         url: /research/research-SENet/
       - title: "18' Re-ID done right"
         url: /research/research-reid/
+      - title: "18' Harmonious Attention CNN"
+        url: /research/research-HACNN/
       - title: "18' Super Convergence"
         url: /research/research-super-convergence/
       - title: "18' Gradient Acceleration"
