@@ -77,13 +77,13 @@ The position attention module encodes a wider range of contextual information in
 
 First, apply a convolution layer to obtain the features of dimension reduction.
 Second, feed the features into the position attention module and generate new features of spatial long-range dependencies through the following three.
+
 1. Generate a spatial attention matrix which models the spatial relationship between any two pixels of the features.
-$$
-s_{ji}=\frac{exp(B_i \cdot C_j)}{\sum_{i=1}^Nexp(B_i \cdot C_j)}
-$$
 2. Perform a matrix multiplication between the attention matrix and the original features.
 3. Perform an element-wise sum operation on the above multiplied resulting matrix and original features to obtains the final representations reflecting long-range contexts.
+
 $$
+s_{ji}=\frac{exp(B_i \cdot C_j)}{\sum_{i=1}^Nexp(B_i \cdot C_j)}
 E_j = \alpha \sum_{i=1}^N(s_{ji}D_i)+A_j
 $$
 
@@ -96,6 +96,7 @@ By exploiting the interdependencies between channel maps, we could emphasize int
 
 
 The process to capture the channel relationship is similar to the position attention matrix is calculated in the channel dimension.
+
 $$
 x_{ji}=\frac{exp(A_i \cdot A_j)}{\sum_{i=1}^Cexp(A_i \cdot A_j)}
 E_j = \beta \sum_{i=1}^C(x_{ji}A_i)+A_j
