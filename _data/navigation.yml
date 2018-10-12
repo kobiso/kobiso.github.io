@@ -64,6 +64,8 @@ dl:
         url: /research/research-super-convergence/
       - title: "18' Gradient Acceleration"
         url: /research/research-gradient-acceleration/
+      - title: "17' MS-RMAC"
+        url: /research/research-MS-RMAC/
       - title: "17' Extreme Clicking"
         url: /research/research-extreme-clicking/
       - title: "17' Click Supervision"
