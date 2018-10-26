@@ -114,8 +114,8 @@ dl:
         url: /research/research-regularization-and-optimization/
   - title: Deep Learning Related
     children:
-      - title: "CNN Models Comparison"
-        url: https://github.com/kobiso/CNN-models-comparison
+      - title: "ImageNet Leaderboard"
+        url: https://kobiso.github.io/Computer-Vision-Leaderboard/imagenet
       - title: "AI Terms"
         url: /research/research-ai-terms/
       - title: "Vision Technique"
