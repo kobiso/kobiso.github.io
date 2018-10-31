@@ -90,6 +90,8 @@ dl:
         url: /research/research-yolo/
       - title: "16' Long-term Recurrent ConvNet"
         url: /research/research-lrcn/
+      - title: "15' U-Net"
+        url: /research/research-U-Net/
       - title: "15' Faster R-CNN"
         url: /research/research-faster-rcnn/
       - title: "15' Multi-neural Machine Translation"
