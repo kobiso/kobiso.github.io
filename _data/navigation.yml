@@ -98,6 +98,8 @@ dl:
         url: /research/research-multi-neural-machine-translation/
       - title: "15' Batch Normalization"
         url: /research/research-batch-norm/
+      - title: "14' BING"
+        url: /research/research-BING/
       - title: "14' Network In Network"
         url: /research/research-NIN/
       - title: "14' Generative Adversarial Nets"
