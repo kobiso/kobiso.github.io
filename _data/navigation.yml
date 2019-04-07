@@ -204,6 +204,10 @@ coding:
         url: /coding challenge/coding-P_L5_change124/
       - title: "Level5. Set Align"
         url: /coding challenge/coding-P_L5_setAlign/
+  - title: LeetCode
+    children:
+      - title: "2. Add Two Numbers"
+        url: /coding challenge/coding-2_AddTwoNumbers/
 
 cs:
   - title: Data Structure
