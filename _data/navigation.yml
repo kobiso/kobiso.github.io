@@ -120,6 +120,14 @@ dl:
     children:
       - title: "ImageNet Leaderboard"
         url: https://kobiso.github.io/Computer-Vision-Leaderboard/imagenet
+      - title: "SOP Leaderboard"
+        url: https://kobiso.github.io/Computer-Vision-Leaderboard/sop
+      - title: "CARS196 Leaderboard"
+        url: https://kobiso.github.io/Computer-Vision-Leaderboard/cars
+      - title: "CUB200 Leaderboard"
+        url: https://kobiso.github.io/Computer-Vision-Leaderboard/cub
+      - title: "In-shop Leaderboard"
+        url: https://kobiso.github.io/Computer-Vision-Leaderboard/in-shop
       - title: "AI Terms"
         url: /research/research-ai-terms/
       - title: "Vision Technique"
