@@ -60,17 +60,49 @@ author_profile: false
 
 # Experiments
 
-## Computational Time
+## Dataset
+- PASCAL VOC2007 test set
+  - 4,952 images with bounding box annotation for the object instances from 20 categories
+
+## Metric
+### DR-#WIN
+- DR-#WIN means detection rate (DR) given #WIN proposals. An object is considered as being covered by a proposal if the strict PASCAL criterion is satisfied. That is, the INT-UION score is no less than 0.5.
+- Refer: [BING: Binarized Normed Gradients for Objectness Estimation at 300fps](https://mmcheng.net/mftp/Papers/ObjectnessBING.pdf)
+
+#### DR-#WIN curves
+- Performance is evaluated with curves measuring the detection-rate vs number of windows (DR-#WIN).
+- #WIN is the number of windows output by the algorithm being evaluated.
+- DR is the percentage of ground-truth objects covered by those windows.
+- An object is considered covered by a window if the strict PASCAL-overlap criterion is satisfied (intersection-over-union(INT-UION) > 0.5).
+- For comparing methods, we summarize a DR-#WIN curve with a single value: the area under the curve (AUC), after renormalizing the horizontal axis from [0, 1000] to [0,1], so the AUC ranges in [0,1].
+
+ - Refer: [Measuring the objectness of image windows](http://calvin.inf.ed.ac.uk/wp-content/uploads/Publications/alexe12pami.pdf)
+
+## Experimental Evaluation
+
+![Grahp]({{ site.url }}{{ site.baseurl }}/assets/images/bing/graph.png){: .align-center}{:height="100%" width="100%"}
+{: .text-center}
+
+### Proposal quality comparisons
+- BING achieves 99.5% DR using only 5,000 proposals by simply collecting the results from 3 color spaces (BING-diversified): RGB, HSV, and GRAY.
+
+### Generalize ability test
+- BING are generic over categories by testing BING on images containing objects whose categories are not used for training.
+- Specifically, we train BING using 6 object categories and test it using the rest 14 categories.
+- The statistics for training and testing on same or different object categories are represented by BING and BING-generic, respectively.
+- Both are almost identical, which demonstrates the generalize ability of our proposals.
+
+### Computational Time
 
 ![Ex1]({{ site.url }}{{ site.baseurl }}/assets/images/bing/computational_time.png){: .align-center}
 {: .full}
 
-## Qualitative Analysis
+### Qualitative Analysis
 
 ![Ex2]({{ site.url }}{{ site.baseurl }}/assets/images/bing/qualitative.png){: .align-center}{:height="100%" width="100%"}
 {: .text-center}
 
-## Quantitative Analysis
+### Quantitative Analysis
 
 ![Ex3]({{ site.url }}{{ site.baseurl }}/assets/images/bing/quantitative.png){: .align-center}{:height="100%" width="100%"}
 {: .text-center}
