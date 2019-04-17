@@ -48,6 +48,8 @@ dl:
         url: /research/research-autoencoder/
   - title: Paper Review
     children:
+      - title: "19' Mining Objects"
+        url: /research/research-mining-objects/
       - title: "18' DeepLab"
         url: /research/research-deeplab/
       - title: "18' DANet"
